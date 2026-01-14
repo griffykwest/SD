@@ -15,7 +15,7 @@ libary_path = '/home/griffin/Downloads/cross_section_libs/endfb-viii.0-hdf5/cros
 os.environ['OPENMC_CROSS_SECTIONS'] = libary_path
 
 batches = 2000
-inactive = 25
+inactive = 50
 particles = 100000
 
 
