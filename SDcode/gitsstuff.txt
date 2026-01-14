@@ -1,5 +1,5 @@
 git add -A
-git commit -m "updatinhg stuff"
+git commit -m "changing how files are called in for the xs"
 git push
 
 

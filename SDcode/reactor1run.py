@@ -10,8 +10,12 @@ import os
 #================================
 # Cross sections
 #================================
+import os
 
-libary_path = '/home/griffin/Downloads/cross_section_libs/endfb-viii.0-hdf5/cross_sections.xml'
+# Path relative to the SDcode folder
+libary_path = os.path.expanduser('~/Downloads/cross_section_libs/endfb-viii.0-hdf5/cross_sections.xml')
+
+
 os.environ['OPENMC_CROSS_SECTIONS'] = libary_path
 
 batches = 200
