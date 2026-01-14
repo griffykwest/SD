@@ -14,9 +14,9 @@ import os
 libary_path = '/home/griffin/Downloads/cross_section_libs/endfb-viii.0-hdf5/cross_sections.xml'
 os.environ['OPENMC_CROSS_SECTIONS'] = libary_path
 
-batches = 2000
+batches = 200
 inactive = 50
-particles = 100000
+particles = 1000
 
 
 materials_file = openmc.Materials(materials.values())
