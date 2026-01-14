@@ -1,0 +1,12 @@
+cd ~/SD
+git add .
+git commit -m "New text file"
+git push
+
+
+# 4️⃣ Push to GitHub
+git push
+
+# 5️⃣ (Optional) On another machine, pull the changes
+# cd ~/SD
+# git pull
