@@ -60,7 +60,7 @@ def xyslice(batch , z):
     plt.xlabel('X [cm]')
     plt.ylabel('Y [cm]')
     plt.gca().set_aspect('equal')
-    plt.savefig(f'flux_xy_{z}.png')
+    plt.savefig(f'{batch}flux_xy_{z}.png')
 
     plt.figure(dpi=150)
     plt.pcolormesh(x_edges, y_edges, fission_xy, shading='auto', cmap='bwr', vmin=fission_min, vmax=fission_max)
@@ -68,13 +68,13 @@ def xyslice(batch , z):
     plt.xlabel('X [cm]')
     plt.ylabel('Y [cm]')
     plt.gca().set_aspect('equal')
-    plt.savefig(f'fission_xy_{z}.png')
+    plt.savefig(f'{batch}fission_xy_{z}.png')
     return
 
-xyslice(2000, 6)
+"""xyslice(2000, 6)
 xyslice(2000, 10)
 xyslice(2000, 15)
-
+"""
 # plotting function for an xz slice 111 is the middle
 def xzslice(batch, y):
     sp = openmc.StatePoint(f'statepoint.{batch}.h5')
@@ -129,7 +129,7 @@ def xzslice(batch, y):
     plt.xlabel('X [cm]')
     plt.ylabel('Z [cm]')
     plt.gca().set_aspect('equal')
-    plt.savefig(f'flux_xz_{y}.png')
+    plt.savefig(f'{batch}flux_xz_{y}.png')
 
     plt.figure(dpi=150)
     plt.pcolormesh(x_edges, z_edges, fission_xz, shading='auto', cmap='bwr', vmin=fission_min, vmax=fission_max)
@@ -137,10 +137,10 @@ def xzslice(batch, y):
     plt.xlabel('X [cm]')
     plt.ylabel('Z [cm]')
     plt.gca().set_aspect('equal')
-    plt.savefig(f'fission_xz_{y}.png')
+    plt.savefig(f'{batch}fission_xz_{y}.png')
     return
 
-xzslice(2000, 110)
+"""xzslice(2000, 110)
 xzslice(2000, 65)
 xzslice(2000, 111)
-
+"""

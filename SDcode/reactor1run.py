@@ -5,6 +5,7 @@ from tally import tallies
 from surfaces import *
 import numpy as np
 import os
+from fluxplot import xyslice
 
 
 #================================
@@ -18,9 +19,9 @@ libary_path = os.path.expanduser('~/Downloads/cross_section_libs/endfb-viii.0-hd
 
 os.environ['OPENMC_CROSS_SECTIONS'] = libary_path
 
-batches = 200
-inactive = 50
-particles = 1000
+batches = 2003
+inactive = 500      
+particles = 5000
 
 
 materials_file = openmc.Materials(materials.values())
@@ -104,7 +105,7 @@ plot_1.colors = {
 }
 plot_file = openmc.Plots([plot_1])
 plot_file.export_to_xml()
-openmc.plot_geometry()
+#openmc.plot_geometry()
 
 
 settings= openmc.Settings()
@@ -148,3 +149,5 @@ tallies_file.export_to_xml()
 
 
 openmc.run()
+
+xyslice(batches, 15)

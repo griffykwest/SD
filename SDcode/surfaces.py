@@ -67,8 +67,8 @@ surfaces['z-max'].boundary_type       = 'vacuum'
 #================================================
 # Z in core
 #================================================
-z_ta=100
-z_ba=-z_ta
+z_ta=83.33
+z_ba=-100
 #Top of the Active fuel region
 surfaces['z-top active'] = openmc.ZPlane(z0=z_ta, name='z-top active')
 surfaces['z-bottom active'] = openmc.ZPlane(z0=z_ba, name='z-bottom active')
