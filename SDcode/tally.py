@@ -5,7 +5,7 @@ from surfaces import *
 tallies = {}
 # Instantiate a tally mesh
 mesh = openmc.RegularMesh(mesh_id=1)
-mesh.dimension = [221, 221, 45]#221
+mesh.dimension = [221, 221, 1]#221,45
 mesh.lower_left = [-w/2, -w/2, z_min]
 mesh.upper_right = [w/2, w/2, z_max]
 

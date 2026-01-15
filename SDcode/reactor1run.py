@@ -150,4 +150,4 @@ tallies_file.export_to_xml()
 
 openmc.run()
 
-xyslice(batches, 15)
+xyslice(batches, 0)

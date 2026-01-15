@@ -3,11 +3,11 @@ import openmc.mgxs
 import numpy as np
 
 ## Starts off with regular material definitions for things
-
+multiplier = 0.9
 ##UO2 low enriched
 uo2l=openmc.Material()
 uo2l.name='UO2L'
-lenrichment=1.8
+lenrichment=2.25*multiplier
 uo2l.add_element('U',1.0,enrichment=lenrichment)
 uo2l.add_element('O',2.0)
 uo2l.set_density('g/cm3',10.15) #****
@@ -16,7 +16,7 @@ uo2l.set_density('g/cm3',10.15) #****
 ##UO2 medium enriched
 uo2m=openmc.Material()
 uo2m.name='UO2M'
-menrichment=3.15
+menrichment=3.5*multiplier
 uo2m.add_element('U',1.0,enrichment=menrichment)
 uo2m.add_element('O',2.0)
 uo2m.set_density('g/cm3',10.15) #****
@@ -25,7 +25,7 @@ uo2m.set_density('g/cm3',10.15) #****
 ###UO2 High enriched
 uo2h=openmc.Material()
 uo2h.name='UO2H'
-henrichment=4.5
+henrichment=4.75*multiplier
 uo2h.add_element('U',1.0,enrichment=henrichment)
 uo2h.add_element('O',2.0)
 uo2h.set_density('g/cm3',10.15) #****
@@ -51,7 +51,7 @@ clad.set_density('g/cm3',6.56)
 
 ##Water
 
-ppm_Boron=2750
+ppm_Boron=2600
 
 water = openmc.Material()
 water.name= 'Water'

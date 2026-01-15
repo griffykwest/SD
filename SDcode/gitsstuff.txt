@@ -1,6 +1,6 @@
 cd ~/SD
 git add -A
-git commit -m "changing how files are called in for the xs"
+git commit -m "changed fluxplot and tallies to no z variation ran some variations"
 git push
 
 
