@@ -51,7 +51,7 @@ clad.set_density('g/cm3',6.56)
 
 ##Water
 
-ppm_Boron=750
+ppm_Boron=2750
 
 water = openmc.Material()
 water.name= 'Water'
