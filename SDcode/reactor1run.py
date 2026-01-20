@@ -6,6 +6,7 @@ from surfaces import *
 import numpy as np
 import os
 from fluxplot import xyslice
+from densitylookup import*
 
 
 #================================
@@ -19,8 +20,8 @@ libary_path = os.path.expanduser('~/Downloads/cross_section_libs/endfb-viii.0-hd
 
 os.environ['OPENMC_CROSS_SECTIONS'] = libary_path
 
-batches = 2011
-inactive = 500      
+batches = 1723
+inactive = 300      
 particles = 5000
 
 

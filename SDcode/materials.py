@@ -1,9 +1,11 @@
 import openmc
 import openmc.mgxs
 import numpy as np
+from cells import watertempc, fueltempc
+from densitylookup import *
 
 ## Starts off with regular material definitions for things
-multiplier = 0.9
+multiplier = 1
 ##UO2 low enriched
 uo2l=openmc.Material()
 uo2l.name='UO2L'
@@ -51,13 +53,16 @@ clad.set_density('g/cm3',6.56)
 
 ##Water
 
-ppm_Boron=2600
+ppm_Boron=2000
+
+density = 1/pl('T',watertempc, 'vol_f')
+density = density/1000
 
 water = openmc.Material()
 water.name= 'Water'
 water.add_element('H', 2.0)
 water.add_element('O', 1.0)
-water.set_density('g/cm3', 0.741) ## add thing so it takes a temp input and givves water density
+water.set_density('g/cm3', density) ## add thing so it takes a temp input and givves water density
 
 water.add_element('B', ppm_Boron * 1e-6) ##either 
 

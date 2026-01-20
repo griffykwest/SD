@@ -4,6 +4,9 @@ from surfaces import surfaces
 
 cells = {}
 
+
+watertempc = 305
+fueltempc = 700
 ## for just the fuel
 cells['UO2L'] = openmc.Cell(name='UO2L')
 cells['UO2M'] = openmc.Cell(name='UO2M')
@@ -163,3 +166,24 @@ cells['rpv'].region = -surfaces['rpv outer'] & +surfaces['rpv inner'] & -surface
 cells['rpv'].fill = materials['SS304']
 
 #print(cells)
+##Temperatures
+
+watertemp = 305+273.15
+fueltemp = 700 +273.15
+
+cells['moderatorL'].temperature = watertemp
+cells['moderatorM'].temperature = watertemp
+cells['moderatorH'].temperature = watertemp
+cells['moderatorHBP'].temperature = watertemp
+cells['moderatorG'].temperature = watertemp
+cells['moderatorCR'].temperature = watertemp
+cells['guide moderator'].temperature = watertemp
+cells['guide moderator w CR'].temperature = watertemp
+cells['water cell'].temperature = watertemp
+cells['downcomer'].temperature = watertemp
+
+
+cells['UO2L'].temperature = fueltemp
+cells['UO2M'].temperature = fueltemp
+cells['UO2H'].temperature = fueltemp
+cells['UO2HBP'].temperature = fueltemp

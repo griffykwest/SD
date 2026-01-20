@@ -70,7 +70,6 @@ def xyslice(batch , z):
     plt.gca().set_aspect('equal')
     plt.savefig(f'{batch}fission_xy_{z}.png')
     return
-xyslice(2001,0)
 """xyslice(2000, 6)
 xyslice(2000, 10)
 xyslice(2000, 15)
