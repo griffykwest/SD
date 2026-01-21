@@ -121,6 +121,9 @@ cells['guide moderator w CR'].fill = materials['water']
 cells['water cell'] = openmc.Cell(name='water cell')
 cells['water cell'].fill = materials['water']
 
+cells['inconel cell'] = openmc.Cell(name='inconel cell')
+cells['inconel cell'].fill = materials['Inconel']
+
 
 cells['UO2L Unrodded Assembly'] = openmc.Cell(name='UO2L Unrodded Assembly')
 cells['UO2M Unrodded Assembly'] = openmc.Cell(name='UO2M Unrodded Assembly')
@@ -143,6 +146,7 @@ cells['UO2M Lrodded Assembly'] = openmc.Cell(name='UO2M Lrodded Assembly')
 cells['UO2M Mrodded Assembly'] = openmc.Cell(name='UO2M Mrodded Assembly')
 
 cells['Water Assembly'] = openmc.Cell(name='Water Assembly')
+cells['Baffle Assembly'] = openmc.Cell(name='Baffle Assembly')
 cells['Core'] = openmc.Cell(name='Core')
 cells['lower plenum']=openmc.Cell(name='lower plenum')
 cells['upper plenum']=openmc.Cell(name='upper plenum')

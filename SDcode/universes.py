@@ -29,6 +29,9 @@ universes['guide tube w CR'].add_cells([cells['CRboron'], cells['cladCR'], cells
 universes['water cell'] = openmc.Universe(universe_id=5,  name='water cell')
 universes['water cell'].add_cell(cells['water cell'] )
 
+universes['inconel cell'] = openmc.Universe(universe_id =25, name='inconel cell')
+universes['inconel cell'].add_cell(cells['inconel cell'] )
+
 
 universes['UO2L Unrodded Assembly'] = openmc.Universe(universe_id=6,  name='UO2L Unrodded Assembly')
 universes['UO2M Unrodded Assembly'] = openmc.Universe(universe_id=7,  name='UO2M Unrodded Assembly')
@@ -74,5 +77,6 @@ universes['UO2M Mrodded Assembly'].add_cell(cells['UO2M Mrodded Assembly'])
 universes['Water Assembly'] = openmc.Universe(universe_id=9, name='Water Assembly')
 universes['Water Assembly'].add_cell(cells['Water Assembly'])
 
-
+universes['Baffle Assembly'] = openmc.Universe(universe_id=26, name='Baffle Assembly')
+universes['Baffle Assembly'].add_cell(cells['Baffle Assembly'])
 #print(universes)

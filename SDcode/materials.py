@@ -4,7 +4,7 @@ import numpy as np
 from densitylookup import *
 
 ## Starts off with regular material definitions for things
-multiplier = 1
+multiplier = 1.05
 ##UO2 low enriched
 uo2l=openmc.Material()
 uo2l.name='UO2L'
@@ -32,8 +32,8 @@ uo2h.add_element('O',2.0)
 uo2h.set_density('g/cm3',10.15) #****
 
 #natural enriched B10 is 19.9
-B10enrichment= 0.35 # for rods
-B10_enr = 0.25 # for coating
+B10enrichment= 0.2 # for rods
+B10_enr = 0.2 # for coating
 ##IFBA inspired coating from math the coating should be about 10 micronsbut the gap is only 5 microns? so maybe just a little less
 IFBA=openmc.Material()
 IFBA.name = 'IFBA'
@@ -55,7 +55,7 @@ clad.set_density('g/cm3',6.56)
 
 ##Water
 
-ppm_Boron=2000
+ppm_Boron=2900
 watertempc = 305
 density = 1/pl('T',watertempc, 'vol_f')
 density = density/1000

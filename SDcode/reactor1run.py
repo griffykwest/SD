@@ -20,8 +20,8 @@ libary_path = os.path.expanduser('~/Downloads/cross_section_libs/endfb-viii.0-hd
 
 os.environ['OPENMC_CROSS_SECTIONS'] = libary_path
 
-batches = 1906
-inactive = 300      
+batches = 2000
+inactive = 300   
 particles = 7000
 
 
@@ -40,7 +40,8 @@ lattices['Core'].dimension = [13, 13]
 lattices['Core'].lower_left = [-13/2*w_ass, -13/2*w_ass]
 lattices['Core'].pitch = [w_ass, w_ass]
 
-m=universes['Water Assembly']
+#m=universes['Water Assembly']
+m = universes['Baffle Assembly']
 L=universes['UO2L Unrodded Assembly']
 M=universes['UO2M Unrodded Assembly']
 h=universes['UO2H Unrodded Assembly']
@@ -106,7 +107,7 @@ plot_1.colors = {
 }
 plot_file = openmc.Plots([plot_1])
 plot_file.export_to_xml()
-#openmc.plot_geometry()
+openmc.plot_geometry()
 
 
 settings= openmc.Settings()

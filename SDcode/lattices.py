@@ -457,6 +457,36 @@ w = universes['water cell']
 lattices['Water Assembly'].universes = [[w]]
 
 
+lattices['Baffle assembly'] = \
+    openmc.RectLattice(lattice_id=118, name='Baffle assembly')
+lattices['Baffle assembly'].dimension = [17, 17]
+lattices['Baffle assembly'].lower_left = [-10.71, -10.71]
+lattices['Baffle assembly'].pitch = [1.26, 1.26]
+u = universes['inconel cell']
+b = universes['water cell']
+lattices['Baffle assembly'].universes = \
+[[u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
+ [u, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, u],
+ [u, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, u],
+ [u, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, u],
+ [u, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, u],
+ [u, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, u],
+ [u, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, u],
+ [u, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, u],
+ [u, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, u],
+ [u, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, u],
+ [u, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, u],
+ [u, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, u],
+ [u, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, u],
+ [u, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, u],
+ [u, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, u],
+ [u, b, b, b, b, b, b, b, b, b, b, b, b, b, b, b, u],
+ [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u]]
+
+
+
+
+
 cells['UO2L Unrodded Assembly'].fill = lattices['UO2L Unrodded Assembly']
 cells['UO2M Unrodded Assembly'].fill = lattices['UO2M Unrodded Assembly']
 cells['UO2H Unrodded Assembly'].fill = lattices['UO2H Unrodded Assembly']
@@ -477,5 +507,6 @@ cells['UO2HBP2SW rodded Assembly'].fill = lattices['UO2HBP2SW rodded Assembly']
 cells['UO2HBP2NW rodded Assembly'].fill = lattices['UO2HBP2NW rodded Assembly']
 
 cells['Water Assembly'].fill = lattices['Water Assembly']
+cells['Baffle Assembly'].fill = lattices['Baffle assembly']
 
 #print(lattices)

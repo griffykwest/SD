@@ -117,3 +117,13 @@ surfaces['rpv outer']= openmc.openmc.ZCylinder(r = r_rpvouter, name = 'rpv outer
 surfaces['rpv outer'].boundary_type = 'vacuum'
 #print(surfaces)
 
+### BAFFLE SURFACES ###
+cedge = hw - w_ass
+
+surfaces['baffel south'] = openmc.XPlane(x0=-cedge, name='baffle south')
+surfaces['baffel north'] = openmc.XPlane(x0=cedge, name='baffle north')
+
+surfaces['baffel east'] = openmc.YPlane(y0=-cedge, name='baffle east')
+surfaces['baffel west'] = openmc.YPlane(y0=cedge, name='baffle west')
+
+
