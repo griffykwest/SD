@@ -31,11 +31,14 @@ uo2h.add_element('U',1.0,enrichment=henrichment)
 uo2h.add_element('O',2.0)
 uo2h.set_density('g/cm3',10.15) #****
 
-
+#natural enriched B10 is 19.9
+B10enrichment= 0.35 # for rods
+B10_enr = 0.25 # for coating
 ##IFBA inspired coating from math the coating should be about 10 micronsbut the gap is only 5 microns? so maybe just a little less
 IFBA=openmc.Material()
 IFBA.name = 'IFBA'
-IFBA.add_element('B',2.0)
+IFBA.add_nuclide('B10', 2.0 * B10_enr)
+IFBA.add_nuclide('B11', 2.0 * (1.0 - B10_enr))
 IFBA.add_element('Zr',1.0)
 IFBA.set_density('g/cm3',6.09)
 
@@ -52,7 +55,7 @@ clad.set_density('g/cm3',6.56)
 
 ##Water
 
-ppm_Boron=0
+ppm_Boron=2000
 watertempc = 305
 density = 1/pl('T',watertempc, 'vol_f')
 density = density/1000
@@ -117,13 +120,13 @@ ss304.set_density("g/cm3", 8.0)
 
 borosilicate = openmc.Material(name='Borosilicate Glass')
 borosilicate.set_density('g/cm3', 2.23)
-
-# Boron isotopes (explicit)
-#borosilicate.add_nuclide('B10', 0.020, percent_type='wo')  # 90% of 4%
-#borosilicate.add_nuclide('B11', 0.020, percent_type='wo')  # 10% of 4%
+B10 = B10enrichment*0.04
+B11 = (1-B10enrichment)*0.04
+borosilicate.add_nuclide('B10', B10, percent_type='wo')
+borosilicate.add_nuclide('B11', B11, percent_type='wo')
 
 # Rest of the glass (fixed)
-borosilicate.add_element('B', 0.04, percent_type='wo')
+#borosilicate.add_element('B', 0.04, percent_type='wo')
 borosilicate.add_element('O',  0.535, percent_type='wo')
 borosilicate.add_element('Si', 0.377, percent_type='wo')
 borosilicate.add_element('Na', 0.030, percent_type='wo')
