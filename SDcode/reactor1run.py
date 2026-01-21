@@ -5,8 +5,8 @@ from tally import tallies
 from surfaces import *
 import numpy as np
 import os
-from fluxplot import xyslice
 from densitylookup import*
+from fluxplot import xyslice , xzslice
 
 
 #================================
@@ -20,9 +20,9 @@ libary_path = os.path.expanduser('~/Downloads/cross_section_libs/endfb-viii.0-hd
 
 os.environ['OPENMC_CROSS_SECTIONS'] = libary_path
 
-batches = 1723
+batches = 1500
 inactive = 300      
-particles = 5000
+particles = 7000
 
 
 materials_file = openmc.Materials(materials.values())
@@ -151,4 +151,5 @@ tallies_file.export_to_xml()
 
 openmc.run()
 
-xyslice(batches, 0)
+xyslice(batches,6)
+xzslice(batches,111)

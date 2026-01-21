@@ -5,11 +5,22 @@ matplotlib.use("Agg")  # no GUI, file output only
 import matplotlib.pyplot as plt
 import pandas as pd
 
+
+EV_TO_J = 1.602176634e-19
+P_TARGET = 700e6  # 700 MWth
 # plotting function for xy slices
 # 15 is the middle slice and the core goes from 5-25
 def xyslice(batch , z):
     
     sp = openmc.StatePoint(f'statepoint.{batch}.h5')
+
+    power_tally = sp.get_tally(name='tally 3')
+    E_per_source = power_tally.mean[0, 0]        # eV / source neutron
+    E_per_source_J = E_per_source * EV_TO_J
+
+    scale = P_TARGET / E_per_source_J  
+
+
 
     tally = sp.get_tally(name = 'tally 1')
 
@@ -21,6 +32,7 @@ def xyslice(batch , z):
 
     flux_idx = scores.index('flux')
     fission_idx = scores.index('fission')
+    heating_idx = scores.index('heating-local')
 
     mean = tally.mean[:, 0, :]
     volume = np.max(mesh.volumes)
@@ -28,12 +40,18 @@ def xyslice(batch , z):
 
     fission = mean[:, fission_idx] 
 
+    heating = mean[:, heating_idx]
+    volume = np.max(mesh.volumes)
+    volumes = mesh.volumes.reshape((nx, ny, nz))[:, :, z]
+    heating_W = heating * EV_TO_J * scale*1000 / volume
+
     flux_3d = flux.reshape((nx, ny, nz), order='F')
 
     fission_3d = fission.reshape((nx, ny, nz), order='F')
 
-    volume = np.max(mesh.volumes)
-    volumes = mesh.volumes.reshape((nx, ny, nz))[:, :, z]
+    heating_3d = heating_W.reshape((nx, ny, nz), order='F')
+
+
 
     flux_3d_norm = flux_3d #/ mesh.volumes.reshape((nx, ny, nz), order='F')
     fission_3d_norm = fission_3d #/ mesh.volumes.reshape((nx, ny, nz), order='F')
@@ -50,6 +68,8 @@ def xyslice(batch , z):
     fission_xy = fission_3d[:,:,z]
     fission_xy = fission_xy #/ volumes
     fission_xy = fission_xy.T
+
+    heating_xy = heating_3d[:, :, z].T
 
     x_edges = np.linspace(mesh.lower_left[0], mesh.upper_right[0], nx+1)
     y_edges = np.linspace(mesh.lower_left[1], mesh.upper_right[1], ny+1)
@@ -68,7 +88,20 @@ def xyslice(batch , z):
     plt.xlabel('X [cm]')
     plt.ylabel('Y [cm]')
     plt.gca().set_aspect('equal')
-    plt.savefig(f'{batch}fission_xy_{z}.png')
+    #plt.savefig(f'{batch}fission_xy_{z}.png')
+
+    plt.figure(dpi=150)
+    plt.pcolormesh(
+        x_edges, y_edges,
+        heating_xy / 1e6,      # MW per mesh cell
+        shading='auto',
+        cmap='bwr'
+    )
+    plt.colorbar(label='Heating [kW per cm$^3$]')
+    plt.xlabel('X [cm]')
+    plt.ylabel('Y [cm]')
+    plt.gca().set_aspect('equal')
+    plt.savefig(f'{batch}heating_xy_{z}.png')
     return
 """xyslice(2000, 6)
 xyslice(2000, 10)
@@ -77,6 +110,12 @@ xyslice(2000, 15)
 # plotting function for an xz slice 111 is the middle
 def xzslice(batch, y):
     sp = openmc.StatePoint(f'statepoint.{batch}.h5')
+
+    power_tally = sp.get_tally(name='tally 3')
+    E_per_source = power_tally.mean[0, 0]        # eV / source neutron
+    E_per_source_J = E_per_source * EV_TO_J
+
+    scale = P_TARGET / E_per_source_J  
 
     tally = sp.get_tally(name = 'tally 1')
 
@@ -88,19 +127,24 @@ def xzslice(batch, y):
 
     flux_idx = scores.index('flux')
     fission_idx = scores.index('fission')
+    heating_idx = scores.index('heating-local')
 
     mean = tally.mean[:, 0, :]
     volume = np.max(mesh.volumes)
     flux = mean[:, flux_idx]
 
     fission = mean[:, fission_idx] 
+    heating = mean[:, heating_idx]
+    volume = np.max(mesh.volumes)
+    volumes = mesh.volumes.reshape((nx, ny, nz))[:, y, :]
+    heating_W = heating * EV_TO_J * scale*1000 / volume
 
     flux_3d = flux.reshape((nx, ny, nz), order='F')
 
     fission_3d = fission.reshape((nx, ny, nz), order='F')
 
-    volume = np.max(mesh.volumes)
-    volumes = mesh.volumes.reshape((nx, ny, nz))[:, y, :]
+    heating_3d = heating_W.reshape((nx, ny, nz), order='F')
+
 
     flux_3d_norm = flux_3d #/ mesh.volumes.reshape((nx, ny, nz), order='F')
     fission_3d_norm = fission_3d #/ mesh.volumes.reshape((nx, ny, nz), order='F')
@@ -116,6 +160,8 @@ def xzslice(batch, y):
     fission_xz = fission_3d[:,y,:]
     fission_xz = fission_xz #/ volumes
     fission_xz = fission_xz.T
+
+    heating_xz = heating_3d[:, y, :].T
 
     # Mesh edges along X and Z
     x_edges = np.linspace(mesh.lower_left[0], mesh.upper_right[0], nx+1)
@@ -136,7 +182,20 @@ def xzslice(batch, y):
     plt.xlabel('X [cm]')
     plt.ylabel('Z [cm]')
     plt.gca().set_aspect('equal')
-    plt.savefig(f'{batch}fission_xz_{y}.png')
+    #plt.savefig(f'{batch}fission_xz_{y}.png')
+
+    plt.figure(dpi=150)
+    plt.pcolormesh(
+        x_edges, z_edges,
+        heating_xz / 1e6,      # MW per mesh cell
+        shading='auto',
+        cmap='bwr'
+    )
+    plt.colorbar(label='Heating [kW per cm$^3$]')
+    plt.xlabel('X [cm]')
+    plt.ylabel('Y [cm]')
+    plt.gca().set_aspect('equal')
+    plt.savefig(f'{batch}heating_xz_{y}.png')
     return
 
 """xzslice(2000, 110)

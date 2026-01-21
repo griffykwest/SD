@@ -42,4 +42,3 @@ def pl(inputvar, inputvalue, outputvar):  ## Property lookup function
     propvalue = y1 + (y2 - y1) * (inputvalue - x1) / (x2 - x1)
     return propvalue
 
-print(1/pl('T',305,'vol_f'))

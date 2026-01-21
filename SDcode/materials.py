@@ -1,7 +1,6 @@
 import openmc
 import openmc.mgxs
 import numpy as np
-from cells import watertempc, fueltempc
 from densitylookup import *
 
 ## Starts off with regular material definitions for things
@@ -53,8 +52,8 @@ clad.set_density('g/cm3',6.56)
 
 ##Water
 
-ppm_Boron=2000
-
+ppm_Boron=0
+watertempc = 305
 density = 1/pl('T',watertempc, 'vol_f')
 density = density/1000
 

@@ -6,7 +6,7 @@ cells = {}
 
 
 watertempc = 305
-fueltempc = 700
+fueltempc = 800
 ## for just the fuel
 cells['UO2L'] = openmc.Cell(name='UO2L')
 cells['UO2M'] = openmc.Cell(name='UO2M')
