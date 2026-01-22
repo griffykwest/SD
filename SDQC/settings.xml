@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<settings>
+  <run_mode>eigenvalue</run_mode>
+  <particles>7000</particles>
+  <batches>2002</batches>
+  <inactive>100</inactive>
+  <source type="independent" strength="1.0" particle="neutron">
+    <space type="cylindrical" origin="0.0 0.0 0.0">
+      <r type="uniform" parameters="0.0 131.733"/>
+      <phi type="uniform" parameters="0.0 1.5707963267948966"/>
+      <z type="uniform" parameters="-100 83.33"/>
+    </space>
+  </source>
+  <temperature_method>interpolation</temperature_method>
+  <temperature_range>293.0 1800.0</temperature_range>
+  <temperature_tolerance>100.0</temperature_tolerance>
+</settings>

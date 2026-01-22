@@ -1,0 +1,7 @@
+Activating conda enviorment and exporting xs
+
+conda activate openmc
+
+cd ~/Downloads/SDoutputs/
+
+export OPENMC_CROSS_SECTIONS=/home/griffin/Downloads/cross_section_libs/endfb-viii.0-hdf5/cross_sections.xml
