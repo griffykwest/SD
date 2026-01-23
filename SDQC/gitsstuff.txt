@@ -1,6 +1,6 @@
 cd ~/SD
 git add -A
-git commit -m "Quarter core stuff and volume calcs"
+git commit -m "Quarter core stuff and starting axial"
 git push
 
 

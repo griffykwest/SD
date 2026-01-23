@@ -24,9 +24,9 @@ total_uranium_volumecc = sum(vol_calc.volumes[mat_id] for mat_id in uranium_mate
 print(f"Total uranium volume = {total_uranium_volumecc:.3f} cm^3")
 
 mass_UO2g = total_uranium_volumecc * UO2_densitygcm3
-mass_uo2MT = mass_UO2g/1000/1000  #g>kg>MT
-
-total_burnup = Total_EnergyMWD/ mass_uo2MT
+mass_uo2T = mass_UO2g/1000/1000  * 4#g>kg>MT in total core
+print(mass_uo2T)
+total_burnup = Total_EnergyMWD/ mass_uo2T
 
 print(total_burnup)
 

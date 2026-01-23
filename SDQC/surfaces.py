@@ -48,7 +48,7 @@ surfaces['x-max'] = openmc.XPlane(x0= hw, name='x-max')
 surfaces['y-min'] = openmc.YPlane(y0=-hw, name='y-min')
 surfaces['y-max'] = openmc.YPlane(y0= hw, name='y-max')
 
-H_core = 300.0  # cm
+
 z_min=-150
 z_max=300
 surfaces['z-min'] = openmc.ZPlane(z0=z_min)
@@ -67,7 +67,7 @@ surfaces['z-max'].boundary_type       = 'vacuum'
 #================================================
 # Z in core
 #================================================
-z_ta=200
+z_ta=1.4384
 z_ba=-100
 #Top of the Active fuel region
 surfaces['z-top active'] = openmc.ZPlane(z0=z_ta, name='z-top active')

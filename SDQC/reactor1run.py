@@ -20,7 +20,7 @@ libary_path = os.path.expanduser('~/Downloads/cross_section_libs/endfb-viii.0-hd
 
 os.environ['OPENMC_CROSS_SECTIONS'] = libary_path
 
-batches = 2000
+batches = 2003
 inactive = 100   
 particles = 10000
 
@@ -50,14 +50,9 @@ C=universes['UO2HBP2 Unrodded Assembly']
 P=universes['UO2M rodded Assembly']
 G=universes['UO2M Lrodded Assembly']
 I=universes['UO2M Mrodded Assembly']
-E=universes['UO2HBP2E rodded Assembly']
 S=universes['UO2HBP2S rodded Assembly']
 W=universes['UO2HBP2W rodded Assembly']
-N=universes['UO2HBP2N rodded Assembly']
-A=universes['UO2HBP2NE rodded Assembly']
-B=universes['UO2HBP2SE rodded Assembly']
 D=universes['UO2HBP2SW rodded Assembly']
-F=universes['UO2HBP2NW rodded Assembly']
 
 
 
@@ -148,7 +143,7 @@ tallies_file = openmc.Tallies(tallies.values())
 tallies_file.export_to_xml()
 
 
-#openmc.calculate_volumes()
+openmc.calculate_volumes()
 
 
 

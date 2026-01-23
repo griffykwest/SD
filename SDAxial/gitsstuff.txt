@@ -1,0 +1,9 @@
+cd ~/SD
+git add -A
+git commit -m "Quarter core stuff and volume calcs"
+git push
+
+
+# 5️⃣ (Optional) On another machine, pull the changes
+# cd ~/SD
+# git pull

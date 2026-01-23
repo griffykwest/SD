@@ -2,7 +2,7 @@
 <settings>
   <run_mode>eigenvalue</run_mode>
   <particles>10000</particles>
-  <batches>2000</batches>
+  <batches>2003</batches>
   <inactive>100</inactive>
   <source particle="neutron" strength="1.0" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">

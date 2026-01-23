@@ -30,6 +30,8 @@
   <cell fill="101" id="28" name="UO2L Unrodded Assembly" universe="6"/>
   <cell fill="103" id="30" name="UO2H Unrodded Assembly" universe="8"/>
   <cell fill="107" id="32" name="UO2HBP2 Unrodded Assembly" universe="14"/>
+  <cell fill="109" id="34" name="UO2HBP2S rodded Assembly" universe="16"/>
+  <cell fill="110" id="35" name="UO2HBP2W rodded Assembly" universe="17"/>
   <cell fill="115" id="39" name="UO2HBP2SW rodded Assembly" universe="20"/>
   <cell fill="116" id="42" name="UO2M Lrodded Assembly" universe="23"/>
   <cell fill="117" id="43" name="UO2M Mrodded Assembly" universe="24"/>
@@ -106,6 +108,52 @@
 3 3 10 3 3 10 3 3 10 3 3 10 3 3 10 3 3 
 3 3 10 4 3 3 3 3 3 3 3 3 3 4 10 3 3 
 3 3 3 10 10 4 3 10 4 10 3 4 10 10 3 3 3 
+10 3 3 3 3 10 3 3 10 3 3 10 3 3 3 3 10 
+10 10 3 3 3 3 3 3 3 3 3 3 3 3 3 10 10 </universes>
+  </lattice>
+  <lattice id="109" name="UO2HBP2S rodded Assembly">
+    <pitch>1.26 1.26</pitch>
+    <dimension>17 17</dimension>
+    <lower_left>-10.71 -10.71</lower_left>
+    <universes>
+10 10 3 3 3 3 3 3 3 3 3 3 3 3 3 10 10 
+10 3 3 3 3 10 3 3 10 3 3 10 3 3 3 3 10 
+3 3 3 10 10 4 3 10 4 10 3 4 10 10 3 3 3 
+3 3 10 4 3 3 3 3 3 3 3 3 3 4 10 3 3 
+3 3 10 3 3 10 3 3 10 3 3 10 3 3 10 3 3 
+3 10 4 3 10 4 3 10 4 10 3 4 10 3 4 10 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 10 3 3 10 3 3 10 3 3 10 3 3 10 3 3 
+3 10 4 3 10 4 3 10 4 10 3 4 10 3 4 10 3 
+3 3 10 3 3 10 3 3 10 3 3 10 3 3 10 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 10 11 3 10 4 3 10 4 10 3 4 10 3 11 10 3 
+3 3 10 3 3 10 3 3 10 3 3 10 3 3 10 3 3 
+3 3 10 4 3 3 3 3 3 3 3 3 3 4 10 3 3 
+3 3 3 10 10 11 3 10 11 10 3 11 10 10 3 3 3 
+10 3 3 3 3 10 3 3 10 3 3 10 3 3 3 3 10 
+10 10 3 3 3 3 3 3 3 3 3 3 3 3 3 10 10 </universes>
+  </lattice>
+  <lattice id="110" name="UO2HBP2W rodded Assembly">
+    <pitch>1.26 1.26</pitch>
+    <dimension>17 17</dimension>
+    <lower_left>-10.71 -10.71</lower_left>
+    <universes>
+10 10 3 3 3 3 3 3 3 3 3 3 3 3 3 10 10 
+10 3 3 3 3 10 3 3 10 3 3 10 3 3 3 3 10 
+3 3 3 10 10 11 3 10 4 10 3 4 10 10 3 3 3 
+3 3 10 4 3 3 3 3 3 3 3 3 3 4 10 3 3 
+3 3 10 3 3 10 3 3 10 3 3 10 3 3 10 3 3 
+3 10 11 3 10 4 3 10 4 10 3 4 10 3 4 10 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 3 10 3 3 10 3 3 10 3 3 10 3 3 10 3 3 
+3 10 11 3 10 4 3 10 4 10 3 4 10 3 4 10 3 
+3 3 10 3 3 10 3 3 10 3 3 10 3 3 10 3 3 
+3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
+3 10 11 3 10 4 3 10 4 10 3 4 10 3 4 10 3 
+3 3 10 3 3 10 3 3 10 3 3 10 3 3 10 3 3 
+3 3 10 4 3 3 3 3 3 3 3 3 3 4 10 3 3 
+3 3 3 10 10 11 3 10 4 10 3 4 10 10 3 3 3 
 10 3 3 3 3 10 3 3 10 3 3 10 3 3 3 3 10 
 10 10 3 3 3 3 3 3 3 3 3 3 3 3 3 10 10 </universes>
   </lattice>
@@ -207,12 +255,12 @@
     <lower_left>-10.71 -10.71</lower_left>
     <universes>
 26 26 26 26 26 26 26 
-14 14 8 26 26 26 26 
+16 14 8 26 26 26 26 
 6 23 20 8 26 26 26 
 24 6 23 6 8 26 26 
 6 24 6 23 20 8 26 
 24 6 24 6 23 14 26 
-6 24 6 24 6 14 26 </universes>
+6 24 6 24 6 17 26 </universes>
   </lattice>
   <surface coeffs="0.0 0.0 0.41" id="1" name="pin radius" type="z-cylinder"/>
   <surface coeffs="0.0 0.0 0.411" id="2" name="IFBA" type="z-cylinder"/>
