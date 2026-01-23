@@ -4,9 +4,10 @@ import matplotlib
 matplotlib.use("Agg")  # no GUI, file output only
 import matplotlib.pyplot as plt
 import pandas as pd
+from surfaces import *
 
 
-
+## doubles the edges to make them correct
 def pltfix(xyplot):
     n = np.shape(xyplot)[0]
 
@@ -15,10 +16,22 @@ def pltfix(xyplot):
         xyplot[i,0] = 2*xyplot[i,0]
     return xyplot
 
+
+#was to help bill make the qtf function now just here
 def datatocsv(matrix,filename):
     df = pd.DataFrame(matrix)
     df.to_csv(filename, index=False, header=False)
     return
+
+
+## for making quater core go to full core
+def qtf(arr):
+    x_mirror = np.flip(arr, axis=0)
+    right = np.vstack([x_mirror[:-1], (x_mirror[-1] + arr[0]) / 2, arr[1:]])
+    left = np.flip(right, axis=1)
+    full = np.hstack([left[:, :-1], (left[:, -1:] + right[:, 0:1]) / 2, right[:, 1:]])
+    return full
+
 
 
 EV_TO_J = 1.602176634e-19
@@ -30,10 +43,13 @@ def xyslice(batch , z):
     sp = openmc.StatePoint(f'statepoint.{batch}.h5')
 
     power_tally = sp.get_tally(name='tally 3')
-    E_per_source = power_tally.mean[0, 0]        # eV / source neutron
+    E_per_source = power_tally.mean[0, 0] 
+          # eV / source neutron
     E_per_source_J = E_per_source * EV_TO_J
+    
 
-    scale = P_TARGET / E_per_source_J  
+    scale = P_TARGET / E_per_source_J
+    
 
 
 
@@ -51,6 +67,13 @@ def xyslice(batch , z):
 
     mean = tally.mean[:, 0, :]
     volume = np.max(mesh.volumes)
+    dx = pitch
+    dy = pitch
+    hight = volume/(dx*dy)
+    
+    sa = hight*np.pi*2*R_co
+    cm2m2 = 10000
+
     flux = mean[:, flux_idx]
 
     fission = mean[:, fission_idx] 
@@ -58,13 +81,18 @@ def xyslice(batch , z):
     heating = mean[:, heating_idx]
     volume = np.max(mesh.volumes)
     volumes = mesh.volumes.reshape((nx, ny, nz))[:, :, z]
-    heating_W = heating * EV_TO_J * scale*1000 / volume
+
+    ## for q'' put the 2 for heating 3d
+    heating_Wm2 = heating * EV_TO_J * scale / sa * cm2m2
+    heating_Wm = heating * EV_TO_J * scale / hight *100
+   
 
     flux_3d = flux.reshape((nx, ny, nz), order='F')
 
     fission_3d = fission.reshape((nx, ny, nz), order='F')
 
-    heating_3d = heating_W.reshape((nx, ny, nz), order='F')
+    heating_3d = heating_Wm.reshape((nx, ny, nz), order='F')
+
 
 
 
@@ -81,6 +109,7 @@ def xyslice(batch , z):
     flux_xy = flux_xy.T
 
     flux_xy = pltfix(flux_xy)
+
 
     ## acounting for the half sized points
 
@@ -104,10 +133,15 @@ def xyslice(batch , z):
     #datatocsv(fission_xy,fissionfile)
     #datatocsv(heating_xy,heatingfile)
 
-    x_edges = np.linspace(mesh.lower_left[0], mesh.upper_right[0], nx+1)
-    y_edges = np.linspace(mesh.lower_left[1], mesh.upper_right[1], ny+1)
+    flux_xy = qtf(flux_xy)
+    fission_xy = qtf(fission_xy)
+    heating_xy = qtf(heating_xy)
 
-    plt.figure(dpi=150)
+
+    x_edges = np.linspace(-mesh.upper_right[0], mesh.upper_right[0], nx*2-1)
+    y_edges = np.linspace(-mesh.upper_right[1], mesh.upper_right[1], ny*2-1)
+
+    plt.figure(figsize=(8, 6), dpi=1000)
     plt.pcolormesh(x_edges, y_edges, flux_xy, shading='auto', cmap='bwr', vmin=flux_min, vmax=flux_max)
     plt.colorbar(label='Flux [#/cm²/s]')
     plt.xlabel('X [cm]')
@@ -115,7 +149,7 @@ def xyslice(batch , z):
     plt.gca().set_aspect('equal')
     plt.savefig(f'{batch}flux_xy_{z}.png')
 
-    plt.figure(dpi=150)
+    plt.figure(figsize=(8, 6), dpi=1000)
     plt.pcolormesh(x_edges, y_edges, fission_xy, shading='auto', cmap='bwr', vmin=fission_min, vmax=fission_max)
     plt.colorbar(label='Fission [#/s]')
     plt.xlabel('X [cm]')
@@ -123,14 +157,14 @@ def xyslice(batch , z):
     plt.gca().set_aspect('equal')
     #plt.savefig(f'{batch}fission_xy_{z}.png')
 
-    plt.figure(dpi=150)
+    plt.figure(figsize=(8, 6), dpi=1000)
     plt.pcolormesh(
-        x_edges/2, y_edges/2,
-        heating_xy / 1e6,      # MW per mesh cell
+        x_edges, y_edges,
+        heating_xy,      # MW per mesh cell
         shading='auto',
         cmap='bwr'
     )
-    plt.colorbar(label='Heating [kW per cm$^3$]')
+    plt.colorbar(label='Heating [W/m]')
     plt.xlabel('X [cm]')
     plt.ylabel('Y [cm]')
     plt.gca().set_aspect('equal')
@@ -140,6 +174,7 @@ def xyslice(batch , z):
 xyslice(2000, 10)
 xyslice(2000, 15)
 """
+xyslice(1000,6)
 
 # plotting function for an xz slice 111 is the middle
 def xzslice(batch, y):

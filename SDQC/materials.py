@@ -55,7 +55,7 @@ clad.set_density('g/cm3',6.56)
 
 ##Water
 
-ppm_Boron=0
+ppm_Boron=3000
 watertempc = 305
 density = 1/pl('T',watertempc, 'vol_f')
 density = density/1000
@@ -143,8 +143,8 @@ materials['UO2L']  = uo2l
 materials['UO2M']  = uo2m
 materials['UO2H' ] = uo2h
 materials['IFBA'] = IFBA
-materials['boron rod'] = borosilicate
-materials['clad'] = clad
+materials['Borosilicate Glass'] = borosilicate
+materials['Cladding'] = clad
 materials['SS304'] = ss304
 materials['Inconel'] = inconel
 materials['gap'] = gap

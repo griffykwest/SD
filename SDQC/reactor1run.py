@@ -20,9 +20,9 @@ libary_path = os.path.expanduser('~/Downloads/cross_section_libs/endfb-viii.0-hd
 
 os.environ['OPENMC_CROSS_SECTIONS'] = libary_path
 
-batches = 490
+batches = 2000
 inactive = 100   
-particles = 7000
+particles = 10000
 
 
 materials_file = openmc.Materials(materials.values())
@@ -36,8 +36,8 @@ cells['Core'].region = -surfaces['inner core barrel'] &-surfaces['z-top active']
 
 lattices['Core'] = openmc.RectLattice(lattice_id=201, name='13x13 core lattice')
 
-lattices['Core'].dimension = [13, 13]
-lattices['Core'].lower_left = [-13/2*w_ass, -13/2*w_ass]
+lattices['Core'].dimension = [7, 7]
+lattices['Core'].lower_left = [-w_ass/2, -w_ass/2]
 lattices['Core'].pitch = [w_ass, w_ass]
 
 #m=universes['Water Assembly']
@@ -62,19 +62,13 @@ F=universes['UO2HBP2NW rodded Assembly']
 
 
 lattices['Core'].universes=[
- [m,m,m,m,m,m,m,m,m,m,m,m,m],
- [m,m,m,m,h,C,C,C,h,m,m,m,m],
- [m,m,m,h,B,G,L,G,D,h,m,m,m],
- [m,m,h,L,G,L,I,L,G,L,h,m,m],
- [m,h,B,G,L,I,L,I,L,G,D,h,m],
- [m,C,G,L,I,L,I,L,I,L,G,C,m],
- [m,C,L,I,L,I,L,I,L,I,L,C,m],
- [m,C,G,L,I,L,I,L,I,L,G,C,m],
- [m,h,A,G,L,I,L,I,L,G,F,h,m],
- [m,m,h,L,G,L,I,L,G,L,h,m,m],
- [m,m,m,h,A,G,L,G,F,h,m,m,m],
- [m,m,m,m,h,C,C,C,h,m,m,m,m],
- [m,m,m,m,m,m,m,m,m,m,m,m,m]
+ [m,m,m,m,m,m,m],
+ [C,C,h,m,m,m,m],
+ [L,G,D,h,m,m,m],
+ [I,L,G,L,h,m,m],
+ [L,I,L,G,D,h,m],
+ [I,L,I,L,G,C,m],
+ [L,I,L,I,L,C,m]
 ]
 cells['Core'].fill = lattices['Core']
 
@@ -95,12 +89,12 @@ plot_1.color_by = 'material'
 #plot_1.universe_depth = 2  # important
 plot_1.colors = {
     materials['water']: (153, 204, 255),       # light blue
-    materials['clad']: (169, 169, 169),        # light gray
+    materials['Cladding']: (169, 169, 169),        # light gray
     materials['UO2L']: (255, 255, 102),        # pale yellow
     materials['UO2M']: (255, 178, 102),        # orange
     materials['UO2H']: (255, 51, 51),          # red
     materials['IFBA']: (102, 255, 102),        # light green
-    materials['boron rod']: (204, 153, 255),   # purple
+    materials['Borosilicate Glass']: (204, 153, 255),   # purple
     materials['SS304']: (192, 192, 192),       # silver
     materials['Inconel']: (255, 153, 204),      # pink
     materials['gap']: (0,0,0)                    #black
@@ -109,6 +103,10 @@ plot_file = openmc.Plots([plot_1])
 plot_file.export_to_xml()
 openmc.plot_geometry()
 
+lower_left = (0, 0, z_min)
+upper_right = (hw, hw, z_max)
+vol_calc = openmc.VolumeCalculation(list(materials.values()), 100000000,
+                                    lower_left, upper_right)
 
 settings= openmc.Settings()
 settings.batches=batches
@@ -143,10 +141,15 @@ source.only_fissionable = True
 
 
 settings.source = source
+settings.volume_calculations = [vol_calc]
 settings.export_to_xml()
 
 tallies_file = openmc.Tallies(tallies.values())
 tallies_file.export_to_xml()
+
+
+#openmc.calculate_volumes()
+
 
 
 

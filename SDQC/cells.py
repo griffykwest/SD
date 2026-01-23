@@ -30,7 +30,7 @@ cells['IFBA'].fill = materials['IFBA']
 
 #Integral control rod
 cells['CRboron'] = openmc.Cell(name = 'CRboron')
-cells['CRboron'].fill = materials['boron rod']
+cells['CRboron'].fill = materials['Borosilicate Glass']
 cells['CRboron'].region = -surfaces['control rod cladding inner radius']
 
 #gap
@@ -58,27 +58,27 @@ cells['cladCR'].fill = materials['SS304']
 
 cells['cladL']= openmc.Cell(name='cladL')
 cells['cladL'].region= -surfaces['cladding outer radius'] & +surfaces['cladding inner radius']
-cells['cladL'].fill = materials['clad']
+cells['cladL'].fill = materials['Cladding']
 
 cells['cladM']= openmc.Cell(name='cladM')
 cells['cladM'].region= -surfaces['cladding outer radius'] & +surfaces['cladding inner radius']
-cells['cladM'].fill = materials['clad']
+cells['cladM'].fill = materials['Cladding']
 
 cells['cladH']= openmc.Cell(name='cladH')
 cells['cladH'].region= -surfaces['cladding outer radius'] & +surfaces['cladding inner radius']
-cells['cladH'].fill = materials['clad']
+cells['cladH'].fill = materials['Cladding']
 
 cells['cladHBP']= openmc.Cell(name='cladHBP')
 cells['cladHBP'].region= -surfaces['cladding outer radius'] & +surfaces['cladding inner radius']
-cells['cladHBP'].fill = materials['clad']
+cells['cladHBP'].fill = materials['Cladding']
 
 cells['guide tube'] = openmc.Cell(name='guide tube')
 cells['guide tube'].region= +surfaces['guide inner radius'] & -surfaces['guide outer radius']
-cells['guide tube'].fill = materials['clad']
+cells['guide tube'].fill = materials['Cladding']
 
 cells['guide tube CR'] = openmc.Cell(name='guide tube CR')
 cells['guide tube CR'].region= +surfaces['guide inner radius'] & -surfaces['guide outer radius']
-cells['guide tube CR'].fill = materials['clad']
+cells['guide tube CR'].fill = materials['Cladding']
 
 
 

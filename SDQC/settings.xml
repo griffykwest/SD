@@ -1,17 +1,24 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <settings>
   <run_mode>eigenvalue</run_mode>
-  <particles>7000</particles>
-  <batches>490</batches>
+  <particles>10000</particles>
+  <batches>2000</batches>
   <inactive>100</inactive>
-  <source type="independent" strength="1.0" particle="neutron">
-    <space type="cylindrical" origin="0.0 0.0 0.0">
-      <r type="uniform" parameters="0.0 131.733"/>
-      <phi type="uniform" parameters="0.0 1.5707963267948966"/>
-      <z type="uniform" parameters="-100 83.33"/>
+  <source particle="neutron" strength="1.0" type="independent">
+    <space origin="0.0 0.0 0.0" type="cylindrical">
+      <r parameters="0.0 131.733" type="uniform"/>
+      <phi parameters="0.0 1.5707963267948966" type="uniform"/>
+      <z parameters="-100 200" type="uniform"/>
     </space>
   </source>
   <temperature_method>interpolation</temperature_method>
   <temperature_range>293.0 1800.0</temperature_range>
   <temperature_tolerance>100.0</temperature_tolerance>
+  <volume_calc>
+    <domain_type>material</domain_type>
+    <domain_ids>6 1 2 3 4 9 5 8 7 10</domain_ids>
+    <samples>100000000</samples>
+    <lower_left>0 0 -150</lower_left>
+    <upper_right>139.23000000000002 139.23000000000002 300</upper_right>
+  </volume_calc>
 </settings>

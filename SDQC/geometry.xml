@@ -1,48 +1,45 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <geometry>
-  <cell id="1" name="UO2L" material="1" region="-1" temperature="973.15" universe="1"/>
-  <cell id="2" name="UO2M" material="2" region="-1" temperature="973.15" universe="2"/>
-  <cell id="3" name="UO2H" material="3" region="-1" temperature="973.15" universe="3"/>
-  <cell id="4" name="UO2HBP" material="3" region="-1" temperature="973.15" universe="10"/>
-  <cell id="5" name="IFBA" material="4" region="-2 1" universe="10"/>
-  <cell id="6" name="CRboron" material="9" region="-7" universe="11"/>
-  <cell id="7" name="gapL" material="10" region="-3 1" universe="1"/>
-  <cell id="8" name="gapM" material="10" region="-3 1" universe="2"/>
-  <cell id="9" name="gapH" material="10" region="-3 1" universe="3"/>
-  <cell id="10" name="gapHBP" material="10" region="-3 2" universe="10"/>
-  <cell id="11" name="cladCR" material="8" region="-8 7" universe="11"/>
-  <cell id="12" name="cladL" material="5" region="-4 3" universe="1"/>
-  <cell id="13" name="cladM" material="5" region="-4 3" universe="2"/>
-  <cell id="14" name="cladH" material="5" region="-4 3" universe="3"/>
-  <cell id="15" name="cladHBP" material="5" region="-4 3" universe="10"/>
-  <cell id="16" name="guide tube" material="5" region="5 -6" universe="4"/>
-  <cell id="17" name="guide tube CR" material="5" region="5 -6" universe="11"/>
-  <cell id="18" name="moderatorL" material="6" region="4" temperature="578.15" universe="1"/>
-  <cell id="19" name="moderatorM" material="6" region="4" temperature="578.15" universe="2"/>
-  <cell id="20" name="moderatorH" material="6" region="4" temperature="578.15" universe="3"/>
-  <cell id="21" name="moderatorHBP" material="6" region="4" temperature="578.15" universe="10"/>
-  <cell id="22" name="moderatorG" material="6" region="6" temperature="578.15" universe="4"/>
-  <cell id="23" name="moderatorCR" material="6" region="6" temperature="578.15" universe="11"/>
-  <cell id="24" name="guide moderator" material="6" region="-5" temperature="578.15" universe="4"/>
-  <cell id="25" name="guide moderator w CR" material="6" region="-5 8" temperature="578.15" universe="11"/>
-  <cell id="26" name="water cell" material="6" temperature="578.15" universe="5"/>
-  <cell id="27" name="inconel cell" material="7" universe="25"/>
-  <cell id="28" name="UO2L Unrodded Assembly" fill="101" universe="6"/>
-  <cell id="30" name="UO2H Unrodded Assembly" fill="103" universe="8"/>
-  <cell id="32" name="UO2HBP2 Unrodded Assembly" fill="107" universe="14"/>
-  <cell id="37" name="UO2HBP2NE rodded Assembly" fill="113" universe="22"/>
-  <cell id="38" name="UO2HBP2SE rodded Assembly" fill="114" universe="19"/>
-  <cell id="39" name="UO2HBP2SW rodded Assembly" fill="115" universe="20"/>
-  <cell id="40" name="UO2HBP2NW rodded Assembly" fill="112" universe="21"/>
-  <cell id="42" name="UO2M Lrodded Assembly" fill="116" universe="23"/>
-  <cell id="43" name="UO2M Mrodded Assembly" fill="117" universe="24"/>
-  <cell id="45" name="Baffle Assembly" fill="118" universe="26"/>
-  <cell id="46" name="Core" fill="201" region="-30 -20 21 38 39" universe="0"/>
-  <cell id="47" name="lower plenum" material="6" region="-19 20 -30 38 39" universe="0"/>
-  <cell id="48" name="upper plenum" material="6" region="18 -21 -30 38 39" universe="0"/>
-  <cell id="49" name="core barrel" material="8" region="-31 30 -19 18 38 39" universe="0"/>
-  <cell id="50" name="downcomer" material="6" region="-32 31 -19 18 38 39" temperature="578.15" universe="0"/>
-  <cell id="51" name="rpv" material="8" region="-33 32 -19 18 38 39" universe="0"/>
+  <cell id="1" material="1" name="UO2L" region="-1" temperature="973.15" universe="1"/>
+  <cell id="2" material="2" name="UO2M" region="-1" temperature="973.15" universe="2"/>
+  <cell id="3" material="3" name="UO2H" region="-1" temperature="973.15" universe="3"/>
+  <cell id="4" material="3" name="UO2HBP" region="-1" temperature="973.15" universe="10"/>
+  <cell id="5" material="4" name="IFBA" region="-2 1" universe="10"/>
+  <cell id="6" material="9" name="CRboron" region="-7" universe="11"/>
+  <cell id="7" material="10" name="gapL" region="-3 1" universe="1"/>
+  <cell id="8" material="10" name="gapM" region="-3 1" universe="2"/>
+  <cell id="9" material="10" name="gapH" region="-3 1" universe="3"/>
+  <cell id="10" material="10" name="gapHBP" region="-3 2" universe="10"/>
+  <cell id="11" material="8" name="cladCR" region="-8 7" universe="11"/>
+  <cell id="12" material="5" name="cladL" region="-4 3" universe="1"/>
+  <cell id="13" material="5" name="cladM" region="-4 3" universe="2"/>
+  <cell id="14" material="5" name="cladH" region="-4 3" universe="3"/>
+  <cell id="15" material="5" name="cladHBP" region="-4 3" universe="10"/>
+  <cell id="16" material="5" name="guide tube" region="5 -6" universe="4"/>
+  <cell id="17" material="5" name="guide tube CR" region="5 -6" universe="11"/>
+  <cell id="18" material="6" name="moderatorL" region="4" temperature="578.15" universe="1"/>
+  <cell id="19" material="6" name="moderatorM" region="4" temperature="578.15" universe="2"/>
+  <cell id="20" material="6" name="moderatorH" region="4" temperature="578.15" universe="3"/>
+  <cell id="21" material="6" name="moderatorHBP" region="4" temperature="578.15" universe="10"/>
+  <cell id="22" material="6" name="moderatorG" region="6" temperature="578.15" universe="4"/>
+  <cell id="23" material="6" name="moderatorCR" region="6" temperature="578.15" universe="11"/>
+  <cell id="24" material="6" name="guide moderator" region="-5" temperature="578.15" universe="4"/>
+  <cell id="25" material="6" name="guide moderator w CR" region="-5 8" temperature="578.15" universe="11"/>
+  <cell id="26" material="6" name="water cell" temperature="578.15" universe="5"/>
+  <cell id="27" material="7" name="inconel cell" universe="25"/>
+  <cell fill="101" id="28" name="UO2L Unrodded Assembly" universe="6"/>
+  <cell fill="103" id="30" name="UO2H Unrodded Assembly" universe="8"/>
+  <cell fill="107" id="32" name="UO2HBP2 Unrodded Assembly" universe="14"/>
+  <cell fill="115" id="39" name="UO2HBP2SW rodded Assembly" universe="20"/>
+  <cell fill="116" id="42" name="UO2M Lrodded Assembly" universe="23"/>
+  <cell fill="117" id="43" name="UO2M Mrodded Assembly" universe="24"/>
+  <cell fill="118" id="45" name="Baffle Assembly" universe="26"/>
+  <cell fill="201" id="46" name="Core" region="-30 -20 21 38 39" universe="0"/>
+  <cell id="47" material="6" name="lower plenum" region="-19 20 -30 38 39" universe="0"/>
+  <cell id="48" material="6" name="upper plenum" region="18 -21 -30 38 39" universe="0"/>
+  <cell id="49" material="8" name="core barrel" region="-31 30 -19 18 38 39" universe="0"/>
+  <cell id="50" material="6" name="downcomer" region="-32 31 -19 18 38 39" temperature="578.15" universe="0"/>
+  <cell id="51" material="8" name="rpv" region="-33 32 -19 18 38 39" universe="0"/>
   <lattice id="101" name="UO2L Unrodded Assembly">
     <pitch>1.26 1.26</pitch>
     <dimension>17 17</dimension>
@@ -109,75 +106,6 @@
 3 3 10 3 3 10 3 3 10 3 3 10 3 3 10 3 3 
 3 3 10 4 3 3 3 3 3 3 3 3 3 4 10 3 3 
 3 3 3 10 10 4 3 10 4 10 3 4 10 10 3 3 3 
-10 3 3 3 3 10 3 3 10 3 3 10 3 3 3 3 10 
-10 10 3 3 3 3 3 3 3 3 3 3 3 3 3 10 10 </universes>
-  </lattice>
-  <lattice id="112" name="UO2HBP2NW rodded Assembly">
-    <pitch>1.26 1.26</pitch>
-    <dimension>17 17</dimension>
-    <lower_left>-10.71 -10.71</lower_left>
-    <universes>
-10 10 3 3 3 3 3 3 3 3 3 3 3 3 3 10 10 
-10 3 3 3 3 10 3 3 10 3 3 10 3 3 3 3 10 
-3 3 3 10 10 11 3 10 11 10 3 11 10 10 3 3 3 
-3 3 10 11 3 3 3 3 3 3 3 3 3 11 10 3 3 
-3 3 10 3 3 10 3 3 10 3 3 10 3 3 10 3 3 
-3 10 11 3 10 11 3 10 11 10 3 4 10 3 4 10 3 
-3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
-3 3 10 3 3 10 3 3 10 3 3 10 3 3 10 3 3 
-3 10 11 3 10 11 3 10 4 10 3 4 10 3 4 10 3 
-3 3 10 3 3 10 3 3 10 3 3 10 3 3 10 3 3 
-3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
-3 10 11 3 10 11 3 10 4 10 3 4 10 3 4 10 3 
-3 3 10 3 3 10 3 3 10 3 3 10 3 3 10 3 3 
-3 3 10 11 3 3 3 3 3 3 3 3 3 4 10 3 3 
-3 3 3 10 10 4 3 10 4 10 3 4 10 10 3 3 3 
-10 3 3 3 3 10 3 3 10 3 3 10 3 3 3 3 10 
-10 10 3 3 3 3 3 3 3 3 3 3 3 3 3 10 10 </universes>
-  </lattice>
-  <lattice id="113" name="UO2HBP2NE rodded Assembly">
-    <pitch>1.26 1.26</pitch>
-    <dimension>17 17</dimension>
-    <lower_left>-10.71 -10.71</lower_left>
-    <universes>
-10 10 3 3 3 3 3 3 3 3 3 3 3 3 3 10 10 
-10 3 3 3 3 10 3 3 10 3 3 10 3 3 3 3 10 
-3 3 3 10 10 11 3 10 11 10 3 11 10 10 3 3 3 
-3 3 10 11 3 3 3 3 3 3 3 3 3 11 10 3 3 
-3 3 10 3 3 10 3 3 10 3 3 10 3 3 10 3 3 
-3 10 4 3 10 11 3 10 11 10 3 11 10 3 11 10 3 
-3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
-3 3 10 3 3 10 3 3 10 3 3 10 3 3 10 3 3 
-3 10 4 3 10 4 3 10 4 10 3 11 10 3 11 10 3 
-3 3 10 3 3 10 3 3 10 3 3 10 3 3 10 3 3 
-3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
-3 10 4 3 10 4 3 10 4 10 3 11 10 3 11 10 3 
-3 3 10 3 3 10 3 3 10 3 3 10 3 3 10 3 3 
-3 3 10 4 3 3 3 3 3 3 3 3 3 11 10 3 3 
-3 3 3 10 10 4 3 10 4 10 3 4 10 10 3 3 3 
-10 3 3 3 3 10 3 3 10 3 3 10 3 3 3 3 10 
-10 10 3 3 3 3 3 3 3 3 3 3 3 3 3 10 10 </universes>
-  </lattice>
-  <lattice id="114" name="UO2HBP2SE rodded Assembly">
-    <pitch>1.26 1.26</pitch>
-    <dimension>17 17</dimension>
-    <lower_left>-10.71 -10.71</lower_left>
-    <universes>
-10 10 3 3 3 3 3 3 3 3 3 3 3 3 3 10 10 
-10 3 3 3 3 10 3 3 10 3 3 10 3 3 3 3 10 
-3 3 3 10 10 4 3 10 4 10 3 4 10 10 3 3 3 
-3 3 10 4 3 3 3 3 3 3 3 3 3 11 10 3 3 
-3 3 10 3 3 10 3 3 10 3 3 10 3 3 10 3 3 
-3 10 4 3 10 4 3 10 4 10 3 11 10 3 11 10 3 
-3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
-3 3 10 3 3 10 3 3 10 3 3 10 3 3 10 3 3 
-3 10 4 3 10 4 3 10 4 10 3 11 10 3 11 10 3 
-3 3 10 3 3 10 3 3 10 3 3 10 3 3 10 3 3 
-3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 
-3 10 4 3 10 11 3 10 11 10 3 11 10 3 11 10 3 
-3 3 10 3 3 10 3 3 10 3 3 10 3 3 10 3 3 
-3 3 10 11 3 3 3 3 3 3 3 3 3 11 10 3 3 
-3 3 3 10 10 11 3 10 11 10 3 11 10 10 3 3 3 
 10 3 3 3 3 10 3 3 10 3 3 10 3 3 3 3 10 
 10 10 3 3 3 3 3 3 3 3 3 3 3 3 3 10 10 </universes>
   </lattice>
@@ -275,39 +203,33 @@
   </lattice>
   <lattice id="201" name="13x13 core lattice">
     <pitch>21.42 21.42</pitch>
-    <dimension>13 13</dimension>
-    <lower_left>-139.23000000000002 -139.23000000000002</lower_left>
+    <dimension>7 7</dimension>
+    <lower_left>-10.71 -10.71</lower_left>
     <universes>
-26 26 26 26 26 26 26 26 26 26 26 26 26 
-26 26 26 26 8 14 14 14 8 26 26 26 26 
-26 26 26 8 19 23 6 23 20 8 26 26 26 
-26 26 8 6 23 6 24 6 23 6 8 26 26 
-26 8 19 23 6 24 6 24 6 23 20 8 26 
-26 14 23 6 24 6 24 6 24 6 23 14 26 
-26 14 6 24 6 24 6 24 6 24 6 14 26 
-26 14 23 6 24 6 24 6 24 6 23 14 26 
-26 8 22 23 6 24 6 24 6 23 21 8 26 
-26 26 8 6 23 6 24 6 23 6 8 26 26 
-26 26 26 8 22 23 6 23 21 8 26 26 26 
-26 26 26 26 8 14 14 14 8 26 26 26 26 
-26 26 26 26 26 26 26 26 26 26 26 26 26 </universes>
+26 26 26 26 26 26 26 
+14 14 8 26 26 26 26 
+6 23 20 8 26 26 26 
+24 6 23 6 8 26 26 
+6 24 6 23 20 8 26 
+24 6 24 6 23 14 26 
+6 24 6 24 6 14 26 </universes>
   </lattice>
-  <surface id="1" name="pin radius" type="z-cylinder" coeffs="0.0 0.0 0.41"/>
-  <surface id="2" name="IFBA" type="z-cylinder" coeffs="0.0 0.0 0.411"/>
-  <surface id="3" name="cladding inner radius" type="z-cylinder" coeffs="0.0 0.0 0.42"/>
-  <surface id="4" name="cladding outer radius" type="z-cylinder" coeffs="0.0 0.0 0.475"/>
-  <surface id="5" name="guide inner radius" type="z-cylinder" coeffs="0.0 0.0 0.5"/>
-  <surface id="6" name="guide outer radius" type="z-cylinder" coeffs="0.0 0.0 0.55"/>
-  <surface id="7" name="control rod cladding inner radius" type="z-cylinder" coeffs="0.0 0.0 0.435"/>
-  <surface id="8" name="control rod cladding outer radius" type="z-cylinder" coeffs="0.0 0.0 0.48"/>
-  <surface id="18" type="z-plane" boundary="vacuum" coeffs="-150"/>
-  <surface id="19" type="z-plane" boundary="vacuum" coeffs="300"/>
-  <surface id="20" name="z-top active" type="z-plane" coeffs="83.33"/>
-  <surface id="21" name="z-bottom active" type="z-plane" coeffs="-100"/>
-  <surface id="30" name="inner core barrel" type="z-cylinder" coeffs="0.0 0.0 131.733"/>
-  <surface id="31" name="outer core barrel" type="z-cylinder" coeffs="0.0 0.0 134.273"/>
-  <surface id="32" name="rpv inner" type="z-cylinder" coeffs="0.0 0.0 144.273"/>
-  <surface id="33" name="rpv outer" type="z-cylinder" boundary="vacuum" coeffs="0.0 0.0 159.273"/>
-  <surface id="38" name="qc x" type="x-plane" boundary="reflective" coeffs="0"/>
-  <surface id="39" name="qc y" type="y-plane" boundary="reflective" coeffs="0"/>
+  <surface coeffs="0.0 0.0 0.41" id="1" name="pin radius" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 0.411" id="2" name="IFBA" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 0.42" id="3" name="cladding inner radius" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 0.475" id="4" name="cladding outer radius" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 0.5" id="5" name="guide inner radius" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 0.55" id="6" name="guide outer radius" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 0.435" id="7" name="control rod cladding inner radius" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 0.48" id="8" name="control rod cladding outer radius" type="z-cylinder"/>
+  <surface boundary="vacuum" coeffs="-150" id="18" type="z-plane"/>
+  <surface boundary="vacuum" coeffs="300" id="19" type="z-plane"/>
+  <surface coeffs="200" id="20" name="z-top active" type="z-plane"/>
+  <surface coeffs="-100" id="21" name="z-bottom active" type="z-plane"/>
+  <surface coeffs="0.0 0.0 131.733" id="30" name="inner core barrel" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 134.273" id="31" name="outer core barrel" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 144.273" id="32" name="rpv inner" type="z-cylinder"/>
+  <surface boundary="vacuum" coeffs="0.0 0.0 159.273" id="33" name="rpv outer" type="z-cylinder"/>
+  <surface boundary="reflective" coeffs="0" id="38" name="qc x" type="x-plane"/>
+  <surface boundary="reflective" coeffs="0" id="39" name="qc y" type="y-plane"/>
 </geometry>
