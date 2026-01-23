@@ -15,6 +15,11 @@ def pltfix(xyplot):
         xyplot[i,0] = 2*xyplot[i,0]
     return xyplot
 
+def datatocsv(matrix,filename):
+    df = pd.DataFrame(matrix)
+    df.to_csv(filename, index=False, header=False)
+    return
+
 
 EV_TO_J = 1.602176634e-19
 P_TARGET = 700e6/4  # 700 MWth
@@ -89,6 +94,15 @@ def xyslice(batch , z):
     heating_xy = heating_3d[:, :, z].T
 
     heating_xy = pltfix(heating_xy)
+
+
+    #fluxfile = "fluxfile.csv"
+    #fissionfile = "fissionfile.csv"
+    #heatingfile = "heatingfile.csv"
+
+    #datatocsv(flux_xy,fluxfile)
+    #datatocsv(fission_xy,fissionfile)
+    #datatocsv(heating_xy,heatingfile)
 
     x_edges = np.linspace(mesh.lower_left[0], mesh.upper_right[0], nx+1)
     y_edges = np.linspace(mesh.lower_left[1], mesh.upper_right[1], ny+1)

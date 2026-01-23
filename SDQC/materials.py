@@ -55,7 +55,7 @@ clad.set_density('g/cm3',6.56)
 
 ##Water
 
-ppm_Boron=2900
+ppm_Boron=0
 watertempc = 305
 density = 1/pl('T',watertempc, 'vol_f')
 density = density/1000

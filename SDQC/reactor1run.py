@@ -20,7 +20,7 @@ libary_path = os.path.expanduser('~/Downloads/cross_section_libs/endfb-viii.0-hd
 
 os.environ['OPENMC_CROSS_SECTIONS'] = libary_path
 
-batches = 2002
+batches = 490
 inactive = 100   
 particles = 7000
 
