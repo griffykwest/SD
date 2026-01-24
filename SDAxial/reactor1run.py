@@ -1,5 +1,5 @@
 import openmc
-from materials import materials
+from matax import *
 from lattices import lattices, universes, cells
 from tally import tallies
 from surfaces import *
@@ -20,12 +20,12 @@ libary_path = os.path.expanduser('~/Downloads/cross_section_libs/endfb-viii.0-hd
 
 os.environ['OPENMC_CROSS_SECTIONS'] = libary_path
 
-batches = 2003
-inactive = 100   
+batches = 501
+inactive = 50   
 particles = 10000
 
 
-materials_file = openmc.Materials(materials.values())
+materials_file = openmc.Materials(axial_materials.values())
 materials_file.export_to_xml()
 
 
@@ -34,7 +34,7 @@ cells['Core'].region = -surfaces['inner core barrel'] &-surfaces['z-top active']
 #+surfaces['x-min'] & +surfaces['y-min'] & \-surfaces['x-max'] & -surfaces['y-max']
 
 
-lattices['Core'] = openmc.RectLattice(lattice_id=201, name='13x13 core lattice')
+lattices['Core'] = openmc.RectLattice(name='7X7 core lattice')
 
 lattices['Core'].dimension = [7, 7]
 lattices['Core'].lower_left = [-w_ass/2, -w_ass/2]
@@ -78,29 +78,34 @@ plot_1 = openmc.Plot()
 plot_1.filename = 'plot_blue_water'
 plot_1.width = [r_rpvouter, r_rpvouter]
 plot_1.pixels = [4000, 4000]
-plot_1.origin = [r_rpvouter/2,r_rpvouter/2,0]
+plot_1.origin = [r_rpvouter/2,r_rpvouter/2,10]
 plot_1.basis = 'xy'
 plot_1.color_by = 'material'
 #plot_1.universe_depth = 2  # important
-plot_1.colors = {
-    materials['water']: (153, 204, 255),       # light blue
-    materials['Cladding']: (169, 169, 169),        # light gray
-    materials['UO2L']: (255, 255, 102),        # pale yellow
-    materials['UO2M']: (255, 178, 102),        # orange
-    materials['UO2H']: (255, 51, 51),          # red
-    materials['IFBA']: (102, 255, 102),        # light green
-    materials['Borosilicate Glass']: (204, 153, 255),   # purple
-    materials['SS304']: (192, 192, 192),       # silver
-    materials['Inconel']: (255, 153, 204),      # pink
-    materials['gap']: (0,0,0)                    #black
+# Start with the single materials (non-axial)
+material_colors = {
+    axial_materials['IFBA']: (102, 255, 102),               # light green
+    axial_materials['Borosilicate Glass']: (204, 153, 255), # purple
+    axial_materials['Cladding']: (169, 169, 169),           # light gray
+    axial_materials['SS304']: (192, 192, 192),              # silver
+    axial_materials['Inconel']: (255, 153, 204),            # pink
+    axial_materials['gap']: (0, 0, 0)                       # black
 }
+
+# Add all axial materials
+for i in range(n_axial):
+    material_colors[axial_materials[f'UO2L{i}']] = (255, 255, 102)       # pale yellow
+    material_colors[axial_materials[f'UO2M{i}']] = (255, 178, 102)       # orange
+    material_colors[axial_materials[f'UO2H{i}']] = (255, 51, 51)         # red
+    material_colors[axial_materials[f'moderator{i}']] = (153, 204, 255)  # light blue
+plot_1.colors = material_colors
 plot_file = openmc.Plots([plot_1])
 plot_file.export_to_xml()
 openmc.plot_geometry()
 
 lower_left = (0, 0, z_min)
 upper_right = (hw, hw, z_max)
-vol_calc = openmc.VolumeCalculation(list(materials.values()), 100000000,
+vol_calc = openmc.VolumeCalculation(list(axial_materials.values()), 100000000,
                                     lower_left, upper_right)
 
 settings= openmc.Settings()
@@ -150,5 +155,5 @@ openmc.calculate_volumes()
 
 openmc.run()
 
-xyslice(batches,6)
-xzslice(batches,55)
+xyslice(batches,20)
+xzslice(batches,1)

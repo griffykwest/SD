@@ -174,7 +174,6 @@ def xyslice(batch , z):
 xyslice(2000, 10)
 xyslice(2000, 15)
 """
-xyslice(1000,6)
 
 # plotting function for an xz slice 111 is the middle
 def xzslice(batch, y):

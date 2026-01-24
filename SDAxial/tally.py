@@ -5,9 +5,9 @@ from surfaces import *
 tallies = {}
 # Instantiate a tally mesh
 mesh = openmc.RegularMesh(mesh_id=1)
-mesh.dimension = [111, 111, 18]#221,45
-mesh.lower_left = [-hp, -hp, z_min]
-mesh.upper_right = [w/2, w/2, z_max]
+mesh.dimension = [7, 7, 40]#111,40
+mesh.lower_left = [-w_ass/2, -w_ass/2, z_ba]
+mesh.upper_right = [w/2, w/2, z_ta]
 
 # Instantiate some tally Filters
 mesh_filter = openmc.MeshFilter(mesh)
