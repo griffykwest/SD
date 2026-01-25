@@ -20,7 +20,7 @@ T_mod_z  = np.linspace(300+273.15, 310+273.15, n_axial)
 axial_materials = {}
 multiplier = 1.0
 fuel_density = 10.15
-ppm_Boron=2900
+ppm_Boron=3000
 for i in range(n_axial):
 
     uo2l=openmc.Material()

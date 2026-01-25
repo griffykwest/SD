@@ -20,9 +20,9 @@ libary_path = os.path.expanduser('~/Downloads/cross_section_libs/endfb-viii.0-hd
 
 os.environ['OPENMC_CROSS_SECTIONS'] = libary_path
 
-batches = 501
-inactive = 50   
-particles = 10000
+batches = 3000
+inactive = 300 
+particles = 100000
 
 
 materials_file = openmc.Materials(axial_materials.values())
@@ -60,7 +60,7 @@ lattices['Core'].universes=[
  [m,m,m,m,m,m,m],
  [C,C,h,m,m,m,m],
  [L,G,D,h,m,m,m],
- [I,L,G,L,h,m,m],
+ [I,L,G,G,h,m,m],
  [L,I,L,G,D,h,m],
  [I,L,I,L,G,C,m],
  [L,I,L,I,L,C,m]
@@ -156,4 +156,5 @@ openmc.calculate_volumes()
 openmc.run()
 
 xyslice(batches,20)
+xyslice(batches,1)
 xzslice(batches,1)

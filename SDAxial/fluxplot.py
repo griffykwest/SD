@@ -16,6 +16,14 @@ def pltfix(xyplot):
         xyplot[i,0] = 2*xyplot[i,0]
     return xyplot
 
+def pltyfix(xzplot):
+    n = np.shape(xzplot)[0]
+
+    for i in range(n):
+        #xzplot[0,i] = 2*xzplot[0,i]
+        xzplot[i,0] = 2*xzplot[i,0]
+    return xzplot
+
 
 #was to help bill make the qtf function now just here
 def datatocsv(matrix,filename):
@@ -79,7 +87,6 @@ def xyslice(batch , z):
     fission = mean[:, fission_idx] 
 
     heating = mean[:, heating_idx]
-    volume = np.max(mesh.volumes)
     volumes = mesh.volumes.reshape((nx, ny, nz))[:, :, z]
 
     ## for q'' put the 2 for heating 3d
@@ -87,9 +94,9 @@ def xyslice(batch , z):
     heating_Wm = heating * EV_TO_J * scale / hight *100
    
 
-    flux_3d = flux.reshape((nx, ny, nz), order='F')
+    flux_3d = flux.reshape((nx, ny, nz), order='F') *scale
 
-    fission_3d = fission.reshape((nx, ny, nz), order='F')
+    fission_3d = fission.reshape((nx, ny, nz), order='F') *scale
 
     heating_3d = heating_Wm.reshape((nx, ny, nz), order='F')
 
@@ -97,15 +104,17 @@ def xyslice(batch , z):
 
 
     flux_3d_norm = flux_3d #/ mesh.volumes.reshape((nx, ny, nz), order='F')
-    fission_3d_norm = fission_3d #/ mesh.volumes.reshape((nx, ny, nz), order='F')
+    fission_3d_norm = fission_3d 
+    heating_3d_norm = heating_3d#/ mesh.volumes.reshape((nx, ny, nz), order='F')
 
     # get min and max for the whole volume
     flux_min, flux_max = flux_3d_norm.min(), flux_3d_norm.max()
     fission_min, fission_max = fission_3d_norm.min(), fission_3d_norm.max()
+    heating_min, heating_max = heating_3d_norm.min(), heating_3d_norm.max()
 
 
     flux_xy = flux_3d[:,:,z]
-    flux_xy = flux_xy #/ volumes
+    flux_xy = flux_xy 
     flux_xy = flux_xy.T
 
     flux_xy = pltfix(flux_xy)
@@ -115,7 +124,7 @@ def xyslice(batch , z):
 
 
     fission_xy = fission_3d[:,:,z]
-    fission_xy = fission_xy #/ volumes
+    fission_xy = fission_xy
     fission_xy = fission_xy.T
 
     fission_xy = pltfix(fission_xy)
@@ -162,7 +171,9 @@ def xyslice(batch , z):
         x_edges, y_edges,
         heating_xy,      # MW per mesh cell
         shading='auto',
-        cmap='bwr'
+        cmap='bwr',
+        vmin= heating_min,
+        vmax= heating_max
     )
     plt.colorbar(label='Heating [W/m]')
     plt.xlabel('X [cm]')
@@ -201,17 +212,28 @@ def xzslice(batch, y):
     volume = np.max(mesh.volumes)
     flux = mean[:, flux_idx]
 
+    dx = pitch
+    dy = pitch
+    hight = volume/(dx*dy)
+    
+    sa = hight*np.pi*2*R_co
+    cm2m2 = 10000
+
     fission = mean[:, fission_idx] 
     heating = mean[:, heating_idx]
-    volume = np.max(mesh.volumes)
+
+    ## for q'' put the 2 for heating 3d
+    heating_Wm2 = heating * EV_TO_J * scale / sa * cm2m2
+    heating_Wm = heating * EV_TO_J * scale / hight *100
+   
+
     volumes = mesh.volumes.reshape((nx, ny, nz))[:, y, :]
-    heating_W = heating * EV_TO_J * scale*1000 / volume
 
-    flux_3d = flux.reshape((nx, ny, nz), order='F')
+    flux_3d = flux.reshape((nx, ny, nz), order='F') *scale
 
-    fission_3d = fission.reshape((nx, ny, nz), order='F')
+    fission_3d = fission.reshape((nx, ny, nz), order='F') *scale
 
-    heating_3d = heating_W.reshape((nx, ny, nz), order='F')
+    heating_3d = heating_Wm.reshape((nx, ny, nz), order='F')
 
 
     flux_3d_norm = flux_3d #/ mesh.volumes.reshape((nx, ny, nz), order='F')
@@ -220,16 +242,20 @@ def xzslice(batch, y):
     # get min and max for the whole volume
     flux_min, flux_max = flux_3d_norm.min(), flux_3d_norm.max()
     fission_min, fission_max = fission_3d_norm.min(), fission_3d_norm.max()
+    heating_3d_norm = heating_3d
+    heating_min, heating_max = heating_3d_norm.min(), heating_3d_norm.max()
+
 
     flux_xz = flux_3d[:,y,:]
-    flux_xz = flux_xz #/ volumes
     flux_xz = flux_xz.T
+    flux_xz = pltyfix(flux_xz)
 
     fission_xz = fission_3d[:,y,:]
-    fission_xz = fission_xz #/ volumes
     fission_xz = fission_xz.T
+    fission_xz = pltyfix(fission_xz)
 
     heating_xz = heating_3d[:, y, :].T
+    heating_xz = pltyfix(heating_xz)
 
     # Mesh edges along X and Z
     x_edges = np.linspace(mesh.lower_left[0], mesh.upper_right[0], nx+1)
@@ -255,11 +281,13 @@ def xzslice(batch, y):
     plt.figure(dpi=150)
     plt.pcolormesh(
         x_edges, z_edges,
-        heating_xz / 1e6,      # MW per mesh cell
+        heating_xz ,      # MW per mesh cell
         shading='auto',
-        cmap='bwr'
+        cmap='bwr',
+        vmin= heating_min,
+        vmax= heating_max
     )
-    plt.colorbar(label='Heating [kW per cm$^3$]')
+    plt.colorbar(label='Heating [W/m]')
     plt.xlabel('X [cm]')
     plt.ylabel('Y [cm]')
     plt.gca().set_aspect('equal')
@@ -270,6 +298,5 @@ def xzslice(batch, y):
 xzslice(2000, 65)
 xzslice(2000, 111)
 """
-
 
 
