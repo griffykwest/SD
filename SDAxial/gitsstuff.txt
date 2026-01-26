@@ -1,6 +1,6 @@
 cd ~/SD
 git add -A
-git commit -m "Axial variation!!!! "
+git commit -m "PPF "
 git push
 
 
