@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <settings>
   <run_mode>eigenvalue</run_mode>
-  <particles>100000</particles>
-  <batches>3000</batches>
-  <inactive>300</inactive>
+  <particles>10000</particles>
+  <batches>2000</batches>
+  <inactive>200</inactive>
   <source particle="neutron" strength="1.0" type="independent">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r parameters="0.0 131.733" type="uniform"/>

@@ -1714,16 +1714,19 @@
   </material>
   <material id="165" name="Borosilicate Glass">
     <density units="g/cm3" value="2.23"/>
-    <nuclide name="B10" wo="0.008"/>
-    <nuclide name="B11" wo="0.032"/>
-    <nuclide name="O16" wo="0.5335805769530464"/>
-    <nuclide name="O17" wo="0.00021543617402274465"/>
-    <nuclide name="O18" wo="0.0012039868729308634"/>
-    <nuclide name="Si28" wo="0.3463631601562946"/>
-    <nuclide name="Si29" wo="0.018215698603804713"/>
-    <nuclide name="Si30" wo="0.012421141239900695"/>
-    <nuclide name="Na23" wo="0.03"/>
-    <nuclide name="Al27" wo="0.012"/>
+    <nuclide ao="0.0140898" name="B10"/>
+    <nuclide ao="0.0563592" name="B11"/>
+    <nuclide ao="0.6395695785569999" name="O16"/>
+    <nuclide ao="0.000242975005" name="O17"/>
+    <nuclide ao="0.0012824464379999998" name="O18"/>
+    <nuclide ao="0.023311" name="Na23"/>
+    <nuclide ao="0.008204" name="Al27"/>
+    <nuclide ao="0.23548727505360004" name="Si28"/>
+    <nuclide ao="0.011957371933200001" name="Si29"/>
+    <nuclide ao="0.0078823530132" name="Si30"/>
+    <nuclide ao="0.001506118315" name="K39"/>
+    <nuclide ao="1.88955e-07" name="K40"/>
+    <nuclide ao="0.00010869272999999999" name="K41"/>
   </material>
   <material id="166" name="gap">
     <density units="g/cm3" value="0.001"/>

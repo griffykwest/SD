@@ -103,43 +103,21 @@ def intra(batch,z):
 test = intra(4000,20)
 
 def compute_peaking(LHGR_xy, first_size=9, full_size=17, N_assy=7):
-    """
-    Compute intra-assembly and inter-assembly peaking factors
-    for a quarter-core LHGR mesh.
 
-    Parameters
-    ----------
-    LHGR_xy : 2D np.ndarray
-        Pin LHGR map at midplane (quarter-core).
-    first_size : int
-        Number of mesh points in the first assembly row/column.
-    full_size : int
-        Number of mesh points in remaining assemblies.
-    N_assy : int
-        Number of assemblies in a row/column.
-
-    Returns
-    -------
-    Fq_intra : np.ndarray
-        Intra-assembly peaking factor for each assembly (1D array, length = N_assy**2)
-    Fq_inter : float
-        Inter-assembly peaking factor for the quarter-core.
-    assembly_avg : np.ndarray
-        Average LHGR per assembly.
-    """
     nx, ny = LHGR_xy.shape
 
-    # --- 1. Build weights for quarter-core symmetry ---
+    print(nx)
+
+    #multiuplying for proper readings(similar to pltfix)
     weights = np.ones_like(LHGR_xy)
     weights[0, :] *= 2       # first row
     weights[:, 0] *= 2       # first column
-    weights[0, 0] *= 2       # corner now 4x
 
-    # --- 2. Build assembly index mapping ---
-    # x and y edges of each assembly [0, first_size] + 
-    x_edges = list(range(first_size, nx+1, full_size))
-    y_edges =  list(range(first_size, ny+1, full_size))
-    print(x_edges,y_edges)
+
+    # x and y edges of each assembly
+    x_edges = [0] + list(range(first_size, nx+1, full_size))
+    y_edges = [0] + list(range(first_size, ny+1, full_size))
+    #print(x_edges,y_edges)
 
     assembly_map = np.zeros_like(LHGR_xy, dtype=int)
     assy_num = 0
@@ -149,32 +127,80 @@ def compute_peaking(LHGR_xy, first_size=9, full_size=17, N_assy=7):
             j0, j1 = y_edges[j], y_edges[j+1]
             assembly_map[i0:i1, j0:j1] = assy_num
             assy_num += 1
+    #print(assembly_map)
+    #datatocsv(assembly_map,'assy.csv')
+    #datatocsv(LHGR_xy,'heating.csv')
 
     n_assembly = assy_num
-    print(n_assembly)
 
-    # --- 3. Compute assembly averages (weighted) ---
+
     assembly_sums = np.zeros(n_assembly)
     assembly_counts = np.zeros(n_assembly)
-    Fq_intra = np.zeros(n_assembly)
 
     for a in range(n_assembly):
-        mask = (assembly_map == a)
+        mask = assembly_map == a
+        assembly_sums[a] = np.sum(LHGR_xy[mask] * weights[mask])
+        assembly_counts[a] = np.count_nonzero(mask)
+
+    assembly_avg = assembly_sums / assembly_counts
+    FUEL_THRESHOLD = 1e3
+
+    # --------------------------------------------------
+    #Fuel identification, making sure that there is true assembly values
+    # --------------------------------------------------
+    fuel_mask = assembly_avg > FUEL_THRESHOLD
+
+    # --------------------------------------------------
+    #Intra-assembly peaking assembly only no ghost values
+    # --------------------------------------------------
+    Fq_intra = np.full(n_assembly, np.nan)
+
+
+    for a in range(n_assembly):
+        if not fuel_mask[a]:
+            continue
+
+        mask = assembly_map == a
         pin_power = LHGR_xy[mask] * weights[mask]
-        assembly_sums[a] = pin_power.sum()
-        assembly_counts[a] = weights[mask].sum()
-        assembly_avg = assembly_sums / assembly_counts
-        # Intra-assembly peaking
+
         Fq_intra[a] = pin_power.max() / pin_power.mean()
 
-    # Inter-assembly peaking
-    assembly_avg = assembly_sums / assembly_counts
-    Fq_inter = np.max(assembly_avg) / np.mean(assembly_avg)
+    # --------------------------------------------------
+    # 7) Inter-assembly peaking (fuel only)
+    # --------------------------------------------------
+    fuel_avgs = assembly_avg[fuel_mask]
+    Fq_inter = assembly_avg/ fuel_avgs.mean()
+    Fq_inter = np.where(fuel_mask, Fq_inter, np.nan)
 
-    return Fq_intra, Fq_inter, assembly_avg
+    return Fq_intra, Fq_inter, assembly_avg, fuel_mask
 
-# LHGR_xy is your 2D mesh at midplane (after pltfix or weighting)
-Fq_intra, Fq_inter, assembly_avg = compute_peaking(test, first_size=9, full_size=17, N_assy=7)
 
-print("Inter-assembly PPF:", Fq_inter)
-print("Intra-assembly PPFs:", Fq_intra)
+Fq_intra, Fq_inter, assembly_avg , fuel_mask = compute_peaking(test, first_size=9, full_size=17, N_assy=7)
+
+np.set_printoptions(linewidth=200)
+Fq_intra = Fq_intra.reshape((7,7))
+Fq_inter = Fq_inter.reshape((7,7))
+print("Inter-assembly PPF:")
+print(Fq_inter)
+
+print("Intra-assembly PPFs:")
+print(Fq_intra)
+#Fq_plot = np.nan_to_num(Fq_intra, nan=0.0)
+
+plt.figure(figsize=(6,6))
+plt.imshow(Fq_intra, origin='lower', cmap='inferno', interpolation='nearest')
+plt.colorbar(label='Intra-assembly PPF')
+plt.title('Quarter-Core Intra-Assembly Peaking Factor')
+plt.xlabel('Assembly X Index')
+plt.ylabel('Assembly Y Index')
+plt.gca().set_aspect('equal')
+plt.savefig(f'intrappf.png')
+
+plt.figure(figsize=(6,6))
+plt.imshow(Fq_inter, origin='lower', cmap='inferno', interpolation='nearest')
+plt.colorbar(label='Intra-assembly PPF')
+plt.title('Quarter-Core Inter-Assembly Peaking Factor')
+plt.xlabel('Assembly X Index')
+plt.ylabel('Assembly Y Index')
+plt.gca().set_aspect('equal')
+plt.savefig(f'interppf.png')

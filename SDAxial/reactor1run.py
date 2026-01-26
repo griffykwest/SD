@@ -20,9 +20,9 @@ libary_path = os.path.expanduser('~/Downloads/cross_section_libs/endfb-viii.0-hd
 
 os.environ['OPENMC_CROSS_SECTIONS'] = libary_path
 
-batches = 3000
-inactive = 300 
-particles = 100000
+batches = 2000
+inactive = 200 
+particles = 10000
 
 
 materials_file = openmc.Materials(axial_materials.values())

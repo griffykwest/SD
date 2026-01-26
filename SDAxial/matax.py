@@ -138,19 +138,37 @@ ss304.set_density("g/cm3", 8.0)
 
 #  Boriscilate glass for constant rods that go in and stay in new and second ran fuels
 
+# Boron-10 enrichment (fraction of boron atoms)
+B10enrichment = 0.20  # example: 20% B-10
 borosilicate = openmc.Material(name='Borosilicate Glass')
 borosilicate.set_density('g/cm3', 2.23)
-B10 = B10enrichment*0.04
-B11 = (1-B10enrichment)*0.04
-borosilicate.add_nuclide('B10', B10, percent_type='wo')
-borosilicate.add_nuclide('B11', B11, percent_type='wo')
+# --- Boron (atomic fraction split into isotopes) ---
+B_total = 0.070449
+borosilicate.add_nuclide(
+    'B10', B_total * B10enrichment, percent_type='ao'
+)
+borosilicate.add_nuclide(
+    'B11', B_total * (1.0 - B10enrichment), percent_type='ao'
+)
+# --- Remaining elements (atomic fractions, unchanged) ---
+borosilicate.add_element('O',  0.641095, percent_type='ao')
+borosilicate.add_element('Na', 0.023311, percent_type='ao')
+borosilicate.add_element('Al', 0.008204, percent_type='ao')
+borosilicate.add_element('Si', 0.255327, percent_type='ao')
+borosilicate.add_element('K',  0.001615, percent_type='ao')
 
-# Rest of the glass (fixed)
-#borosilicate.add_element('B', 0.04, percent_type='wo')
-borosilicate.add_element('O',  0.535, percent_type='wo')
-borosilicate.add_element('Si', 0.377, percent_type='wo')
-borosilicate.add_element('Na', 0.030, percent_type='wo')
-borosilicate.add_element('Al', 0.012, percent_type='wo')
+"""openmc.Material(name='Borosilicate Glass') 
+borosilicate.set_density('g/cm3', 2.23) 
+B10 = B10enrichment*0.04 
+B11 = (1-B10enrichment)*0.04 
+borosilicate.add_nuclide('B10', B10, percent_type='wo') 
+borosilicate.add_nuclide('B11', B11, percent_type='wo') # Rest of the glass (fixed) 
+#borosilicate.add_element('B', 0.04, percent_type='wo') 
+# borosilicate.add_element('O', 0.535, percent_type='wo') 
+# borosilicate.add_element('Si', 0.377, percent_type='wo') 
+# borosilicate.add_element('Na', 0.030, percent_type='wo') 
+borosilicate.add_element('Al', 0.012, percent_type='wo')"""
+
 
 gap = openmc.Material(name='gap')
 gap.add_element('He', 1.0)
@@ -299,7 +317,7 @@ cells['water cell'] = openmc.Cell(name='water cell')
 cells['water cell'].fill = axial_materials[f'moderator20']
 
 cells['inconel cell'] = openmc.Cell(name='inconel cell')
-cells['inconel cell'].fill = axial_materials['Inconel']
+cells['inconel cell'].fill = axial_materials['SS304']
 
 ###Non repeated stuff
 cells['UO2L Unrodded Assembly'] = openmc.Cell(name='UO2L Unrodded Assembly')
