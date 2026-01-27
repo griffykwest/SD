@@ -73,15 +73,15 @@ def intra(batch,z):
     volume = np.max(mesh.volumes)
     dx = pitch
     dy = pitch
-    hight = volume/(dx*dy)
+    height = volume/(dx*dy)
     
-    sa = hight*np.pi*2*R_co
+    sa = height*np.pi*2*R_co
     cm2m2 = 10000
 
     heating = mean[:, heating_idx]
 
     heating_Wm2 = heating * EV_TO_J * scale / sa * cm2m2
-    heating_Wm = heating * EV_TO_J * scale / hight *100
+    heating_Wm = heating * EV_TO_J * scale / height *100
 
     heating_3d = heating_Wm.reshape((nx, ny, nz), order='F')
 

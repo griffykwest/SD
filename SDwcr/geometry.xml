@@ -1,0 +1,622 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<geometry>
+  <cell id="1" material="1" name="UO2L0" region="-1 36 -37" temperature="700.0" universe="1"/>
+  <cell id="2" material="2" name="UO2M0" region="-1 36 -37" temperature="700.0" universe="2"/>
+  <cell id="3" material="3" name="UO2H0" region="-1 36 -37" temperature="700.0" universe="3"/>
+  <cell id="4" material="4" name="moderator0" region="4 36 -37 -11 10 -13 12" temperature="563.15" universe="4"/>
+  <cell id="5" material="4" name="guide moderator0" region="6 36 -37 -11 10 -13 12" temperature="563.15" universe="5"/>
+  <cell id="6" material="162" name="spacer0" region="-15 14 -17 16 (11 | -10 | 13 | -12) 36 -37" universe="4"/>
+  <cell id="7" material="162" name="g spacer0" region="-15 14 -17 16 (11 | -10 | 13 | -12) 36 -37" universe="5"/>
+  <cell id="8" material="4" name="inner guide moderator no CR0" region="-5 36 -37" temperature="563.15" universe="6"/>
+  <cell id="9" material="4" name="inner guide moderator w CR0" region="-5 8 36 -37" temperature="563.15" universe="7"/>
+  <cell id="10" material="5" name="UO2L1" region="-1 37 -38" temperature="756.3265981017082" universe="1"/>
+  <cell id="11" material="6" name="UO2M1" region="-1 37 -38" temperature="756.3265981017082" universe="2"/>
+  <cell id="12" material="7" name="UO2H1" region="-1 37 -38" temperature="756.3265981017082" universe="3"/>
+  <cell id="13" material="8" name="moderator1" region="4 37 -38" temperature="563.6628205128205" universe="4"/>
+  <cell id="14" material="8" name="guide moderator1" region="6 37 -38" temperature="563.6628205128205" universe="5"/>
+  <cell id="15" material="8" name="inner guide moderator no CR1" region="-5 37 -38" temperature="563.6628205128205" universe="6"/>
+  <cell id="16" material="8" name="inner guide moderator w CR1" region="-5 8 37 -38" temperature="563.6628205128205" universe="7"/>
+  <cell id="17" material="9" name="UO2L2" region="-1 38 -39" temperature="812.2878966004322" universe="1"/>
+  <cell id="18" material="10" name="UO2M2" region="-1 38 -39" temperature="812.2878966004322" universe="2"/>
+  <cell id="19" material="11" name="UO2H2" region="-1 38 -39" temperature="812.2878966004322" universe="3"/>
+  <cell id="20" material="12" name="moderator2" region="4 38 -39" temperature="564.175641025641" universe="4"/>
+  <cell id="21" material="12" name="guide moderator2" region="6 38 -39" temperature="564.175641025641" universe="5"/>
+  <cell id="22" material="12" name="inner guide moderator no CR2" region="-5 38 -39" temperature="564.175641025641" universe="6"/>
+  <cell id="23" material="12" name="inner guide moderator w CR2" region="-5 8 38 -39" temperature="564.175641025641" universe="7"/>
+  <cell id="24" material="13" name="UO2L3" region="-1 39 -40" temperature="867.5209650012905" universe="1"/>
+  <cell id="25" material="14" name="UO2M3" region="-1 39 -40" temperature="867.5209650012905" universe="2"/>
+  <cell id="26" material="15" name="UO2H3" region="-1 39 -40" temperature="867.5209650012905" universe="3"/>
+  <cell id="27" material="16" name="moderator3" region="4 39 -40" temperature="564.6884615384615" universe="4"/>
+  <cell id="28" material="16" name="guide moderator3" region="6 39 -40" temperature="564.6884615384615" universe="5"/>
+  <cell id="29" material="16" name="inner guide moderator no CR3" region="-5 39 -40" temperature="564.6884615384615" universe="6"/>
+  <cell id="30" material="16" name="inner guide moderator w CR3" region="-5 8 39 -40" temperature="564.6884615384615" universe="7"/>
+  <cell id="31" material="17" name="UO2L4" region="-1 40 -41" temperature="921.6675956610306" universe="1"/>
+  <cell id="32" material="18" name="UO2M4" region="-1 40 -41" temperature="921.6675956610306" universe="2"/>
+  <cell id="33" material="19" name="UO2H4" region="-1 40 -41" temperature="921.6675956610306" universe="3"/>
+  <cell id="34" material="20" name="moderator4" region="4 40 -41" temperature="565.2012820512821" universe="4"/>
+  <cell id="35" material="20" name="guide moderator4" region="6 40 -41" temperature="565.2012820512821" universe="5"/>
+  <cell id="36" material="20" name="inner guide moderator no CR4" region="-5 40 -41" temperature="565.2012820512821" universe="6"/>
+  <cell id="37" material="20" name="inner guide moderator w CR4" region="-5 8 40 -41" temperature="565.2012820512821" universe="7"/>
+  <cell id="38" material="21" name="UO2L5" region="-1 41 -42" temperature="974.3766269020525" universe="1"/>
+  <cell id="39" material="22" name="UO2M5" region="-1 41 -42" temperature="974.3766269020525" universe="2"/>
+  <cell id="40" material="23" name="UO2H5" region="-1 41 -42" temperature="974.3766269020525" universe="3"/>
+  <cell id="41" material="24" name="moderator5" region="4 41 -42" temperature="565.7141025641025" universe="4"/>
+  <cell id="42" material="24" name="guide moderator5" region="6 41 -42" temperature="565.7141025641025" universe="5"/>
+  <cell id="43" material="24" name="inner guide moderator no CR5" region="-5 41 -42" temperature="565.7141025641025" universe="6"/>
+  <cell id="44" material="24" name="inner guide moderator w CR5" region="-5 8 41 -42" temperature="565.7141025641025" universe="7"/>
+  <cell id="45" material="25" name="UO2L6" region="-1 42 -43" temperature="1025.306220430638" universe="1"/>
+  <cell id="46" material="26" name="UO2M6" region="-1 42 -43" temperature="1025.306220430638" universe="2"/>
+  <cell id="47" material="27" name="UO2H6" region="-1 42 -43" temperature="1025.306220430638" universe="3"/>
+  <cell id="48" material="28" name="moderator6" region="4 42 -43" temperature="566.2269230769231" universe="4"/>
+  <cell id="49" material="28" name="guide moderator6" region="6 42 -43" temperature="566.2269230769231" universe="5"/>
+  <cell id="50" material="28" name="inner guide moderator no CR6" region="-5 42 -43" temperature="566.2269230769231" universe="6"/>
+  <cell id="51" material="28" name="inner guide moderator w CR6" region="-5 8 42 -43" temperature="566.2269230769231" universe="7"/>
+  <cell id="52" material="29" name="UO2L7" region="-1 43 -44" temperature="1074.1260782894608" universe="1"/>
+  <cell id="53" material="30" name="UO2M7" region="-1 43 -44" temperature="1074.1260782894608" universe="2"/>
+  <cell id="54" material="31" name="UO2H7" region="-1 43 -44" temperature="1074.1260782894608" universe="3"/>
+  <cell id="55" material="32" name="moderator7" region="4 43 -44" temperature="566.7397435897435" universe="4"/>
+  <cell id="56" material="32" name="guide moderator7" region="6 43 -44" temperature="566.7397435897435" universe="5"/>
+  <cell id="57" material="32" name="inner guide moderator no CR7" region="-5 43 -44" temperature="566.7397435897435" universe="6"/>
+  <cell id="58" material="32" name="inner guide moderator w CR7" region="-5 8 43 -44" temperature="566.7397435897435" universe="7"/>
+  <cell id="59" material="33" name="UO2L8" region="-1 44 -45" temperature="1120.5195849665852" universe="1"/>
+  <cell id="60" material="34" name="UO2M8" region="-1 44 -45" temperature="1120.5195849665852" universe="2"/>
+  <cell id="61" material="35" name="UO2H8" region="-1 44 -45" temperature="1120.5195849665852" universe="3"/>
+  <cell id="62" material="36" name="moderator8" region="4 44 -45" temperature="567.2525641025641" universe="4"/>
+  <cell id="63" material="36" name="guide moderator8" region="6 44 -45" temperature="567.2525641025641" universe="5"/>
+  <cell id="64" material="36" name="inner guide moderator no CR8" region="-5 44 -45" temperature="567.2525641025641" universe="6"/>
+  <cell id="65" material="36" name="inner guide moderator w CR8" region="-5 8 44 -45" temperature="567.2525641025641" universe="7"/>
+  <cell id="66" material="37" name="UO2L9" region="-1 45 -46" temperature="1164.1858607685565" universe="1"/>
+  <cell id="67" material="38" name="UO2M9" region="-1 45 -46" temperature="1164.1858607685565" universe="2"/>
+  <cell id="68" material="39" name="UO2H9" region="-1 45 -46" temperature="1164.1858607685565" universe="3"/>
+  <cell id="69" material="40" name="moderator9" region="4 45 -46 -11 10 -13 12" temperature="567.7653846153846" universe="4"/>
+  <cell id="70" material="40" name="guide moderator9" region="6 45 -46 -11 10 -13 12" temperature="567.7653846153846" universe="5"/>
+  <cell id="71" material="162" name="spacer9" region="-15 14 -17 16 (11 | -10 | 13 | -12) 45 -46" universe="4"/>
+  <cell id="72" material="162" name="g spacer9" region="-15 14 -17 16 (11 | -10 | 13 | -12) 45 -46" universe="5"/>
+  <cell id="73" material="40" name="inner guide moderator no CR9" region="-5 45 -46" temperature="567.7653846153846" universe="6"/>
+  <cell id="74" material="40" name="inner guide moderator w CR9" region="-5 8 45 -46" temperature="567.7653846153846" universe="7"/>
+  <cell id="75" material="41" name="UO2L10" region="-1 46 -47" temperature="1204.84171314067" universe="1"/>
+  <cell id="76" material="42" name="UO2M10" region="-1 46 -47" temperature="1204.84171314067" universe="2"/>
+  <cell id="77" material="43" name="UO2H10" region="-1 46 -47" temperature="1204.84171314067" universe="3"/>
+  <cell id="78" material="44" name="moderator10" region="4 46 -47" temperature="568.2782051282051" universe="4"/>
+  <cell id="79" material="44" name="guide moderator10" region="6 46 -47" temperature="568.2782051282051" universe="5"/>
+  <cell id="80" material="44" name="inner guide moderator no CR10" region="-5 46 -47" temperature="568.2782051282051" universe="6"/>
+  <cell id="81" material="44" name="inner guide moderator w CR10" region="-5 8 46 -47" temperature="568.2782051282051" universe="7"/>
+  <cell id="82" material="45" name="UO2L11" region="-1 47 -48" temperature="1242.2234732793581" universe="1"/>
+  <cell id="83" material="46" name="UO2M11" region="-1 47 -48" temperature="1242.2234732793581" universe="2"/>
+  <cell id="84" material="47" name="UO2H11" region="-1 47 -48" temperature="1242.2234732793581" universe="3"/>
+  <cell id="85" material="48" name="moderator11" region="4 47 -48" temperature="568.7910256410256" universe="4"/>
+  <cell id="86" material="48" name="guide moderator11" region="6 47 -48" temperature="568.7910256410256" universe="5"/>
+  <cell id="87" material="48" name="inner guide moderator no CR11" region="-5 47 -48" temperature="568.7910256410256" universe="6"/>
+  <cell id="88" material="48" name="inner guide moderator w CR11" region="-5 8 47 -48" temperature="568.7910256410256" universe="7"/>
+  <cell id="89" material="49" name="UO2L12" region="-1 48 -49" temperature="1276.0887061255594" universe="1"/>
+  <cell id="90" material="50" name="UO2M12" region="-1 48 -49" temperature="1276.0887061255594" universe="2"/>
+  <cell id="91" material="51" name="UO2H12" region="-1 48 -49" temperature="1276.0887061255594" universe="3"/>
+  <cell id="92" material="52" name="moderator12" region="4 48 -49" temperature="569.3038461538462" universe="4"/>
+  <cell id="93" material="52" name="guide moderator12" region="6 48 -49" temperature="569.3038461538462" universe="5"/>
+  <cell id="94" material="52" name="inner guide moderator no CR12" region="-5 48 -49" temperature="569.3038461538462" universe="6"/>
+  <cell id="95" material="52" name="inner guide moderator w CR12" region="-5 8 48 -49" temperature="569.3038461538462" universe="7"/>
+  <cell id="96" material="53" name="UO2L13" region="-1 49 -50" temperature="1306.217782649107" universe="1"/>
+  <cell id="97" material="54" name="UO2M13" region="-1 49 -50" temperature="1306.217782649107" universe="2"/>
+  <cell id="98" material="55" name="UO2H13" region="-1 49 -50" temperature="1306.217782649107" universe="3"/>
+  <cell id="99" material="56" name="moderator13" region="4 49 -50" temperature="569.8166666666666" universe="4"/>
+  <cell id="100" material="56" name="guide moderator13" region="6 49 -50" temperature="569.8166666666666" universe="5"/>
+  <cell id="101" material="56" name="inner guide moderator no CR13" region="-5 49 -50" temperature="569.8166666666666" universe="6"/>
+  <cell id="102" material="56" name="inner guide moderator w CR13" region="-5 8 49 -50" temperature="569.8166666666666" universe="7"/>
+  <cell id="103" material="57" name="UO2L14" region="-1 50 -51" temperature="1332.4153042272676" universe="1"/>
+  <cell id="104" material="58" name="UO2M14" region="-1 50 -51" temperature="1332.4153042272676" universe="2"/>
+  <cell id="105" material="59" name="UO2H14" region="-1 50 -51" temperature="1332.4153042272676" universe="3"/>
+  <cell id="106" material="60" name="moderator14" region="4 50 -51" temperature="570.3294871794872" universe="4"/>
+  <cell id="107" material="60" name="guide moderator14" region="6 50 -51" temperature="570.3294871794872" universe="5"/>
+  <cell id="108" material="60" name="inner guide moderator no CR14" region="-5 50 -51" temperature="570.3294871794872" universe="6"/>
+  <cell id="109" material="60" name="inner guide moderator w CR14" region="-5 8 50 -51" temperature="570.3294871794872" universe="7"/>
+  <cell id="110" material="61" name="UO2L15" region="-1 51 -52" temperature="1354.5113698797904" universe="1"/>
+  <cell id="111" material="62" name="UO2M15" region="-1 51 -52" temperature="1354.5113698797904" universe="2"/>
+  <cell id="112" material="63" name="UO2H15" region="-1 51 -52" temperature="1354.5113698797904" universe="3"/>
+  <cell id="113" material="64" name="moderator15" region="4 51 -52" temperature="570.8423076923077" universe="4"/>
+  <cell id="114" material="64" name="guide moderator15" region="6 51 -52" temperature="570.8423076923077" universe="5"/>
+  <cell id="115" material="64" name="inner guide moderator no CR15" region="-5 51 -52" temperature="570.8423076923077" universe="6"/>
+  <cell id="116" material="64" name="inner guide moderator w CR15" region="-5 8 51 -52" temperature="570.8423076923077" universe="7"/>
+  <cell id="117" material="65" name="UO2L16" region="-1 52 -53" temperature="1372.3626781419607" universe="1"/>
+  <cell id="118" material="66" name="UO2M16" region="-1 52 -53" temperature="1372.3626781419607" universe="2"/>
+  <cell id="119" material="67" name="UO2H16" region="-1 52 -53" temperature="1372.3626781419607" universe="3"/>
+  <cell id="120" material="68" name="moderator16" region="4 52 -53" temperature="571.3551282051282" universe="4"/>
+  <cell id="121" material="68" name="guide moderator16" region="6 52 -53" temperature="571.3551282051282" universe="5"/>
+  <cell id="122" material="68" name="inner guide moderator no CR16" region="-5 52 -53" temperature="571.3551282051282" universe="6"/>
+  <cell id="123" material="68" name="inner guide moderator w CR16" region="-5 8 52 -53" temperature="571.3551282051282" universe="7"/>
+  <cell id="124" material="69" name="UO2L17" region="-1 53 -54" temperature="1385.8534564295874" universe="1"/>
+  <cell id="125" material="70" name="UO2M17" region="-1 53 -54" temperature="1385.8534564295874" universe="2"/>
+  <cell id="126" material="71" name="UO2H17" region="-1 53 -54" temperature="1385.8534564295874" universe="3"/>
+  <cell id="127" material="72" name="moderator17" region="4 53 -54" temperature="571.8679487179487" universe="4"/>
+  <cell id="128" material="72" name="guide moderator17" region="6 53 -54" temperature="571.8679487179487" universe="5"/>
+  <cell id="129" material="72" name="inner guide moderator no CR17" region="-5 53 -54" temperature="571.8679487179487" universe="6"/>
+  <cell id="130" material="72" name="inner guide moderator w CR17" region="-5 8 53 -54" temperature="571.8679487179487" universe="7"/>
+  <cell id="131" material="73" name="UO2L18" region="-1 54 -55" temperature="1394.8962118686377" universe="1"/>
+  <cell id="132" material="74" name="UO2M18" region="-1 54 -55" temperature="1394.8962118686377" universe="2"/>
+  <cell id="133" material="75" name="UO2H18" region="-1 54 -55" temperature="1394.8962118686377" universe="3"/>
+  <cell id="134" material="76" name="moderator18" region="4 54 -55" temperature="572.3807692307693" universe="4"/>
+  <cell id="135" material="76" name="guide moderator18" region="6 54 -55" temperature="572.3807692307693" universe="5"/>
+  <cell id="136" material="76" name="inner guide moderator no CR18" region="-5 54 -55" temperature="572.3807692307693" universe="6"/>
+  <cell id="137" material="76" name="inner guide moderator w CR18" region="-5 8 54 -55" temperature="572.3807692307693" universe="7"/>
+  <cell id="138" material="77" name="UO2L19" region="-1 55 -56" temperature="1399.4322987200987" universe="1"/>
+  <cell id="139" material="78" name="UO2M19" region="-1 55 -56" temperature="1399.4322987200987" universe="2"/>
+  <cell id="140" material="79" name="UO2H19" region="-1 55 -56" temperature="1399.4322987200987" universe="3"/>
+  <cell id="141" material="80" name="moderator19" region="4 55 -56 -11 10 -13 12" temperature="572.8935897435897" universe="4"/>
+  <cell id="142" material="80" name="guide moderator19" region="6 55 -56 -11 10 -13 12" temperature="572.8935897435897" universe="5"/>
+  <cell id="143" material="162" name="spacer19" region="-15 14 -17 16 (11 | -10 | 13 | -12) 55 -56" universe="4"/>
+  <cell id="144" material="162" name="g spacer19" region="-15 14 -17 16 (11 | -10 | 13 | -12) 55 -56" universe="5"/>
+  <cell id="145" material="80" name="inner guide moderator no CR19" region="-5 55 -56" temperature="572.8935897435897" universe="6"/>
+  <cell id="146" material="80" name="inner guide moderator w CR19" region="-5 8 55 -56" temperature="572.8935897435897" universe="7"/>
+  <cell id="147" material="81" name="UO2L20" region="-1 56 -57" temperature="1399.4322987200987" universe="1"/>
+  <cell id="148" material="82" name="UO2M20" region="-1 56 -57" temperature="1399.4322987200987" universe="2"/>
+  <cell id="149" material="83" name="UO2H20" region="-1 56 -57" temperature="1399.4322987200987" universe="3"/>
+  <cell id="150" material="84" name="moderator20" region="4 56 -57" temperature="573.4064102564103" universe="4"/>
+  <cell id="151" material="84" name="guide moderator20" region="6 56 -57" temperature="573.4064102564103" universe="5"/>
+  <cell id="152" material="84" name="inner guide moderator no CR20" region="-5 56 -57" temperature="573.4064102564103" universe="6"/>
+  <cell id="153" material="84" name="inner guide moderator w CR20" region="-5 8 56 -57" temperature="573.4064102564103" universe="7"/>
+  <cell id="154" material="85" name="UO2L21" region="-1 57 -58" temperature="1394.8962118686377" universe="1"/>
+  <cell id="155" material="86" name="UO2M21" region="-1 57 -58" temperature="1394.8962118686377" universe="2"/>
+  <cell id="156" material="87" name="UO2H21" region="-1 57 -58" temperature="1394.8962118686377" universe="3"/>
+  <cell id="157" material="88" name="moderator21" region="4 57 -58" temperature="573.9192307692307" universe="4"/>
+  <cell id="158" material="88" name="guide moderator21" region="6 57 -58" temperature="573.9192307692307" universe="5"/>
+  <cell id="159" material="88" name="inner guide moderator no CR21" region="-5 57 -58" temperature="573.9192307692307" universe="6"/>
+  <cell id="160" material="88" name="inner guide moderator w CR21" region="-5 8 57 -58" temperature="573.9192307692307" universe="7"/>
+  <cell id="161" material="89" name="UO2L22" region="-1 58 -59" temperature="1385.8534564295874" universe="1"/>
+  <cell id="162" material="90" name="UO2M22" region="-1 58 -59" temperature="1385.8534564295874" universe="2"/>
+  <cell id="163" material="91" name="UO2H22" region="-1 58 -59" temperature="1385.8534564295874" universe="3"/>
+  <cell id="164" material="92" name="moderator22" region="4 58 -59" temperature="574.4320512820512" universe="4"/>
+  <cell id="165" material="92" name="guide moderator22" region="6 58 -59" temperature="574.4320512820512" universe="5"/>
+  <cell id="166" material="92" name="inner guide moderator no CR22" region="-5 58 -59" temperature="574.4320512820512" universe="6"/>
+  <cell id="167" material="92" name="inner guide moderator w CR22" region="-5 8 58 -59" temperature="574.4320512820512" universe="7"/>
+  <cell id="168" material="93" name="UO2L23" region="-1 59 -60" temperature="1372.3626781419607" universe="1"/>
+  <cell id="169" material="94" name="UO2M23" region="-1 59 -60" temperature="1372.3626781419607" universe="2"/>
+  <cell id="170" material="95" name="UO2H23" region="-1 59 -60" temperature="1372.3626781419607" universe="3"/>
+  <cell id="171" material="96" name="moderator23" region="4 59 -60" temperature="574.9448717948718" universe="4"/>
+  <cell id="172" material="96" name="guide moderator23" region="6 59 -60" temperature="574.9448717948718" universe="5"/>
+  <cell id="173" material="96" name="inner guide moderator no CR23" region="-5 59 -60" temperature="574.9448717948718" universe="6"/>
+  <cell id="174" material="96" name="inner guide moderator w CR23" region="-5 8 59 -60" temperature="574.9448717948718" universe="7"/>
+  <cell id="175" material="97" name="UO2L24" region="-1 60 -61" temperature="1354.5113698797904" universe="1"/>
+  <cell id="176" material="98" name="UO2M24" region="-1 60 -61" temperature="1354.5113698797904" universe="2"/>
+  <cell id="177" material="99" name="UO2H24" region="-1 60 -61" temperature="1354.5113698797904" universe="3"/>
+  <cell id="178" material="100" name="moderator24" region="4 60 -61" temperature="575.4576923076922" universe="4"/>
+  <cell id="179" material="100" name="guide moderator24" region="6 60 -61" temperature="575.4576923076922" universe="5"/>
+  <cell id="180" material="100" name="inner guide moderator no CR24" region="-5 60 -61" temperature="575.4576923076922" universe="6"/>
+  <cell id="181" material="100" name="inner guide moderator w CR24" region="-5 8 60 -61" temperature="575.4576923076922" universe="7"/>
+  <cell id="182" material="101" name="UO2L25" region="-1 61 -62" temperature="1332.4153042272676" universe="1"/>
+  <cell id="183" material="102" name="UO2M25" region="-1 61 -62" temperature="1332.4153042272676" universe="2"/>
+  <cell id="184" material="103" name="UO2H25" region="-1 61 -62" temperature="1332.4153042272676" universe="3"/>
+  <cell id="185" material="104" name="moderator25" region="4 61 -62" temperature="575.9705128205128" universe="4"/>
+  <cell id="186" material="104" name="guide moderator25" region="6 61 -62" temperature="575.9705128205128" universe="5"/>
+  <cell id="187" material="104" name="inner guide moderator no CR25" region="-5 61 -62" temperature="575.9705128205128" universe="6"/>
+  <cell id="188" material="104" name="inner guide moderator w CR25" region="-5 8 61 -62" temperature="575.9705128205128" universe="7"/>
+  <cell id="189" material="105" name="UO2L26" region="-1 62 -63" temperature="1306.217782649107" universe="1"/>
+  <cell id="190" material="106" name="UO2M26" region="-1 62 -63" temperature="1306.217782649107" universe="2"/>
+  <cell id="191" material="107" name="UO2H26" region="-1 62 -63" temperature="1306.217782649107" universe="3"/>
+  <cell id="192" material="108" name="moderator26" region="4 62 -63" temperature="576.4833333333333" universe="4"/>
+  <cell id="193" material="108" name="guide moderator26" region="6 62 -63" temperature="576.4833333333333" universe="5"/>
+  <cell id="194" material="108" name="inner guide moderator no CR26" region="-5 62 -63" temperature="576.4833333333333" universe="6"/>
+  <cell id="195" material="108" name="inner guide moderator w CR26" region="-5 8 62 -63" temperature="576.4833333333333" universe="7"/>
+  <cell id="196" material="109" name="UO2L27" region="-1 63 -64" temperature="1276.0887061255594" universe="1"/>
+  <cell id="197" material="110" name="UO2M27" region="-1 63 -64" temperature="1276.0887061255594" universe="2"/>
+  <cell id="198" material="111" name="UO2H27" region="-1 63 -64" temperature="1276.0887061255594" universe="3"/>
+  <cell id="199" material="112" name="moderator27" region="4 63 -64" temperature="576.9961538461538" universe="4"/>
+  <cell id="200" material="112" name="guide moderator27" region="6 63 -64" temperature="576.9961538461538" universe="5"/>
+  <cell id="201" material="112" name="inner guide moderator no CR27" region="-5 63 -64" temperature="576.9961538461538" universe="6"/>
+  <cell id="202" material="112" name="inner guide moderator w CR27" region="-5 8 63 -64" temperature="576.9961538461538" universe="7"/>
+  <cell id="203" material="113" name="UO2L28" region="-1 64 -65" temperature="1242.2234732793581" universe="1"/>
+  <cell id="204" material="114" name="UO2M28" region="-1 64 -65" temperature="1242.2234732793581" universe="2"/>
+  <cell id="205" material="115" name="UO2H28" region="-1 64 -65" temperature="1242.2234732793581" universe="3"/>
+  <cell id="206" material="116" name="moderator28" region="4 64 -65" temperature="577.5089743589743" universe="4"/>
+  <cell id="207" material="116" name="guide moderator28" region="6 64 -65" temperature="577.5089743589743" universe="5"/>
+  <cell id="208" material="116" name="inner guide moderator no CR28" region="-5 64 -65" temperature="577.5089743589743" universe="6"/>
+  <cell id="209" material="116" name="inner guide moderator w CR28" region="-5 8 64 -65" temperature="577.5089743589743" universe="7"/>
+  <cell id="210" material="117" name="UO2L29" region="-1 65 -66" temperature="1204.84171314067" universe="1"/>
+  <cell id="211" material="118" name="UO2M29" region="-1 65 -66" temperature="1204.84171314067" universe="2"/>
+  <cell id="212" material="119" name="UO2H29" region="-1 65 -66" temperature="1204.84171314067" universe="3"/>
+  <cell id="213" material="120" name="moderator29" region="4 65 -66 -11 10 -13 12" temperature="578.0217948717949" universe="4"/>
+  <cell id="214" material="120" name="guide moderator29" region="6 65 -66 -11 10 -13 12" temperature="578.0217948717949" universe="5"/>
+  <cell id="215" material="162" name="spacer29" region="-15 14 -17 16 (11 | -10 | 13 | -12) 65 -66" universe="4"/>
+  <cell id="216" material="162" name="g spacer29" region="-15 14 -17 16 (11 | -10 | 13 | -12) 65 -66" universe="5"/>
+  <cell id="217" material="120" name="inner guide moderator no CR29" region="-5 65 -66" temperature="578.0217948717949" universe="6"/>
+  <cell id="218" material="120" name="inner guide moderator w CR29" region="-5 8 65 -66" temperature="578.0217948717949" universe="7"/>
+  <cell id="219" material="121" name="UO2L30" region="-1 66 -67" temperature="1164.1858607685567" universe="1"/>
+  <cell id="220" material="122" name="UO2M30" region="-1 66 -67" temperature="1164.1858607685567" universe="2"/>
+  <cell id="221" material="123" name="UO2H30" region="-1 66 -67" temperature="1164.1858607685567" universe="3"/>
+  <cell id="222" material="124" name="moderator30" region="4 66 -67" temperature="578.5346153846153" universe="4"/>
+  <cell id="223" material="124" name="guide moderator30" region="6 66 -67" temperature="578.5346153846153" universe="5"/>
+  <cell id="224" material="124" name="inner guide moderator no CR30" region="-5 66 -67" temperature="578.5346153846153" universe="6"/>
+  <cell id="225" material="124" name="inner guide moderator w CR30" region="-5 8 66 -67" temperature="578.5346153846153" universe="7"/>
+  <cell id="226" material="125" name="UO2L31" region="-1 67 -68" temperature="1120.5195849665854" universe="1"/>
+  <cell id="227" material="126" name="UO2M31" region="-1 67 -68" temperature="1120.5195849665854" universe="2"/>
+  <cell id="228" material="127" name="UO2H31" region="-1 67 -68" temperature="1120.5195849665854" universe="3"/>
+  <cell id="229" material="128" name="moderator31" region="4 67 -68" temperature="579.0474358974359" universe="4"/>
+  <cell id="230" material="128" name="guide moderator31" region="6 67 -68" temperature="579.0474358974359" universe="5"/>
+  <cell id="231" material="128" name="inner guide moderator no CR31" region="-5 67 -68" temperature="579.0474358974359" universe="6"/>
+  <cell id="232" material="128" name="inner guide moderator w CR31" region="-5 8 67 -68" temperature="579.0474358974359" universe="7"/>
+  <cell id="233" material="129" name="UO2L32" region="-1 68 -69" temperature="1074.1260782894608" universe="1"/>
+  <cell id="234" material="130" name="UO2M32" region="-1 68 -69" temperature="1074.1260782894608" universe="2"/>
+  <cell id="235" material="131" name="UO2H32" region="-1 68 -69" temperature="1074.1260782894608" universe="3"/>
+  <cell id="236" material="132" name="moderator32" region="4 68 -69" temperature="579.5602564102564" universe="4"/>
+  <cell id="237" material="132" name="guide moderator32" region="6 68 -69" temperature="579.5602564102564" universe="5"/>
+  <cell id="238" material="132" name="inner guide moderator no CR32" region="-5 68 -69" temperature="579.5602564102564" universe="6"/>
+  <cell id="239" material="132" name="inner guide moderator w CR32" region="-5 8 68 -69" temperature="579.5602564102564" universe="7"/>
+  <cell id="240" material="133" name="UO2L33" region="-1 69 -70" temperature="1025.306220430638" universe="1"/>
+  <cell id="241" material="134" name="UO2M33" region="-1 69 -70" temperature="1025.306220430638" universe="2"/>
+  <cell id="242" material="135" name="UO2H33" region="-1 69 -70" temperature="1025.306220430638" universe="3"/>
+  <cell id="243" material="136" name="moderator33" region="4 69 -70" temperature="580.0730769230769" universe="4"/>
+  <cell id="244" material="136" name="guide moderator33" region="6 69 -70" temperature="580.0730769230769" universe="5"/>
+  <cell id="245" material="136" name="inner guide moderator no CR33" region="-5 69 -70" temperature="580.0730769230769" universe="6"/>
+  <cell id="246" material="136" name="inner guide moderator w CR33" region="-5 8 69 -70" temperature="580.0730769230769" universe="7"/>
+  <cell id="247" material="137" name="UO2L34" region="-1 70 -71" temperature="974.3766269020525" universe="1"/>
+  <cell id="248" material="138" name="UO2M34" region="-1 70 -71" temperature="974.3766269020525" universe="2"/>
+  <cell id="249" material="139" name="UO2H34" region="-1 70 -71" temperature="974.3766269020525" universe="3"/>
+  <cell id="250" material="140" name="moderator34" region="4 70 -71" temperature="580.5858974358974" universe="4"/>
+  <cell id="251" material="140" name="guide moderator34" region="6 70 -71" temperature="580.5858974358974" universe="5"/>
+  <cell id="252" material="140" name="inner guide moderator no CR34" region="-5 70 -71" temperature="580.5858974358974" universe="6"/>
+  <cell id="253" material="140" name="inner guide moderator w CR34" region="-5 8 70 -71" temperature="580.5858974358974" universe="7"/>
+  <cell id="254" material="141" name="UO2L35" region="-1 71 -72" temperature="921.667595661031" universe="1"/>
+  <cell id="255" material="142" name="UO2M35" region="-1 71 -72" temperature="921.667595661031" universe="2"/>
+  <cell id="256" material="143" name="UO2H35" region="-1 71 -72" temperature="921.667595661031" universe="3"/>
+  <cell id="257" material="144" name="moderator35" region="4 71 -72" temperature="581.0987179487179" universe="4"/>
+  <cell id="258" material="144" name="guide moderator35" region="6 71 -72" temperature="581.0987179487179" universe="5"/>
+  <cell id="259" material="144" name="inner guide moderator no CR35" region="-5 71 -72" temperature="581.0987179487179" universe="6"/>
+  <cell id="260" material="144" name="inner guide moderator w CR35" region="-5 8 71 -72" temperature="581.0987179487179" universe="7"/>
+  <cell id="261" material="145" name="UO2L36" region="-1 72 -73" temperature="867.5209650012906" universe="1"/>
+  <cell id="262" material="146" name="UO2M36" region="-1 72 -73" temperature="867.5209650012906" universe="2"/>
+  <cell id="263" material="147" name="UO2H36" region="-1 72 -73" temperature="867.5209650012906" universe="3"/>
+  <cell id="264" material="148" name="moderator36" region="4 72 -73" temperature="581.6115384615384" universe="4"/>
+  <cell id="265" material="148" name="guide moderator36" region="6 72 -73" temperature="581.6115384615384" universe="5"/>
+  <cell id="266" material="148" name="inner guide moderator no CR36" region="-5 72 -73" temperature="581.6115384615384" universe="6"/>
+  <cell id="267" material="148" name="inner guide moderator w CR36" region="-5 8 72 -73" temperature="581.6115384615384" universe="7"/>
+  <cell id="268" material="149" name="UO2L37" region="-1 73 -74" temperature="812.2878966004323" universe="1"/>
+  <cell id="269" material="150" name="UO2M37" region="-1 73 -74" temperature="812.2878966004323" universe="2"/>
+  <cell id="270" material="151" name="UO2H37" region="-1 73 -74" temperature="812.2878966004323" universe="3"/>
+  <cell id="271" material="152" name="moderator37" region="4 73 -74" temperature="582.124358974359" universe="4"/>
+  <cell id="272" material="152" name="guide moderator37" region="6 73 -74" temperature="582.124358974359" universe="5"/>
+  <cell id="273" material="152" name="inner guide moderator no CR37" region="-5 73 -74" temperature="582.124358974359" universe="6"/>
+  <cell id="274" material="152" name="inner guide moderator w CR37" region="-5 8 73 -74" temperature="582.124358974359" universe="7"/>
+  <cell id="275" material="153" name="UO2L38" region="-1 74 -75" temperature="756.3265981017082" universe="1"/>
+  <cell id="276" material="154" name="UO2M38" region="-1 74 -75" temperature="756.3265981017082" universe="2"/>
+  <cell id="277" material="155" name="UO2H38" region="-1 74 -75" temperature="756.3265981017082" universe="3"/>
+  <cell id="278" material="156" name="moderator38" region="4 74 -75" temperature="582.6371794871794" universe="4"/>
+  <cell id="279" material="156" name="guide moderator38" region="6 74 -75" temperature="582.6371794871794" universe="5"/>
+  <cell id="280" material="156" name="inner guide moderator no CR38" region="-5 74 -75" temperature="582.6371794871794" universe="6"/>
+  <cell id="281" material="156" name="inner guide moderator w CR38" region="-5 8 74 -75" temperature="582.6371794871794" universe="7"/>
+  <cell id="282" material="157" name="UO2L39" region="-1 75 -76" temperature="700.0" universe="1"/>
+  <cell id="283" material="158" name="UO2M39" region="-1 75 -76" temperature="700.0" universe="2"/>
+  <cell id="284" material="159" name="UO2H39" region="-1 75 -76" temperature="700.0" universe="3"/>
+  <cell id="285" material="160" name="moderator39" region="4 75 -76 -11 10 -13 12" temperature="583.15" universe="4"/>
+  <cell id="286" material="160" name="guide moderator39" region="6 75 -76 -11 10 -13 12" temperature="583.15" universe="5"/>
+  <cell id="287" material="162" name="spacer39" region="-15 14 -17 16 (11 | -10 | 13 | -12) 75 -76" universe="4"/>
+  <cell id="288" material="162" name="g spacer39" region="-15 14 -17 16 (11 | -10 | 13 | -12) 75 -76" universe="5"/>
+  <cell id="289" material="160" name="inner guide moderator no CR39" region="-5 75 -76" temperature="583.15" universe="6"/>
+  <cell id="290" material="160" name="inner guide moderator w CR39" region="-5 8 75 -76" temperature="583.15" universe="7"/>
+  <cell fill="1" id="291" name="UO2L" region="-1" universe="10"/>
+  <cell fill="2" id="292" name="UO2M" region="-1" universe="11"/>
+  <cell fill="3" id="293" name="UO2H" region="-1" universe="12"/>
+  <cell fill="3" id="294" name="UO2HBP" region="-1" universe="13"/>
+  <cell fill="4" id="295" name="moderatorL" region="4" universe="10"/>
+  <cell fill="4" id="296" name="moderatorM" region="4" universe="11"/>
+  <cell fill="4" id="297" name="moderatorH" region="4" universe="12"/>
+  <cell fill="4" id="298" name="moderatorHBP" region="4" universe="13"/>
+  <cell fill="5" id="299" name="g_moderator1" region="6" universe="14"/>
+  <cell fill="5" id="300" name="g_moderator2" region="6" universe="15"/>
+  <cell fill="6" id="301" name="inner guide moderator no CR" region="-5" universe="14"/>
+  <cell fill="7" id="302" name="inner guide moderator w CR" region="-5 8" universe="15"/>
+  <cell id="303" material="161" name="IFBA" region="-2 1" universe="13"/>
+  <cell id="304" material="165" name="CRboron" region="-7" universe="15"/>
+  <cell id="305" material="167" name="gapL" region="-3 1" universe="10"/>
+  <cell id="306" material="167" name="gapM" region="-3 1" universe="11"/>
+  <cell id="307" material="167" name="gapH" region="-3 1" universe="12"/>
+  <cell id="308" material="167" name="gapHBP" region="-3 2" universe="13"/>
+  <cell id="309" material="164" name="cladCR" region="-8 7" universe="15"/>
+  <cell id="310" material="162" name="cladL" region="-4 3" universe="10"/>
+  <cell id="311" material="162" name="cladM" region="-4 3" universe="11"/>
+  <cell id="312" material="162" name="cladH" region="-4 3" universe="12"/>
+  <cell id="313" material="162" name="cladHBP" region="-4 3" universe="13"/>
+  <cell id="314" material="162" name="guide tube" region="5 -6" universe="14"/>
+  <cell id="315" material="162" name="guide tube CR" region="5 -6" universe="15"/>
+  <cell id="316" material="84" name="water cell" universe="16"/>
+  <cell id="317" material="164" name="inconel cell" universe="17"/>
+  <cell fill="31" id="318" name="UO2L Unrodded Assembly" universe="18"/>
+  <cell fill="33" id="320" name="UO2H Unrodded Assembly" universe="20"/>
+  <cell fill="34" id="321" name="UO2HBP1 Unrodded Assembly" universe="21"/>
+  <cell fill="35" id="322" name="UO2HBP2 Unrodded Assembly" universe="22"/>
+  <cell fill="41" id="325" name="UO2HBP2SW rodded Assembly" universe="26"/>
+  <cell fill="38" id="326" name="UO2M rodded Assembly" universe="23"/>
+  <cell fill="40" id="327" name="UO2M Lrodded Assembly" universe="27"/>
+  <cell fill="39" id="328" name="UO2M Mrodded Assembly" universe="28"/>
+  <cell fill="43" id="330" name="Baffle Assembly" universe="30"/>
+  <cell fill="44" id="331" name="Core" region="-26 -24 25 34 35" universe="9"/>
+  <cell id="332" material="4" name="lower plenum" region="22 -25 -26 34 35" universe="9"/>
+  <cell id="333" material="160" name="upper plenum" region="-23 24 -26 34 35" universe="9"/>
+  <cell id="334" material="164" name="core barrel" region="-27 26 -23 22 34 35" universe="9"/>
+  <cell id="335" material="4" name="downcomer" region="-28 27 -23 22 34 35" universe="9"/>
+  <cell id="336" material="164" name="rpv" region="-29 28 -23 22 34 35" universe="9"/>
+  <lattice id="31" name="UO2L Unrodded Assembly">
+    <pitch>1.26 1.26</pitch>
+    <dimension>17 17</dimension>
+    <lower_left>-10.71 -10.71</lower_left>
+    <universes>
+10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 
+10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 
+10 10 10 10 10 14 10 10 14 10 10 14 10 10 10 10 10 
+10 10 10 14 10 10 10 10 10 10 10 10 10 14 10 10 10 
+10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 
+10 10 14 10 10 14 10 10 14 10 10 14 10 10 14 10 10 
+10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 
+10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 
+10 10 14 10 10 14 10 10 14 10 10 14 10 10 14 10 10 
+10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 
+10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 
+10 10 14 10 10 14 10 10 14 10 10 14 10 10 14 10 10 
+10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 
+10 10 10 14 10 10 10 10 10 10 10 10 10 14 10 10 10 
+10 10 10 10 10 14 10 10 14 10 10 14 10 10 10 10 10 
+10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 
+10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 </universes>
+  </lattice>
+  <lattice id="33" name="UO2H Unrodded Assembly">
+    <pitch>1.26 1.26</pitch>
+    <dimension>17 17</dimension>
+    <lower_left>-10.71 -10.71</lower_left>
+    <universes>
+12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 
+12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 
+12 12 12 12 12 14 12 12 14 12 12 14 12 12 12 12 12 
+12 12 12 14 12 12 12 12 12 12 12 12 12 14 12 12 12 
+12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 
+12 12 14 12 12 14 12 12 14 12 12 14 12 12 14 12 12 
+12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 
+12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 
+12 12 14 12 12 14 12 12 14 12 12 14 12 12 14 12 12 
+12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 
+12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 
+12 12 14 12 12 14 12 12 14 12 12 14 12 12 14 12 12 
+12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 
+12 12 12 14 12 12 12 12 12 12 12 12 12 14 12 12 12 
+12 12 12 12 12 14 12 12 14 12 12 14 12 12 12 12 12 
+12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 
+12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 </universes>
+  </lattice>
+  <lattice id="34" name="UO2HBP1 Unrodded Assembly">
+    <pitch>1.26 1.26</pitch>
+    <dimension>17 17</dimension>
+    <lower_left>-10.71 -10.71</lower_left>
+    <universes>
+13 13 12 12 12 12 12 12 12 12 12 12 12 12 12 13 13 
+13 12 12 12 12 13 12 12 13 12 12 13 12 12 12 12 13 
+12 12 12 13 13 14 13 13 14 13 13 14 13 13 12 12 12 
+12 12 13 14 12 13 12 12 13 12 12 13 12 14 13 12 12 
+12 12 13 12 12 13 12 12 13 12 12 13 12 12 13 12 12 
+12 13 14 13 13 14 13 13 14 13 13 14 13 13 14 13 12 
+12 12 13 12 12 13 12 12 13 12 12 13 12 12 13 12 12 
+12 12 13 12 12 13 12 12 13 12 12 13 12 12 13 12 12 
+12 13 14 13 13 14 13 13 14 13 13 14 13 13 14 13 12 
+12 12 13 12 12 13 12 12 13 12 12 13 12 12 13 12 12 
+12 12 13 12 12 13 12 12 13 12 12 13 12 12 13 12 12 
+12 13 14 13 13 14 13 13 14 13 13 14 13 13 14 13 12 
+12 12 13 12 12 13 12 12 13 12 12 13 12 12 13 12 12 
+12 12 13 14 12 13 12 12 13 12 12 13 12 14 13 12 12 
+12 12 12 13 13 14 13 13 14 13 13 14 13 13 12 12 12 
+13 12 12 12 12 13 12 12 13 12 12 13 12 12 12 12 13 
+13 13 12 12 12 12 12 12 12 12 12 12 12 12 12 13 13 </universes>
+  </lattice>
+  <lattice id="35" name="UO2HBP2 Unrodded Assembly">
+    <pitch>1.26 1.26</pitch>
+    <dimension>17 17</dimension>
+    <lower_left>-10.71 -10.71</lower_left>
+    <universes>
+13 13 12 12 12 12 12 12 12 12 12 12 12 12 12 13 13 
+13 12 12 12 12 13 12 12 13 12 12 13 12 12 12 12 13 
+12 12 12 13 13 14 12 13 14 13 12 14 13 13 12 12 12 
+12 12 13 14 12 12 12 12 12 12 12 12 12 14 13 12 12 
+12 12 13 12 12 13 12 12 13 12 12 13 12 12 13 12 12 
+12 13 14 12 13 14 12 13 14 13 12 14 13 12 14 13 12 
+12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 
+12 12 13 12 12 13 12 12 13 12 12 13 12 12 13 12 12 
+12 13 14 12 13 14 12 13 14 13 12 14 13 12 14 13 12 
+12 12 13 12 12 13 12 12 13 12 12 13 12 12 13 12 12 
+12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 
+12 13 14 12 13 14 12 13 14 13 12 14 13 12 14 13 12 
+12 12 13 12 12 13 12 12 13 12 12 13 12 12 13 12 12 
+12 12 13 14 12 12 12 12 12 12 12 12 12 14 13 12 12 
+12 12 12 13 13 14 12 13 14 13 12 14 13 13 12 12 12 
+13 12 12 12 12 13 12 12 13 12 12 13 12 12 12 12 13 
+13 13 12 12 12 12 12 12 12 12 12 12 12 12 12 13 13 </universes>
+  </lattice>
+  <lattice id="38" name="UO2M rodded Assembly">
+    <pitch>1.26 1.26</pitch>
+    <dimension>17 17</dimension>
+    <lower_left>-10.71 -10.71</lower_left>
+    <universes>
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 11 11 11 15 11 11 15 11 11 15 11 11 11 11 11 
+11 11 11 14 11 11 11 11 11 11 11 11 11 14 11 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 15 11 11 15 11 11 15 11 11 15 11 11 15 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 15 11 11 15 11 11 14 11 11 15 11 11 15 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 15 11 11 15 11 11 15 11 11 15 11 11 15 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 11 14 11 11 11 11 11 11 11 11 11 14 11 11 11 
+11 11 11 11 11 15 11 11 15 11 11 15 11 11 11 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 </universes>
+  </lattice>
+  <lattice id="39" name="UO2M Mrodded Assembly">
+    <pitch>1.26 1.26</pitch>
+    <dimension>17 17</dimension>
+    <lower_left>-10.71 -10.71</lower_left>
+    <universes>
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 11 11 11 15 11 11 15 11 11 15 11 11 11 11 11 
+11 11 11 14 11 11 11 11 11 11 11 11 11 14 11 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 15 11 11 15 11 11 14 11 11 15 11 11 15 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 15 11 11 14 11 11 14 11 11 14 11 11 15 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 15 11 11 15 11 11 14 11 11 15 11 11 15 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 11 14 11 11 11 11 11 11 11 11 11 14 11 11 11 
+11 11 11 11 11 15 11 11 15 11 11 15 11 11 11 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 </universes>
+  </lattice>
+  <lattice id="40" name="UO2M Lrodded Assembly">
+    <pitch>1.26 1.26</pitch>
+    <dimension>17 17</dimension>
+    <lower_left>-10.71 -10.71</lower_left>
+    <universes>
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 11 11 11 15 11 11 14 11 11 15 11 11 11 11 11 
+11 11 11 14 11 11 11 11 11 11 11 11 11 14 11 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 15 11 11 14 11 11 15 11 11 14 11 11 15 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 14 11 11 15 11 11 14 11 11 15 11 11 14 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 15 11 11 14 11 11 15 11 11 14 11 11 15 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 11 14 11 11 11 11 11 11 11 11 11 14 11 11 11 
+11 11 11 11 11 15 11 11 14 11 11 15 11 11 11 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 
+11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 </universes>
+  </lattice>
+  <lattice id="41" name="UO2HBP2SW rodded Assembly">
+    <pitch>1.26 1.26</pitch>
+    <dimension>17 17</dimension>
+    <lower_left>-10.71 -10.71</lower_left>
+    <universes>
+13 13 12 12 12 12 12 12 12 12 12 12 12 12 12 13 13 
+13 12 12 12 12 13 12 12 13 12 12 13 12 12 12 12 13 
+12 12 12 13 13 14 12 13 14 13 12 14 13 13 12 12 12 
+12 12 13 14 12 12 12 12 12 12 12 12 12 14 13 12 12 
+12 12 13 12 12 13 12 12 13 12 12 13 12 12 13 12 12 
+12 13 15 12 13 14 12 13 14 13 12 14 13 12 14 13 12 
+12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 
+12 12 13 12 12 13 12 12 13 12 12 13 12 12 13 12 12 
+12 13 15 12 13 15 12 13 14 13 12 14 13 12 14 13 12 
+12 12 13 12 12 13 12 12 13 12 12 13 12 12 13 12 12 
+12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 
+12 13 15 12 13 15 12 13 15 13 12 14 13 12 14 13 12 
+12 12 13 12 12 13 12 12 13 12 12 13 12 12 13 12 12 
+12 12 13 15 12 12 12 12 12 12 12 12 12 14 13 12 12 
+12 12 12 13 13 15 12 13 15 13 12 15 13 13 12 12 12 
+13 12 12 12 12 13 12 12 13 12 12 13 12 12 12 12 13 
+13 13 12 12 12 12 12 12 12 12 12 12 12 12 12 13 13 </universes>
+  </lattice>
+  <lattice id="43" name="Baffle assembly">
+    <pitch>1.26 1.26</pitch>
+    <dimension>17 17</dimension>
+    <lower_left>-10.71 -10.71</lower_left>
+    <universes>
+17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 
+17 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 
+17 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 
+17 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 
+17 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 
+17 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 
+17 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 
+17 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 
+17 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 
+17 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 
+17 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 
+17 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 
+17 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 
+17 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 
+17 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 
+17 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 
+17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 </universes>
+  </lattice>
+  <lattice id="44" name="7X7 core lattice">
+    <pitch>21.42 21.42</pitch>
+    <dimension>7 7</dimension>
+    <lower_left>-10.71 -10.71</lower_left>
+    <universes>
+30 30 30 30 30 30 30 
+21 21 22 30 30 30 30 
+18 27 26 20 30 30 30 
+28 18 27 27 20 30 30 
+18 28 18 28 26 22 30 
+23 18 28 18 27 21 30 
+18 23 18 28 18 21 30 </universes>
+  </lattice>
+  <surface coeffs="0.0 0.0 0.41" id="1" name="pin radius" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 0.411" id="2" name="IFBA" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 0.42" id="3" name="cladding inner radius" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 0.475" id="4" name="cladding outer radius" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 0.5" id="5" name="guide inner radius" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 0.55" id="6" name="guide outer radius" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 0.435" id="7" name="control rod cladding inner radius" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 0.48" id="8" name="control rod cladding outer radius" type="z-cylinder"/>
+  <surface coeffs="-0.58" id="10" name="spacer x-min" type="x-plane"/>
+  <surface coeffs="0.58" id="11" name="spacer x-max" type="x-plane"/>
+  <surface coeffs="-0.58" id="12" name="spacer y-min" type="y-plane"/>
+  <surface coeffs="0.58" id="13" name="spacer y-max" type="y-plane"/>
+  <surface coeffs="-0.63" id="14" name="outer spacer x-min" type="x-plane"/>
+  <surface coeffs="0.63" id="15" name="outer spacer x-max" type="x-plane"/>
+  <surface coeffs="-0.63" id="16" name="outer spacer y-min" type="y-plane"/>
+  <surface coeffs="0.63" id="17" name="outer spacer y-max" type="y-plane"/>
+  <surface boundary="vacuum" coeffs="-150" id="22" type="z-plane"/>
+  <surface boundary="vacuum" coeffs="300" id="23" type="z-plane"/>
+  <surface coeffs="143.84" id="24" name="z-top active" type="z-plane"/>
+  <surface coeffs="-100" id="25" name="z-bottom active" type="z-plane"/>
+  <surface coeffs="0.0 0.0 131.733" id="26" name="inner core barrel" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 134.273" id="27" name="outer core barrel" type="z-cylinder"/>
+  <surface coeffs="0.0 0.0 144.273" id="28" name="rpv inner" type="z-cylinder"/>
+  <surface boundary="vacuum" coeffs="0.0 0.0 159.273" id="29" name="rpv outer" type="z-cylinder"/>
+  <surface boundary="reflective" coeffs="0" id="34" name="qc x" type="x-plane"/>
+  <surface boundary="reflective" coeffs="0" id="35" name="qc y" type="y-plane"/>
+  <surface coeffs="-100.0" id="36" type="z-plane"/>
+  <surface coeffs="-93.904" id="37" type="z-plane"/>
+  <surface coeffs="-87.80799999999999" id="38" type="z-plane"/>
+  <surface coeffs="-81.712" id="39" type="z-plane"/>
+  <surface coeffs="-75.616" id="40" type="z-plane"/>
+  <surface coeffs="-69.52" id="41" type="z-plane"/>
+  <surface coeffs="-63.424" id="42" type="z-plane"/>
+  <surface coeffs="-57.328" id="43" type="z-plane"/>
+  <surface coeffs="-51.232" id="44" type="z-plane"/>
+  <surface coeffs="-45.135999999999996" id="45" type="z-plane"/>
+  <surface coeffs="-39.04" id="46" type="z-plane"/>
+  <surface coeffs="-32.944" id="47" type="z-plane"/>
+  <surface coeffs="-26.848" id="48" type="z-plane"/>
+  <surface coeffs="-20.751999999999995" id="49" type="z-plane"/>
+  <surface coeffs="-14.656000000000006" id="50" type="z-plane"/>
+  <surface coeffs="-8.560000000000002" id="51" type="z-plane"/>
+  <surface coeffs="-2.4639999999999986" id="52" type="z-plane"/>
+  <surface coeffs="3.632000000000005" id="53" type="z-plane"/>
+  <surface coeffs="9.728000000000009" id="54" type="z-plane"/>
+  <surface coeffs="15.823999999999998" id="55" type="z-plane"/>
+  <surface coeffs="21.92" id="56" type="z-plane"/>
+  <surface coeffs="28.01599999999999" id="57" type="z-plane"/>
+  <surface coeffs="34.111999999999995" id="58" type="z-plane"/>
+  <surface coeffs="40.208" id="59" type="z-plane"/>
+  <surface coeffs="46.304" id="60" type="z-plane"/>
+  <surface coeffs="52.400000000000006" id="61" type="z-plane"/>
+  <surface coeffs="58.49600000000001" id="62" type="z-plane"/>
+  <surface coeffs="64.59200000000001" id="63" type="z-plane"/>
+  <surface coeffs="70.68799999999999" id="64" type="z-plane"/>
+  <surface coeffs="76.78399999999999" id="65" type="z-plane"/>
+  <surface coeffs="82.88" id="66" type="z-plane"/>
+  <surface coeffs="88.976" id="67" type="z-plane"/>
+  <surface coeffs="95.072" id="68" type="z-plane"/>
+  <surface coeffs="101.168" id="69" type="z-plane"/>
+  <surface coeffs="107.26400000000001" id="70" type="z-plane"/>
+  <surface coeffs="113.36000000000001" id="71" type="z-plane"/>
+  <surface coeffs="119.45600000000002" id="72" type="z-plane"/>
+  <surface coeffs="125.55199999999999" id="73" type="z-plane"/>
+  <surface coeffs="131.648" id="74" type="z-plane"/>
+  <surface coeffs="137.744" id="75" type="z-plane"/>
+  <surface coeffs="143.84" id="76" type="z-plane"/>
+</geometry>

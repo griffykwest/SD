@@ -170,12 +170,23 @@ borosilicate.add_nuclide('B11', B11, percent_type='wo') # Rest of the glass (fix
 borosilicate.add_element('Al', 0.012, percent_type='wo')"""
 
 
+B10enrichmentB4C = 0.20  # 20% B-10, adjust as needed
+B4C = openmc.Material(name='Boron Carbide (B4C)')
+B4C.set_density('g/cm3', 2.52)
+
+B_total = 0.799981
+
+B4C.add_nuclide('B10', B_total * B10enrichmentB4C, percent_type='ao')
+B4C.add_nuclide('B11', B_total * (1.0 - B10enrichmentB4C), percent_type='ao')
+B4C.add_element('C', 0.200019, percent_type='ao')
+
 gap = openmc.Material(name='gap')
 gap.add_element('He', 1.0)
 gap.set_density('g/cm3', 0.001)
 
 axial_materials['IFBA'] = IFBA
 axial_materials['Borosilicate Glass'] = borosilicate
+axial_materials['B4C'] = B4C
 axial_materials['Cladding'] = clad
 axial_materials['SS304'] = ss304
 axial_materials['Inconel'] = inconel
