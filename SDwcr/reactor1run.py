@@ -25,8 +25,24 @@ inactive = 200
 particles = 10000
 
 
-materials_file = openmc.Materials(axial_materials.values())
-materials_file.export_to_xml()
+
+geometry = openmc.Geometry()
+geometry.root_universe = universes['UO2HBP2W rodded Assembly']
+geometry.export_to_xml()
+
+
+plot_1 = openmc.Plot()
+plot_1.filename = 'cell plot'
+plot_1.width = [pitch, pitch] #[r_rpvouter, r_rpvouter]
+plot_1.pixels = [4000, 4000]
+plot_1.origin = [0,0,145]
+plot_1.width = [21.42,21.42] #[r_rpvouter/2,r_rpvouter/2,10]
+plot_1.basis = 'xy'
+plot_1.color_by = 'material'
+
+plot_file = openmc.Plots([plot_1])
+plot_file.export_to_xml()
+openmc.plot_geometry()
 
 
 cells['Core'].region = -surfaces['inner core barrel'] &-surfaces['z-top active'] & +surfaces['z-bottom active'] & +surfaces['qc x'] & +surfaces['qc y']
@@ -123,7 +139,7 @@ plot_2.colors = material_colors
 
 plot_file = openmc.Plots([plot_1,plot_2])
 plot_file.export_to_xml()
-openmc.plot_geometry()
+#openmc.plot_geometry()
 
 lower_left = (0, 0, z_min)
 upper_right = (hw, hw, z_max)
@@ -173,7 +189,7 @@ tallies_file.export_to_xml()
 #openmc.calculate_volumes()
 
 
-openmc.run()
+#openmc.run()
 xyslice(batches,20)
 xyslice(batches,1)
 xzslice(batches,1)

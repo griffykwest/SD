@@ -1,6 +1,7 @@
 import openmc
 
 from matax import *
+#from lattices import lattices
 
 universes = {}
 
@@ -16,15 +17,8 @@ universes['UO2M'].add_cells([cells['UO2M'], cells['gapM'], cells['cladM'], cells
 universes['UO2H'].add_cells([cells['UO2H'], cells['gapH'], cells['cladH'], cells['moderatorH']])
 
 
-
-
-
 universes['UO2HBP']  = openmc.Universe(name='UO2HBP')
 universes['UO2HBP'].add_cells([cells['UO2HBP'],cells['IFBA'], cells['gapHBP'], cells['cladHBP'], cells['moderatorHBP']])
-print(universes['UO2HBP'])
-print(universes['UO2H'])
-
-
 
 universes['guide tube'] = openmc.Universe(name='guide tube')
 universes['guide tube'].add_cells([cells['inner guide moderator no BPR'], cells['guide tube'], cells['g_moderator1']])
@@ -37,6 +31,28 @@ universes['water cell'].add_cell(cells['water cell'] )
 
 universes['inconel cell'] = openmc.Universe(name='inconel cell')
 universes['inconel cell'].add_cell(cells['inconel cell'] )
+
+combinedcells = {}
+
+combinedcells['UO2L Lower'] = openmc.Cell(name = 'UO2L Lower', fill= universes['UO2L'], region = outer_spacer_box & +surfaces['z-bottom active'] & -surfaces['z-top active'])
+combinedcells['UO2L Upper'] = openmc.Cell(name= 'UO2L upper', fill = upper_water_fuel_univ, region= outer_spacer_box & +surfaces['z-top active'] & -surfaces['z-max'])
+combinedcells['UO2M Lower'] = openmc.Cell(name = 'UO2M Lower', fill= universes['UO2M'], region = outer_spacer_box & +surfaces['z-bottom active'] & -surfaces['z-top active'])
+combinedcells['UO2M Upper'] = openmc.Cell(name= 'UO2M upper', fill = upper_water_fuel_univ, region= outer_spacer_box & +surfaces['z-top active'] & -surfaces['z-max'])
+combinedcells['UO2H Lower'] = openmc.Cell(name = 'UO2H Lower', fill= universes['UO2H'], region = outer_spacer_box & +surfaces['z-bottom active'] & -surfaces['z-top active'])
+combinedcells['UO2H Upper'] = openmc.Cell(name= 'UO2H upper', fill = upper_water_fuel_univ, region= outer_spacer_box & +surfaces['z-top active'] & -surfaces['z-max'])
+combinedcells['UO2HBP Lower'] = openmc.Cell(name = 'UO2HBP Lower', fill= universes['UO2HBP'], region = outer_spacer_box & +surfaces['z-bottom active'] & -surfaces['z-top active'])
+combinedcells['UO2HBP Upper'] = openmc.Cell(name= 'UO2HBP upper', fill = upper_water_fuel_univ, region= outer_spacer_box & +surfaces['z-top active'] & -surfaces['z-max'])
+combinedcells['guide tube w BPR Lower'] = openmc.Cell(name = 'guide tube w BPR Lower', fill= universes['guide tube w BPR'], region = outer_spacer_box & +surfaces['z-bottom active'] & -surfaces['z-top active'])
+combinedcells['guide tube w BPR Upper'] = openmc.Cell(name= 'guide tube w BPR upper', fill = upper_water_fuel_univ, region= outer_spacer_box & +surfaces['z-top active'] & -surfaces['z-max'])
+
+
+
+universes['UO2L complete'] = openmc.Universe(name='UO2L complete', cells= [combinedcells['UO2L Lower'],combinedcells['UO2L Upper']])
+universes['UO2M complete'] = openmc.Universe(name='UO2M complete', cells= [combinedcells['UO2M Lower'],combinedcells['UO2M Upper']])
+universes['UO2H complete'] = openmc.Universe(name='UO2H complete', cells= [combinedcells['UO2H Lower'],combinedcells['UO2H Upper']])
+universes['UO2HBP complete'] = openmc.Universe(name='UO2HBP complete', cells= [combinedcells['UO2HBP Lower'],combinedcells['UO2HBP Upper']])
+universes['guide tube w BPR complete'] = openmc.Universe(name='guide tube w BPR complete', cells= [combinedcells['guide tube w BPR Lower'],combinedcells['guide tube w BPR Upper']])
+
 
 universes['UO2L Unrodded Assembly'] = openmc.Universe( name='UO2L Unrodded Assembly')
 universes['UO2M Unrodded Assembly'] = openmc.Universe(name='UO2M Unrodded Assembly')
@@ -75,4 +91,6 @@ universes['Water Assembly'].add_cell(cells['Water Assembly'])
 
 universes['Baffle Assembly'] = openmc.Universe(name='Baffle Assembly')
 universes['Baffle Assembly'].add_cell(cells['Baffle Assembly'])
+
+
 
