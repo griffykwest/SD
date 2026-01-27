@@ -1611,33 +1611,24 @@
     <nuclide ao="0.028" name="Zr96"/>
   </material>
   <material id="162" name="Cladding">
-    <density units="g/cm3" value="6.56"/>
-    <nuclide name="Sn112" wo="0.0001325869650089989"/>
-    <nuclide name="Sn114" wo="9.18244938630758e-05"/>
-    <nuclide name="Sn115" wo="4.7719058992548675e-05"/>
-    <nuclide name="Sn116" wo="0.0020584231441515095"/>
-    <nuclide name="Sn117" wo="0.001096647338091086"/>
-    <nuclide name="Sn118" wo="0.0034879812785975975"/>
-    <nuclide name="Sn119" wo="0.0012475771051862216"/>
-    <nuclide name="Sn120" wo="0.004771539508846635"/>
-    <nuclide name="Sn122" wo="0.0006894094862319449"/>
-    <nuclide name="Sn124" wo="0.0008762916210303821"/>
-    <nuclide name="Fe54" wo="0.00011855672267684395"/>
-    <nuclide name="Fe56" wo="0.0019299321043708116"/>
-    <nuclide name="Fe57" wo="4.5367740887167366e-05"/>
-    <nuclide name="Fe58" wo="6.143432065177235e-06"/>
-    <nuclide name="Cr50" wo="4.173686622718313e-05"/>
-    <nuclide name="Cr52" wo="0.000836993623513459"/>
-    <nuclide name="Cr53" wo="9.673586818675183e-05"/>
-    <nuclide name="Cr54" wo="2.4533642072606143e-05"/>
-    <nuclide name="Zr90" wo="0.4975030719418411"/>
-    <nuclide name="Zr91" wo="0.10970127724609834"/>
-    <nuclide name="Zr92" wo="0.1695240925103877"/>
-    <nuclide name="Zr94" wo="0.1755385702549024"/>
-    <nuclide name="Zr96" wo="0.02888298804677048"/>
-    <nuclide name="O16" wo="0.0012466835910117907"/>
-    <nuclide name="O17" wo="5.033555467821137e-07"/>
-    <nuclide name="O18" wo="2.813053441427251e-06"/>
+    <density units="g/cm3" value="6.52"/>
+    <nuclide name="Fe54" wo="1.9759453779473997e-05"/>
+    <nuclide name="Fe56" wo="0.00032165535072846863"/>
+    <nuclide name="Fe57" wo="7.561290147861229e-06"/>
+    <nuclide name="Fe58" wo="1.023905344196206e-06"/>
+    <nuclide name="Cr50" wo="2.0868433113591565e-06"/>
+    <nuclide name="Cr52" wo="4.184968117567295e-05"/>
+    <nuclide name="Cr53" wo="4.836793409337592e-06"/>
+    <nuclide name="Cr54" wo="1.226682103630307e-06"/>
+    <nuclide name="Zr90" wo="0.5009764409912236"/>
+    <nuclide name="Zr91" wo="0.11046716803663574"/>
+    <nuclide name="Zr92" wo="0.1707076424606462"/>
+    <nuclide name="Zr94" wo="0.17676411090235292"/>
+    <nuclide name="Zr96" wo="0.029084637609141557"/>
+    <nuclide name="O16" wo="0.12965509346522622"/>
+    <nuclide name="O17" wo="5.234897686533982e-05"/>
+    <nuclide name="O18" wo="0.0002925575579084341"/>
+    <nuclide name="Nb93" wo="0.0103"/>
   </material>
   <material id="163" name="Inconel">
     <density units="g/cm3" value="8.19"/>

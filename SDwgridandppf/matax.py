@@ -12,9 +12,6 @@ z_bot = -100                 # bottom of active fuel
 z_top = 143.84               # top of active fuel (m)
 z_edges = np.linspace(z_bot, z_top, n_axial + 1)
 z_centers = 0.5 * (z_edges[:-1] + z_edges[1:])
-print(z_edges)
-z_upper_edges = z_edges +z_top-z_bot
-print(z_upper_edges)
 
 h = np.linspace(0, 1, n_axial)  # normalized axial position 0->1
 
@@ -93,7 +90,7 @@ IFBA.add_element('Zr',1.0)
 IFBA.set_density('g/cm3',6.09)
 
 ###Cladding
-zirc = (99.83-1.03)/100
+zirc = (99.83-1.03,)/100
 clad=openmc.Material()
 clad.name='Cladding'
 #clad.add_element('Sn',1.45/100,'wo')
@@ -253,11 +250,11 @@ for i in range(n_axial):
         axial_cells[f'guide moderator{i}'].temperature = axial_materials[f'moderator{i}'].temperature
 
 
-    axial_cells[f'inner guide moderator no BPR{i}'] = openmc.Cell(name = f'inner guide moderator no BPR{i}', fill= axial_materials[f'moderator{i}'], region=-surfaces['guide inner radius'] & z_bottom & z_top)
-    axial_cells[f'inner guide moderator no BPR{i}'].temperature = axial_materials[f'moderator{i}'].temperature
+    axial_cells[f'inner guide moderator no CR{i}'] = openmc.Cell(name = f'inner guide moderator no CR{i}', fill= axial_materials[f'moderator{i}'], region=-surfaces['guide inner radius'] & z_bottom & z_top)
+    axial_cells[f'inner guide moderator no CR{i}'].temperature = axial_materials[f'moderator{i}'].temperature
 
-    axial_cells[f'inner guide moderator w BPR{i}'] = openmc.Cell(name = f'inner guide moderator w BPR{i}', fill= axial_materials[f'moderator{i}'], region=-surfaces['guide inner radius'] & +surfaces['BPR rod cladding outer radius'] & z_bottom & z_top)
-    axial_cells[f'inner guide moderator w BPR{i}'].temperature = axial_materials[f'moderator{i}'].temperature
+    axial_cells[f'inner guide moderator w CR{i}'] = openmc.Cell(name = f'inner guide moderator w CR{i}', fill= axial_materials[f'moderator{i}'], region=-surfaces['guide inner radius'] & +surfaces['control rod cladding outer radius'] & z_bottom & z_top)
+    axial_cells[f'inner guide moderator w CR{i}'].temperature = axial_materials[f'moderator{i}'].temperature
 
 
 
@@ -267,8 +264,8 @@ uo2h_axial_cells = []
 spacer_axial_cells = []
 moderator_axial_cells = []
 g_moderator_axial_cells = []
-i_g_moderator_axial_cells_n_BPR = []
-i_g_moderator_axial_cells_w_BPR = []
+i_g_moderator_axial_cells_n_CR = []
+i_g_moderator_axial_cells_w_CR = []
 
 
 for i in range(n_axial):
@@ -280,8 +277,8 @@ for i in range(n_axial):
     if i in spacer_indices:
         moderator_axial_cells.append(axial_cells[f'spacer{i}'])
         g_moderator_axial_cells.append(axial_cells[f'g spacer{i}'])
-    i_g_moderator_axial_cells_n_BPR.append(axial_cells[f'inner guide moderator no BPR{i}'])
-    i_g_moderator_axial_cells_w_BPR.append(axial_cells[f'inner guide moderator w BPR{i}'])
+    i_g_moderator_axial_cells_n_CR.append(axial_cells[f'inner guide moderator no CR{i}'])
+    i_g_moderator_axial_cells_w_CR.append(axial_cells[f'inner guide moderator w CR{i}'])
 
 UO2L_cont_universe = openmc.Universe(cells=uo2l_axial_cells)
 UO2M_cont_universe = openmc.Universe(cells=uo2m_axial_cells)
@@ -289,8 +286,8 @@ UO2H_cont_universe = openmc.Universe(cells=uo2h_axial_cells)
 moderator_cont_universe = openmc.Universe(cells=moderator_axial_cells)
 
 g_moderator_cont_universe = openmc.Universe(cells=g_moderator_axial_cells)
-i_g_moderator_n_BPR_cont_universe = openmc.Universe(cells=i_g_moderator_axial_cells_n_BPR)
-i_g_moderator_w_BPR_cont_universe = openmc.Universe(cells=i_g_moderator_axial_cells_w_BPR)
+i_g_moderator_n_CR_cont_universe = openmc.Universe(cells=i_g_moderator_axial_cells_n_CR)
+i_g_moderator_w_CR_cont_universe = openmc.Universe(cells=i_g_moderator_axial_cells_w_CR)
 
 
 
@@ -306,8 +303,8 @@ cells['moderatorH'] = openmc.Cell(name='moderatorH', region = +surfaces['claddin
 cells['moderatorHBP'] = openmc.Cell(name='moderatorHBP', region = +surfaces['cladding outer radius'], fill = moderator_cont_universe)
 cells['g_moderator1'] = openmc.Cell(name='g_moderator1', region = +surfaces['guide outer radius'], fill = g_moderator_cont_universe)
 cells['g_moderator2'] = openmc.Cell(name='g_moderator2', region = +surfaces['guide outer radius'], fill = g_moderator_cont_universe)
-cells['inner guide moderator no BPR'] = openmc.Cell(name='inner guide moderator no BPR', region = -surfaces['guide inner radius'], fill = i_g_moderator_n_BPR_cont_universe)
-cells['inner guide moderator w BPR'] = openmc.Cell(name='inner guide moderator w BPR', region = -surfaces['guide inner radius'] & +surfaces['BPR rod cladding outer radius'], fill = i_g_moderator_w_BPR_cont_universe)
+cells['inner guide moderator no CR'] = openmc.Cell(name='inner guide moderator no CR', region = -surfaces['guide inner radius'], fill = i_g_moderator_n_CR_cont_universe)
+cells['inner guide moderator w CR'] = openmc.Cell(name='inner guide moderator w CR', region = -surfaces['guide inner radius'] & +surfaces['control rod cladding outer radius'], fill = i_g_moderator_w_CR_cont_universe)
 
 """print(cells['spacerL'])
 print(cells['UO2L'])
@@ -319,9 +316,9 @@ cells['IFBA'].region = -surfaces['IFBA'] & +surfaces['pin radius']
 cells['IFBA'].fill = axial_materials['IFBA']
 
 #Integral control rod
-cells['BPRboron'] = openmc.Cell(name = 'BPRboron')
-cells['BPRboron'].fill = axial_materials['Borosilicate Glass']
-cells['BPRboron'].region = -surfaces['BPR rod cladding inner radius']
+cells['CRboron'] = openmc.Cell(name = 'CRboron')
+cells['CRboron'].fill = axial_materials['Borosilicate Glass']
+cells['CRboron'].region = -surfaces['control rod cladding inner radius']
 
 #gap
 cells['gapL'] = openmc.Cell(name='gapL')
@@ -342,9 +339,9 @@ cells['gapHBP'].fill = axial_materials['gap']
 # no fill because no need hopefullt, iff not make H2 material and fill it here
 
 ##cladding cells
-cells['cladBPR']= openmc.Cell(name='cladBPR')
-cells['cladBPR'].region= -surfaces['BPR rod cladding outer radius'] & +surfaces['BPR rod cladding inner radius']
-cells['cladBPR'].fill = axial_materials['SS304']
+cells['cladCR']= openmc.Cell(name='cladCR')
+cells['cladCR'].region= -surfaces['control rod cladding outer radius'] & +surfaces['control rod cladding inner radius']
+cells['cladCR'].fill = axial_materials['SS304']
 
 cells['cladL']= openmc.Cell(name='cladL')
 cells['cladL'].region= -surfaces['cladding outer radius'] & +surfaces['cladding inner radius']
@@ -366,9 +363,9 @@ cells['guide tube'] = openmc.Cell(name='guide tube')
 cells['guide tube'].region= +surfaces['guide inner radius'] & -surfaces['guide outer radius']
 cells['guide tube'].fill = axial_materials['Cladding']
 
-cells['guide tube BPR'] = openmc.Cell(name='guide tube BPR')
-cells['guide tube BPR'].region= +surfaces['guide inner radius'] & -surfaces['guide outer radius']
-cells['guide tube BPR'].fill = axial_materials['Cladding']
+cells['guide tube CR'] = openmc.Cell(name='guide tube CR')
+cells['guide tube CR'].region= +surfaces['guide inner radius'] & -surfaces['guide outer radius']
+cells['guide tube CR'].fill = axial_materials['Cladding']
 
 cells['water cell'] = openmc.Cell(name='water cell')
 cells['water cell'].fill = axial_materials[f'moderator20']

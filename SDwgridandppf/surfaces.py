@@ -22,14 +22,14 @@ R_go=1.1/2
 surfaces['guide inner radius'] = openmc.ZCylinder(r=R_gi, name= 'guide inner radius')
 surfaces['guide outer radius']= openmc.ZCylinder(r=R_go, name= 'guide outer radius')
 
-#BPRrod cladding
-R_BPRci=0.87/2
-R_BPRco=0.96/2
-surfaces['BPR rod cladding inner radius'] = openmc.ZCylinder(r=R_BPRci, name= 'BPR rod cladding inner radius')
-surfaces['BPR rod cladding outer radius']= openmc.ZCylinder(r=R_BPRco, name= 'BPR rod cladding outer radius')
+#controlrod cladding
+R_cri=0.87/2
+R_cro=0.96/2
+surfaces['control rod cladding inner radius'] = openmc.ZCylinder(r=R_cri, name= 'control rod cladding inner radius')
+surfaces['control rod cladding outer radius']= openmc.ZCylinder(r=R_cro, name= 'control rod cladding outer radius')
 
-#BPR rod absorber section
-surfaces['BPR rod pin radius'] = openmc.ZCylinder(r=R_BPRci, name= 'BPR rod pin radius')
+#control rod absorber section
+surfaces['control rod pin radius'] = openmc.ZCylinder(r=R_cri, name= 'control rod pin radius')
 
 pitch=1.26
 

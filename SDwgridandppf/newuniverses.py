@@ -27,10 +27,10 @@ print(universes['UO2H'])
 
 
 universes['guide tube'] = openmc.Universe(name='guide tube')
-universes['guide tube'].add_cells([cells['inner guide moderator no BPR'], cells['guide tube'], cells['g_moderator1']])
+universes['guide tube'].add_cells([cells['inner guide moderator no CR'], cells['guide tube'], cells['g_moderator1']])
 
-universes['guide tube w BPR'] = openmc.Universe(name='guide tube w BPR')
-universes['guide tube w BPR'].add_cells([cells['BPRboron'], cells['cladBPR'], cells['inner guide moderator w BPR'], cells['guide tube BPR'], cells['g_moderator2']])
+universes['guide tube w CR'] = openmc.Universe(name='guide tube w CR')
+universes['guide tube w CR'].add_cells([cells['CRboron'], cells['cladCR'], cells['inner guide moderator w CR'], cells['guide tube CR'], cells['g_moderator2']])
 
 universes['water cell'] = openmc.Universe(name='water cell')
 universes['water cell'].add_cell(cells['water cell'] )

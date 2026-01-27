@@ -1,6 +1,6 @@
 cd ~/SD
 git add -A
-git commit -m "recent work addeng density lookup func for water"
+git commit -m "starting to try to get moving control rods"
 git push
 
 
