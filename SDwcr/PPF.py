@@ -131,6 +131,7 @@ def ppf(batch,z):
 
     for a in range(n_assembly):
         mask = assembly_map == a
+
         channel_sums = heating_3d[mask] * weights[mask]
         
         nz = 40
@@ -196,7 +197,7 @@ def ppf(batch,z):
     Fq_inter = np.where(fuel_mask, Fq_inter, np.nan)
     print(Fq_intra2/Fq_intra)
 
-    return Fq_intra, Fq_inter, assembly_avg, fuel_mask
+    return Fq_intra2, Fq_inter, assembly_avg, fuel_mask
 
 
 Fq_intra, Fq_inter, assembly_avg , fuel_mask = ppf(2000,19)

@@ -18,7 +18,7 @@ z_centers = 0.5 * (z_edges[:-1] + z_edges[1:])
 z_upper_edges = z_edges +z_top-z_bot
 
 z_cr_edges = np.concatenate((z_edges[0:n_axial], z_upper_edges))
-print(z_cr_edges[40])
+#print(z_cr_edges[40])
 h = np.linspace(0, 1, n_axial)  # normalized axial position 0->1
 
 T_min = 700
@@ -211,7 +211,7 @@ axial_materials['gap'] = gap
 materials_file = openmc.Materials(axial_materials.values())
 materials_file.export_to_xml()
 
-#print(axial_materials)
+##print(axial_materials)
 
 z_planes = [openmc.ZPlane(z0=z) for z in z_edges]
 spacer_indices = [0, 9, 19, 29, 39]
@@ -301,7 +301,7 @@ i_g_moderator_w_BPR_cont_universe = openmc.Universe(cells=i_g_moderator_axial_ce
 upper_water_fuel_univ = openmc.Universe(cells = [axial_cells['upper water cell fuel']])
 
 
-#print(spacer_cont_universe)
+##print(spacer_cont_universe)
 cells = {}
 cells['UO2L'] = openmc.Cell(name='UO2L', region = -surfaces['pin radius'], fill = UO2L_cont_universe)
 cells['UO2M'] = openmc.Cell(name='UO2M', region = -surfaces['pin radius'], fill = UO2M_cont_universe)
@@ -320,9 +320,9 @@ cells['inner guide moderator no BPR'] = openmc.Cell(name='inner guide moderator 
 cells['inner guide moderator w BPR'] = openmc.Cell(name='inner guide moderator w BPR', region = -surfaces['guide inner radius'] & +surfaces['BPR rod cladding outer radius'], fill = i_g_moderator_w_BPR_cont_universe)
 cells['inner guide moderator w CR'] = openmc.Cell(name='inner guide moderator w CR', region = -surfaces['guide inner radius'] & +surfaces['BPR rod cladding outer radius'], fill = i_g_moderator_w_BPR_cont_universe)
 
-"""print(cells['spacerL'])
-print(cells['UO2L'])
-print(cells['moderatorHBP'])"""
+"""#print(cells['spacerL'])
+#print(cells['UO2L'])
+#print(cells['moderatorHBP'])"""
 
 #IFBA coating on high enriched
 cells['IFBA'] = openmc.Cell(name='IFBA')
@@ -474,4 +474,4 @@ temp_universe = openmc.Universe(cells=[cells['moderatorL']])
 
 
 
-#print(cells)
+##print(cells)

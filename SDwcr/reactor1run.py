@@ -57,9 +57,9 @@ lattices['Core'].universes=[
  [H,H,C,m,m,m,m],
  [c,P,D,d,m,m,m],
  [G,c,P,P,d,m,m],
- [b,G,c,G,D,C,m],
- [I,a,G,c,P,H,m],
- [c,I,b,G,c,H,m]
+ [b,G,c,P,D,C,m],
+ [G,a,G,c,P,H,m],
+ [c,G,b,G,c,H,m]
 ]
 cells['Core'].fill = lattices['Core']
 

@@ -1,14 +1,14 @@
 import openmc
 import numpy as np
 
-A_Bank = 1  #0 is fully out 1 is fully in
-B_Bank = 1  #0 is fully out 1 is fully in
-C_Bank = 1  #0 is fully out 1 is fully in
-Shut_Down_Bank = 1  #0 is fully out 1 is fully in
+A_Bank = 0  #0 is fully out 1 is fully in
+B_Bank = 0  #0 is fully out 1 is fully in
+C_Bank = 0  #0 is fully out 1 is fully in
+Shut_Down_Bank = 0  #0 is fully out 1 is fully in
 Batches = 2000
 PPB = 10000
 inactive = 200
-Boron_PPM = 0
+Boron_PPM = 2200
 """
 n_axial = 40                # number of axial slices
 z_bot = -100                 # bottom of active fuel
