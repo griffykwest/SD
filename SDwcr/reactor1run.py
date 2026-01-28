@@ -26,26 +26,9 @@ particles = 10000
 
 
 
-geometry = openmc.Geometry()
-geometry.root_universe = universes['UO2HBP2W rodded Assembly']
-geometry.export_to_xml()
 
 
-plot_1 = openmc.Plot()
-plot_1.filename = 'cell plot'
-plot_1.width = [pitch, pitch] #[r_rpvouter, r_rpvouter]
-plot_1.pixels = [4000, 4000]
-plot_1.origin = [0,0,145]
-plot_1.width = [21.42,21.42] #[r_rpvouter/2,r_rpvouter/2,10]
-plot_1.basis = 'xy'
-plot_1.color_by = 'material'
-
-plot_file = openmc.Plots([plot_1])
-plot_file.export_to_xml()
-openmc.plot_geometry()
-
-
-cells['Core'].region = -surfaces['inner core barrel'] &-surfaces['z-top active'] & +surfaces['z-bottom active'] & +surfaces['qc x'] & +surfaces['qc y']
+cells['Core'].region = -surfaces['inner core barrel']  & +surfaces['qc x'] & +surfaces['qc y']# &-surfaces['z-top active'] & +surfaces['z-bottom active']
 
 #+surfaces['x-min'] & +surfaces['y-min'] & \-surfaces['x-max'] & -surfaces['y-max']
 
@@ -83,6 +66,25 @@ lattices['Core'].universes=[
 ]
 cells['Core'].fill = lattices['Core']
 
+universes['Core'] = openmc.Universe(name= 'Core', cells = [cells['Core']])
+
+geometry = openmc.Geometry()
+geometry.root_universe = universes['Core']
+geometry.export_to_xml()
+
+
+plot_1 = openmc.Plot()
+plot_1.filename = 'cell plot'
+plot_1.width = [r_rpvouter, r_rpvouter] #[pitch, pitch] #[r_rpvouter, r_rpvouter]
+plot_1.pixels = [4000, 4000]
+plot_1.origin = [r_rpvouter/2,r_rpvouter/2,150]
+#plot_1.width = [r_rpvouter/2,r_rpvouter/2,10] #[21.42,21.42] #[r_rpvouter/2,r_rpvouter/2,10]
+plot_1.basis = 'xy'
+plot_1.color_by = 'material'
+
+plot_file = openmc.Plots([plot_1])
+plot_file.export_to_xml()
+openmc.plot_geometry()
 
 
 # Start with the single materials (non-axial)

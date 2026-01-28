@@ -318,16 +318,16 @@
   <cell id="316" name="guide tube BPR" material="162" region="5 -6" universe="16"/>
   <cell id="317" name="water cell" material="84" universe="17"/>
   <cell id="318" name="inconel cell" material="164" universe="18"/>
-  <cell id="319" name="UO2L Unrodded Assembly" fill="37" universe="24"/>
-  <cell id="321" name="UO2H Unrodded Assembly" fill="39" universe="26"/>
-  <cell id="322" name="UO2HBP1 Unrodded Assembly" fill="40" universe="27"/>
-  <cell id="323" name="UO2HBP2 Unrodded Assembly" fill="41" universe="28"/>
-  <cell id="326" name="UO2HBP2SW rodded Assembly" fill="47" universe="32"/>
-  <cell id="327" name="UO2M rodded Assembly" fill="44" universe="29"/>
-  <cell id="328" name="UO2M Lrodded Assembly" fill="46" universe="33"/>
-  <cell id="329" name="UO2M Mrodded Assembly" fill="45" universe="34"/>
-  <cell id="331" name="Baffle Assembly" fill="49" universe="36"/>
-  <cell id="332" name="Core" fill="50" region="-26 -24 25 34 35" universe="10"/>
+  <cell id="319" name="UO2L Unrodded Assembly" fill="38" universe="25"/>
+  <cell id="321" name="UO2H Unrodded Assembly" fill="40" universe="27"/>
+  <cell id="322" name="UO2HBP1 Unrodded Assembly" fill="41" universe="28"/>
+  <cell id="323" name="UO2HBP2 Unrodded Assembly" fill="42" universe="29"/>
+  <cell id="326" name="UO2HBP2SW rodded Assembly" fill="48" universe="33"/>
+  <cell id="327" name="UO2M rodded Assembly" fill="45" universe="30"/>
+  <cell id="328" name="UO2M Lrodded Assembly" fill="47" universe="34"/>
+  <cell id="329" name="UO2M Mrodded Assembly" fill="46" universe="35"/>
+  <cell id="331" name="Baffle Assembly" fill="50" universe="37"/>
+  <cell id="332" name="Core" fill="51" region="-26 34 35" universe="10"/>
   <cell id="333" name="lower plenum" material="4" region="22 -25 -26 34 35" universe="10"/>
   <cell id="334" name="upper plenum" material="160" region="-23 24 -26 34 35" universe="10"/>
   <cell id="335" name="core barrel" material="164" region="-27 26 -23 22 34 35" universe="10"/>
@@ -343,7 +343,9 @@
   <cell id="345" name="UO2HBP upper" fill="8" region="-15 14 -17 16 24 -23" universe="22"/>
   <cell id="346" name="guide tube w BPR Lower" fill="16" region="-15 14 -17 16 25 -24" universe="23"/>
   <cell id="347" name="guide tube w BPR upper" fill="8" region="-15 14 -17 16 24 -23" universe="23"/>
-  <lattice id="37" name="UO2L Unrodded Assembly">
+  <cell id="348" name="guide tube w/o BPR Lower" fill="15" region="-15 14 -17 16 25 -24" universe="24"/>
+  <cell id="349" name="guide tube w/o BPR upper" fill="8" region="-15 14 -17 16 24 -23" universe="24"/>
+  <lattice id="38" name="UO2L Unrodded Assembly">
     <pitch>1.26 1.26</pitch>
     <dimension>17 17</dimension>
     <lower_left>-10.71 -10.71</lower_left>
@@ -366,7 +368,7 @@
 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 </universes>
   </lattice>
-  <lattice id="39" name="UO2H Unrodded Assembly">
+  <lattice id="40" name="UO2H Unrodded Assembly">
     <pitch>1.26 1.26</pitch>
     <dimension>17 17</dimension>
     <lower_left>-10.71 -10.71</lower_left>
@@ -389,7 +391,7 @@
 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 
 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 </universes>
   </lattice>
-  <lattice id="40" name="UO2HBP1 Unrodded Assembly">
+  <lattice id="41" name="UO2HBP1 Unrodded Assembly">
     <pitch>1.26 1.26</pitch>
     <dimension>17 17</dimension>
     <lower_left>-10.71 -10.71</lower_left>
@@ -412,7 +414,7 @@
 22 21 21 21 21 22 21 21 22 21 21 22 21 21 21 21 22 
 22 22 21 21 21 21 21 21 21 21 21 21 21 21 21 22 22 </universes>
   </lattice>
-  <lattice id="41" name="UO2HBP2 Unrodded Assembly">
+  <lattice id="42" name="UO2HBP2 Unrodded Assembly">
     <pitch>1.26 1.26</pitch>
     <dimension>17 17</dimension>
     <lower_left>-10.71 -10.71</lower_left>
@@ -435,7 +437,7 @@
 22 21 21 21 21 22 21 21 22 21 21 22 21 21 21 21 22 
 22 22 21 21 21 21 21 21 21 21 21 21 21 21 21 22 22 </universes>
   </lattice>
-  <lattice id="44" name="UO2M rodded Assembly">
+  <lattice id="45" name="UO2M rodded Assembly">
     <pitch>1.26 1.26</pitch>
     <dimension>17 17</dimension>
     <lower_left>-10.71 -10.71</lower_left>
@@ -443,22 +445,22 @@
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
 20 20 20 20 20 23 20 20 23 20 20 23 20 20 20 20 20 
-20 20 20 15 20 20 20 20 20 20 20 20 20 15 20 20 20 
+20 20 20 24 20 20 20 20 20 20 20 20 20 24 20 20 20 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
 20 20 23 20 20 23 20 20 23 20 20 23 20 20 23 20 20 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
-20 20 23 20 20 23 20 20 15 20 20 23 20 20 23 20 20 
+20 20 23 20 20 23 20 20 24 20 20 23 20 20 23 20 20 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
 20 20 23 20 20 23 20 20 23 20 20 23 20 20 23 20 20 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
-20 20 20 15 20 20 20 20 20 20 20 20 20 15 20 20 20 
+20 20 20 24 20 20 20 20 20 20 20 20 20 24 20 20 20 
 20 20 20 20 20 23 20 20 23 20 20 23 20 20 20 20 20 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 </universes>
   </lattice>
-  <lattice id="45" name="UO2M Mrodded Assembly">
+  <lattice id="46" name="UO2M Mrodded Assembly">
     <pitch>1.26 1.26</pitch>
     <dimension>17 17</dimension>
     <lower_left>-10.71 -10.71</lower_left>
@@ -466,68 +468,68 @@
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
 20 20 20 20 20 23 20 20 23 20 20 23 20 20 20 20 20 
-20 20 20 15 20 20 20 20 20 20 20 20 20 15 20 20 20 
+20 20 20 24 20 20 20 20 20 20 20 20 20 24 20 20 20 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
-20 20 23 20 20 23 20 20 15 20 20 23 20 20 23 20 20 
-20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
-20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
-20 20 23 20 20 15 20 20 15 20 20 15 20 20 23 20 20 
+20 20 23 20 20 23 20 20 24 20 20 23 20 20 23 20 20 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
-20 20 23 20 20 23 20 20 15 20 20 23 20 20 23 20 20 
+20 20 23 20 20 24 20 20 24 20 20 24 20 20 23 20 20 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
-20 20 20 15 20 20 20 20 20 20 20 20 20 15 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 23 20 20 23 20 20 24 20 20 23 20 20 23 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 24 20 20 20 20 20 20 20 20 20 24 20 20 20 
 20 20 20 20 20 23 20 20 23 20 20 23 20 20 20 20 20 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 </universes>
   </lattice>
-  <lattice id="46" name="UO2M Lrodded Assembly">
+  <lattice id="47" name="UO2M Lrodded Assembly">
     <pitch>1.26 1.26</pitch>
     <dimension>17 17</dimension>
     <lower_left>-10.71 -10.71</lower_left>
     <universes>
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
-20 20 20 20 20 23 20 20 15 20 20 23 20 20 20 20 20 
-20 20 20 15 20 20 20 20 20 20 20 20 20 15 20 20 20 
+20 20 20 20 20 23 20 20 24 20 20 23 20 20 20 20 20 
+20 20 20 24 20 20 20 20 20 20 20 20 20 24 20 20 20 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
-20 20 23 20 20 15 20 20 23 20 20 15 20 20 23 20 20 
-20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
-20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
-20 20 15 20 20 23 20 20 15 20 20 23 20 20 15 20 20 
+20 20 23 20 20 24 20 20 23 20 20 24 20 20 23 20 20 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
-20 20 23 20 20 15 20 20 23 20 20 15 20 20 23 20 20 
+20 20 24 20 20 23 20 20 24 20 20 23 20 20 24 20 20 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
-20 20 20 15 20 20 20 20 20 20 20 20 20 15 20 20 20 
-20 20 20 20 20 23 20 20 15 20 20 23 20 20 20 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 23 20 20 24 20 20 23 20 20 24 20 20 23 20 20 
+20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
+20 20 20 24 20 20 20 20 20 20 20 20 20 24 20 20 20 
+20 20 20 20 20 23 20 20 24 20 20 23 20 20 20 20 20 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 
 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 </universes>
   </lattice>
-  <lattice id="47" name="UO2HBP2SW rodded Assembly">
+  <lattice id="48" name="UO2HBP2SW rodded Assembly">
     <pitch>1.26 1.26</pitch>
     <dimension>17 17</dimension>
     <lower_left>-10.71 -10.71</lower_left>
     <universes>
 22 22 21 21 21 21 21 21 21 21 21 21 21 21 21 22 22 
 22 21 21 21 21 22 21 21 22 21 21 22 21 21 21 21 22 
-21 21 21 22 22 15 21 22 15 22 21 15 22 22 21 21 21 
-21 21 22 15 21 21 21 21 21 21 21 21 21 15 22 21 21 
+21 21 21 22 22 24 21 22 24 22 21 24 22 22 21 21 21 
+21 21 22 24 21 21 21 21 21 21 21 21 21 24 22 21 21 
 21 21 22 21 21 22 21 21 22 21 21 22 21 21 22 21 21 
-21 22 23 21 22 15 21 22 15 22 21 15 22 21 15 22 21 
+21 22 23 21 22 24 21 22 24 22 21 24 22 21 24 22 21 
 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 
 21 21 22 21 21 22 21 21 22 21 21 22 21 21 22 21 21 
-21 22 23 21 22 23 21 22 15 22 21 15 22 21 15 22 21 
+21 22 23 21 22 23 21 22 24 22 21 24 22 21 24 22 21 
 21 21 22 21 21 22 21 21 22 21 21 22 21 21 22 21 21 
 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 
-21 22 23 21 22 23 21 22 23 22 21 15 22 21 15 22 21 
+21 22 23 21 22 23 21 22 23 22 21 24 22 21 24 22 21 
 21 21 22 21 21 22 21 21 22 21 21 22 21 21 22 21 21 
-21 21 22 23 21 21 21 21 21 21 21 21 21 15 22 21 21 
+21 21 22 23 21 21 21 21 21 21 21 21 21 24 22 21 21 
 21 21 21 22 22 23 21 22 23 22 21 23 22 22 21 21 21 
 22 21 21 21 21 22 21 21 22 21 21 22 21 21 21 21 22 
 22 22 21 21 21 21 21 21 21 21 21 21 21 21 21 22 22 </universes>
   </lattice>
-  <lattice id="49" name="Baffle assembly">
+  <lattice id="50" name="Baffle assembly">
     <pitch>1.26 1.26</pitch>
     <dimension>17 17</dimension>
     <lower_left>-10.71 -10.71</lower_left>
@@ -550,18 +552,18 @@
 18 17 17 17 17 17 17 17 17 17 17 17 17 17 17 17 18 
 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 </universes>
   </lattice>
-  <lattice id="50" name="7X7 core lattice">
+  <lattice id="51" name="7X7 core lattice">
     <pitch>21.42 21.42</pitch>
     <dimension>7 7</dimension>
     <lower_left>-10.71 -10.71</lower_left>
     <universes>
-36 36 36 36 36 36 36 
-27 27 28 36 36 36 36 
-24 33 32 26 36 36 36 
-34 24 33 33 26 36 36 
-24 34 24 34 32 28 36 
-29 24 34 24 33 27 36 
-24 29 24 34 24 27 36 </universes>
+37 37 37 37 37 37 37 
+28 28 29 37 37 37 37 
+25 34 33 27 37 37 37 
+35 25 34 34 27 37 37 
+25 35 25 35 33 29 37 
+30 25 35 25 34 28 37 
+25 30 25 35 25 28 37 </universes>
   </lattice>
   <surface id="1" name="pin radius" type="z-cylinder" coeffs="0.0 0.0 0.41"/>
   <surface id="2" name="IFBA" type="z-cylinder" coeffs="0.0 0.0 0.411"/>

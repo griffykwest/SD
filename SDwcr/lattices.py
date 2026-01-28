@@ -37,7 +37,7 @@ lattices['UO2M Unrodded Assembly'].dimension = [17, 17]
 lattices['UO2M Unrodded Assembly'].lower_left = [-10.71, -10.71]
 lattices['UO2M Unrodded Assembly'].pitch = [1.26, 1.26]
 u = universes['UO2M complete']
-g = universes['guide tube']
+g = universes['guide tube w/o BPR complete']
 lattices['UO2M Unrodded Assembly'].universes = \
     [[u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
@@ -150,7 +150,7 @@ lattices['UO2HBP2S rodded Assembly'].pitch = [1.26, 1.26]
 u = universes['UO2H complete']
 b = universes['UO2HBP complete']
 gt = universes['guide tube w BPR complete']
-g = universes['guide tube']
+g = universes['guide tube w/o BPR complete']
 lattices['UO2HBP2S rodded Assembly'].universes = \
     [[b, b, u, u, u, u, u, u, u, u, u, u, u, u, u, b, b],
      [b, u, u, u, u, b, u, u, b, u, u, b, u, u, u, u, b],
@@ -178,7 +178,7 @@ lattices['UO2HBP2W rodded Assembly'].pitch = [1.26, 1.26]
 u = universes['UO2H complete']
 b = universes['UO2HBP complete']
 gt = universes['guide tube w BPR complete']
-g = universes['guide tube']
+g = universes['guide tube w/o BPR complete']
 lattices['UO2HBP2W rodded Assembly'].universes = \
     [[b, b, u, u, u, u, u, u, u, u, u, u, u, u, u, b, b],
      [b, u, u, u, u, b, u, u, b, u, u, b, u, u, u, u, b],
@@ -208,7 +208,7 @@ lattices['UO2M rodded Assembly'].lower_left = [-10.71, -10.71]
 lattices['UO2M rodded Assembly'].pitch = [1.26, 1.26]
 u = universes['UO2M complete']
 g = universes['guide tube w BPR complete']
-gt = universes['guide tube']
+gt = universes['guide tube w/o BPR complete']
 lattices['UO2M rodded Assembly'].universes = \
     [[u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
@@ -236,7 +236,7 @@ lattices['UO2M Mrodded Assembly'].lower_left = [-10.71, -10.71]
 lattices['UO2M Mrodded Assembly'].pitch = [1.26, 1.26]
 u = universes['UO2M complete']
 g = universes['guide tube w BPR complete']
-gt = universes['guide tube']
+gt = universes['guide tube w/o BPR complete']
 lattices['UO2M Mrodded Assembly'].universes = \
     [[u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
@@ -264,7 +264,7 @@ lattices['UO2M Lrodded Assembly'].lower_left = [-10.71, -10.71]
 lattices['UO2M Lrodded Assembly'].pitch = [1.26, 1.26]
 u = universes['UO2M complete']
 g = universes['guide tube w BPR complete']
-gt = universes['guide tube']
+gt = universes['guide tube w/o BPR complete']
 lattices['UO2M Lrodded Assembly'].universes = \
     [[u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
@@ -294,7 +294,7 @@ lattices['UO2HBP2SW rodded Assembly'].pitch = [1.26, 1.26]
 u = universes['UO2H complete']
 b = universes['UO2HBP complete']
 gt = universes['guide tube w BPR complete']
-g = universes['guide tube']
+g = universes['guide tube w/o BPR complete']
 lattices['UO2HBP2SW rodded Assembly'].universes = \
     [[b, b, u, u, u, u, u, u, u, u, u, u, u, u, u, b, b],
      [b, u, u, u, u, b, u, u, b, u, u, b, u, u, u, u, b],

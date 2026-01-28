@@ -44,6 +44,8 @@ combinedcells['UO2HBP Lower'] = openmc.Cell(name = 'UO2HBP Lower', fill= univers
 combinedcells['UO2HBP Upper'] = openmc.Cell(name= 'UO2HBP upper', fill = upper_water_fuel_univ, region= outer_spacer_box & +surfaces['z-top active'] & -surfaces['z-max'])
 combinedcells['guide tube w BPR Lower'] = openmc.Cell(name = 'guide tube w BPR Lower', fill= universes['guide tube w BPR'], region = outer_spacer_box & +surfaces['z-bottom active'] & -surfaces['z-top active'])
 combinedcells['guide tube w BPR Upper'] = openmc.Cell(name= 'guide tube w BPR upper', fill = upper_water_fuel_univ, region= outer_spacer_box & +surfaces['z-top active'] & -surfaces['z-max'])
+combinedcells['guide tube w/o BPR Lower'] = openmc.Cell(name = 'guide tube w/o BPR Lower', fill= universes['guide tube'], region = outer_spacer_box & +surfaces['z-bottom active'] & -surfaces['z-top active'])
+combinedcells['guide tube w/o BPR Upper'] = openmc.Cell(name= 'guide tube w/o BPR upper', fill = upper_water_fuel_univ, region= outer_spacer_box & +surfaces['z-top active'] & -surfaces['z-max'])
 
 
 
@@ -52,6 +54,7 @@ universes['UO2M complete'] = openmc.Universe(name='UO2M complete', cells= [combi
 universes['UO2H complete'] = openmc.Universe(name='UO2H complete', cells= [combinedcells['UO2H Lower'],combinedcells['UO2H Upper']])
 universes['UO2HBP complete'] = openmc.Universe(name='UO2HBP complete', cells= [combinedcells['UO2HBP Lower'],combinedcells['UO2HBP Upper']])
 universes['guide tube w BPR complete'] = openmc.Universe(name='guide tube w BPR complete', cells= [combinedcells['guide tube w BPR Lower'],combinedcells['guide tube w BPR Upper']])
+universes['guide tube w/o BPR complete'] = openmc.Universe(name='guide tube w/o BPR complete', cells= [combinedcells['guide tube w/o BPR Lower'],combinedcells['guide tube w/o BPR Upper']])
 
 
 universes['UO2L Unrodded Assembly'] = openmc.Universe( name='UO2L Unrodded Assembly')
