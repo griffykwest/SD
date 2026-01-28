@@ -2,6 +2,8 @@ import openmc
 import numpy as np
 from densitylookup import *
 from surfaces import *
+from specialinputs import*
+
 
 
 # ----------------------------
@@ -12,10 +14,11 @@ z_bot = -100                 # bottom of active fuel
 z_top = 143.84               # top of active fuel (m)
 z_edges = np.linspace(z_bot, z_top, n_axial + 1)
 z_centers = 0.5 * (z_edges[:-1] + z_edges[1:])
-print(z_edges)
-z_upper_edges = z_edges +z_top-z_bot
-print(z_upper_edges)
 
+z_upper_edges = z_edges +z_top-z_bot
+
+z_cr_edges = np.concatenate((z_edges[0:n_axial], z_upper_edges))
+print(z_cr_edges[40])
 h = np.linspace(0, 1, n_axial)  # normalized axial position 0->1
 
 T_min = 700
@@ -311,8 +314,13 @@ cells['moderatorH'] = openmc.Cell(name='moderatorH', region = +surfaces['claddin
 cells['moderatorHBP'] = openmc.Cell(name='moderatorHBP', region = +surfaces['cladding outer radius'], fill = moderator_cont_universe)
 cells['g_moderator1'] = openmc.Cell(name='g_moderator1', region = +surfaces['guide outer radius'], fill = g_moderator_cont_universe)
 cells['g_moderator2'] = openmc.Cell(name='g_moderator2', region = +surfaces['guide outer radius'], fill = g_moderator_cont_universe)
+cells['g_moderator3'] = openmc.Cell(name='g_moderator3', region = +surfaces['guide outer radius'], fill = g_moderator_cont_universe)
+cells['g_moderator4'] = openmc.Cell(name='g_moderator4', region = +surfaces['guide outer radius'], fill = g_moderator_cont_universe)
+cells['inner guide moderator no CR'] = openmc.Cell(name='inner guide moderator no CR', region = -surfaces['guide inner radius'], fill = i_g_moderator_n_BPR_cont_universe)
 cells['inner guide moderator no BPR'] = openmc.Cell(name='inner guide moderator no BPR', region = -surfaces['guide inner radius'], fill = i_g_moderator_n_BPR_cont_universe)
 cells['inner guide moderator w BPR'] = openmc.Cell(name='inner guide moderator w BPR', region = -surfaces['guide inner radius'] & +surfaces['BPR rod cladding outer radius'], fill = i_g_moderator_w_BPR_cont_universe)
+cells['inner guide moderator w CR'] = openmc.Cell(name='inner guide moderator w CR', region = -surfaces['guide inner radius'] & +surfaces['BPR rod cladding outer radius'], fill = i_g_moderator_w_BPR_cont_universe)
+
 """print(cells['spacerL'])
 print(cells['UO2L'])
 print(cells['moderatorHBP'])"""
@@ -326,6 +334,20 @@ cells['IFBA'].fill = axial_materials['IFBA']
 cells['BPRboron'] = openmc.Cell(name = 'BPRboron')
 cells['BPRboron'].fill = axial_materials['Borosilicate Glass']
 cells['BPRboron'].region = -surfaces['BPR rod cladding inner radius'] 
+
+cells['B4C CR'] = openmc.Cell(name = 'B4C CR')
+cells['B4C CR'].fill = axial_materials['B4C']
+cells['B4C CR'].region = -surfaces['BPR rod cladding inner radius'] 
+
+cells['B4C CR2'] = openmc.Cell(name = 'B4C CR2')
+cells['B4C CR2'].fill = axial_materials['B4C']
+cells['B4C CR2'].region = -surfaces['BPR rod cladding inner radius']
+
+cells['CR moderator above core'] = openmc.Cell(name = 'CR moderator above core')
+cells['CR moderator above core'].fill = axial_materials['moderator39']
+cells['CR moderator above core'].region = +surfaces['BPR rod cladding outer radius']
+
+
 
 #gap
 cells['gapL'] = openmc.Cell(name='gapL')
@@ -349,6 +371,14 @@ cells['gapHBP'].fill = axial_materials['gap']
 cells['cladBPR']= openmc.Cell(name='cladBPR')
 cells['cladBPR'].region= -surfaces['BPR rod cladding outer radius'] & +surfaces['BPR rod cladding inner radius'] 
 cells['cladBPR'].fill = axial_materials['SS304']
+
+cells['cladCR']= openmc.Cell(name='cladCR')
+cells['cladCR'].region= -surfaces['BPR rod cladding outer radius'] & +surfaces['BPR rod cladding inner radius'] 
+cells['cladCR'].fill = axial_materials['SS304']
+
+cells['cladCR2']= openmc.Cell(name='cladCR2')
+cells['cladCR2'].region= -surfaces['BPR rod cladding outer radius'] & +surfaces['BPR rod cladding inner radius'] 
+cells['cladCR2'].fill = axial_materials['SS304']
 
 cells['cladL']= openmc.Cell(name='cladL')
 cells['cladL'].region= -surfaces['cladding outer radius'] & +surfaces['cladding inner radius'] 
@@ -374,14 +404,29 @@ cells['guide tube BPR'] = openmc.Cell(name='guide tube BPR')
 cells['guide tube BPR'].region= +surfaces['guide inner radius'] & -surfaces['guide outer radius'] 
 cells['guide tube BPR'].fill = axial_materials['Cladding']
 
+cells['guide tube CR'] = openmc.Cell(name='guide tube CR')
+cells['guide tube CR'].region= +surfaces['guide inner radius'] & -surfaces['guide outer radius'] 
+cells['guide tube CR'].fill = axial_materials['Cladding']
+
+cells['guide tube no CR'] = openmc.Cell(name='guide tube no CR')
+cells['guide tube no CR'].region= +surfaces['guide inner radius'] & -surfaces['guide outer radius'] 
+cells['guide tube no CR'].fill = axial_materials['Cladding']
+
+cells['water above core'] = openmc.Cell(name='water above core')
+cells['water above core'].fill = axial_materials[f'moderator39']
+
 cells['water cell'] = openmc.Cell(name='water cell')
 cells['water cell'].fill = axial_materials[f'moderator20']
 
 cells['inconel cell'] = openmc.Cell(name='inconel cell')
 cells['inconel cell'].fill = axial_materials['SS304']
 
+###Control rods
 
-
+cells['Bank A'] = openmc.Cell(name = 'Bank A')
+cells['Bank B'] = openmc.Cell(name = 'Bank B')
+cells['Bank C'] = openmc.Cell(name = 'Bank C')
+cells['Shut Down Bank'] = openmc.Cell(name = 'Shut Down Bank')
 
 ###Non repeated stuff
 cells['UO2L Unrodded Assembly'] = openmc.Cell(name='UO2L Unrodded Assembly')
@@ -389,33 +434,34 @@ cells['UO2M Unrodded Assembly'] = openmc.Cell(name='UO2M Unrodded Assembly')
 cells['UO2H Unrodded Assembly'] = openmc.Cell(name='UO2H Unrodded Assembly')
 cells['UO2HBP1 Unrodded Assembly'] = openmc.Cell(name='UO2HBP1 Unrodded Assembly')
 cells['UO2HBP2 Unrodded Assembly'] = openmc.Cell(name='UO2HBP2 Unrodded Assembly')
-
-
 cells['UO2HBP2S rodded Assembly'] = openmc.Cell(name='UO2HBP2S rodded Assembly')
 cells['UO2HBP2W rodded Assembly'] = openmc.Cell(name='UO2HBP2W rodded Assembly')
-
 cells['UO2HBP2SW rodded Assembly'] = openmc.Cell(name='UO2HBP2SW rodded Assembly')
-
 cells['UO2M rodded Assembly'] = openmc.Cell(name='UO2M rodded Assembly')
 cells['UO2M Lrodded Assembly'] = openmc.Cell(name='UO2M Lrodded Assembly')
 cells['UO2M Mrodded Assembly'] = openmc.Cell(name='UO2M Mrodded Assembly')
+
+cells['Bank A Assembly'] = openmc.Cell( name='Bank A Assembly')
+cells['Bank B Assembly'] = openmc.Cell( name='Bank B Assembly')
+cells['Bank C Assembly'] = openmc.Cell( name='Bank C Assembly')
+cells['Bank Shut Down Assembly'] = openmc.Cell( name='Bank Shut Down Assembly')
+
 
 
 cells['Water Assembly'] = openmc.Cell(name='Water Assembly')
 cells['Baffle Assembly'] = openmc.Cell(name='Baffle Assembly')
 cells['Core'] = openmc.Cell(name='Core')
 cells['lower plenum']=openmc.Cell(name='lower plenum')
-cells['upper plenum']=openmc.Cell(name='upper plenum')
-
-cells['upper plenum'].region = -surfaces['z-max'] & +surfaces['z-top active'] & -surfaces['inner core barrel'] & +surfaces['qc x'] & +surfaces['qc y']
 cells['lower plenum'].region = +surfaces['z-min'] & -surfaces['z-bottom active'] & -surfaces['inner core barrel'] & +surfaces['qc x'] & +surfaces['qc y']
 
 cells['lower plenum'].fill = axial_materials['moderator0']
-cells['upper plenum'].fill = axial_materials['moderator39']
-
 cells['core barrel'] = openmc.Cell(name = 'core barrel')
-cells['core barrel'].region = -surfaces['outer core barrel'] & +surfaces['inner core barrel'] & -surfaces['z-max'] & +surfaces['z-min'] & +surfaces['qc x'] & +surfaces['qc y']
+cells['core barrel'].region = -surfaces['outer core barrel'] & +surfaces['inner core barrel'] & -surfaces['z-max'] & +surfaces['z-bottom active'] & +surfaces['qc x'] & +surfaces['qc y']
 cells['core barrel'].fill = axial_materials['SS304']
+
+cells['core barrel replace'] = openmc.Cell(name = 'core barrel replace')
+cells['core barrel replace'].region = -surfaces['outer core barrel'] & +surfaces['inner core barrel'] & +surfaces['z-min'] & -surfaces['z-bottom active'] & +surfaces['qc x'] & +surfaces['qc y']
+cells['core barrel replace'].fill = axial_materials['moderator0']
 
 cells['downcomer'] = openmc.Cell(name = 'downcomer')
 cells['downcomer'].region = -surfaces['rpv inner'] & +surfaces['outer core barrel'] & -surfaces['z-max'] & +surfaces['z-min'] & +surfaces['qc x'] & +surfaces['qc y']

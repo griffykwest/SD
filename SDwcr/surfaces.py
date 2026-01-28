@@ -34,7 +34,7 @@ surfaces['BPR rod pin radius'] = openmc.ZCylinder(r=R_BPRci, name= 'BPR rod pin 
 pitch=1.26
 
 hp = pitch / 2.0
-t_spacer = 0.05
+t_spacer = 0.03
 surfaces['spacer x-min'] = openmc.XPlane(x0=-hp+t_spacer, name='spacer x-min')
 surfaces['spacer x-max'] = openmc.XPlane(x0= hp-t_spacer, name='spacer x-max')
 surfaces['spacer y-min'] = openmc.YPlane(y0=-hp+t_spacer, name='spacer y-min')
@@ -70,8 +70,20 @@ surfaces['y-min'] = openmc.YPlane(y0=-hw, name='y-min')
 surfaces['y-max'] = openmc.YPlane(y0= hw, name='y-max')
 
 
+
+
+#================================================
+# Z in core
+#================================================
+z_ta=143.84
+z_ba=-100
+#Top of the Active fuel region
+surfaces['z-top active'] = openmc.ZPlane(z0=z_ta, name='z-top active')
+surfaces['z-bottom active'] = openmc.ZPlane(z0=z_ba, name='z-bottom active')
+
+
 z_min=-150
-z_max=300
+z_max=z_ta+(z_ta-z_ba)
 surfaces['z-min'] = openmc.ZPlane(z0=z_min)
 surfaces['z-max'] = openmc.ZPlane(z0=z_max)
 
@@ -83,16 +95,6 @@ surfaces['x-min'].boundary_type       = 'vacuum'
 
 surfaces['z-min'].boundary_type       = 'vacuum' 
 surfaces['z-max'].boundary_type       = 'vacuum'
-
-
-#================================================
-# Z in core
-#================================================
-z_ta=143.84
-z_ba=-100
-#Top of the Active fuel region
-surfaces['z-top active'] = openmc.ZPlane(z0=z_ta, name='z-top active')
-surfaces['z-bottom active'] = openmc.ZPlane(z0=z_ba, name='z-bottom active')
 
 #Spacer planes
 

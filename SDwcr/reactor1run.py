@@ -20,7 +20,7 @@ libary_path = os.path.expanduser('~/Downloads/cross_section_libs/endfb-viii.0-hd
 
 os.environ['OPENMC_CROSS_SECTIONS'] = libary_path
 
-batches = 2006
+batches = 2007
 inactive = 200 
 particles = 10000
 
@@ -28,7 +28,7 @@ particles = 10000
 
 
 
-cells['Core'].region = -surfaces['inner core barrel']  & +surfaces['qc x'] & +surfaces['qc y']# &-surfaces['z-top active'] & +surfaces['z-bottom active']
+cells['Core'].region = -surfaces['inner core barrel'] &-surfaces['z-max'] & +surfaces['z-bottom active']& +surfaces['qc x'] & +surfaces['qc y']# &-surfaces['z-top active'] & +surfaces['z-bottom active']
 
 #+surfaces['x-min'] & +surfaces['y-min'] & \-surfaces['x-max'] & -surfaces['y-max']
 
@@ -52,39 +52,26 @@ G=universes['UO2M Mrodded Assembly']
 S=universes['UO2HBP2S rodded Assembly']
 W=universes['UO2HBP2W rodded Assembly']
 D=universes['UO2HBP2SW rodded Assembly']
+a = universes['Bank A Assembly']
+b = universes['Bank B Assembly']
+c = universes['Bank C Assembly']
+d = universes['Bank Shut Down Assembly']
 
 
 
 lattices['Core'].universes=[
  [m,m,m,m,m,m,m],
  [H,H,C,m,m,m,m],
- [L,P,D,h,m,m,m],
- [G,L,P,P,h,m,m],
- [L,G,L,G,D,C,m],
- [I,L,G,L,P,H,m],
- [L,I,L,G,L,H,m]
+ [c,P,D,d,m,m,m],
+ [G,c,P,P,d,m,m],
+ [b,G,c,G,D,C,m],
+ [I,a,G,c,P,H,m],
+ [c,I,b,G,c,H,m]
 ]
 cells['Core'].fill = lattices['Core']
 
 universes['Core'] = openmc.Universe(name= 'Core', cells = [cells['Core']])
 
-geometry = openmc.Geometry()
-geometry.root_universe = universes['Core']
-geometry.export_to_xml()
-
-
-plot_1 = openmc.Plot()
-plot_1.filename = 'cell plot'
-plot_1.width = [r_rpvouter, r_rpvouter] #[pitch, pitch] #[r_rpvouter, r_rpvouter]
-plot_1.pixels = [4000, 4000]
-plot_1.origin = [r_rpvouter/2,r_rpvouter/2,150]
-#plot_1.width = [r_rpvouter/2,r_rpvouter/2,10] #[21.42,21.42] #[r_rpvouter/2,r_rpvouter/2,10]
-plot_1.basis = 'xy'
-plot_1.color_by = 'material'
-
-plot_file = openmc.Plots([plot_1])
-plot_file.export_to_xml()
-openmc.plot_geometry()
 
 
 # Start with the single materials (non-axial)
@@ -114,7 +101,7 @@ geometry.export_to_xml()
 
 # Step 1: get all surfaces actually used in cells
 used_surfaces = geometry.get_all_surfaces()
-#print(used_surfaces)
+print(used_surfaces)
 # Step 2: find all defined surfaces that are not used
 unused_surfaces = [surf for surf in surfaces.values() if surf not in used_surfaces]
 
@@ -123,7 +110,7 @@ plot_1 = openmc.Plot()
 plot_1.filename = 'plot_blue_water'
 plot_1.width = [r_rpvouter, r_rpvouter] #[r_rpvouter, r_rpvouter]
 plot_1.pixels = [4000, 4000]
-plot_1.origin = [r_rpvouter/2,r_rpvouter/2,10] #[r_rpvouter/2,r_rpvouter/2,10]
+plot_1.origin = [r_rpvouter/2,r_rpvouter/2,150] #[r_rpvouter/2,r_rpvouter/2,10]
 plot_1.basis = 'xy'
 plot_1.color_by = 'material'
 #plot_1.universe_depth = 2  # important
@@ -141,7 +128,7 @@ plot_2.colors = material_colors
 
 plot_file = openmc.Plots([plot_1,plot_2])
 plot_file.export_to_xml()
-#openmc.plot_geometry()
+openmc.plot_geometry()
 
 lower_left = (0, 0, z_min)
 upper_right = (hw, hw, z_max)
@@ -191,7 +178,7 @@ tallies_file.export_to_xml()
 #openmc.calculate_volumes()
 
 
-#openmc.run()
+openmc.run()
 xyslice(batches,20)
 xyslice(batches,1)
 xzslice(batches,1)
