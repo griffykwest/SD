@@ -7,6 +7,7 @@ import numpy as np
 import os
 from densitylookup import*
 from fluxplot import xyslice , xzslice
+from specialinputs import*
 
 
 #================================
@@ -19,14 +20,6 @@ libary_path = os.path.expanduser('~/Downloads/cross_section_libs/endfb-viii.0-hd
 
 
 os.environ['OPENMC_CROSS_SECTIONS'] = libary_path
-
-batches = 2007
-inactive = 200 
-particles = 10000
-
-
-
-
 
 cells['Core'].region = -surfaces['inner core barrel'] &-surfaces['z-max'] & +surfaces['z-bottom active']& +surfaces['qc x'] & +surfaces['qc y']# &-surfaces['z-top active'] & +surfaces['z-bottom active']
 
@@ -113,7 +106,6 @@ plot_1.pixels = [4000, 4000]
 plot_1.origin = [r_rpvouter/2,r_rpvouter/2,150] #[r_rpvouter/2,r_rpvouter/2,10]
 plot_1.basis = 'xy'
 plot_1.color_by = 'material'
-#plot_1.universe_depth = 2  # important
 plot_1.colors = material_colors
 
 plot_2 = openmc.Plot()
@@ -123,7 +115,6 @@ plot_2.pixels = [4000, 4000]
 plot_2.origin = [r_rpvouter/2,r_rpvouter/2,-99]#[r_rpvouter/2,r_rpvouter/2,-99]
 plot_2.basis = 'xy'
 plot_2.color_by = 'material'
-#plot_2.universe_depth = 2  # important
 plot_2.colors = material_colors
 
 plot_file = openmc.Plots([plot_1,plot_2])
@@ -136,9 +127,9 @@ vol_calc = openmc.VolumeCalculation(list(axial_materials.values()), 100000000,
                                     lower_left, upper_right)
 
 settings= openmc.Settings()
-settings.batches=batches
+settings.batches=Batches
 settings.inactive=inactive
-settings.particles=particles
+settings.particles=PPB
 settings.temperature = {
     'method': 'interpolation',
     'range': (293.0, 1800.0),
@@ -163,9 +154,6 @@ source.space = openmc.stats.CylindricalIndependent(
     origin=(0.0, 0.0, 0.0)  # center of the cylinder
 )
 source.only_fissionable = True
-#source.constraints = {'fissionable': True}
-#source.space = openmc.stats.Point([0,0,0])
-
 
 settings.source = source
 settings.volume_calculations = [vol_calc]
@@ -179,6 +167,6 @@ tallies_file.export_to_xml()
 
 
 openmc.run()
-xyslice(batches,20)
-xyslice(batches,1)
-xzslice(batches,1)
+xyslice(Batches,20)
+xyslice(Batches,1)
+xzslice(Batches,1)

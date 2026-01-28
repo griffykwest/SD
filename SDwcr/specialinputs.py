@@ -7,6 +7,7 @@ C_Bank = 1  #0 is fully out 1 is fully in
 Shut_Down_Bank = 1  #0 is fully out 1 is fully in
 Batches = 2000
 PPB = 10000
+inactive = 200
 Boron_PPM = 0
 """
 n_axial = 40                # number of axial slices

@@ -1,0 +1,9 @@
+cd ~/SD
+git add -A
+git commit -m "Adjusted input file uses"
+git push
+
+
+# 5️⃣ (Optional) On another machine, pull the changes
+# cd ~/SD
+# git pull

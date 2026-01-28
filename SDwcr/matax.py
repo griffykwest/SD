@@ -36,7 +36,6 @@ T_mod_z  = np.linspace(290+273.15, 310+273.15, n_axial)
 axial_materials = {}
 multiplier = 1.0
 fuel_density = 10.30
-ppm_Boron=2200
 for i in range(n_axial):
 
     uo2l=openmc.Material()
@@ -76,7 +75,7 @@ for i in range(n_axial):
     moderator.name= f'moderator{i}'
     moderator.add_element('H', 2.0)
     moderator.add_element('O', 1.0)
-    moderator.add_element('B', ppm_Boron * 1e-6)
+    moderator.add_element('B', Boron_PPM * 1e-6)
     moderator.set_density('g/cm3', density)
     moderator.temperature = T_mod_z[i]
     axial_materials[f'moderator{i}']  = moderator
