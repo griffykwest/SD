@@ -301,15 +301,12 @@
   <cell id="299" name="moderatorHBP" fill="4" region="4" universe="14"/>
   <cell id="300" name="g_moderator1" fill="5" region="6" universe="15"/>
   <cell id="301" name="g_moderator2" fill="5" region="6" universe="16"/>
-  <cell id="302" name="g_moderator3" fill="5" region="6" universe="17"/>
   <cell id="303" name="g_moderator4" fill="5" region="6" universe="18"/>
   <cell id="304" name="inner guide moderator no CR" fill="6" region="-5" universe="18"/>
   <cell id="305" name="inner guide moderator no BPR" fill="6" region="-5" universe="15"/>
   <cell id="306" name="inner guide moderator w BPR" fill="7" region="-5 8" universe="16"/>
-  <cell id="307" name="inner guide moderator w CR" fill="7" region="-5 8" universe="17"/>
   <cell id="308" name="IFBA" material="161" region="-2 1" universe="14"/>
   <cell id="309" name="BPRboron" material="165" region="-7" universe="16"/>
-  <cell id="310" name="B4C CR" material="166" region="-7" universe="17"/>
   <cell id="311" name="B4C CR2" material="166" region="-7" universe="19"/>
   <cell id="312" name="CR moderator above core" material="160" region="8" universe="19"/>
   <cell id="313" name="gapL" material="167" region="-3 1" universe="11"/>
@@ -317,7 +314,6 @@
   <cell id="315" name="gapH" material="167" region="-3 1" universe="13"/>
   <cell id="316" name="gapHBP" material="167" region="-3 2" universe="14"/>
   <cell id="317" name="cladBPR" material="164" region="-8 7" universe="16"/>
-  <cell id="318" name="cladCR" material="164" region="-8 7" universe="17"/>
   <cell id="319" name="cladCR2" material="164" region="-8 7" universe="19"/>
   <cell id="320" name="cladL" material="162" region="-4 3" universe="11"/>
   <cell id="321" name="cladM" material="162" region="-4 3" universe="12"/>
@@ -325,360 +321,360 @@
   <cell id="323" name="cladHBP" material="162" region="-4 3" universe="14"/>
   <cell id="324" name="guide tube" material="162" region="5 -6" universe="15"/>
   <cell id="325" name="guide tube BPR" material="162" region="5 -6" universe="16"/>
-  <cell id="326" name="guide tube CR" material="162" region="5 -6" universe="17"/>
   <cell id="327" name="guide tube no CR" material="162" region="5 -6" universe="18"/>
-  <cell id="328" name="water above core" material="160" universe="20"/>
   <cell id="329" name="water cell" material="84" universe="21"/>
   <cell id="330" name="inconel cell" material="164" universe="22"/>
-  <cell id="338" name="UO2HBP1 Unrodded Assembly" fill="57" universe="36"/>
-  <cell id="339" name="UO2HBP2 Unrodded Assembly" fill="58" universe="37"/>
-  <cell id="342" name="UO2HBP2SW rodded Assembly" fill="64" universe="40"/>
-  <cell id="344" name="UO2M Lrodded Assembly" fill="63" universe="42"/>
-  <cell id="345" name="UO2M Mrodded Assembly" fill="62" universe="43"/>
-  <cell id="346" name="Bank A Assembly" fill="51" universe="44"/>
-  <cell id="347" name="Bank B Assembly" fill="52" universe="45"/>
-  <cell id="348" name="Bank C Assembly" fill="53" universe="46"/>
-  <cell id="349" name="Bank Shut Down Assembly" fill="54" universe="47"/>
-  <cell id="351" name="Baffle Assembly" fill="66" universe="49"/>
-  <cell id="352" name="Core" fill="67" region="-26 -25 23 34 35" universe="10"/>
-  <cell id="353" name="lower plenum" material="4" region="24 -23 -26 34 35" universe="10"/>
-  <cell id="354" name="core barrel" material="164" region="-27 26 -25 23 34 35" universe="10"/>
-  <cell id="355" name="core barrel replace" material="4" region="-27 26 24 -23 34 35" universe="10"/>
-  <cell id="356" name="downcomer" material="4" region="-28 27 -25 24 34 35" universe="10"/>
-  <cell id="357" name="rpv" material="164" region="-29 28 -25 24 34 35" universe="10"/>
-  <cell id="358" name="UO2L Lower" fill="11" region="-15 14 -17 16 23 -22" universe="23"/>
-  <cell id="359" name="UO2L upper" fill="8" region="-15 14 -17 16 22 -25" universe="23"/>
-  <cell id="360" name="UO2M Lower" fill="12" region="-15 14 -17 16 23 -22" universe="24"/>
-  <cell id="361" name="UO2M upper" fill="8" region="-15 14 -17 16 22 -25" universe="24"/>
-  <cell id="362" name="UO2H Lower" fill="13" region="-15 14 -17 16 23 -22" universe="25"/>
-  <cell id="363" name="UO2H upper" fill="8" region="-15 14 -17 16 22 -25" universe="25"/>
-  <cell id="364" name="UO2HBP Lower" fill="14" region="-15 14 -17 16 23 -22" universe="26"/>
-  <cell id="365" name="UO2HBP upper" fill="8" region="-15 14 -17 16 22 -25" universe="26"/>
-  <cell id="366" name="guide tube w BPR Lower" fill="16" region="-15 14 -17 16 23 -22" universe="27"/>
-  <cell id="367" name="guide tube w BPR upper" fill="8" region="-15 14 -17 16 22 -25" universe="27"/>
-  <cell id="368" name="guide tube w/o BPR Lower" fill="15" region="-15 14 -17 16 23 -22" universe="28"/>
-  <cell id="369" name="guide tube w/o BPR upper" fill="8" region="-15 14 -17 16 22 -25" universe="28"/>
-  <cell id="370" name="Bank_A_axial_0" fill="18" region="77 -78" universe="29"/>
-  <cell id="371" name="Bank_A_axial_1" fill="18" region="78 -79" universe="29"/>
-  <cell id="372" name="Bank_A_axial_2" fill="18" region="79 -80" universe="29"/>
-  <cell id="373" name="Bank_A_axial_3" fill="18" region="80 -81" universe="29"/>
-  <cell id="374" name="Bank_A_axial_4" fill="18" region="81 -82" universe="29"/>
-  <cell id="375" name="Bank_A_axial_5" fill="18" region="82 -83" universe="29"/>
-  <cell id="376" name="Bank_A_axial_6" fill="18" region="83 -84" universe="29"/>
-  <cell id="377" name="Bank_A_axial_7" fill="18" region="84 -85" universe="29"/>
-  <cell id="378" name="Bank_A_axial_8" fill="18" region="85 -86" universe="29"/>
-  <cell id="379" name="Bank_A_axial_9" fill="18" region="86 -87" universe="29"/>
-  <cell id="380" name="Bank_A_axial_10" fill="17" region="87 -88" universe="29"/>
-  <cell id="381" name="Bank_A_axial_11" fill="17" region="88 -89" universe="29"/>
-  <cell id="382" name="Bank_A_axial_12" fill="17" region="89 -90" universe="29"/>
-  <cell id="383" name="Bank_A_axial_13" fill="17" region="90 -91" universe="29"/>
-  <cell id="384" name="Bank_A_axial_14" fill="17" region="91 -92" universe="29"/>
-  <cell id="385" name="Bank_A_axial_15" fill="17" region="92 -93" universe="29"/>
-  <cell id="386" name="Bank_A_axial_16" fill="17" region="93 -94" universe="29"/>
-  <cell id="387" name="Bank_A_axial_17" fill="17" region="94 -95" universe="29"/>
-  <cell id="388" name="Bank_A_axial_18" fill="17" region="95 -96" universe="29"/>
-  <cell id="389" name="Bank_A_axial_19" fill="17" region="96 -97" universe="29"/>
-  <cell id="390" name="Bank_A_axial_20" fill="17" region="97 -98" universe="29"/>
-  <cell id="391" name="Bank_A_axial_21" fill="17" region="98 -99" universe="29"/>
-  <cell id="392" name="Bank_A_axial_22" fill="17" region="99 -100" universe="29"/>
-  <cell id="393" name="Bank_A_axial_23" fill="17" region="100 -101" universe="29"/>
-  <cell id="394" name="Bank_A_axial_24" fill="17" region="101 -102" universe="29"/>
-  <cell id="395" name="Bank_A_axial_25" fill="17" region="102 -103" universe="29"/>
-  <cell id="396" name="Bank_A_axial_26" fill="17" region="103 -104" universe="29"/>
-  <cell id="397" name="Bank_A_axial_27" fill="17" region="104 -105" universe="29"/>
-  <cell id="398" name="Bank_A_axial_28" fill="17" region="105 -106" universe="29"/>
-  <cell id="399" name="Bank_A_axial_29" fill="17" region="106 -107" universe="29"/>
-  <cell id="400" name="Bank_A_axial_30" fill="17" region="107 -108" universe="29"/>
-  <cell id="401" name="Bank_A_axial_31" fill="17" region="108 -109" universe="29"/>
-  <cell id="402" name="Bank_A_axial_32" fill="17" region="109 -110" universe="29"/>
-  <cell id="403" name="Bank_A_axial_33" fill="17" region="110 -111" universe="29"/>
-  <cell id="404" name="Bank_A_axial_34" fill="17" region="111 -112" universe="29"/>
-  <cell id="405" name="Bank_A_axial_35" fill="17" region="112 -113" universe="29"/>
-  <cell id="406" name="Bank_A_axial_36" fill="17" region="113 -114" universe="29"/>
-  <cell id="407" name="Bank_A_axial_37" fill="17" region="114 -115" universe="29"/>
-  <cell id="408" name="Bank_A_axial_38" fill="17" region="115 -116" universe="29"/>
-  <cell id="409" name="Bank_A_axial_39" fill="17" region="116 -117" universe="29"/>
-  <cell id="410" name="Bank_A_axial_40" fill="19" region="117 -118" universe="29"/>
-  <cell id="411" name="Bank_A_axial_41" fill="19" region="118 -119" universe="29"/>
-  <cell id="412" name="Bank_A_axial_42" fill="19" region="119 -120" universe="29"/>
-  <cell id="413" name="Bank_A_axial_43" fill="19" region="120 -121" universe="29"/>
-  <cell id="414" name="Bank_A_axial_44" fill="19" region="121 -122" universe="29"/>
-  <cell id="415" name="Bank_A_axial_45" fill="19" region="122 -123" universe="29"/>
-  <cell id="416" name="Bank_A_axial_46" fill="19" region="123 -124" universe="29"/>
-  <cell id="417" name="Bank_A_axial_47" fill="19" region="124 -125" universe="29"/>
-  <cell id="418" name="Bank_A_axial_48" fill="19" region="125 -126" universe="29"/>
-  <cell id="419" name="Bank_A_axial_49" fill="19" region="126 -127" universe="29"/>
-  <cell id="420" name="Bank_A_axial_50" fill="20" region="127 -128" universe="29"/>
-  <cell id="421" name="Bank_A_axial_51" fill="20" region="128 -129" universe="29"/>
-  <cell id="422" name="Bank_A_axial_52" fill="20" region="129 -130" universe="29"/>
-  <cell id="423" name="Bank_A_axial_53" fill="20" region="130 -131" universe="29"/>
-  <cell id="424" name="Bank_A_axial_54" fill="20" region="131 -132" universe="29"/>
-  <cell id="425" name="Bank_A_axial_55" fill="20" region="132 -133" universe="29"/>
-  <cell id="426" name="Bank_A_axial_56" fill="20" region="133 -134" universe="29"/>
-  <cell id="427" name="Bank_A_axial_57" fill="20" region="134 -135" universe="29"/>
-  <cell id="428" name="Bank_A_axial_58" fill="20" region="135 -136" universe="29"/>
-  <cell id="429" name="Bank_A_axial_59" fill="20" region="136 -137" universe="29"/>
-  <cell id="430" name="Bank_A_axial_60" fill="20" region="137 -138" universe="29"/>
-  <cell id="431" name="Bank_A_axial_61" fill="20" region="138 -139" universe="29"/>
-  <cell id="432" name="Bank_A_axial_62" fill="20" region="139 -140" universe="29"/>
-  <cell id="433" name="Bank_A_axial_63" fill="20" region="140 -141" universe="29"/>
-  <cell id="434" name="Bank_A_axial_64" fill="20" region="141 -142" universe="29"/>
-  <cell id="435" name="Bank_A_axial_65" fill="20" region="142 -143" universe="29"/>
-  <cell id="436" name="Bank_A_axial_66" fill="20" region="143 -144" universe="29"/>
-  <cell id="437" name="Bank_A_axial_67" fill="20" region="144 -145" universe="29"/>
-  <cell id="438" name="Bank_A_axial_68" fill="20" region="145 -146" universe="29"/>
-  <cell id="439" name="Bank_A_axial_69" fill="20" region="146 -147" universe="29"/>
-  <cell id="440" name="Bank_A_axial_70" fill="20" region="147 -148" universe="29"/>
-  <cell id="441" name="Bank_A_axial_71" fill="20" region="148 -149" universe="29"/>
-  <cell id="442" name="Bank_A_axial_72" fill="20" region="149 -150" universe="29"/>
-  <cell id="443" name="Bank_A_axial_73" fill="20" region="150 -151" universe="29"/>
-  <cell id="444" name="Bank_A_axial_74" fill="20" region="151 -152" universe="29"/>
-  <cell id="445" name="Bank_A_axial_75" fill="20" region="152 -153" universe="29"/>
-  <cell id="446" name="Bank_A_axial_76" fill="20" region="153 -154" universe="29"/>
-  <cell id="447" name="Bank_A_axial_77" fill="20" region="154 -155" universe="29"/>
-  <cell id="448" name="Bank_A_axial_78" fill="20" region="155 -156" universe="29"/>
-  <cell id="449" name="Bank_A_axial_79" fill="20" region="156 -157" universe="29"/>
-  <cell id="450" name="Bank_B_axial_0" fill="18" region="77 -78" universe="30"/>
-  <cell id="451" name="Bank_B_axial_1" fill="18" region="78 -79" universe="30"/>
-  <cell id="452" name="Bank_B_axial_2" fill="18" region="79 -80" universe="30"/>
-  <cell id="453" name="Bank_B_axial_3" fill="18" region="80 -81" universe="30"/>
-  <cell id="454" name="Bank_B_axial_4" fill="18" region="81 -82" universe="30"/>
-  <cell id="455" name="Bank_B_axial_5" fill="18" region="82 -83" universe="30"/>
-  <cell id="456" name="Bank_B_axial_6" fill="18" region="83 -84" universe="30"/>
-  <cell id="457" name="Bank_B_axial_7" fill="18" region="84 -85" universe="30"/>
-  <cell id="458" name="Bank_B_axial_8" fill="18" region="85 -86" universe="30"/>
-  <cell id="459" name="Bank_B_axial_9" fill="18" region="86 -87" universe="30"/>
-  <cell id="460" name="Bank_B_axial_10" fill="17" region="87 -88" universe="30"/>
-  <cell id="461" name="Bank_B_axial_11" fill="17" region="88 -89" universe="30"/>
-  <cell id="462" name="Bank_B_axial_12" fill="17" region="89 -90" universe="30"/>
-  <cell id="463" name="Bank_B_axial_13" fill="17" region="90 -91" universe="30"/>
-  <cell id="464" name="Bank_B_axial_14" fill="17" region="91 -92" universe="30"/>
-  <cell id="465" name="Bank_B_axial_15" fill="17" region="92 -93" universe="30"/>
-  <cell id="466" name="Bank_B_axial_16" fill="17" region="93 -94" universe="30"/>
-  <cell id="467" name="Bank_B_axial_17" fill="17" region="94 -95" universe="30"/>
-  <cell id="468" name="Bank_B_axial_18" fill="17" region="95 -96" universe="30"/>
-  <cell id="469" name="Bank_B_axial_19" fill="17" region="96 -97" universe="30"/>
-  <cell id="470" name="Bank_B_axial_20" fill="17" region="97 -98" universe="30"/>
-  <cell id="471" name="Bank_B_axial_21" fill="17" region="98 -99" universe="30"/>
-  <cell id="472" name="Bank_B_axial_22" fill="17" region="99 -100" universe="30"/>
-  <cell id="473" name="Bank_B_axial_23" fill="17" region="100 -101" universe="30"/>
-  <cell id="474" name="Bank_B_axial_24" fill="17" region="101 -102" universe="30"/>
-  <cell id="475" name="Bank_B_axial_25" fill="17" region="102 -103" universe="30"/>
-  <cell id="476" name="Bank_B_axial_26" fill="17" region="103 -104" universe="30"/>
-  <cell id="477" name="Bank_B_axial_27" fill="17" region="104 -105" universe="30"/>
-  <cell id="478" name="Bank_B_axial_28" fill="17" region="105 -106" universe="30"/>
-  <cell id="479" name="Bank_B_axial_29" fill="17" region="106 -107" universe="30"/>
-  <cell id="480" name="Bank_B_axial_30" fill="17" region="107 -108" universe="30"/>
-  <cell id="481" name="Bank_B_axial_31" fill="17" region="108 -109" universe="30"/>
-  <cell id="482" name="Bank_B_axial_32" fill="17" region="109 -110" universe="30"/>
-  <cell id="483" name="Bank_B_axial_33" fill="17" region="110 -111" universe="30"/>
-  <cell id="484" name="Bank_B_axial_34" fill="17" region="111 -112" universe="30"/>
-  <cell id="485" name="Bank_B_axial_35" fill="17" region="112 -113" universe="30"/>
-  <cell id="486" name="Bank_B_axial_36" fill="17" region="113 -114" universe="30"/>
-  <cell id="487" name="Bank_B_axial_37" fill="17" region="114 -115" universe="30"/>
-  <cell id="488" name="Bank_B_axial_38" fill="17" region="115 -116" universe="30"/>
-  <cell id="489" name="Bank_B_axial_39" fill="17" region="116 -117" universe="30"/>
-  <cell id="490" name="Bank_B_axial_40" fill="19" region="117 -118" universe="30"/>
-  <cell id="491" name="Bank_B_axial_41" fill="19" region="118 -119" universe="30"/>
-  <cell id="492" name="Bank_B_axial_42" fill="19" region="119 -120" universe="30"/>
-  <cell id="493" name="Bank_B_axial_43" fill="19" region="120 -121" universe="30"/>
-  <cell id="494" name="Bank_B_axial_44" fill="19" region="121 -122" universe="30"/>
-  <cell id="495" name="Bank_B_axial_45" fill="19" region="122 -123" universe="30"/>
-  <cell id="496" name="Bank_B_axial_46" fill="19" region="123 -124" universe="30"/>
-  <cell id="497" name="Bank_B_axial_47" fill="19" region="124 -125" universe="30"/>
-  <cell id="498" name="Bank_B_axial_48" fill="19" region="125 -126" universe="30"/>
-  <cell id="499" name="Bank_B_axial_49" fill="19" region="126 -127" universe="30"/>
-  <cell id="500" name="Bank_B_axial_50" fill="20" region="127 -128" universe="30"/>
-  <cell id="501" name="Bank_B_axial_51" fill="20" region="128 -129" universe="30"/>
-  <cell id="502" name="Bank_B_axial_52" fill="20" region="129 -130" universe="30"/>
-  <cell id="503" name="Bank_B_axial_53" fill="20" region="130 -131" universe="30"/>
-  <cell id="504" name="Bank_B_axial_54" fill="20" region="131 -132" universe="30"/>
-  <cell id="505" name="Bank_B_axial_55" fill="20" region="132 -133" universe="30"/>
-  <cell id="506" name="Bank_B_axial_56" fill="20" region="133 -134" universe="30"/>
-  <cell id="507" name="Bank_B_axial_57" fill="20" region="134 -135" universe="30"/>
-  <cell id="508" name="Bank_B_axial_58" fill="20" region="135 -136" universe="30"/>
-  <cell id="509" name="Bank_B_axial_59" fill="20" region="136 -137" universe="30"/>
-  <cell id="510" name="Bank_B_axial_60" fill="20" region="137 -138" universe="30"/>
-  <cell id="511" name="Bank_B_axial_61" fill="20" region="138 -139" universe="30"/>
-  <cell id="512" name="Bank_B_axial_62" fill="20" region="139 -140" universe="30"/>
-  <cell id="513" name="Bank_B_axial_63" fill="20" region="140 -141" universe="30"/>
-  <cell id="514" name="Bank_B_axial_64" fill="20" region="141 -142" universe="30"/>
-  <cell id="515" name="Bank_B_axial_65" fill="20" region="142 -143" universe="30"/>
-  <cell id="516" name="Bank_B_axial_66" fill="20" region="143 -144" universe="30"/>
-  <cell id="517" name="Bank_B_axial_67" fill="20" region="144 -145" universe="30"/>
-  <cell id="518" name="Bank_B_axial_68" fill="20" region="145 -146" universe="30"/>
-  <cell id="519" name="Bank_B_axial_69" fill="20" region="146 -147" universe="30"/>
-  <cell id="520" name="Bank_B_axial_70" fill="20" region="147 -148" universe="30"/>
-  <cell id="521" name="Bank_B_axial_71" fill="20" region="148 -149" universe="30"/>
-  <cell id="522" name="Bank_B_axial_72" fill="20" region="149 -150" universe="30"/>
-  <cell id="523" name="Bank_B_axial_73" fill="20" region="150 -151" universe="30"/>
-  <cell id="524" name="Bank_B_axial_74" fill="20" region="151 -152" universe="30"/>
-  <cell id="525" name="Bank_B_axial_75" fill="20" region="152 -153" universe="30"/>
-  <cell id="526" name="Bank_B_axial_76" fill="20" region="153 -154" universe="30"/>
-  <cell id="527" name="Bank_B_axial_77" fill="20" region="154 -155" universe="30"/>
-  <cell id="528" name="Bank_B_axial_78" fill="20" region="155 -156" universe="30"/>
-  <cell id="529" name="Bank_B_axial_79" fill="20" region="156 -157" universe="30"/>
-  <cell id="530" name="Bank_C_axial_0" fill="18" region="77 -78" universe="31"/>
-  <cell id="531" name="Bank_C_axial_1" fill="18" region="78 -79" universe="31"/>
-  <cell id="532" name="Bank_C_axial_2" fill="18" region="79 -80" universe="31"/>
-  <cell id="533" name="Bank_C_axial_3" fill="18" region="80 -81" universe="31"/>
-  <cell id="534" name="Bank_C_axial_4" fill="18" region="81 -82" universe="31"/>
-  <cell id="535" name="Bank_C_axial_5" fill="18" region="82 -83" universe="31"/>
-  <cell id="536" name="Bank_C_axial_6" fill="18" region="83 -84" universe="31"/>
-  <cell id="537" name="Bank_C_axial_7" fill="18" region="84 -85" universe="31"/>
-  <cell id="538" name="Bank_C_axial_8" fill="18" region="85 -86" universe="31"/>
-  <cell id="539" name="Bank_C_axial_9" fill="18" region="86 -87" universe="31"/>
-  <cell id="540" name="Bank_C_axial_10" fill="17" region="87 -88" universe="31"/>
-  <cell id="541" name="Bank_C_axial_11" fill="17" region="88 -89" universe="31"/>
-  <cell id="542" name="Bank_C_axial_12" fill="17" region="89 -90" universe="31"/>
-  <cell id="543" name="Bank_C_axial_13" fill="17" region="90 -91" universe="31"/>
-  <cell id="544" name="Bank_C_axial_14" fill="17" region="91 -92" universe="31"/>
-  <cell id="545" name="Bank_C_axial_15" fill="17" region="92 -93" universe="31"/>
-  <cell id="546" name="Bank_C_axial_16" fill="17" region="93 -94" universe="31"/>
-  <cell id="547" name="Bank_C_axial_17" fill="17" region="94 -95" universe="31"/>
-  <cell id="548" name="Bank_C_axial_18" fill="17" region="95 -96" universe="31"/>
-  <cell id="549" name="Bank_C_axial_19" fill="17" region="96 -97" universe="31"/>
-  <cell id="550" name="Bank_C_axial_20" fill="17" region="97 -98" universe="31"/>
-  <cell id="551" name="Bank_C_axial_21" fill="17" region="98 -99" universe="31"/>
-  <cell id="552" name="Bank_C_axial_22" fill="17" region="99 -100" universe="31"/>
-  <cell id="553" name="Bank_C_axial_23" fill="17" region="100 -101" universe="31"/>
-  <cell id="554" name="Bank_C_axial_24" fill="17" region="101 -102" universe="31"/>
-  <cell id="555" name="Bank_C_axial_25" fill="17" region="102 -103" universe="31"/>
-  <cell id="556" name="Bank_C_axial_26" fill="17" region="103 -104" universe="31"/>
-  <cell id="557" name="Bank_C_axial_27" fill="17" region="104 -105" universe="31"/>
-  <cell id="558" name="Bank_C_axial_28" fill="17" region="105 -106" universe="31"/>
-  <cell id="559" name="Bank_C_axial_29" fill="17" region="106 -107" universe="31"/>
-  <cell id="560" name="Bank_C_axial_30" fill="17" region="107 -108" universe="31"/>
-  <cell id="561" name="Bank_C_axial_31" fill="17" region="108 -109" universe="31"/>
-  <cell id="562" name="Bank_C_axial_32" fill="17" region="109 -110" universe="31"/>
-  <cell id="563" name="Bank_C_axial_33" fill="17" region="110 -111" universe="31"/>
-  <cell id="564" name="Bank_C_axial_34" fill="17" region="111 -112" universe="31"/>
-  <cell id="565" name="Bank_C_axial_35" fill="17" region="112 -113" universe="31"/>
-  <cell id="566" name="Bank_C_axial_36" fill="17" region="113 -114" universe="31"/>
-  <cell id="567" name="Bank_C_axial_37" fill="17" region="114 -115" universe="31"/>
-  <cell id="568" name="Bank_C_axial_38" fill="17" region="115 -116" universe="31"/>
-  <cell id="569" name="Bank_C_axial_39" fill="17" region="116 -117" universe="31"/>
-  <cell id="570" name="Bank_C_axial_40" fill="19" region="117 -118" universe="31"/>
-  <cell id="571" name="Bank_C_axial_41" fill="19" region="118 -119" universe="31"/>
-  <cell id="572" name="Bank_C_axial_42" fill="19" region="119 -120" universe="31"/>
-  <cell id="573" name="Bank_C_axial_43" fill="19" region="120 -121" universe="31"/>
-  <cell id="574" name="Bank_C_axial_44" fill="19" region="121 -122" universe="31"/>
-  <cell id="575" name="Bank_C_axial_45" fill="19" region="122 -123" universe="31"/>
-  <cell id="576" name="Bank_C_axial_46" fill="19" region="123 -124" universe="31"/>
-  <cell id="577" name="Bank_C_axial_47" fill="19" region="124 -125" universe="31"/>
-  <cell id="578" name="Bank_C_axial_48" fill="19" region="125 -126" universe="31"/>
-  <cell id="579" name="Bank_C_axial_49" fill="19" region="126 -127" universe="31"/>
-  <cell id="580" name="Bank_C_axial_50" fill="20" region="127 -128" universe="31"/>
-  <cell id="581" name="Bank_C_axial_51" fill="20" region="128 -129" universe="31"/>
-  <cell id="582" name="Bank_C_axial_52" fill="20" region="129 -130" universe="31"/>
-  <cell id="583" name="Bank_C_axial_53" fill="20" region="130 -131" universe="31"/>
-  <cell id="584" name="Bank_C_axial_54" fill="20" region="131 -132" universe="31"/>
-  <cell id="585" name="Bank_C_axial_55" fill="20" region="132 -133" universe="31"/>
-  <cell id="586" name="Bank_C_axial_56" fill="20" region="133 -134" universe="31"/>
-  <cell id="587" name="Bank_C_axial_57" fill="20" region="134 -135" universe="31"/>
-  <cell id="588" name="Bank_C_axial_58" fill="20" region="135 -136" universe="31"/>
-  <cell id="589" name="Bank_C_axial_59" fill="20" region="136 -137" universe="31"/>
-  <cell id="590" name="Bank_C_axial_60" fill="20" region="137 -138" universe="31"/>
-  <cell id="591" name="Bank_C_axial_61" fill="20" region="138 -139" universe="31"/>
-  <cell id="592" name="Bank_C_axial_62" fill="20" region="139 -140" universe="31"/>
-  <cell id="593" name="Bank_C_axial_63" fill="20" region="140 -141" universe="31"/>
-  <cell id="594" name="Bank_C_axial_64" fill="20" region="141 -142" universe="31"/>
-  <cell id="595" name="Bank_C_axial_65" fill="20" region="142 -143" universe="31"/>
-  <cell id="596" name="Bank_C_axial_66" fill="20" region="143 -144" universe="31"/>
-  <cell id="597" name="Bank_C_axial_67" fill="20" region="144 -145" universe="31"/>
-  <cell id="598" name="Bank_C_axial_68" fill="20" region="145 -146" universe="31"/>
-  <cell id="599" name="Bank_C_axial_69" fill="20" region="146 -147" universe="31"/>
-  <cell id="600" name="Bank_C_axial_70" fill="20" region="147 -148" universe="31"/>
-  <cell id="601" name="Bank_C_axial_71" fill="20" region="148 -149" universe="31"/>
-  <cell id="602" name="Bank_C_axial_72" fill="20" region="149 -150" universe="31"/>
-  <cell id="603" name="Bank_C_axial_73" fill="20" region="150 -151" universe="31"/>
-  <cell id="604" name="Bank_C_axial_74" fill="20" region="151 -152" universe="31"/>
-  <cell id="605" name="Bank_C_axial_75" fill="20" region="152 -153" universe="31"/>
-  <cell id="606" name="Bank_C_axial_76" fill="20" region="153 -154" universe="31"/>
-  <cell id="607" name="Bank_C_axial_77" fill="20" region="154 -155" universe="31"/>
-  <cell id="608" name="Bank_C_axial_78" fill="20" region="155 -156" universe="31"/>
-  <cell id="609" name="Bank_C_axial_79" fill="20" region="156 -157" universe="31"/>
-  <cell id="610" name="Bank_Shut_Down_axial_0" fill="18" region="77 -78" universe="32"/>
-  <cell id="611" name="Bank_Shut_Down_axial_1" fill="18" region="78 -79" universe="32"/>
-  <cell id="612" name="Bank_Shut_Down_axial_2" fill="18" region="79 -80" universe="32"/>
-  <cell id="613" name="Bank_Shut_Down_axial_3" fill="18" region="80 -81" universe="32"/>
-  <cell id="614" name="Bank_Shut_Down_axial_4" fill="18" region="81 -82" universe="32"/>
-  <cell id="615" name="Bank_Shut_Down_axial_5" fill="18" region="82 -83" universe="32"/>
-  <cell id="616" name="Bank_Shut_Down_axial_6" fill="18" region="83 -84" universe="32"/>
-  <cell id="617" name="Bank_Shut_Down_axial_7" fill="18" region="84 -85" universe="32"/>
-  <cell id="618" name="Bank_Shut_Down_axial_8" fill="18" region="85 -86" universe="32"/>
-  <cell id="619" name="Bank_Shut_Down_axial_9" fill="18" region="86 -87" universe="32"/>
-  <cell id="620" name="Bank_Shut_Down_axial_10" fill="17" region="87 -88" universe="32"/>
-  <cell id="621" name="Bank_Shut_Down_axial_11" fill="17" region="88 -89" universe="32"/>
-  <cell id="622" name="Bank_Shut_Down_axial_12" fill="17" region="89 -90" universe="32"/>
-  <cell id="623" name="Bank_Shut_Down_axial_13" fill="17" region="90 -91" universe="32"/>
-  <cell id="624" name="Bank_Shut_Down_axial_14" fill="17" region="91 -92" universe="32"/>
-  <cell id="625" name="Bank_Shut_Down_axial_15" fill="17" region="92 -93" universe="32"/>
-  <cell id="626" name="Bank_Shut_Down_axial_16" fill="17" region="93 -94" universe="32"/>
-  <cell id="627" name="Bank_Shut_Down_axial_17" fill="17" region="94 -95" universe="32"/>
-  <cell id="628" name="Bank_Shut_Down_axial_18" fill="17" region="95 -96" universe="32"/>
-  <cell id="629" name="Bank_Shut_Down_axial_19" fill="17" region="96 -97" universe="32"/>
-  <cell id="630" name="Bank_Shut_Down_axial_20" fill="17" region="97 -98" universe="32"/>
-  <cell id="631" name="Bank_Shut_Down_axial_21" fill="17" region="98 -99" universe="32"/>
-  <cell id="632" name="Bank_Shut_Down_axial_22" fill="17" region="99 -100" universe="32"/>
-  <cell id="633" name="Bank_Shut_Down_axial_23" fill="17" region="100 -101" universe="32"/>
-  <cell id="634" name="Bank_Shut_Down_axial_24" fill="17" region="101 -102" universe="32"/>
-  <cell id="635" name="Bank_Shut_Down_axial_25" fill="17" region="102 -103" universe="32"/>
-  <cell id="636" name="Bank_Shut_Down_axial_26" fill="17" region="103 -104" universe="32"/>
-  <cell id="637" name="Bank_Shut_Down_axial_27" fill="17" region="104 -105" universe="32"/>
-  <cell id="638" name="Bank_Shut_Down_axial_28" fill="17" region="105 -106" universe="32"/>
-  <cell id="639" name="Bank_Shut_Down_axial_29" fill="17" region="106 -107" universe="32"/>
-  <cell id="640" name="Bank_Shut_Down_axial_30" fill="17" region="107 -108" universe="32"/>
-  <cell id="641" name="Bank_Shut_Down_axial_31" fill="17" region="108 -109" universe="32"/>
-  <cell id="642" name="Bank_Shut_Down_axial_32" fill="17" region="109 -110" universe="32"/>
-  <cell id="643" name="Bank_Shut_Down_axial_33" fill="17" region="110 -111" universe="32"/>
-  <cell id="644" name="Bank_Shut_Down_axial_34" fill="17" region="111 -112" universe="32"/>
-  <cell id="645" name="Bank_Shut_Down_axial_35" fill="17" region="112 -113" universe="32"/>
-  <cell id="646" name="Bank_Shut_Down_axial_36" fill="17" region="113 -114" universe="32"/>
-  <cell id="647" name="Bank_Shut_Down_axial_37" fill="17" region="114 -115" universe="32"/>
-  <cell id="648" name="Bank_Shut_Down_axial_38" fill="17" region="115 -116" universe="32"/>
-  <cell id="649" name="Bank_Shut_Down_axial_39" fill="17" region="116 -117" universe="32"/>
-  <cell id="650" name="Bank_Shut_Down_axial_40" fill="19" region="117 -118" universe="32"/>
-  <cell id="651" name="Bank_Shut_Down_axial_41" fill="19" region="118 -119" universe="32"/>
-  <cell id="652" name="Bank_Shut_Down_axial_42" fill="19" region="119 -120" universe="32"/>
-  <cell id="653" name="Bank_Shut_Down_axial_43" fill="19" region="120 -121" universe="32"/>
-  <cell id="654" name="Bank_Shut_Down_axial_44" fill="19" region="121 -122" universe="32"/>
-  <cell id="655" name="Bank_Shut_Down_axial_45" fill="19" region="122 -123" universe="32"/>
-  <cell id="656" name="Bank_Shut_Down_axial_46" fill="19" region="123 -124" universe="32"/>
-  <cell id="657" name="Bank_Shut_Down_axial_47" fill="19" region="124 -125" universe="32"/>
-  <cell id="658" name="Bank_Shut_Down_axial_48" fill="19" region="125 -126" universe="32"/>
-  <cell id="659" name="Bank_Shut_Down_axial_49" fill="19" region="126 -127" universe="32"/>
-  <cell id="660" name="Bank_Shut_Down_axial_50" fill="20" region="127 -128" universe="32"/>
-  <cell id="661" name="Bank_Shut_Down_axial_51" fill="20" region="128 -129" universe="32"/>
-  <cell id="662" name="Bank_Shut_Down_axial_52" fill="20" region="129 -130" universe="32"/>
-  <cell id="663" name="Bank_Shut_Down_axial_53" fill="20" region="130 -131" universe="32"/>
-  <cell id="664" name="Bank_Shut_Down_axial_54" fill="20" region="131 -132" universe="32"/>
-  <cell id="665" name="Bank_Shut_Down_axial_55" fill="20" region="132 -133" universe="32"/>
-  <cell id="666" name="Bank_Shut_Down_axial_56" fill="20" region="133 -134" universe="32"/>
-  <cell id="667" name="Bank_Shut_Down_axial_57" fill="20" region="134 -135" universe="32"/>
-  <cell id="668" name="Bank_Shut_Down_axial_58" fill="20" region="135 -136" universe="32"/>
-  <cell id="669" name="Bank_Shut_Down_axial_59" fill="20" region="136 -137" universe="32"/>
-  <cell id="670" name="Bank_Shut_Down_axial_60" fill="20" region="137 -138" universe="32"/>
-  <cell id="671" name="Bank_Shut_Down_axial_61" fill="20" region="138 -139" universe="32"/>
-  <cell id="672" name="Bank_Shut_Down_axial_62" fill="20" region="139 -140" universe="32"/>
-  <cell id="673" name="Bank_Shut_Down_axial_63" fill="20" region="140 -141" universe="32"/>
-  <cell id="674" name="Bank_Shut_Down_axial_64" fill="20" region="141 -142" universe="32"/>
-  <cell id="675" name="Bank_Shut_Down_axial_65" fill="20" region="142 -143" universe="32"/>
-  <cell id="676" name="Bank_Shut_Down_axial_66" fill="20" region="143 -144" universe="32"/>
-  <cell id="677" name="Bank_Shut_Down_axial_67" fill="20" region="144 -145" universe="32"/>
-  <cell id="678" name="Bank_Shut_Down_axial_68" fill="20" region="145 -146" universe="32"/>
-  <cell id="679" name="Bank_Shut_Down_axial_69" fill="20" region="146 -147" universe="32"/>
-  <cell id="680" name="Bank_Shut_Down_axial_70" fill="20" region="147 -148" universe="32"/>
-  <cell id="681" name="Bank_Shut_Down_axial_71" fill="20" region="148 -149" universe="32"/>
-  <cell id="682" name="Bank_Shut_Down_axial_72" fill="20" region="149 -150" universe="32"/>
-  <cell id="683" name="Bank_Shut_Down_axial_73" fill="20" region="150 -151" universe="32"/>
-  <cell id="684" name="Bank_Shut_Down_axial_74" fill="20" region="151 -152" universe="32"/>
-  <cell id="685" name="Bank_Shut_Down_axial_75" fill="20" region="152 -153" universe="32"/>
-  <cell id="686" name="Bank_Shut_Down_axial_76" fill="20" region="153 -154" universe="32"/>
-  <cell id="687" name="Bank_Shut_Down_axial_77" fill="20" region="154 -155" universe="32"/>
-  <cell id="688" name="Bank_Shut_Down_axial_78" fill="20" region="155 -156" universe="32"/>
-  <cell id="689" name="Bank_Shut_Down_axial_79" fill="20" region="156 -157" universe="32"/>
-  <lattice id="51" name="Bank A Assembly">
+  <cell id="338" name="UO2HBP1 Unrodded Assembly" fill="59" universe="36"/>
+  <cell id="340" name="UO2HBP2S rodded Assembly" fill="61" universe="38"/>
+  <cell id="341" name="UO2HBP2W rodded Assembly" fill="62" universe="39"/>
+  <cell id="342" name="UO2HBP2SW rodded Assembly" fill="66" universe="40"/>
+  <cell id="344" name="UO2M Lrodded Assembly" fill="65" universe="42"/>
+  <cell id="345" name="UO2M Mrodded Assembly" fill="64" universe="43"/>
+  <cell id="346" name="Bank A Assembly" fill="52" universe="44"/>
+  <cell id="347" name="Bank B Assembly" fill="53" universe="45"/>
+  <cell id="348" name="Bank C Assembly" fill="54" universe="46"/>
+  <cell id="349" name="Bank Shut Down Assembly" fill="55" universe="47"/>
+  <cell id="350" name="Low Bank Shut Down Assembly" fill="56" universe="48"/>
+  <cell id="352" name="Baffle Assembly" fill="68" universe="50"/>
+  <cell id="353" name="Core" fill="69" region="-26 -25 23 34 35" universe="10"/>
+  <cell id="354" name="lower plenum" material="4" region="24 -23 -26 34 35" universe="10"/>
+  <cell id="355" name="core barrel" material="164" region="-27 26 -25 23 34 35" universe="10"/>
+  <cell id="356" name="core barrel replace" material="4" region="-27 26 24 -23 34 35" universe="10"/>
+  <cell id="357" name="downcomer" material="4" region="-28 27 -25 24 34 35" universe="10"/>
+  <cell id="358" name="rpv" material="164" region="-29 28 -25 24 34 35" universe="10"/>
+  <cell id="359" name="UO2L Lower" fill="11" region="-15 14 -17 16 23 -22" universe="23"/>
+  <cell id="360" name="UO2L upper" fill="8" region="-15 14 -17 16 22 -25" universe="23"/>
+  <cell id="361" name="UO2M Lower" fill="12" region="-15 14 -17 16 23 -22" universe="24"/>
+  <cell id="362" name="UO2M upper" fill="8" region="-15 14 -17 16 22 -25" universe="24"/>
+  <cell id="363" name="UO2H Lower" fill="13" region="-15 14 -17 16 23 -22" universe="25"/>
+  <cell id="364" name="UO2H upper" fill="8" region="-15 14 -17 16 22 -25" universe="25"/>
+  <cell id="365" name="UO2HBP Lower" fill="14" region="-15 14 -17 16 23 -22" universe="26"/>
+  <cell id="366" name="UO2HBP upper" fill="8" region="-15 14 -17 16 22 -25" universe="26"/>
+  <cell id="367" name="guide tube w BPR Lower" fill="16" region="-15 14 -17 16 23 -22" universe="27"/>
+  <cell id="368" name="guide tube w BPR upper" fill="8" region="-15 14 -17 16 22 -25" universe="27"/>
+  <cell id="369" name="guide tube w/o BPR Lower" fill="15" region="-15 14 -17 16 23 -22" universe="28"/>
+  <cell id="370" name="guide tube w/o BPR upper" fill="8" region="-15 14 -17 16 22 -25" universe="28"/>
+  <cell id="371" name="Bank_A_axial_0" fill="18" region="77 -78" universe="29"/>
+  <cell id="372" name="Bank_A_axial_1" fill="18" region="78 -79" universe="29"/>
+  <cell id="373" name="Bank_A_axial_2" fill="18" region="79 -80" universe="29"/>
+  <cell id="374" name="Bank_A_axial_3" fill="18" region="80 -81" universe="29"/>
+  <cell id="375" name="Bank_A_axial_4" fill="18" region="81 -82" universe="29"/>
+  <cell id="376" name="Bank_A_axial_5" fill="18" region="82 -83" universe="29"/>
+  <cell id="377" name="Bank_A_axial_6" fill="18" region="83 -84" universe="29"/>
+  <cell id="378" name="Bank_A_axial_7" fill="18" region="84 -85" universe="29"/>
+  <cell id="379" name="Bank_A_axial_8" fill="18" region="85 -86" universe="29"/>
+  <cell id="380" name="Bank_A_axial_9" fill="18" region="86 -87" universe="29"/>
+  <cell id="381" name="Bank_A_axial_10" fill="18" region="87 -88" universe="29"/>
+  <cell id="382" name="Bank_A_axial_11" fill="18" region="88 -89" universe="29"/>
+  <cell id="383" name="Bank_A_axial_12" fill="18" region="89 -90" universe="29"/>
+  <cell id="384" name="Bank_A_axial_13" fill="18" region="90 -91" universe="29"/>
+  <cell id="385" name="Bank_A_axial_14" fill="18" region="91 -92" universe="29"/>
+  <cell id="386" name="Bank_A_axial_15" fill="18" region="92 -93" universe="29"/>
+  <cell id="387" name="Bank_A_axial_16" fill="18" region="93 -94" universe="29"/>
+  <cell id="388" name="Bank_A_axial_17" fill="18" region="94 -95" universe="29"/>
+  <cell id="389" name="Bank_A_axial_18" fill="18" region="95 -96" universe="29"/>
+  <cell id="390" name="Bank_A_axial_19" fill="18" region="96 -97" universe="29"/>
+  <cell id="391" name="Bank_A_axial_20" fill="18" region="97 -98" universe="29"/>
+  <cell id="392" name="Bank_A_axial_21" fill="18" region="98 -99" universe="29"/>
+  <cell id="393" name="Bank_A_axial_22" fill="18" region="99 -100" universe="29"/>
+  <cell id="394" name="Bank_A_axial_23" fill="18" region="100 -101" universe="29"/>
+  <cell id="395" name="Bank_A_axial_24" fill="18" region="101 -102" universe="29"/>
+  <cell id="396" name="Bank_A_axial_25" fill="18" region="102 -103" universe="29"/>
+  <cell id="397" name="Bank_A_axial_26" fill="18" region="103 -104" universe="29"/>
+  <cell id="398" name="Bank_A_axial_27" fill="18" region="104 -105" universe="29"/>
+  <cell id="399" name="Bank_A_axial_28" fill="18" region="105 -106" universe="29"/>
+  <cell id="400" name="Bank_A_axial_29" fill="18" region="106 -107" universe="29"/>
+  <cell id="401" name="Bank_A_axial_30" fill="18" region="107 -108" universe="29"/>
+  <cell id="402" name="Bank_A_axial_31" fill="18" region="108 -109" universe="29"/>
+  <cell id="403" name="Bank_A_axial_32" fill="18" region="109 -110" universe="29"/>
+  <cell id="404" name="Bank_A_axial_33" fill="18" region="110 -111" universe="29"/>
+  <cell id="405" name="Bank_A_axial_34" fill="18" region="111 -112" universe="29"/>
+  <cell id="406" name="Bank_A_axial_35" fill="18" region="112 -113" universe="29"/>
+  <cell id="407" name="Bank_A_axial_36" fill="18" region="113 -114" universe="29"/>
+  <cell id="408" name="Bank_A_axial_37" fill="18" region="114 -115" universe="29"/>
+  <cell id="409" name="Bank_A_axial_38" fill="18" region="115 -116" universe="29"/>
+  <cell id="410" name="Bank_A_axial_39" fill="18" region="116 -117" universe="29"/>
+  <cell id="411" name="Bank_A_axial_40" fill="19" region="117 -118" universe="29"/>
+  <cell id="412" name="Bank_A_axial_41" fill="19" region="118 -119" universe="29"/>
+  <cell id="413" name="Bank_A_axial_42" fill="19" region="119 -120" universe="29"/>
+  <cell id="414" name="Bank_A_axial_43" fill="19" region="120 -121" universe="29"/>
+  <cell id="415" name="Bank_A_axial_44" fill="19" region="121 -122" universe="29"/>
+  <cell id="416" name="Bank_A_axial_45" fill="19" region="122 -123" universe="29"/>
+  <cell id="417" name="Bank_A_axial_46" fill="19" region="123 -124" universe="29"/>
+  <cell id="418" name="Bank_A_axial_47" fill="19" region="124 -125" universe="29"/>
+  <cell id="419" name="Bank_A_axial_48" fill="19" region="125 -126" universe="29"/>
+  <cell id="420" name="Bank_A_axial_49" fill="19" region="126 -127" universe="29"/>
+  <cell id="421" name="Bank_A_axial_50" fill="19" region="127 -128" universe="29"/>
+  <cell id="422" name="Bank_A_axial_51" fill="19" region="128 -129" universe="29"/>
+  <cell id="423" name="Bank_A_axial_52" fill="19" region="129 -130" universe="29"/>
+  <cell id="424" name="Bank_A_axial_53" fill="19" region="130 -131" universe="29"/>
+  <cell id="425" name="Bank_A_axial_54" fill="19" region="131 -132" universe="29"/>
+  <cell id="426" name="Bank_A_axial_55" fill="19" region="132 -133" universe="29"/>
+  <cell id="427" name="Bank_A_axial_56" fill="19" region="133 -134" universe="29"/>
+  <cell id="428" name="Bank_A_axial_57" fill="19" region="134 -135" universe="29"/>
+  <cell id="429" name="Bank_A_axial_58" fill="19" region="135 -136" universe="29"/>
+  <cell id="430" name="Bank_A_axial_59" fill="19" region="136 -137" universe="29"/>
+  <cell id="431" name="Bank_A_axial_60" fill="19" region="137 -138" universe="29"/>
+  <cell id="432" name="Bank_A_axial_61" fill="19" region="138 -139" universe="29"/>
+  <cell id="433" name="Bank_A_axial_62" fill="19" region="139 -140" universe="29"/>
+  <cell id="434" name="Bank_A_axial_63" fill="19" region="140 -141" universe="29"/>
+  <cell id="435" name="Bank_A_axial_64" fill="19" region="141 -142" universe="29"/>
+  <cell id="436" name="Bank_A_axial_65" fill="19" region="142 -143" universe="29"/>
+  <cell id="437" name="Bank_A_axial_66" fill="19" region="143 -144" universe="29"/>
+  <cell id="438" name="Bank_A_axial_67" fill="19" region="144 -145" universe="29"/>
+  <cell id="439" name="Bank_A_axial_68" fill="19" region="145 -146" universe="29"/>
+  <cell id="440" name="Bank_A_axial_69" fill="19" region="146 -147" universe="29"/>
+  <cell id="441" name="Bank_A_axial_70" fill="19" region="147 -148" universe="29"/>
+  <cell id="442" name="Bank_A_axial_71" fill="19" region="148 -149" universe="29"/>
+  <cell id="443" name="Bank_A_axial_72" fill="19" region="149 -150" universe="29"/>
+  <cell id="444" name="Bank_A_axial_73" fill="19" region="150 -151" universe="29"/>
+  <cell id="445" name="Bank_A_axial_74" fill="19" region="151 -152" universe="29"/>
+  <cell id="446" name="Bank_A_axial_75" fill="19" region="152 -153" universe="29"/>
+  <cell id="447" name="Bank_A_axial_76" fill="19" region="153 -154" universe="29"/>
+  <cell id="448" name="Bank_A_axial_77" fill="19" region="154 -155" universe="29"/>
+  <cell id="449" name="Bank_A_axial_78" fill="19" region="155 -156" universe="29"/>
+  <cell id="450" name="Bank_A_axial_79" fill="19" region="156 -157" universe="29"/>
+  <cell id="451" name="Bank_B_axial_0" fill="18" region="77 -78" universe="30"/>
+  <cell id="452" name="Bank_B_axial_1" fill="18" region="78 -79" universe="30"/>
+  <cell id="453" name="Bank_B_axial_2" fill="18" region="79 -80" universe="30"/>
+  <cell id="454" name="Bank_B_axial_3" fill="18" region="80 -81" universe="30"/>
+  <cell id="455" name="Bank_B_axial_4" fill="18" region="81 -82" universe="30"/>
+  <cell id="456" name="Bank_B_axial_5" fill="18" region="82 -83" universe="30"/>
+  <cell id="457" name="Bank_B_axial_6" fill="18" region="83 -84" universe="30"/>
+  <cell id="458" name="Bank_B_axial_7" fill="18" region="84 -85" universe="30"/>
+  <cell id="459" name="Bank_B_axial_8" fill="18" region="85 -86" universe="30"/>
+  <cell id="460" name="Bank_B_axial_9" fill="18" region="86 -87" universe="30"/>
+  <cell id="461" name="Bank_B_axial_10" fill="18" region="87 -88" universe="30"/>
+  <cell id="462" name="Bank_B_axial_11" fill="18" region="88 -89" universe="30"/>
+  <cell id="463" name="Bank_B_axial_12" fill="18" region="89 -90" universe="30"/>
+  <cell id="464" name="Bank_B_axial_13" fill="18" region="90 -91" universe="30"/>
+  <cell id="465" name="Bank_B_axial_14" fill="18" region="91 -92" universe="30"/>
+  <cell id="466" name="Bank_B_axial_15" fill="18" region="92 -93" universe="30"/>
+  <cell id="467" name="Bank_B_axial_16" fill="18" region="93 -94" universe="30"/>
+  <cell id="468" name="Bank_B_axial_17" fill="18" region="94 -95" universe="30"/>
+  <cell id="469" name="Bank_B_axial_18" fill="18" region="95 -96" universe="30"/>
+  <cell id="470" name="Bank_B_axial_19" fill="18" region="96 -97" universe="30"/>
+  <cell id="471" name="Bank_B_axial_20" fill="18" region="97 -98" universe="30"/>
+  <cell id="472" name="Bank_B_axial_21" fill="18" region="98 -99" universe="30"/>
+  <cell id="473" name="Bank_B_axial_22" fill="18" region="99 -100" universe="30"/>
+  <cell id="474" name="Bank_B_axial_23" fill="18" region="100 -101" universe="30"/>
+  <cell id="475" name="Bank_B_axial_24" fill="18" region="101 -102" universe="30"/>
+  <cell id="476" name="Bank_B_axial_25" fill="18" region="102 -103" universe="30"/>
+  <cell id="477" name="Bank_B_axial_26" fill="18" region="103 -104" universe="30"/>
+  <cell id="478" name="Bank_B_axial_27" fill="18" region="104 -105" universe="30"/>
+  <cell id="479" name="Bank_B_axial_28" fill="18" region="105 -106" universe="30"/>
+  <cell id="480" name="Bank_B_axial_29" fill="18" region="106 -107" universe="30"/>
+  <cell id="481" name="Bank_B_axial_30" fill="18" region="107 -108" universe="30"/>
+  <cell id="482" name="Bank_B_axial_31" fill="18" region="108 -109" universe="30"/>
+  <cell id="483" name="Bank_B_axial_32" fill="18" region="109 -110" universe="30"/>
+  <cell id="484" name="Bank_B_axial_33" fill="18" region="110 -111" universe="30"/>
+  <cell id="485" name="Bank_B_axial_34" fill="18" region="111 -112" universe="30"/>
+  <cell id="486" name="Bank_B_axial_35" fill="18" region="112 -113" universe="30"/>
+  <cell id="487" name="Bank_B_axial_36" fill="18" region="113 -114" universe="30"/>
+  <cell id="488" name="Bank_B_axial_37" fill="18" region="114 -115" universe="30"/>
+  <cell id="489" name="Bank_B_axial_38" fill="18" region="115 -116" universe="30"/>
+  <cell id="490" name="Bank_B_axial_39" fill="18" region="116 -117" universe="30"/>
+  <cell id="491" name="Bank_B_axial_40" fill="19" region="117 -118" universe="30"/>
+  <cell id="492" name="Bank_B_axial_41" fill="19" region="118 -119" universe="30"/>
+  <cell id="493" name="Bank_B_axial_42" fill="19" region="119 -120" universe="30"/>
+  <cell id="494" name="Bank_B_axial_43" fill="19" region="120 -121" universe="30"/>
+  <cell id="495" name="Bank_B_axial_44" fill="19" region="121 -122" universe="30"/>
+  <cell id="496" name="Bank_B_axial_45" fill="19" region="122 -123" universe="30"/>
+  <cell id="497" name="Bank_B_axial_46" fill="19" region="123 -124" universe="30"/>
+  <cell id="498" name="Bank_B_axial_47" fill="19" region="124 -125" universe="30"/>
+  <cell id="499" name="Bank_B_axial_48" fill="19" region="125 -126" universe="30"/>
+  <cell id="500" name="Bank_B_axial_49" fill="19" region="126 -127" universe="30"/>
+  <cell id="501" name="Bank_B_axial_50" fill="19" region="127 -128" universe="30"/>
+  <cell id="502" name="Bank_B_axial_51" fill="19" region="128 -129" universe="30"/>
+  <cell id="503" name="Bank_B_axial_52" fill="19" region="129 -130" universe="30"/>
+  <cell id="504" name="Bank_B_axial_53" fill="19" region="130 -131" universe="30"/>
+  <cell id="505" name="Bank_B_axial_54" fill="19" region="131 -132" universe="30"/>
+  <cell id="506" name="Bank_B_axial_55" fill="19" region="132 -133" universe="30"/>
+  <cell id="507" name="Bank_B_axial_56" fill="19" region="133 -134" universe="30"/>
+  <cell id="508" name="Bank_B_axial_57" fill="19" region="134 -135" universe="30"/>
+  <cell id="509" name="Bank_B_axial_58" fill="19" region="135 -136" universe="30"/>
+  <cell id="510" name="Bank_B_axial_59" fill="19" region="136 -137" universe="30"/>
+  <cell id="511" name="Bank_B_axial_60" fill="19" region="137 -138" universe="30"/>
+  <cell id="512" name="Bank_B_axial_61" fill="19" region="138 -139" universe="30"/>
+  <cell id="513" name="Bank_B_axial_62" fill="19" region="139 -140" universe="30"/>
+  <cell id="514" name="Bank_B_axial_63" fill="19" region="140 -141" universe="30"/>
+  <cell id="515" name="Bank_B_axial_64" fill="19" region="141 -142" universe="30"/>
+  <cell id="516" name="Bank_B_axial_65" fill="19" region="142 -143" universe="30"/>
+  <cell id="517" name="Bank_B_axial_66" fill="19" region="143 -144" universe="30"/>
+  <cell id="518" name="Bank_B_axial_67" fill="19" region="144 -145" universe="30"/>
+  <cell id="519" name="Bank_B_axial_68" fill="19" region="145 -146" universe="30"/>
+  <cell id="520" name="Bank_B_axial_69" fill="19" region="146 -147" universe="30"/>
+  <cell id="521" name="Bank_B_axial_70" fill="19" region="147 -148" universe="30"/>
+  <cell id="522" name="Bank_B_axial_71" fill="19" region="148 -149" universe="30"/>
+  <cell id="523" name="Bank_B_axial_72" fill="19" region="149 -150" universe="30"/>
+  <cell id="524" name="Bank_B_axial_73" fill="19" region="150 -151" universe="30"/>
+  <cell id="525" name="Bank_B_axial_74" fill="19" region="151 -152" universe="30"/>
+  <cell id="526" name="Bank_B_axial_75" fill="19" region="152 -153" universe="30"/>
+  <cell id="527" name="Bank_B_axial_76" fill="19" region="153 -154" universe="30"/>
+  <cell id="528" name="Bank_B_axial_77" fill="19" region="154 -155" universe="30"/>
+  <cell id="529" name="Bank_B_axial_78" fill="19" region="155 -156" universe="30"/>
+  <cell id="530" name="Bank_B_axial_79" fill="19" region="156 -157" universe="30"/>
+  <cell id="531" name="Bank_C_axial_0" fill="18" region="77 -78" universe="31"/>
+  <cell id="532" name="Bank_C_axial_1" fill="18" region="78 -79" universe="31"/>
+  <cell id="533" name="Bank_C_axial_2" fill="18" region="79 -80" universe="31"/>
+  <cell id="534" name="Bank_C_axial_3" fill="18" region="80 -81" universe="31"/>
+  <cell id="535" name="Bank_C_axial_4" fill="18" region="81 -82" universe="31"/>
+  <cell id="536" name="Bank_C_axial_5" fill="18" region="82 -83" universe="31"/>
+  <cell id="537" name="Bank_C_axial_6" fill="18" region="83 -84" universe="31"/>
+  <cell id="538" name="Bank_C_axial_7" fill="18" region="84 -85" universe="31"/>
+  <cell id="539" name="Bank_C_axial_8" fill="18" region="85 -86" universe="31"/>
+  <cell id="540" name="Bank_C_axial_9" fill="18" region="86 -87" universe="31"/>
+  <cell id="541" name="Bank_C_axial_10" fill="18" region="87 -88" universe="31"/>
+  <cell id="542" name="Bank_C_axial_11" fill="18" region="88 -89" universe="31"/>
+  <cell id="543" name="Bank_C_axial_12" fill="18" region="89 -90" universe="31"/>
+  <cell id="544" name="Bank_C_axial_13" fill="18" region="90 -91" universe="31"/>
+  <cell id="545" name="Bank_C_axial_14" fill="18" region="91 -92" universe="31"/>
+  <cell id="546" name="Bank_C_axial_15" fill="18" region="92 -93" universe="31"/>
+  <cell id="547" name="Bank_C_axial_16" fill="18" region="93 -94" universe="31"/>
+  <cell id="548" name="Bank_C_axial_17" fill="18" region="94 -95" universe="31"/>
+  <cell id="549" name="Bank_C_axial_18" fill="18" region="95 -96" universe="31"/>
+  <cell id="550" name="Bank_C_axial_19" fill="18" region="96 -97" universe="31"/>
+  <cell id="551" name="Bank_C_axial_20" fill="18" region="97 -98" universe="31"/>
+  <cell id="552" name="Bank_C_axial_21" fill="18" region="98 -99" universe="31"/>
+  <cell id="553" name="Bank_C_axial_22" fill="18" region="99 -100" universe="31"/>
+  <cell id="554" name="Bank_C_axial_23" fill="18" region="100 -101" universe="31"/>
+  <cell id="555" name="Bank_C_axial_24" fill="18" region="101 -102" universe="31"/>
+  <cell id="556" name="Bank_C_axial_25" fill="18" region="102 -103" universe="31"/>
+  <cell id="557" name="Bank_C_axial_26" fill="18" region="103 -104" universe="31"/>
+  <cell id="558" name="Bank_C_axial_27" fill="18" region="104 -105" universe="31"/>
+  <cell id="559" name="Bank_C_axial_28" fill="18" region="105 -106" universe="31"/>
+  <cell id="560" name="Bank_C_axial_29" fill="18" region="106 -107" universe="31"/>
+  <cell id="561" name="Bank_C_axial_30" fill="18" region="107 -108" universe="31"/>
+  <cell id="562" name="Bank_C_axial_31" fill="18" region="108 -109" universe="31"/>
+  <cell id="563" name="Bank_C_axial_32" fill="18" region="109 -110" universe="31"/>
+  <cell id="564" name="Bank_C_axial_33" fill="18" region="110 -111" universe="31"/>
+  <cell id="565" name="Bank_C_axial_34" fill="18" region="111 -112" universe="31"/>
+  <cell id="566" name="Bank_C_axial_35" fill="18" region="112 -113" universe="31"/>
+  <cell id="567" name="Bank_C_axial_36" fill="18" region="113 -114" universe="31"/>
+  <cell id="568" name="Bank_C_axial_37" fill="18" region="114 -115" universe="31"/>
+  <cell id="569" name="Bank_C_axial_38" fill="18" region="115 -116" universe="31"/>
+  <cell id="570" name="Bank_C_axial_39" fill="18" region="116 -117" universe="31"/>
+  <cell id="571" name="Bank_C_axial_40" fill="19" region="117 -118" universe="31"/>
+  <cell id="572" name="Bank_C_axial_41" fill="19" region="118 -119" universe="31"/>
+  <cell id="573" name="Bank_C_axial_42" fill="19" region="119 -120" universe="31"/>
+  <cell id="574" name="Bank_C_axial_43" fill="19" region="120 -121" universe="31"/>
+  <cell id="575" name="Bank_C_axial_44" fill="19" region="121 -122" universe="31"/>
+  <cell id="576" name="Bank_C_axial_45" fill="19" region="122 -123" universe="31"/>
+  <cell id="577" name="Bank_C_axial_46" fill="19" region="123 -124" universe="31"/>
+  <cell id="578" name="Bank_C_axial_47" fill="19" region="124 -125" universe="31"/>
+  <cell id="579" name="Bank_C_axial_48" fill="19" region="125 -126" universe="31"/>
+  <cell id="580" name="Bank_C_axial_49" fill="19" region="126 -127" universe="31"/>
+  <cell id="581" name="Bank_C_axial_50" fill="19" region="127 -128" universe="31"/>
+  <cell id="582" name="Bank_C_axial_51" fill="19" region="128 -129" universe="31"/>
+  <cell id="583" name="Bank_C_axial_52" fill="19" region="129 -130" universe="31"/>
+  <cell id="584" name="Bank_C_axial_53" fill="19" region="130 -131" universe="31"/>
+  <cell id="585" name="Bank_C_axial_54" fill="19" region="131 -132" universe="31"/>
+  <cell id="586" name="Bank_C_axial_55" fill="19" region="132 -133" universe="31"/>
+  <cell id="587" name="Bank_C_axial_56" fill="19" region="133 -134" universe="31"/>
+  <cell id="588" name="Bank_C_axial_57" fill="19" region="134 -135" universe="31"/>
+  <cell id="589" name="Bank_C_axial_58" fill="19" region="135 -136" universe="31"/>
+  <cell id="590" name="Bank_C_axial_59" fill="19" region="136 -137" universe="31"/>
+  <cell id="591" name="Bank_C_axial_60" fill="19" region="137 -138" universe="31"/>
+  <cell id="592" name="Bank_C_axial_61" fill="19" region="138 -139" universe="31"/>
+  <cell id="593" name="Bank_C_axial_62" fill="19" region="139 -140" universe="31"/>
+  <cell id="594" name="Bank_C_axial_63" fill="19" region="140 -141" universe="31"/>
+  <cell id="595" name="Bank_C_axial_64" fill="19" region="141 -142" universe="31"/>
+  <cell id="596" name="Bank_C_axial_65" fill="19" region="142 -143" universe="31"/>
+  <cell id="597" name="Bank_C_axial_66" fill="19" region="143 -144" universe="31"/>
+  <cell id="598" name="Bank_C_axial_67" fill="19" region="144 -145" universe="31"/>
+  <cell id="599" name="Bank_C_axial_68" fill="19" region="145 -146" universe="31"/>
+  <cell id="600" name="Bank_C_axial_69" fill="19" region="146 -147" universe="31"/>
+  <cell id="601" name="Bank_C_axial_70" fill="19" region="147 -148" universe="31"/>
+  <cell id="602" name="Bank_C_axial_71" fill="19" region="148 -149" universe="31"/>
+  <cell id="603" name="Bank_C_axial_72" fill="19" region="149 -150" universe="31"/>
+  <cell id="604" name="Bank_C_axial_73" fill="19" region="150 -151" universe="31"/>
+  <cell id="605" name="Bank_C_axial_74" fill="19" region="151 -152" universe="31"/>
+  <cell id="606" name="Bank_C_axial_75" fill="19" region="152 -153" universe="31"/>
+  <cell id="607" name="Bank_C_axial_76" fill="19" region="153 -154" universe="31"/>
+  <cell id="608" name="Bank_C_axial_77" fill="19" region="154 -155" universe="31"/>
+  <cell id="609" name="Bank_C_axial_78" fill="19" region="155 -156" universe="31"/>
+  <cell id="610" name="Bank_C_axial_79" fill="19" region="156 -157" universe="31"/>
+  <cell id="611" name="Bank_Shut_Down_axial_0" fill="18" region="77 -78" universe="32"/>
+  <cell id="612" name="Bank_Shut_Down_axial_1" fill="18" region="78 -79" universe="32"/>
+  <cell id="613" name="Bank_Shut_Down_axial_2" fill="18" region="79 -80" universe="32"/>
+  <cell id="614" name="Bank_Shut_Down_axial_3" fill="18" region="80 -81" universe="32"/>
+  <cell id="615" name="Bank_Shut_Down_axial_4" fill="18" region="81 -82" universe="32"/>
+  <cell id="616" name="Bank_Shut_Down_axial_5" fill="18" region="82 -83" universe="32"/>
+  <cell id="617" name="Bank_Shut_Down_axial_6" fill="18" region="83 -84" universe="32"/>
+  <cell id="618" name="Bank_Shut_Down_axial_7" fill="18" region="84 -85" universe="32"/>
+  <cell id="619" name="Bank_Shut_Down_axial_8" fill="18" region="85 -86" universe="32"/>
+  <cell id="620" name="Bank_Shut_Down_axial_9" fill="18" region="86 -87" universe="32"/>
+  <cell id="621" name="Bank_Shut_Down_axial_10" fill="18" region="87 -88" universe="32"/>
+  <cell id="622" name="Bank_Shut_Down_axial_11" fill="18" region="88 -89" universe="32"/>
+  <cell id="623" name="Bank_Shut_Down_axial_12" fill="18" region="89 -90" universe="32"/>
+  <cell id="624" name="Bank_Shut_Down_axial_13" fill="18" region="90 -91" universe="32"/>
+  <cell id="625" name="Bank_Shut_Down_axial_14" fill="18" region="91 -92" universe="32"/>
+  <cell id="626" name="Bank_Shut_Down_axial_15" fill="18" region="92 -93" universe="32"/>
+  <cell id="627" name="Bank_Shut_Down_axial_16" fill="18" region="93 -94" universe="32"/>
+  <cell id="628" name="Bank_Shut_Down_axial_17" fill="18" region="94 -95" universe="32"/>
+  <cell id="629" name="Bank_Shut_Down_axial_18" fill="18" region="95 -96" universe="32"/>
+  <cell id="630" name="Bank_Shut_Down_axial_19" fill="18" region="96 -97" universe="32"/>
+  <cell id="631" name="Bank_Shut_Down_axial_20" fill="18" region="97 -98" universe="32"/>
+  <cell id="632" name="Bank_Shut_Down_axial_21" fill="18" region="98 -99" universe="32"/>
+  <cell id="633" name="Bank_Shut_Down_axial_22" fill="18" region="99 -100" universe="32"/>
+  <cell id="634" name="Bank_Shut_Down_axial_23" fill="18" region="100 -101" universe="32"/>
+  <cell id="635" name="Bank_Shut_Down_axial_24" fill="18" region="101 -102" universe="32"/>
+  <cell id="636" name="Bank_Shut_Down_axial_25" fill="18" region="102 -103" universe="32"/>
+  <cell id="637" name="Bank_Shut_Down_axial_26" fill="18" region="103 -104" universe="32"/>
+  <cell id="638" name="Bank_Shut_Down_axial_27" fill="18" region="104 -105" universe="32"/>
+  <cell id="639" name="Bank_Shut_Down_axial_28" fill="18" region="105 -106" universe="32"/>
+  <cell id="640" name="Bank_Shut_Down_axial_29" fill="18" region="106 -107" universe="32"/>
+  <cell id="641" name="Bank_Shut_Down_axial_30" fill="18" region="107 -108" universe="32"/>
+  <cell id="642" name="Bank_Shut_Down_axial_31" fill="18" region="108 -109" universe="32"/>
+  <cell id="643" name="Bank_Shut_Down_axial_32" fill="18" region="109 -110" universe="32"/>
+  <cell id="644" name="Bank_Shut_Down_axial_33" fill="18" region="110 -111" universe="32"/>
+  <cell id="645" name="Bank_Shut_Down_axial_34" fill="18" region="111 -112" universe="32"/>
+  <cell id="646" name="Bank_Shut_Down_axial_35" fill="18" region="112 -113" universe="32"/>
+  <cell id="647" name="Bank_Shut_Down_axial_36" fill="18" region="113 -114" universe="32"/>
+  <cell id="648" name="Bank_Shut_Down_axial_37" fill="18" region="114 -115" universe="32"/>
+  <cell id="649" name="Bank_Shut_Down_axial_38" fill="18" region="115 -116" universe="32"/>
+  <cell id="650" name="Bank_Shut_Down_axial_39" fill="18" region="116 -117" universe="32"/>
+  <cell id="651" name="Bank_Shut_Down_axial_40" fill="19" region="117 -118" universe="32"/>
+  <cell id="652" name="Bank_Shut_Down_axial_41" fill="19" region="118 -119" universe="32"/>
+  <cell id="653" name="Bank_Shut_Down_axial_42" fill="19" region="119 -120" universe="32"/>
+  <cell id="654" name="Bank_Shut_Down_axial_43" fill="19" region="120 -121" universe="32"/>
+  <cell id="655" name="Bank_Shut_Down_axial_44" fill="19" region="121 -122" universe="32"/>
+  <cell id="656" name="Bank_Shut_Down_axial_45" fill="19" region="122 -123" universe="32"/>
+  <cell id="657" name="Bank_Shut_Down_axial_46" fill="19" region="123 -124" universe="32"/>
+  <cell id="658" name="Bank_Shut_Down_axial_47" fill="19" region="124 -125" universe="32"/>
+  <cell id="659" name="Bank_Shut_Down_axial_48" fill="19" region="125 -126" universe="32"/>
+  <cell id="660" name="Bank_Shut_Down_axial_49" fill="19" region="126 -127" universe="32"/>
+  <cell id="661" name="Bank_Shut_Down_axial_50" fill="19" region="127 -128" universe="32"/>
+  <cell id="662" name="Bank_Shut_Down_axial_51" fill="19" region="128 -129" universe="32"/>
+  <cell id="663" name="Bank_Shut_Down_axial_52" fill="19" region="129 -130" universe="32"/>
+  <cell id="664" name="Bank_Shut_Down_axial_53" fill="19" region="130 -131" universe="32"/>
+  <cell id="665" name="Bank_Shut_Down_axial_54" fill="19" region="131 -132" universe="32"/>
+  <cell id="666" name="Bank_Shut_Down_axial_55" fill="19" region="132 -133" universe="32"/>
+  <cell id="667" name="Bank_Shut_Down_axial_56" fill="19" region="133 -134" universe="32"/>
+  <cell id="668" name="Bank_Shut_Down_axial_57" fill="19" region="134 -135" universe="32"/>
+  <cell id="669" name="Bank_Shut_Down_axial_58" fill="19" region="135 -136" universe="32"/>
+  <cell id="670" name="Bank_Shut_Down_axial_59" fill="19" region="136 -137" universe="32"/>
+  <cell id="671" name="Bank_Shut_Down_axial_60" fill="19" region="137 -138" universe="32"/>
+  <cell id="672" name="Bank_Shut_Down_axial_61" fill="19" region="138 -139" universe="32"/>
+  <cell id="673" name="Bank_Shut_Down_axial_62" fill="19" region="139 -140" universe="32"/>
+  <cell id="674" name="Bank_Shut_Down_axial_63" fill="19" region="140 -141" universe="32"/>
+  <cell id="675" name="Bank_Shut_Down_axial_64" fill="19" region="141 -142" universe="32"/>
+  <cell id="676" name="Bank_Shut_Down_axial_65" fill="19" region="142 -143" universe="32"/>
+  <cell id="677" name="Bank_Shut_Down_axial_66" fill="19" region="143 -144" universe="32"/>
+  <cell id="678" name="Bank_Shut_Down_axial_67" fill="19" region="144 -145" universe="32"/>
+  <cell id="679" name="Bank_Shut_Down_axial_68" fill="19" region="145 -146" universe="32"/>
+  <cell id="680" name="Bank_Shut_Down_axial_69" fill="19" region="146 -147" universe="32"/>
+  <cell id="681" name="Bank_Shut_Down_axial_70" fill="19" region="147 -148" universe="32"/>
+  <cell id="682" name="Bank_Shut_Down_axial_71" fill="19" region="148 -149" universe="32"/>
+  <cell id="683" name="Bank_Shut_Down_axial_72" fill="19" region="149 -150" universe="32"/>
+  <cell id="684" name="Bank_Shut_Down_axial_73" fill="19" region="150 -151" universe="32"/>
+  <cell id="685" name="Bank_Shut_Down_axial_74" fill="19" region="151 -152" universe="32"/>
+  <cell id="686" name="Bank_Shut_Down_axial_75" fill="19" region="152 -153" universe="32"/>
+  <cell id="687" name="Bank_Shut_Down_axial_76" fill="19" region="153 -154" universe="32"/>
+  <cell id="688" name="Bank_Shut_Down_axial_77" fill="19" region="154 -155" universe="32"/>
+  <cell id="689" name="Bank_Shut_Down_axial_78" fill="19" region="155 -156" universe="32"/>
+  <cell id="690" name="Bank_Shut_Down_axial_79" fill="19" region="156 -157" universe="32"/>
+  <lattice id="52" name="Bank A Assembly">
     <pitch>1.26 1.26</pitch>
     <dimension>17 17</dimension>
     <lower_left>-10.71 -10.71</lower_left>
@@ -701,7 +697,7 @@
 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 
 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 </universes>
   </lattice>
-  <lattice id="52" name="Bank B Assembly">
+  <lattice id="53" name="Bank B Assembly">
     <pitch>1.26 1.26</pitch>
     <dimension>17 17</dimension>
     <lower_left>-10.71 -10.71</lower_left>
@@ -724,7 +720,7 @@
 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 
 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 </universes>
   </lattice>
-  <lattice id="53" name="Bank C Assembly">
+  <lattice id="54" name="Bank C Assembly">
     <pitch>1.26 1.26</pitch>
     <dimension>17 17</dimension>
     <lower_left>-10.71 -10.71</lower_left>
@@ -747,30 +743,53 @@
 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 
 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 </universes>
   </lattice>
-  <lattice id="54" name="Bank Shut Down Assembly">
+  <lattice id="55" name="Bank Shut Down Assembly">
     <pitch>1.26 1.26</pitch>
     <dimension>17 17</dimension>
     <lower_left>-10.71 -10.71</lower_left>
     <universes>
-25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 
-25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 
-25 25 25 25 25 32 25 25 32 25 25 32 25 25 25 25 25 
-25 25 25 32 25 25 25 25 25 25 25 25 25 32 25 25 25 
-25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 
-25 25 32 25 25 32 25 25 32 25 25 32 25 25 32 25 25 
-25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 
-25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 
-25 25 32 25 25 32 25 25 32 25 25 32 25 25 32 25 25 
-25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 
-25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 
-25 25 32 25 25 32 25 25 32 25 25 32 25 25 32 25 25 
-25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 
-25 25 25 32 25 25 25 25 25 25 25 25 25 32 25 25 25 
-25 25 25 25 25 32 25 25 32 25 25 32 25 25 25 25 25 
-25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 
-25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 </universes>
+26 26 25 25 25 25 25 25 25 25 25 25 25 25 25 26 26 
+26 25 25 25 25 26 25 25 26 25 25 26 25 25 25 25 26 
+25 25 25 26 26 32 26 26 32 26 26 32 26 26 25 25 25 
+25 25 26 32 25 26 25 25 26 25 25 26 25 32 26 25 25 
+25 25 26 25 25 26 25 25 26 25 25 26 25 25 26 25 25 
+25 26 32 26 26 32 26 26 32 26 26 32 26 26 32 26 25 
+25 25 26 25 25 26 25 25 26 25 25 26 25 25 26 25 25 
+25 25 26 25 25 26 25 25 26 25 25 26 25 25 26 25 25 
+25 26 32 26 26 32 26 26 32 26 26 32 26 26 32 26 25 
+25 25 26 25 25 26 25 25 26 25 25 26 25 25 26 25 25 
+25 25 26 25 25 26 25 25 26 25 25 26 25 25 26 25 25 
+25 26 32 26 26 32 26 26 32 26 26 32 26 26 32 26 25 
+25 25 26 25 25 26 25 25 26 25 25 26 25 25 26 25 25 
+25 25 26 32 25 26 25 25 26 25 25 26 25 32 26 25 25 
+25 25 25 26 26 32 26 26 32 26 26 32 26 26 25 25 25 
+26 25 25 25 25 26 25 25 26 25 25 26 25 25 25 25 26 
+26 26 25 25 25 25 25 25 25 25 25 25 25 25 25 26 26 </universes>
   </lattice>
-  <lattice id="57" name="UO2HBP1 Unrodded Assembly">
+  <lattice id="56" name="Low Bank Shut Down Assembly">
+    <pitch>1.26 1.26</pitch>
+    <dimension>17 17</dimension>
+    <lower_left>-10.71 -10.71</lower_left>
+    <universes>
+23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 
+23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 
+23 23 23 23 23 32 23 23 32 23 23 32 23 23 23 23 23 
+23 23 23 32 23 23 23 23 23 23 23 23 23 32 23 23 23 
+23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 
+23 23 32 23 23 32 23 23 32 23 23 32 23 23 32 23 23 
+23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 
+23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 
+23 23 32 23 23 32 23 23 32 23 23 32 23 23 32 23 23 
+23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 
+23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 
+23 23 32 23 23 32 23 23 32 23 23 32 23 23 32 23 23 
+23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 
+23 23 23 32 23 23 23 23 23 23 23 23 23 32 23 23 23 
+23 23 23 23 23 32 23 23 32 23 23 32 23 23 23 23 23 
+23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 
+23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 </universes>
+  </lattice>
+  <lattice id="59" name="UO2HBP1 Unrodded Assembly">
     <pitch>1.26 1.26</pitch>
     <dimension>17 17</dimension>
     <lower_left>-10.71 -10.71</lower_left>
@@ -793,7 +812,7 @@
 26 25 25 25 25 26 25 25 26 25 25 26 25 25 25 25 26 
 26 26 25 25 25 25 25 25 25 25 25 25 25 25 25 26 26 </universes>
   </lattice>
-  <lattice id="58" name="UO2HBP2 Unrodded Assembly">
+  <lattice id="61" name="UO2HBP2S rodded Assembly">
     <pitch>1.26 1.26</pitch>
     <dimension>17 17</dimension>
     <lower_left>-10.71 -10.71</lower_left>
@@ -811,12 +830,35 @@
 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 
 25 26 28 25 26 28 25 26 28 26 25 28 26 25 28 26 25 
 25 25 26 25 25 26 25 25 26 25 25 26 25 25 26 25 25 
-25 25 26 28 25 25 25 25 25 25 25 25 25 28 26 25 25 
+25 25 26 27 25 25 25 25 25 25 25 25 25 27 26 25 25 
+25 25 25 26 26 27 25 26 27 26 25 27 26 26 25 25 25 
+26 25 25 25 25 26 25 25 26 25 25 26 25 25 25 25 26 
+26 26 25 25 25 25 25 25 25 25 25 25 25 25 25 26 26 </universes>
+  </lattice>
+  <lattice id="62" name="UO2HBP2W rodded Assembly">
+    <pitch>1.26 1.26</pitch>
+    <dimension>17 17</dimension>
+    <lower_left>-10.71 -10.71</lower_left>
+    <universes>
+26 26 25 25 25 25 25 25 25 25 25 25 25 25 25 26 26 
+26 25 25 25 25 26 25 25 26 25 25 26 25 25 25 25 26 
+25 25 25 26 26 28 25 26 28 26 25 28 26 26 25 25 25 
+25 25 26 27 25 25 25 25 25 25 25 25 25 28 26 25 25 
+25 25 26 25 25 26 25 25 26 25 25 26 25 25 26 25 25 
+25 26 27 25 26 28 25 26 28 26 25 28 26 25 28 26 25 
+25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 
+25 25 26 25 25 26 25 25 26 25 25 26 25 25 26 25 25 
+25 26 27 25 26 28 25 26 28 26 25 28 26 25 28 26 25 
+25 25 26 25 25 26 25 25 26 25 25 26 25 25 26 25 25 
+25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 
+25 26 27 25 26 28 25 26 28 26 25 28 26 25 28 26 25 
+25 25 26 25 25 26 25 25 26 25 25 26 25 25 26 25 25 
+25 25 26 27 25 25 25 25 25 25 25 25 25 28 26 25 25 
 25 25 25 26 26 28 25 26 28 26 25 28 26 26 25 25 25 
 26 25 25 25 25 26 25 25 26 25 25 26 25 25 25 25 26 
 26 26 25 25 25 25 25 25 25 25 25 25 25 25 25 26 26 </universes>
   </lattice>
-  <lattice id="62" name="UO2M Mrodded Assembly">
+  <lattice id="64" name="UO2M Mrodded Assembly">
     <pitch>1.26 1.26</pitch>
     <dimension>17 17</dimension>
     <lower_left>-10.71 -10.71</lower_left>
@@ -839,7 +881,7 @@
 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 
 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 </universes>
   </lattice>
-  <lattice id="63" name="UO2M Lrodded Assembly">
+  <lattice id="65" name="UO2M Lrodded Assembly">
     <pitch>1.26 1.26</pitch>
     <dimension>17 17</dimension>
     <lower_left>-10.71 -10.71</lower_left>
@@ -862,7 +904,7 @@
 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 
 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 </universes>
   </lattice>
-  <lattice id="64" name="UO2HBP2SW rodded Assembly">
+  <lattice id="66" name="UO2HBP2SW rodded Assembly">
     <pitch>1.26 1.26</pitch>
     <dimension>17 17</dimension>
     <lower_left>-10.71 -10.71</lower_left>
@@ -885,7 +927,7 @@
 26 25 25 25 25 26 25 25 26 25 25 26 25 25 25 25 26 
 26 26 25 25 25 25 25 25 25 25 25 25 25 25 25 26 26 </universes>
   </lattice>
-  <lattice id="66" name="Baffle assembly">
+  <lattice id="68" name="Baffle assembly">
     <pitch>1.26 1.26</pitch>
     <dimension>17 17</dimension>
     <lower_left>-10.71 -10.71</lower_left>
@@ -908,18 +950,18 @@
 22 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 22 
 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 </universes>
   </lattice>
-  <lattice id="67" name="7X7 core lattice">
+  <lattice id="69" name="7X7 core lattice">
     <pitch>21.42 21.42</pitch>
     <dimension>7 7</dimension>
     <lower_left>-10.71 -10.71</lower_left>
     <universes>
-49 49 49 49 49 49 49 
-36 36 37 49 49 49 49 
-46 42 40 47 49 49 49 
-43 46 42 42 47 49 49 
-45 43 46 42 40 37 49 
-43 44 43 46 42 36 49 
-46 43 45 43 46 36 49 </universes>
+50 50 50 50 50 50 50 
+47 38 40 50 50 50 50 
+46 42 47 36 50 50 50 
+43 44 42 47 36 50 50 
+45 43 46 42 47 40 50 
+43 48 43 44 42 39 50 
+44 43 45 43 46 47 50 </universes>
   </lattice>
   <surface id="1" name="pin radius" type="z-cylinder" coeffs="0.0 0.0 0.41"/>
   <surface id="2" name="IFBA" type="z-cylinder" coeffs="0.0 0.0 0.411"/>

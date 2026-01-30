@@ -116,7 +116,34 @@ lattices['Bank Shut Down Assembly'].lower_left = [-10.71, -10.71]
 lattices['Bank Shut Down Assembly'].pitch = [1.26, 1.26]
 u = universes['UO2H complete']
 g = universes['Shut Down Bank']
+b = universes['UO2HBP complete']
 lattices['Bank Shut Down Assembly'].universes = \
+    [[b, b, u, u, u, u, u, u, u, u, u, u, u, u, u, b, b],
+     [b, u, u, u, u, b, u, u, b, u, u, b, u, u, u, u, b],
+     [u, u, u, b, b, g, b, b, g, b, b, g, b, b, u, u, u],
+     [u, u, b, g, u, b, u, u, b, u, u, b, u, g, b, u, u],
+     [u, u, b, u, u, b, u, u, b, u, u, b, u, u, b, u, u],
+     [u, b, g, b, b, g, b, b, g, b, b, g, b, b, g, b, u],
+     [u, u, b, u, u, b, u, u, b, u, u, b, u, u, b, u, u],
+     [u, u, b, u, u, b, u, u, b, u, u, b, u, u, b, u, u],
+     [u, b, g, b, b, g, b, b, g, b, b, g, b, b, g, b, u],
+     [u, u, b, u, u, b, u, u, b, u, u, b, u, u, b, u, u],
+     [u, u, b, u, u, b, u, u, b, u, u, b, u, u, b, u, u],
+     [u, b, g, b, b, g, b, b, g, b, b, g, b, b, g, b, u],
+     [u, u, b, u, u, b, u, u, b, u, u, b, u, u, b, u, u],
+     [u, u, b, g, u, b, u, u, b, u, u, b, u, g, b, u, u],
+     [u, u, u, b, b, g, b, b, g, b, b, g, b, b, u, u, u],
+     [b, u, u, u, u, b, u, u, b, u, u, b, u, u, u, u, b],
+     [b, b, u, u, u, u, u, u, u, u, u, u, u, u, u, b, b]]
+
+lattices['Low Bank Shut Down Assembly'] = \
+    openmc.RectLattice(name='Low Bank Shut Down Assembly')
+lattices['Low Bank Shut Down Assembly'].dimension = [17, 17]
+lattices['Low Bank Shut Down Assembly'].lower_left = [-10.71, -10.71]
+lattices['Low Bank Shut Down Assembly'].pitch = [1.26, 1.26]
+u = universes['UO2L complete']
+g = universes['Shut Down Bank']
+lattices['Low Bank Shut Down Assembly'].universes = \
     [[u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, g, u, u, g, u, u, g, u, u, u, u, u],
@@ -479,6 +506,7 @@ cells['Bank A Assembly'].fill = lattices['Bank A Assembly']
 cells['Bank B Assembly'].fill = lattices['Bank B Assembly']
 cells['Bank C Assembly'].fill = lattices['Bank C Assembly']
 cells['Bank Shut Down Assembly'].fill = lattices['Bank Shut Down Assembly']
+cells['Low Bank Shut Down Assembly'].fill = lattices['Low Bank Shut Down Assembly']
 
 cells['Water Assembly'].fill = lattices['Water Assembly']
 cells['Baffle Assembly'].fill = lattices['Baffle assembly']

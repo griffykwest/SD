@@ -444,6 +444,7 @@ cells['Bank A Assembly'] = openmc.Cell( name='Bank A Assembly')
 cells['Bank B Assembly'] = openmc.Cell( name='Bank B Assembly')
 cells['Bank C Assembly'] = openmc.Cell( name='Bank C Assembly')
 cells['Bank Shut Down Assembly'] = openmc.Cell( name='Bank Shut Down Assembly')
+cells['Low Bank Shut Down Assembly'] = openmc.Cell( name='Low Bank Shut Down Assembly')
 
 
 
