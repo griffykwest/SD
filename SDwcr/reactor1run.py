@@ -8,6 +8,7 @@ import os
 from densitylookup import*
 from fluxplot import xyslice , xzslice
 from specialinputs import*
+from PPF import ppf
 
 
 #================================
@@ -55,12 +56,12 @@ e = universes['Low Bank Shut Down Assembly']
 
 lattices['Core'].universes=[
  [m,m,m,m,m,m,m],
- [d,S,D,m,m,m,m],
- [c,P,d,H,m,m,m],
- [G,a,P,d,H,m,m],
- [b,G,c,P,d,D,m],
- [G,e,G,a,P,W,m],
- [a,G,b,G,c,d,m]
+ [H,H,C,m,m,m,m],
+ [c,P,D,C,m,m,m],
+ [G,a,P,P,C,m,m],
+ [b,G,c,P,D,C,m],
+ [G,e,G,a,P,H,m],
+ [a,G,b,G,c,H,m]
 ]
 cells['Core'].fill = lattices['Core']
 
@@ -94,10 +95,10 @@ geometry.export_to_xml()
 # geometry: your OpenMC Geometry object
 
 # Step 1: get all surfaces actually used in cells
-used_surfaces = geometry.get_all_surfaces()
-print(used_surfaces)
+#used_surfaces = geometry.get_all_surfaces()
+#print(used_surfaces)
 # Step 2: find all defined surfaces that are not used
-unused_surfaces = [surf for surf in surfaces.values() if surf not in used_surfaces]
+#unused_surfaces = [surf for surf in surfaces.values() if surf not in used_surfaces]
 
 
 plot_1 = openmc.Plot()
@@ -168,6 +169,8 @@ tallies_file.export_to_xml()
 
 
 openmc.run()
-xyslice(Batches,20)
-xyslice(Batches,1)
+xyslice(Batches,18)
+xyslice(Batches,15)
+xyslice(Batches,25)
 xzslice(Batches,1)
+ppf(Batches,20)

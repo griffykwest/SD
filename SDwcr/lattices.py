@@ -511,4 +511,3 @@ cells['Low Bank Shut Down Assembly'].fill = lattices['Low Bank Shut Down Assembl
 cells['Water Assembly'].fill = lattices['Water Assembly']
 cells['Baffle Assembly'].fill = lattices['Baffle assembly']
 
-print(lattices)

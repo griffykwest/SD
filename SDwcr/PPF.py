@@ -147,21 +147,23 @@ def ppf(batch,z):
         channel_sums2 = channel_sums.reshape((nx, ny, nz), order='C')
         
         pin_sums = np.sum(channel_sums2, axis=2)
-        pin_sums = np.where(pin_sums < 5e4, 0.0, pin_sums)
+
+        pin_sums = np.where(pin_sums < 9e4, 0.0, pin_sums)
+
         n_pins = np.count_nonzero(pin_sums)
+
         assembly_avgnowc[a] = np.sum(pin_sums)/(n_pins*40)
         assembly_sums[a] = np.sum( channel_sums)
         
         assembly_counts[a] = np.count_nonzero(mask)
         
         
-    datatocsv(heating_3d[mask] * weights[mask],'heating.csv')
-    np.set_printoptions(linewidth=200)
+    #datatocsv(heating_3d[mask] * weights[mask],'heating.csv')
+    #np.set_printoptions(linewidth=200)
     
 
-    assembly_avg = assembly_sums / assembly_counts
-    print(assembly_avg)
-    print(assembly_avgnowc)
+    #assembly_avg = assembly_sums / assembly_counts
+
 
 
     FUEL_THRESHOLD = 1e3
@@ -169,14 +171,14 @@ def ppf(batch,z):
     # --------------------------------------------------
     #Fuel identification, making sure that there is true assembly values
     # --------------------------------------------------
-    fuel_mask = assembly_avg > FUEL_THRESHOLD
+    fuel_mask = assembly_avgnowc > FUEL_THRESHOLD
 
 
     # --------------------------------------------------
     #Intra-assembly peaking assembly only no ghost values
     # --------------------------------------------------
-    Fq_intra = np.full(n_assembly, np.nan)
-    Fq_intra2 = np.full(n_assembly, np.nan)
+    Fq_intraA = np.full(n_assembly, np.nan)
+    Fq_intra2r = np.full(n_assembly, np.nan)
 
 
     for a in range(n_assembly):
@@ -185,31 +187,59 @@ def ppf(batch,z):
 
         mask = assembly_map[:,:,z] == a
         pin_power =  heating_3d[mask,z] * weights[mask,z]
+        pin_powerA =  heating_3d[mask] * weights[mask]
 
-        Fq_intra[a] = pin_power.max() / assembly_avg[a]
-        Fq_intra2[a] = pin_power.max() / assembly_avgnowc[a]
-    print(Fq_intra2.reshape((7,7)))
+        Fq_intraA[a] = pin_powerA.max() / assembly_avgnowc[a]
+        Fq_intra2r[a] = pin_power.max() / assembly_avgnowc[a]
+    
     # --------------------------------------------------
     # 7) Inter-assembly peaking (fuel only)
     # --------------------------------------------------
-    fuel_avgs = assembly_avg[fuel_mask]
-    Fq_inter = assembly_avg/ fuel_avgs.mean()
+    fuel_avgs = assembly_avgnowc[fuel_mask]
+    Fq_inter = assembly_avgnowc/ fuel_avgs.mean()
     Fq_inter = np.where(fuel_mask, Fq_inter, np.nan)
-    print(Fq_intra2/Fq_intra)
 
-    return Fq_intra2, Fq_inter, assembly_avg, fuel_mask
+    Fq_intra2r = Fq_intra2r.reshape((7,7))
+    Fq_intraA = Fq_intraA.reshape((7,7))
+    Fq_inter = Fq_inter.reshape((7,7))
+    
+    
+    plt.figure(figsize=(6,6))
+    plt.imshow(Fq_intraA, origin='lower', cmap='inferno', interpolation='nearest')
+    plt.colorbar(label='Intra-assembly PPF')
+    plt.title('Quarter-Core Intra-Assembly Peaking Factor')
+    plt.xlabel('Assembly X Index')
+    plt.ylabel('Assembly Y Index')
+    plt.gca().set_aspect('equal')
+    plt.savefig(f'intrappf.png')
+
+    plt.figure(figsize=(6,6))
+    plt.imshow(Fq_inter, origin='lower', cmap='inferno', interpolation='nearest')
+    plt.colorbar(label='Inter-assembly PPF')
+    plt.title('Quarter-Core Inter-Assembly Peaking Factor')
+    plt.xlabel('Assembly X Index')
+    plt.ylabel('Assembly Y Index')
+    plt.gca().set_aspect('equal')
+    plt.savefig(f'interppf.png')
+
+    return Fq_intra2r, Fq_intraA, Fq_inter, assembly_avgnowc, fuel_mask
 
 
-Fq_intra, Fq_inter, assembly_avg , fuel_mask = ppf(2000,19)
+Fq_intra, Fq_intraA, Fq_inter, assembly_avg , fuel_mask = ppf(2014,19)
 
 np.set_printoptions(linewidth=200)
 Fq_intra = Fq_intra.reshape((7,7))
+Fq_intraA = Fq_intraA.reshape((7,7))
 Fq_inter = Fq_inter.reshape((7,7))
 print("Inter-assembly PPF:")
 print(Fq_inter)
 
-print("Intra-assembly PPFs:")
+print("Intra-assembly radial PPFs:")
 print(Fq_intra)
+
+
+print("Intra-assembly max PPFs:")
+print(Fq_intraA)
 
 
 #Fq_plot = np.nan_to_num(Fq_intra, nan=0.0)
