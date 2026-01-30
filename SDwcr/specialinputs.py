@@ -1,12 +1,12 @@
 import openmc
 import numpy as np
 
-A_Bank = 0  #0 is fully out 1 is fully in
-B_Bank = 0  #0 is fully out 1 is fully in
-C_Bank = 0  #0 is fully out 1 is fully in
-Shut_Down_Bank = 0  #0 is fully out 1 is fully in
-Batches = 2000
-PPB = 10000
+A_Bank = 0.75  #0 is fully out 1 is fully in
+B_Bank = 0.75  #0 is fully out 1 is fully in
+C_Bank = 0.75  #0 is fully out 1 is fully in
+Shut_Down_Bank = 0.75  #0 is fully out 1 is fully in
+Batches = 2002
+PPB = 1000
 inactive = 200
 Boron_PPM = 2200
 """

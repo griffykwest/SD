@@ -30,7 +30,7 @@ universes['guide tube w CR'] = openmc.Universe(name='guide tube w CR')
 universes['guide tube w CR'].add_cells([cells['B4C CR'], cells['cladCR'], cells['inner guide moderator w CR'], cells['guide tube CR'], cells['g_moderator3']])
 
 universes['guide tube no CR'] = openmc.Universe(name='guide tube no CR')
-universes['guide tube no CR'].add_cells([cells['inner guide moderator no CR'], cells['guide tube CR'], cells['g_moderator3']])
+universes['guide tube no CR'].add_cells([cells['inner guide moderator no CR'], cells['guide tube no CR'], cells['g_moderator4']])
 
 universes['CR above core'] = openmc.Universe(name='CR above core')
 universes['CR above core'].add_cells([cells['B4C CR2'], cells['cladCR2'], cells['CR moderator above core']])

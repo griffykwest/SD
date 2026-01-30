@@ -9,12 +9,15 @@ import shutil
 import os
 
 # Import your existing modules
-from matax import *
+"""from matax import *
 from lattices import lattices, universes, cells
 from surfaces import *
-from specialinputs import *
+from specialinputs import axial_control_rod_fixed
+from densitylookup import *"""
+from All import lattices, universes, cells, axial_materials
+from surfaces import *
+from specialinputs import axial_control_rod_fixed
 from densitylookup import *
-
 
 class ReactorModel:
     """
@@ -63,48 +66,7 @@ class ReactorModel:
         from lattices import lattices
         
         # Set up core lattice
-        cells['Core'].region = (-surfaces['inner core barrel'] & 
-                               -surfaces['z-max'] & 
-                               +surfaces['z-bottom active'] & 
-                               +surfaces['qc x'] & 
-                               +surfaces['qc y'])
-        
-        lattices['Core'] = openmc.RectLattice(name='7X7 core lattice')
-        lattices['Core'].dimension = [7, 7]
-        lattices['Core'].lower_left = [-w_ass/2, -w_ass/2]
-        lattices['Core'].pitch = [w_ass, w_ass]
-        
-        # Define assembly types
-        m = universes['Baffle Assembly']
-        L = universes['UO2L Unrodded Assembly']
-        M = universes['UO2M Unrodded Assembly']
-        h = universes['UO2H Unrodded Assembly']
-        H = universes['UO2HBP1 Unrodded Assembly']
-        C = universes['UO2HBP2 Unrodded Assembly']
-        I = universes['UO2M rodded Assembly']
-        P = universes['UO2M Lrodded Assembly']
-        G = universes['UO2M Mrodded Assembly']
-        S = universes['UO2HBP2S rodded Assembly']
-        W = universes['UO2HBP2W rodded Assembly']
-        D = universes['UO2HBP2SW rodded Assembly']
-        a = universes['Bank A Assembly']
-        b = universes['Bank B Assembly']
-        c = universes['Bank C Assembly']
-        d = universes['Bank Shut Down Assembly']
-        
-        # Core loading pattern
-        lattices['Core'].universes = [
-            [m, m, m, m, m, m, m],
-            [H, H, C, m, m, m, m],
-            [c, P, D, d, m, m, m],
-            [G, c, P, P, d, m, m],
-            [b, G, c, P, D, C, m],
-            [G, a, G, c, P, H, m],
-            [c, G, b, G, c, H, m]
-        ]
-        
-        cells['Core'].fill = lattices['Core']
-        universes['Core'] = openmc.Universe(name='Core', cells=[cells['Core']])
+
         
         # Set up root universe
         geometry = openmc.Geometry()
@@ -180,7 +142,7 @@ class ReactorModel:
                 self._regenerate_materials(params)
 
             # Set up materials  ← ADD THIS
-            from matax import axial_materials
+            from All import axial_materials
 
             materials = openmc.Materials(axial_materials.values())
             materials.export_to_xml()

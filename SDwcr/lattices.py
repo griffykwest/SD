@@ -483,3 +483,4 @@ cells['Bank Shut Down Assembly'].fill = lattices['Bank Shut Down Assembly']
 cells['Water Assembly'].fill = lattices['Water Assembly']
 cells['Baffle Assembly'].fill = lattices['Baffle assembly']
 
+print(lattices)

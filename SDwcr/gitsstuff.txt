@@ -1,6 +1,6 @@
 cd ~/SD
 git add -A
-git commit -m "Adjusted input file uses"
+git commit -m Fixed SDwcr tried to do OOP and failed"
 git push
 
 
