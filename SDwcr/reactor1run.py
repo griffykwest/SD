@@ -51,16 +51,17 @@ b = universes['Bank B Assembly']
 c = universes['Bank C Assembly']
 d = universes['Bank Shut Down Assembly']
 e = universes['Low Bank Shut Down Assembly']
+f = universes['BP Bank Shut Down Assembly']
 
 
 
 lattices['Core'].universes=[
  [m,m,m,m,m,m,m],
- [H,C,C,m,m,m,m],
- [c,P,D,h,m,m,m],
- [G,a,P,P,h,m,m],
- [b,G,c,P,D,C,m],
- [G,e,G,a,P,C,m],
+ [H,f,f,m,m,m,m],
+ [c,P,D,d,m,m,m],
+ [G,a,P,P,d,m,m],
+ [b,G,c,P,D,f,m],
+ [G,e,G,a,P,f,m],
  [a,G,b,G,c,H,m]
 ]
 cells['Core'].fill = lattices['Core']
