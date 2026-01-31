@@ -5,8 +5,8 @@ A_Bank = 0  #0 is fully out 1 is fully in
 B_Bank = 0  #0 is fully out 1 is fully in
 C_Bank = 0  #0 is fully out 1 is fully in
 Shut_Down_Bank = 0  #0 is fully out 1 is fully in
-Batches = 2016
-PPB = 10000
+Batches = 2020
+PPB = 30000
 inactive = 250
 Boron_PPM = 2300
 """

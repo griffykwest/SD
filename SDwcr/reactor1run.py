@@ -56,11 +56,11 @@ e = universes['Low Bank Shut Down Assembly']
 
 lattices['Core'].universes=[
  [m,m,m,m,m,m,m],
- [H,H,C,m,m,m,m],
- [c,P,D,C,m,m,m],
- [G,a,P,P,C,m,m],
+ [H,C,C,m,m,m,m],
+ [c,P,D,h,m,m,m],
+ [G,a,P,P,h,m,m],
  [b,G,c,P,D,C,m],
- [G,e,G,a,P,H,m],
+ [G,e,G,a,P,C,m],
  [a,G,b,G,c,H,m]
 ]
 cells['Core'].fill = lattices['Core']

@@ -38,6 +38,7 @@ lattices['Bank A Assembly'].lower_left = [-10.71, -10.71]
 lattices['Bank A Assembly'].pitch = [1.26, 1.26]
 u = universes['UO2L complete']
 g = universes['Bank A']
+gt = universes['guide tube']
 lattices['Bank A Assembly'].universes = \
     [[u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
@@ -47,7 +48,7 @@ lattices['Bank A Assembly'].universes = \
      [u, u, g, u, u, g, u, u, g, u, u, g, u, u, g, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
-     [u, u, g, u, u, g, u, u, g, u, u, g, u, u, g, u, u],
+     [u, u, g, u, u, g, u, u, gt, u, u, g, u, u, g, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, g, u, u, g, u, u, g, u, u, g, u, u, g, u, u],
@@ -64,6 +65,7 @@ lattices['Bank B Assembly'].lower_left = [-10.71, -10.71]
 lattices['Bank B Assembly'].pitch = [1.26, 1.26]
 u = universes['UO2L complete']
 g = universes['Bank B']
+gt = universes['guide tube']
 lattices['Bank B Assembly'].universes = \
     [[u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
@@ -73,7 +75,7 @@ lattices['Bank B Assembly'].universes = \
      [u, u, g, u, u, g, u, u, g, u, u, g, u, u, g, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
-     [u, u, g, u, u, g, u, u, g, u, u, g, u, u, g, u, u],
+     [u, u, g, u, u, g, u, u, gt, u, u, g, u, u, g, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, g, u, u, g, u, u, g, u, u, g, u, u, g, u, u],
@@ -90,6 +92,7 @@ lattices['Bank C Assembly'].lower_left = [-10.71, -10.71]
 lattices['Bank C Assembly'].pitch = [1.26, 1.26]
 u = universes['UO2L complete']
 g = universes['Bank C']
+gt = universes['guide tube']
 lattices['Bank C Assembly'].universes = \
     [[u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
@@ -99,7 +102,7 @@ lattices['Bank C Assembly'].universes = \
      [u, u, g, u, u, g, u, u, g, u, u, g, u, u, g, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
-     [u, u, g, u, u, g, u, u, g, u, u, g, u, u, g, u, u],
+     [u, u, g, u, u, g, u, u, gt, u, u, g, u, u, g, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, g, u, u, g, u, u, g, u, u, g, u, u, g, u, u],
@@ -116,8 +119,36 @@ lattices['Bank Shut Down Assembly'].lower_left = [-10.71, -10.71]
 lattices['Bank Shut Down Assembly'].pitch = [1.26, 1.26]
 u = universes['UO2H complete']
 g = universes['Shut Down Bank']
-b = universes['UO2HBP complete']
+gt = universes['guide tube']
 lattices['Bank Shut Down Assembly'].universes = \
+    [[u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
+     [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
+     [u, u, u, u, u, g, u, u, g, u, u, g, u, u, u, u, u],
+     [u, u, u, g, u, u, u, u, u, u, u, u, u, g, u, u, u],
+     [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
+     [u, u, g, u, u, g, u, u, g, u, u, g, u, u, g, u, u],
+     [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
+     [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
+     [u, u, g, u, u, g, u, u, gt, u, u, g, u, u, g, u, u],
+     [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
+     [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
+     [u, u, g, u, u, g, u, u, g, u, u, g, u, u, g, u, u],
+     [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
+     [u, u, u, g, u, u, u, u, u, u, u, u, u, g, u, u, u],
+     [u, u, u, u, u, g, u, u, g, u, u, g, u, u, u, u, u],
+     [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
+     [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u]]
+
+lattices['BP Bank Shut Down Assembly'] = \
+    openmc.RectLattice(name='BP Bank Shut Down Assembly')
+lattices['BP Bank Shut Down Assembly'].dimension = [17, 17]
+lattices['BP Bank Shut Down Assembly'].lower_left = [-10.71, -10.71]
+lattices['BP Bank Shut Down Assembly'].pitch = [1.26, 1.26]
+u = universes['UO2H complete']
+g = universes['Shut Down Bank']
+b = universes['UO2HBP complete']
+gt = universes['guide tube']
+lattices['BP Bank Shut Down Assembly'].universes = \
     [[b, b, u, u, u, u, u, u, u, u, u, u, u, u, u, b, b],
      [b, u, u, u, u, b, u, u, b, u, u, b, u, u, u, u, b],
      [u, u, u, b, b, g, b, b, g, b, b, g, b, b, u, u, u],
@@ -126,7 +157,7 @@ lattices['Bank Shut Down Assembly'].universes = \
      [u, b, g, b, b, g, b, b, g, b, b, g, b, b, g, b, u],
      [u, u, b, u, u, b, u, u, b, u, u, b, u, u, b, u, u],
      [u, u, b, u, u, b, u, u, b, u, u, b, u, u, b, u, u],
-     [u, b, g, b, b, g, b, b, g, b, b, g, b, b, g, b, u],
+     [u, b, g, b, b, g, b, b, gt, b, b, g, b, b, g, b, u],
      [u, u, b, u, u, b, u, u, b, u, u, b, u, u, b, u, u],
      [u, u, b, u, u, b, u, u, b, u, u, b, u, u, b, u, u],
      [u, b, g, b, b, g, b, b, g, b, b, g, b, b, g, b, u],
@@ -143,6 +174,7 @@ lattices['Low Bank Shut Down Assembly'].lower_left = [-10.71, -10.71]
 lattices['Low Bank Shut Down Assembly'].pitch = [1.26, 1.26]
 u = universes['UO2L complete']
 g = universes['Shut Down Bank']
+gt = universes['guide tube']
 lattices['Low Bank Shut Down Assembly'].universes = \
     [[u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
@@ -152,7 +184,7 @@ lattices['Low Bank Shut Down Assembly'].universes = \
      [u, u, g, u, u, g, u, u, g, u, u, g, u, u, g, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
-     [u, u, g, u, u, g, u, u, g, u, u, g, u, u, g, u, u],
+     [u, u, g, u, u, g, u, u, gt, u, u, g, u, u, g, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, g, u, u, g, u, u, g, u, u, g, u, u, g, u, u],
@@ -506,6 +538,7 @@ cells['Bank A Assembly'].fill = lattices['Bank A Assembly']
 cells['Bank B Assembly'].fill = lattices['Bank B Assembly']
 cells['Bank C Assembly'].fill = lattices['Bank C Assembly']
 cells['Bank Shut Down Assembly'].fill = lattices['Bank Shut Down Assembly']
+cells['BP Bank Shut Down Assembly'].fill = lattices['BP Bank Shut Down Assembly']
 cells['Low Bank Shut Down Assembly'].fill = lattices['Low Bank Shut Down Assembly']
 
 cells['Water Assembly'].fill = lattices['Water Assembly']

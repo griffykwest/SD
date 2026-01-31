@@ -1,0 +1,91 @@
+m = universes['Baffle Assembly']
+L=universes['UO2L Unrodded Assembly']
+M=universes['UO2M Unrodded Assembly']
+h=universes['UO2H Unrodded Assembly']
+H=universes['UO2HBP1 Unrodded Assembly']
+C=universes['UO2HBP2 Unrodded Assembly']
+I=universes['UO2M rodded Assembly']
+P=universes['UO2M Lrodded Assembly']
+G=universes['UO2M Mrodded Assembly']
+S=universes['UO2HBP2S rodded Assembly']
+W=universes['UO2HBP2W rodded Assembly']
+D=universes['UO2HBP2SW rodded Assembly']
+a = universes['Bank A Assembly']
+b = universes['Bank B Assembly']
+c = universes['Bank C Assembly']
+d = universes['Bank Shut Down Assembly']
+e = universes['Low Bank Shut Down Assembly']
+
+
+lattices['Core'].universes=[
+ [m,m,m,m,m,m,m],
+ [S,H,C,m,m,m,m],
+ [c,P,D,C,m,m,m],
+ [G,a,P,P,C,m,m],
+ [b,G,c,P,D,C,m],
+ [G,e,G,a,P,H,m],
+ [a,G,b,G,c,W,m]
+]
+sp 2014
+center peaked need more + reactivity towards edge/ more - in middle
+
+
+lattices['Core'].universes=[
+ [m,m,m,m,m,m,m],
+ [S,H,C,m,m,m,m],
+ [c,P,D,h,m,m,m],
+ [G,a,P,P,h,m,m],
+ [b,G,c,P,D,C,m],
+ [I,e,G,a,P,H,m],
+ [a,I,b,G,c,W,m]
+]
+
+sp = 2015
+peaks in line on diagonal and cold on the center medium assemblies
+
+lattices['Core'].universes=[
+ [m,m,m,m,m,m,m],
+ [H,H,C,m,m,m,m],
+ [c,P,D,C,m,m,m],
+ [G,a,P,P,C,m,m],
+ [b,G,c,P,D,C,m],
+ [G,e,G,a,P,H,m],
+ [a,G,b,G,c,H,m]
+]
+]
+
+sp =2016
+better but there is a zone of weird low
+
+lattices['Core'].universes=[
+ [m,m,m,m,m,m,m],
+ [C,C,C,m,m,m,m],
+ [c,P,D,C,m,m,m],
+ [G,a,P,P,C,m,m],
+ [b,G,c,P,D,C,m],
+ [G,e,G,a,P,C,m],
+ [a,G,b,G,c,C,m]
+]
+
+sp =2026
+
+
+ [m,m,m,m,m,m,m],
+ [H,H,C,m,m,m,m],
+ [c,P,D,h,m,m,m],
+ [G,a,P,P,h,m,m],
+ [b,G,c,P,D,C,m],
+ [G,e,G,a,P,H,m],
+ [a,G,b,G,c,H,m]
+]
+
+sp =2017
+
+ [m,m,m,m,m,m,m],
+ [H,H,C,m,m,m,m],
+ [c,P,D,h,m,m,m],
+ [G,a,P,P,h,m,m],
+ [b,G,c,P,D,C,m],
+ [G,e,G,a,P,C,m],
+ [a,G,b,G,c,H,m]
+]

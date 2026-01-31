@@ -162,6 +162,8 @@ universes['Bank C Assembly'] = openmc.Universe( name='Bank C Assembly')
 universes['Bank C Assembly'].add_cell(cells['Bank C Assembly'])
 universes['Bank Shut Down Assembly'] = openmc.Universe( name='Bank Shut Down Assembly')
 universes['Bank Shut Down Assembly'].add_cell(cells['Bank Shut Down Assembly'])
+universes['BP Bank Shut Down Assembly'] = openmc.Universe( name='BP Bank Shut Down Assembly')
+universes['BP Bank Shut Down Assembly'].add_cell(cells['BP Bank Shut Down Assembly'])
 universes['Low Bank Shut Down Assembly'] = openmc.Universe( name='Low Bank Shut Down Assembly')
 universes['Low Bank Shut Down Assembly'].add_cell(cells['Low Bank Shut Down Assembly'])
 
