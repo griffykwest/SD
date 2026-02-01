@@ -38,7 +38,7 @@ lattices['Bank A Assembly'].lower_left = [-10.71, -10.71]
 lattices['Bank A Assembly'].pitch = [1.26, 1.26]
 u = universes['UO2L complete']
 g = universes['Bank A']
-gt = universes['guide tube']
+gt = universes['guide tube w/o BPR complete']
 lattices['Bank A Assembly'].universes = \
     [[u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
@@ -65,7 +65,7 @@ lattices['Bank B Assembly'].lower_left = [-10.71, -10.71]
 lattices['Bank B Assembly'].pitch = [1.26, 1.26]
 u = universes['UO2L complete']
 g = universes['Bank B']
-gt = universes['guide tube']
+gt = universes['guide tube w/o BPR complete']
 lattices['Bank B Assembly'].universes = \
     [[u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
@@ -92,7 +92,7 @@ lattices['Bank C Assembly'].lower_left = [-10.71, -10.71]
 lattices['Bank C Assembly'].pitch = [1.26, 1.26]
 u = universes['UO2L complete']
 g = universes['Bank C']
-gt = universes['guide tube']
+gt = universes['guide tube w/o BPR complete']
 lattices['Bank C Assembly'].universes = \
     [[u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
@@ -119,7 +119,7 @@ lattices['Bank Shut Down Assembly'].lower_left = [-10.71, -10.71]
 lattices['Bank Shut Down Assembly'].pitch = [1.26, 1.26]
 u = universes['UO2H complete']
 g = universes['Shut Down Bank']
-gt = universes['guide tube']
+gt = universes['guide tube w/o BPR complete']
 lattices['Bank Shut Down Assembly'].universes = \
     [[u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
@@ -147,7 +147,7 @@ lattices['BP Bank Shut Down Assembly'].pitch = [1.26, 1.26]
 u = universes['UO2H complete']
 g = universes['Shut Down Bank']
 b = universes['UO2HBP complete']
-gt = universes['guide tube']
+gt = universes['guide tube w/o BPR complete']
 lattices['BP Bank Shut Down Assembly'].universes = \
     [[b, b, u, u, u, u, u, u, u, u, u, u, u, u, u, b, b],
      [b, u, u, u, u, b, u, u, b, u, u, b, u, u, u, u, b],
@@ -174,7 +174,7 @@ lattices['Low Bank Shut Down Assembly'].lower_left = [-10.71, -10.71]
 lattices['Low Bank Shut Down Assembly'].pitch = [1.26, 1.26]
 u = universes['UO2L complete']
 g = universes['Shut Down Bank']
-gt = universes['guide tube']
+gt = universes['guide tube w/o BPR complete']
 lattices['Low Bank Shut Down Assembly'].universes = \
     [[u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],

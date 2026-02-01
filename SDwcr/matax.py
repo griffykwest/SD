@@ -21,16 +21,17 @@ z_cr_edges = np.concatenate((z_edges[0:n_axial], z_upper_edges))
 #print(z_cr_edges[40])
 h = np.linspace(0, 1, n_axial)  # normalized axial position 0->1
 
-T_min = 700
-T_max = 700
+T_min = 368
+T_max = 756
 
 T_avg = (T_max + T_min) / 2
-T_amp = (T_max + T_min) / 2
+T_amp = T_max-T_min
 
 # Cosine shape, peak in the middle, edges at min
 T_fuel_z = T_min + T_amp * np.cos(np.pi * (h - 0.5))
+print(T_fuel_z)
 
-T_mod_z  = np.linspace(290+273.15, 310+273.15, n_axial)
+T_mod_z  = np.linspace(T_mod_min+273.15, T_mod_max+273.15, n_axial)
 
 
 axial_materials = {}
@@ -108,19 +109,19 @@ clad.set_density('g/cm3',6.52)
 
 inconel = openmc.Material()
 inconel.name ="Inconel"
-inconel.add_element("Ni", 52.0/100, percent_type="wo")
-inconel.add_element("Cr", 19.0/100, percent_type="wo")
-inconel.add_element("Nb", 5.0/100, percent_type="wo")
-inconel.add_element("Mo", 3.0/100, percent_type="wo")
-inconel.add_element("Ti", 0.75/100, percent_type="wo")
-inconel.add_element("Al", 0.4/100, percent_type="wo")
-inconel.add_element("Co", 0.5/100, percent_type="wo")
-inconel.add_element("Mg", 0.25/100, percent_type="wo")
-inconel.add_element("Si", 0.025/100, percent_type="wo")
-inconel.add_element("P",  0.0075/100, percent_type="wo")
-inconel.add_element("S",  0.0075/100, percent_type="wo")
-inconel.add_element("C",  0.15/100, percent_type="wo")
-inconel.add_element("Fe", 18.91/100, percent_type="wo")
+inconel.add_element("Ni", 51.19/100, percent_type="wo")
+inconel.add_element("Cr", 18.96/100, percent_type="wo")
+#inconel.add_element("Nb", 5.0/100, percent_type="wo")
+#inconel.add_element("Mo", 3.0/100, percent_type="wo")
+#inconel.add_element("Ti", 0.75/100, percent_type="wo")
+#inconel.add_element("Al", 0.4/100, percent_type="wo")
+#inconel.add_element("Co", 0.5/100, percent_type="wo")
+inconel.add_element("Mn", 0.87/100, percent_type="wo")
+inconel.add_element("Si", 0.35/100, percent_type="wo")
+#inconel.add_element("P",  0.0075/100, percent_type="wo")
+#inconel.add_element("S",  0.0075/100, percent_type="wo")
+#inconel.add_element("C",  0.15/100, percent_type="wo")
+inconel.add_element("Fe", 28.63/100, percent_type="wo")
 
 inconel.set_density("g/cm3", 8.19)
 
@@ -195,6 +196,12 @@ B_total = 0.799981
 B4C.add_nuclide('B10', B_total * B10enrichmentB4C, percent_type='ao')
 B4C.add_nuclide('B11', B_total * (1.0 - B10enrichmentB4C), percent_type='ao')
 B4C.add_element('C', 0.200019, percent_type='ao')
+
+Ag_In_Cd = openmc.Material(name= 'Ag_In_Cd')
+Ag_In_Cd.add_element('Ag', 0.8)
+Ag_In_Cd.add_element('In', 0.15)
+Ag_In_Cd.add_element('Cd', 0.05)
+Ag_In_Cd.set_density('g/cm3', 10.16)
 
 gap = openmc.Material(name='gap')
 gap.add_element('He', 1.0)

@@ -17,8 +17,8 @@ surfaces['cladding inner radius'] = openmc.ZCylinder(r=R_ci, name= 'cladding inn
 surfaces['cladding outer radius']= openmc.ZCylinder(r=R_co, name= 'cladding outer radius')
 
 #guide tube 
-R_gi=1.0/2
-R_go=1.1/2
+R_gi=1.14/2
+R_go=1.22/2
 surfaces['guide inner radius'] = openmc.ZCylinder(r=R_gi, name= 'guide inner radius')
 surfaces['guide outer radius']= openmc.ZCylinder(r=R_go, name= 'guide outer radius')
 
@@ -34,7 +34,7 @@ surfaces['BPR rod pin radius'] = openmc.ZCylinder(r=R_BPRci, name= 'BPR rod pin 
 pitch=1.26
 
 hp = pitch / 2.0
-t_spacer = 0.03
+t_spacer = 0.014
 surfaces['spacer x-min'] = openmc.XPlane(x0=-hp+t_spacer, name='spacer x-min')
 surfaces['spacer x-max'] = openmc.XPlane(x0= hp-t_spacer, name='spacer x-max')
 surfaces['spacer y-min'] = openmc.YPlane(y0=-hp+t_spacer, name='spacer y-min')

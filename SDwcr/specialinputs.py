@@ -5,10 +5,12 @@ A_Bank = 0  #0 is fully out 1 is fully in
 B_Bank = 0  #0 is fully out 1 is fully in
 C_Bank = 0  #0 is fully out 1 is fully in
 Shut_Down_Bank = 0  #0 is fully out 1 is fully in
-Batches = 2020
+Batches = 2060
 PPB = 30000
 inactive = 250
-Boron_PPM = 2300
+Boron_PPM = 2275
+T_mod_min = 285  #C
+T_mod_max = 310  #C
 """
 n_axial = 40                # number of axial slices
 z_bot = -100                 # bottom of active fuel

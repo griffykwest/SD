@@ -82,7 +82,7 @@ sp =2026
 sp =2017
 
  [m,m,m,m,m,m,m],
- [H,H,C,m,m,m,m],
+ [H,C,C,m,m,m,m],
  [c,P,D,h,m,m,m],
  [G,a,P,P,h,m,m],
  [b,G,c,P,D,C,m],
