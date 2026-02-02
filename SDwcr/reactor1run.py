@@ -57,12 +57,12 @@ f = universes['BP Bank Shut Down Assembly']
 
 lattices['Core'].universes=[
  [m,m,m,m,m,m,m],
- [H,f,f,m,m,m,m],
+ [S,f,f,m,m,m,m],
  [c,P,D,d,m,m,m],
  [G,a,P,P,d,m,m],
  [b,G,c,P,D,f,m],
  [G,e,G,a,P,f,m],
- [a,G,b,G,c,H,m]
+ [a,G,b,G,c,W,m]
 ]
 cells['Core'].fill = lattices['Core']
 

@@ -225,7 +225,7 @@ def ppf(batch,z):
     return Fq_intra2r, Fq_intraA, Fq_inter, assembly_avgnowc, fuel_mask
 
 
-"""Fq_intra, Fq_intraA, Fq_inter, assembly_avg , fuel_mask = ppf(2060,25)
+Fq_intra, Fq_intraA, Fq_inter, assembly_avg , fuel_mask = ppf(2068,19)
 
 np.set_printoptions(linewidth=200)
 Fq_intra = Fq_intra.reshape((7,7))
@@ -250,7 +250,7 @@ Fq = Fq_intraA * Fq_inter
 print(Fq)
 
 plt.figure(figsize=(6,6))
-plt.imshow(Fq_intra, origin='lower', cmap='inferno', interpolation='nearest')
+plt.imshow(Fq, origin='lower', cmap='inferno', interpolation='nearest')
 plt.colorbar(label='Intra-assembly PPF')
 plt.title('Quarter-Core Intra-Assembly Peaking Factor')
 plt.xlabel('Assembly X Index')
@@ -265,4 +265,4 @@ plt.title('Quarter-Core Inter-Assembly Peaking Factor')
 plt.xlabel('Assembly X Index')
 plt.ylabel('Assembly Y Index')
 plt.gca().set_aspect('equal')
-plt.savefig(f'interppf.png')"""
+plt.savefig(f'interppf.png')

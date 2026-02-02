@@ -70,8 +70,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="8" name="moderator1" temperature="558.7910256410256">
-    <density units="g/cm3" value="0.7402420200785638"/>
+  <material id="8" name="moderator1" temperature="558.9192307692307">
+    <density units="g/cm3" value="0.7400062834502764"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -110,8 +110,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="12" name="moderator2" temperature="559.4320512820512">
-    <density units="g/cm3" value="0.7390585508335275"/>
+  <material id="12" name="moderator2" temperature="559.6884615384615">
+    <density units="g/cm3" value="0.738583026191688"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -150,8 +150,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="16" name="moderator3" temperature="560.0730769230769">
-    <density units="g/cm3" value="0.7378708854794019"/>
+  <material id="16" name="moderator3" temperature="560.4576923076922">
+    <density units="g/cm3" value="0.7371531612155552"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -190,8 +190,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="20" name="moderator4" temperature="560.7141025641025">
-    <density units="g/cm3" value="0.7366742958293797"/>
+  <material id="20" name="moderator4" temperature="561.2269230769231">
+    <density units="g/cm3" value="0.7357166553686998"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -230,8 +230,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="24" name="moderator5" temperature="561.3551282051282">
-    <density units="g/cm3" value="0.7354751230112788"/>
+  <material id="24" name="moderator5" temperature="561.9961538461538">
+    <density units="g/cm3" value="0.7342698361442971"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -270,8 +270,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="28" name="moderator6" temperature="561.9961538461538">
-    <density units="g/cm3" value="0.7342698361442971"/>
+  <material id="28" name="moderator6" temperature="562.7653846153846">
+    <density units="g/cm3" value="0.73281432040942"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -310,8 +310,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="32" name="moderator7" temperature="562.6371794871794">
-    <density units="g/cm3" value="0.7330571048853219"/>
+  <material id="32" name="moderator7" temperature="563.5346153846153">
+    <density units="g/cm3" value="0.7313518087427259"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -350,8 +350,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="36" name="moderator8" temperature="563.2782051282051">
-    <density units="g/cm3" value="0.7318417260535899"/>
+  <material id="36" name="moderator8" temperature="564.3038461538462">
+    <density units="g/cm3" value="0.7298822471987427"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -390,8 +390,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="40" name="moderator9" temperature="563.9192307692307">
-    <density units="g/cm3" value="0.7306181614140093"/>
+  <material id="40" name="moderator9" temperature="565.0730769230769">
+    <density units="g/cm3" value="0.7284036906489251"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -430,8 +430,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="44" name="moderator10" temperature="564.5602564102564">
-    <density units="g/cm3" value="0.7293887285195814"/>
+  <material id="44" name="moderator10" temperature="565.8423076923077">
+    <density units="g/cm3" value="0.7269140648231543"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -470,8 +470,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="48" name="moderator11" temperature="565.2012820512821">
-    <density units="g/cm3" value="0.7281565796840938"/>
+  <material id="48" name="moderator11" temperature="566.6115384615384">
+    <density units="g/cm3" value="0.7254169989867041"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -510,8 +510,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="52" name="moderator12" temperature="565.8423076923077">
-    <density units="g/cm3" value="0.7269140648231543"/>
+  <material id="52" name="moderator12" temperature="567.3807692307693">
+    <density units="g/cm3" value="0.7239124612976907"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -550,8 +550,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="56" name="moderator13" temperature="566.4833333333333">
-    <density units="g/cm3" value="0.7256673751195991"/>
+  <material id="56" name="moderator13" temperature="568.15">
+    <density units="g/cm3" value="0.7224004384103782"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -590,8 +590,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="60" name="moderator14" temperature="567.124358974359">
-    <density units="g/cm3" value="0.7244172198133904"/>
+  <material id="60" name="moderator14" temperature="568.9192307692307">
+    <density units="g/cm3" value="0.7208746511881645"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -630,8 +630,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="64" name="moderator15" temperature="567.7653846153846">
-    <density units="g/cm3" value="0.7231556594949039"/>
+  <material id="64" name="moderator15" temperature="569.6884615384615">
+    <density units="g/cm3" value="0.7193410017481923"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -670,8 +670,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="68" name="moderator16" temperature="568.4064102564103">
-    <density units="g/cm3" value="0.7218911255206667"/>
+  <material id="68" name="moderator16" temperature="570.4576923076922">
+    <density units="g/cm3" value="0.7177994094421313"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -710,8 +710,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="72" name="moderator17" temperature="569.0474358974359">
-    <density units="g/cm3" value="0.7206209797190705"/>
+  <material id="72" name="moderator17" temperature="571.2269230769231">
+    <density units="g/cm3" value="0.7162498050560866"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -750,8 +750,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="76" name="moderator18" temperature="569.6884615384615">
-    <density units="g/cm3" value="0.7193410017481923"/>
+  <material id="76" name="moderator18" temperature="571.9961538461538">
+    <density units="g/cm3" value="0.7146878165001868"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -790,8 +790,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="80" name="moderator19" temperature="570.3294871794872">
-    <density units="g/cm3" value="0.7180579726645051"/>
+  <material id="80" name="moderator19" temperature="572.7653846153846">
+    <density units="g/cm3" value="0.7131152570559435"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -830,8 +830,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="84" name="moderator20" temperature="570.9705128205128">
-    <density units="g/cm3" value="0.716767015978661"/>
+  <material id="84" name="moderator20" temperature="573.5346153846153">
+    <density units="g/cm3" value="0.7115342387511651"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -870,8 +870,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="88" name="moderator21" temperature="571.6115384615384">
-    <density units="g/cm3" value="0.7154679582573099"/>
+  <material id="88" name="moderator21" temperature="574.3038461538462">
+    <density units="g/cm3" value="0.709944695035201"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -910,8 +910,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="92" name="moderator22" temperature="572.2525641025641">
-    <density units="g/cm3" value="0.7141657632134044"/>
+  <material id="92" name="moderator22" temperature="575.0730769230769">
+    <density units="g/cm3" value="0.7083442048276438"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -950,8 +950,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="96" name="moderator23" temperature="572.8935897435897">
-    <density units="g/cm3" value="0.712853113229053"/>
+  <material id="96" name="moderator23" temperature="575.8423076923077">
+    <density units="g/cm3" value="0.7067302360728518"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -990,8 +990,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="100" name="moderator24" temperature="573.5346153846153">
-    <density units="g/cm3" value="0.7115342387511651"/>
+  <material id="100" name="moderator24" temperature="576.6115384615384">
+    <density units="g/cm3" value="0.7051072059369247"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -1030,8 +1030,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="104" name="moderator25" temperature="574.175641025641">
-    <density units="g/cm3" value="0.7102121468330106"/>
+  <material id="104" name="moderator25" temperature="577.3807692307693">
+    <density units="g/cm3" value="0.7034750308274933"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -1070,8 +1070,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="108" name="moderator26" temperature="574.8166666666666">
-    <density units="g/cm3" value="0.7088768991550543"/>
+  <material id="108" name="moderator26" temperature="578.15">
+    <density units="g/cm3" value="0.7018336316009295"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -1110,8 +1110,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="112" name="moderator27" temperature="575.4576923076922">
-    <density units="g/cm3" value="0.7075374514404122"/>
+  <material id="112" name="moderator27" temperature="578.9192307692307">
+    <density units="g/cm3" value="0.7001753987847639"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -1150,8 +1150,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="116" name="moderator28" temperature="576.0987179487179">
-    <density units="g/cm3" value="0.7061931149789172"/>
+  <material id="116" name="moderator28" temperature="579.6884615384615">
+    <density units="g/cm3" value="0.6985074068059746"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -1190,8 +1190,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="120" name="moderator29" temperature="576.7397435897435">
-    <density units="g/cm3" value="0.7048358585843071"/>
+  <material id="120" name="moderator29" temperature="580.4576923076922">
+    <density units="g/cm3" value="0.6968295968615654"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -1230,8 +1230,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="124" name="moderator30" temperature="577.3807692307693">
-    <density units="g/cm3" value="0.7034750308274933"/>
+  <material id="124" name="moderator30" temperature="581.2269230769231">
+    <density units="g/cm3" value="0.6951418997705159"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -1270,8 +1270,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="128" name="moderator31" temperature="578.0217948717949">
-    <density units="g/cm3" value="0.7021066660105989"/>
+  <material id="128" name="moderator31" temperature="581.9961538461538">
+    <density units="g/cm3" value="0.6934388210959687"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -1310,8 +1310,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="132" name="moderator32" temperature="578.6628205128205">
-    <density units="g/cm3" value="0.7007272717191401"/>
+  <material id="132" name="moderator32" temperature="582.7653846153846">
+    <density units="g/cm3" value="0.6917226304417413"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -1350,8 +1350,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="136" name="moderator33" temperature="579.3038461538462">
-    <density units="g/cm3" value="0.699344183536404"/>
+  <material id="136" name="moderator33" temperature="583.5346153846153">
+    <density units="g/cm3" value="0.6899958473396077"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -1390,8 +1390,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="140" name="moderator34" temperature="579.9448717948718">
-    <density units="g/cm3" value="0.6979506672290263"/>
+  <material id="140" name="moderator34" temperature="584.3038461538462">
+    <density units="g/cm3" value="0.6882583657526407"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -1430,8 +1430,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="144" name="moderator35" temperature="580.5858974358974">
-    <density units="g/cm3" value="0.696548184921791"/>
+  <material id="144" name="moderator35" temperature="585.0730769230769">
+    <density units="g/cm3" value="0.6865071927708555"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -1470,8 +1470,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="148" name="moderator36" temperature="581.2269230769231">
-    <density units="g/cm3" value="0.6951418997705159"/>
+  <material id="148" name="moderator36" temperature="585.8423076923077">
+    <density units="g/cm3" value="0.6847390691955216"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -1510,8 +1510,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="152" name="moderator37" temperature="581.8679487179487">
-    <density units="g/cm3" value="0.6937220877916295"/>
+  <material id="152" name="moderator37" temperature="586.6115384615384">
+    <density units="g/cm3" value="0.6829594990779968"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -1550,8 +1550,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="156" name="moderator38" temperature="582.5089743589743">
-    <density units="g/cm3" value="0.6922955386293872"/>
+  <material id="156" name="moderator38" temperature="587.3807692307693">
+    <density units="g/cm3" value="0.6811683531635325"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -1590,8 +1590,8 @@
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
-  <material id="160" name="moderator39" temperature="583.15">
-    <density units="g/cm3" value="0.6908650438661305"/>
+  <material id="160" name="moderator39" temperature="588.15">
+    <density units="g/cm3" value="0.6793655025127352"/>
     <nuclide ao="1.99968852" name="H1"/>
     <nuclide ao="0.00031148" name="H2"/>
     <nuclide ao="0.9976206" name="O16"/>
@@ -1702,7 +1702,7 @@
     <nuclide ao="0.197803189518" name="C12"/>
     <nuclide ao="0.0022158104819999997" name="C13"/>
   </material>
-  <material id="167" name="gap">
+  <material id="168" name="gap">
     <density units="g/cm3" value="0.001"/>
     <nuclide ao="2e-06" name="He3"/>
     <nuclide ao="0.999998" name="He4"/>

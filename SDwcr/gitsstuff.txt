@@ -1,6 +1,6 @@
 cd ~/SD
 git add -A
-git commit -m "ran a lot of stuff changed some things like t_s and T_mod"
+git commit -m "Tried to un f***"
 git push
 
 

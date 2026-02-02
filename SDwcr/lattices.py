@@ -474,7 +474,7 @@ lattices['UO2HBP2SW rodded Assembly'].universes = \
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, b, gt, u, b, gt, u, b, gt, b, u, g, b, u, g, b, u],
      [u, u, b, u, u, b, u, u, b, u, u, b, u, u, b, u, u],
-     [u, u, b, gt, u, u, u, u, u, u, u, u, u, g, b, u, u],
+     [u, u, b, g, u, u, u, u, u, u, u, u, u, g, b, u, u],
      [u, u, u, b, b, gt, u, b, gt, b, u, gt, b, b, u, u, u],
      [b, u, u, u, u, b, u, u, b, u, u, b, u, u, u, u, b],
      [b, b, u, u, u, u, u, u, u, u, u, u, u, u, u, b, b]]
