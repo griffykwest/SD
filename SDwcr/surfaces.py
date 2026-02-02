@@ -31,18 +31,36 @@ surfaces['CR rod cladding outer radius']= openmc.ZCylinder(r=R_CRco, name= 'CR r
 #BPR rod absorber section
 surfaces['CR rod pin radius'] = openmc.ZCylinder(r=R_CRci, name= 'CR rod pin radius')
 
-R_BPRci=1.02/2
-R_BPRco=1.11/2
-surfaces['BPR rod cladding inner radius'] = openmc.ZCylinder(r=R_BPRci, name= 'BPR rod cladding inner radius')
-surfaces['BPR rod cladding outer radius']= openmc.ZCylinder(r=R_BPRco, name= 'BPR rod cladding outer radius')
+R_AlB4Cci=0.82570/2
+R_AlB4Cco=0.96774/2
+surfaces['AlB4C rod cladding inner radius'] = openmc.ZCylinder(r=R_AlB4Cci, name= 'AlB4C rod cladding inner radius')
+surfaces['AlB4C rod cladding outer radius']= openmc.ZCylinder(r=R_AlB4Cco, name= 'AlB4C rod cladding outer radius')
 
 #BPR rod absorber section
-surfaces['BPR rod pin radius'] = openmc.ZCylinder(r=R_BPRci, name= 'BPR rod pin radius')
+R_AlB4Co=0.8077/2
+R_AlB4Ci=0.70610/2
+surfaces['AlB4C rod outer radius'] = openmc.ZCylinder(r=R_AlB4Co, name= 'AlB4C rod outer radius')
+surfaces['AlB4C rod inner radius'] = openmc.ZCylinder(r=R_AlB4Ci, name= 'AlB4C rod inner radius')
 
-R_inner_BPRci=0.568/2
-R_inner_BPRco=0.617/2
-surfaces['BPR inner rod cladding inner radius'] = openmc.ZCylinder(r=R_inner_BPRci, name= 'BPR inner rod cladding inner radius')
-surfaces['BPR inner rod cladding outer radius']= openmc.ZCylinder(r=R_inner_BPRco, name= 'BPR inner rod cladding outer radius')
+R_inner_AlB4Cci=0.57150/2
+R_inner_AlB4Cco=0.6782/2
+surfaces['AlB4C inner rod cladding inner radius'] = openmc.ZCylinder(r=R_inner_AlB4Cci, name= 'AlB4C inner rod cladding inner radius')
+surfaces['AlB4C inner rod cladding outer radius']= openmc.ZCylinder(r=R_inner_AlB4Cco, name= 'AlB4C inner rod cladding outer radius')
+
+
+R_BSGci=0.87376/2
+surfaces['BSG rod cladding inner radius'] = openmc.ZCylinder(r=R_BSGci, name= 'BSG rod cladding inner radius')
+surfaces['BSG rod cladding outer radius']= surfaces['AlB4C rod cladding outer radius']
+#BPR rod absorber section
+R_BSGo=0.83544/2
+R_BSGi=0.48260/2
+surfaces['BSG rod outer radius'] = openmc.ZCylinder(r=R_BSGo, name= 'BSG rod outer radius')
+surfaces['BSG rod inner radius'] = openmc.ZCylinder(r=R_BSGi, name= 'BSG rod inner radius')
+
+R_inner_BSGci=0.42799/2
+R_inner_BSGco=0.46101/2
+surfaces['BSG inner rod cladding inner radius'] = openmc.ZCylinder(r=R_inner_BSGci, name= 'BSG inner rod cladding inner radius')
+surfaces['BSG inner rod cladding outer radius']= openmc.ZCylinder(r=R_inner_BSGco, name= 'BSG inner rod cladding outer radius')
 
 pitch=1.26
 

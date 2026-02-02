@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tallies>
+  <mesh id="1">
+    <dimension>111 111 40</dimension>
+    <lower_left>-0.63 -0.63 -100</lower_left>
+    <upper_right>139.23000000000002 139.23000000000002 143.84</upper_right>
+  </mesh>
+  <filter id="1" type="mesh">
+    <bins>1</bins>
+  </filter>
+  <tally id="1" name="tally 1">
+    <filters>1</filters>
+    <scores>flux fission nu-fission heating-local</scores>
+  </tally>
+  <tally id="2" name="tally 2">
+    <scores>flux fission nu-fission</scores>
+  </tally>
+  <tally id="3" name="tally 3">
+    <scores>heating-local</scores>
+  </tally>
+</tallies>

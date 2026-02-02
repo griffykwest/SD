@@ -157,7 +157,7 @@ ss304.set_density("g/cm3", 8.0)
 
 # Boron-10 enrichment (fraction of boron atoms)
 #MAterials from https://github.com/ukaea/neutronics_material_maker/blob/main/neutronics_material_maker/data/pnnl_materials.json
-B10enrichment = 0.3  # example: 40% B-10
+"""B10enrichment = 0.3  # example: 40% B-10
 borosilicate = openmc.Material(name='Borosilicate Glass')
 borosilicate.set_density('g/cm3', 2.23)
 B_total = 0.070449
@@ -171,22 +171,35 @@ borosilicate.add_element('O',  0.641095, percent_type='ao')
 borosilicate.add_element('Na', 0.023311, percent_type='ao')
 borosilicate.add_element('Al', 0.008204, percent_type='ao')
 borosilicate.add_element('Si', 0.255327, percent_type='ao')
-borosilicate.add_element('K',  0.001615, percent_type='ao')
+borosilicate.add_element('K',  0.001615, percent_type='ao')"""
 
-"""openmc.Material(name='Borosilicate Glass') 
-borosilicate.set_density('g/cm3', 2.23) 
-B10 = B10enrichment*0.04 
-B11 = (1-B10enrichment)*0.04 
-borosilicate.add_nuclide('B10', B10, percent_type='wo') 
-borosilicate.add_nuclide('B11', B11, percent_type='wo') # Rest of the glass (fixed) 
-#borosilicate.add_element('B', 0.04, percent_type='wo') 
-# borosilicate.add_element('O', 0.535, percent_type='wo') 
-# borosilicate.add_element('Si', 0.377, percent_type='wo') 
-# borosilicate.add_element('Na', 0.030, percent_type='wo') 
-borosilicate.add_element('Al', 0.012, percent_type='wo')"""
+## from source
+BSG = openmc.Material(name='BSG')
+
+# Typical borosilicate glass density
+BSG.set_density('g/cm3', 2.23)
+
+BSG.add_nuclide('B10', 0.699, 'wo')
+BSG.add_nuclide('B11', 3.207, 'wo')
+BSG.add_element('O',  53.902, 'wo')
+BSG.add_element('Si', 37.586, 'wo')
+BSG.add_element('K',   0.332, 'wo')
+BSG.add_element('Na',  2.837, 'wo')
+
+Al2O3_B4C = openmc.Material(name='Al2O3-B4C')
+
+# Reasonable effective density for Al2O3-dominated composite
+Al2O3_B4C.set_density('g/cm3', 2.593)
+
+Al2O3_B4C.add_nuclide('B10', 1.968, 'wo')
+Al2O3_B4C.add_nuclide('B11', 8.992, 'wo')
+Al2O3_B4C.add_element('C',  3.040, 'wo')
+Al2O3_B4C.add_element('O', 40.479, 'wo')
+Al2O3_B4C.add_element('Al',45.521, 'wo')
 
 
-B10enrichmentB4C = 0.20  # 20% B-10, adjust as needed
+
+B10enrichmentB4C = 0.85  # 20% B-10, adjust as needed
 B4C = openmc.Material(name='Boron Carbide (B4C)')
 B4C.set_density('g/cm3', 2.52)
 
@@ -207,7 +220,8 @@ gap.add_element('He', 1.0)
 gap.set_density('g/cm3', 0.001)
 
 axial_materials['IFBA'] = IFBA
-axial_materials['Borosilicate Glass'] = borosilicate
+axial_materials['BSG'] = BSG 
+axial_materials['Al2O3_B4C'] = Al2O3_B4C
 axial_materials['B4C'] = B4C
 axial_materials['Cladding'] = clad
 axial_materials['SS304'] = ss304
@@ -254,8 +268,8 @@ for i in range(n_axial):
         axial_cells[f'guide moderator{i}'] = openmc.Cell(name = f'guide moderator{i}', fill= axial_materials[f'moderator{i}'], region=+surfaces['guide outer radius'] & z_bottom & z_top & spacer_box)
         axial_cells[f'guide moderator{i}'].temperature = axial_materials[f'moderator{i}'].temperature
 
-        axial_cells[f'spacer{i}'] = openmc.Cell(name= f'spacer{i}', fill = axial_materials['Inconel'], region= spacer_region)
-        axial_cells[f'g spacer{i}'] = openmc.Cell(name= f'g spacer{i}', fill = axial_materials['Inconel'], region=spacer_region)
+        axial_cells[f'spacer{i}'] = openmc.Cell(name= f'spacer{i}', fill = axial_materials['Cladding'], region= spacer_region)
+        axial_cells[f'g spacer{i}'] = openmc.Cell(name= f'g spacer{i}', fill = axial_materials['Cladding'], region=spacer_region)
     else:
         axial_cells[f'moderator{i}'] = openmc.Cell(name = f'moderator{i}', fill= axial_materials[f'moderator{i}'], region=+surfaces['cladding outer radius'] & z_bottom & z_top)
         axial_cells[f'moderator{i}'].temperature = axial_materials[f'moderator{i}'].temperature
@@ -267,16 +281,19 @@ for i in range(n_axial):
     axial_cells[f'inner guide moderator no BPR{i}'] = openmc.Cell(name = f'inner guide moderator no BPR{i}', fill= axial_materials[f'moderator{i}'], region=-surfaces['guide inner radius'] & z_bottom & z_top)
     axial_cells[f'inner guide moderator no BPR{i}'].temperature = axial_materials[f'moderator{i}'].temperature
 
-    axial_cells[f'inner guide moderator w BPR{i}'] = openmc.Cell(name = f'inner guide moderator w BPR{i}', fill= axial_materials[f'moderator{i}'], region=-surfaces['guide inner radius'] & +surfaces['BPR rod cladding outer radius'] & z_bottom & z_top)
+    axial_cells[f'inner guide moderator w BPR{i}'] = openmc.Cell(name = f'inner guide moderator w BPR{i}', fill= axial_materials[f'moderator{i}'], region=-surfaces['guide inner radius'] & +surfaces['BSG rod cladding outer radius'] & z_bottom & z_top)
     axial_cells[f'inner guide moderator w BPR{i}'].temperature = axial_materials[f'moderator{i}'].temperature   
     
-    axial_cells[f'inner inner guide moderator w BPR{i}'] = openmc.Cell(name = f'inner inner guide moderator w BPR{i}', fill= axial_materials[f'moderator{i}'], region=-surfaces['BPR inner rod cladding inner radius'] & z_bottom & z_top)
-    axial_cells[f'inner inner guide moderator w BPR{i}'].temperature = axial_materials[f'moderator{i}'].temperature
+    axial_cells[f'inner inner guide moderator w Al2O3_B4C{i}'] = openmc.Cell(name = f'inner inner guide moderator w Al2O3_B4C{i}', fill= axial_materials[f'moderator{i}'], region=-surfaces['AlB4C inner rod cladding inner radius'] & z_bottom & z_top)
+    axial_cells[f'inner inner guide moderator w Al2O3_B4C{i}'].temperature = axial_materials[f'moderator{i}'].temperature
+    
+    axial_cells[f'inner inner guide moderator w BSG{i}'] = openmc.Cell(name = f'inner inner guide moderator w BSG{i}', fill= axial_materials[f'moderator{i}'], region=-surfaces['BSG inner rod cladding inner radius'] & z_bottom & z_top)
+    axial_cells[f'inner inner guide moderator w BSG{i}'].temperature = axial_materials[f'moderator{i}'].temperature
 
     axial_cells[f'inner guide moderator no CR{i}'] = openmc.Cell(name = f'inner guide moderator no CR{i}', fill= axial_materials[f'moderator{i}'], region=-surfaces['guide inner radius'] & z_bottom & z_top)
     axial_cells[f'inner guide moderator no CR{i}'].temperature = axial_materials[f'moderator{i}'].temperature
 
-    axial_cells[f'inner guide moderator w CR{i}'] = openmc.Cell(name = f'inner guide moderator w CR{i}', fill= axial_materials[f'moderator{i}'], region=-surfaces['BPR inner rod cladding inner radius'] & z_bottom & z_top)
+    axial_cells[f'inner guide moderator w CR{i}'] = openmc.Cell(name = f'inner guide moderator w CR{i}', fill= axial_materials[f'moderator{i}'], region=-surfaces['CR rod cladding inner radius'] & z_bottom & z_top)
     axial_cells[f'inner guide moderator w CR{i}'].temperature = axial_materials[f'moderator{i}'].temperature   
     
     
@@ -290,7 +307,8 @@ moderator_axial_cells = []
 g_moderator_axial_cells = []
 i_g_moderator_axial_cells_n_BPR = []
 i_g_moderator_axial_cells_w_BPR = []
-i_i_g_moderator_axial_cells_w_BPR = []
+i_i_g_moderator_axial_cells_w_Al2O3_B4C = []
+i_i_g_moderator_axial_cells_w_BSG = []
 i_g_moderator_axial_cells_n_CR = []
 i_g_moderator_axial_cells_w_CR = []
 
@@ -309,7 +327,8 @@ for i in range(n_axial):
         g_moderator_axial_cells.append(axial_cells[f'g spacer{i}'])
     i_g_moderator_axial_cells_n_BPR.append(axial_cells[f'inner guide moderator no BPR{i}'])
     i_g_moderator_axial_cells_w_BPR.append(axial_cells[f'inner guide moderator w BPR{i}'])
-    i_i_g_moderator_axial_cells_w_BPR.append(axial_cells[f'inner inner guide moderator w BPR{i}'])
+    i_i_g_moderator_axial_cells_w_BSG.append(axial_cells[f'inner inner guide moderator w BSG{i}'])
+    i_i_g_moderator_axial_cells_w_Al2O3_B4C.append(axial_cells[f'inner inner guide moderator w Al2O3_B4C{i}'])
     i_g_moderator_axial_cells_n_CR.append(axial_cells[f'inner guide moderator no CR{i}'])
     i_g_moderator_axial_cells_w_CR.append(axial_cells[f'inner guide moderator w CR{i}'])
 
@@ -323,7 +342,8 @@ moderator_cont_universe = openmc.Universe(cells=moderator_axial_cells)
 g_moderator_cont_universe = openmc.Universe(cells=g_moderator_axial_cells)
 i_g_moderator_n_BPR_cont_universe = openmc.Universe(cells=i_g_moderator_axial_cells_n_BPR)
 i_g_moderator_w_BPR_cont_universe = openmc.Universe(cells=i_g_moderator_axial_cells_w_BPR)
-i_i_g_moderator_w_BPR_cont_universe = openmc.Universe(cells=i_i_g_moderator_axial_cells_w_BPR)
+i_i_g_moderator_w_BSG_cont_universe = openmc.Universe(cells=i_i_g_moderator_axial_cells_w_BSG)
+i_i_g_moderator_w_Al2O3_B4C_cont_universe = openmc.Universe(cells=i_i_g_moderator_axial_cells_w_Al2O3_B4C)
 i_g_moderator_n_CR_cont_universe = openmc.Universe(cells=i_g_moderator_axial_cells_n_CR)
 i_g_moderator_w_CR_cont_universe = openmc.Universe(cells=i_g_moderator_axial_cells_w_CR)
 upper_water_fuel_univ = openmc.Universe(cells = [axial_cells['upper water cell fuel']])
@@ -343,10 +363,13 @@ cells['g_moderator1'] = openmc.Cell(name='g_moderator1', region = +surfaces['gui
 cells['g_moderator2'] = openmc.Cell(name='g_moderator2', region = +surfaces['guide outer radius'], fill = g_moderator_cont_universe)
 cells['g_moderator3'] = openmc.Cell(name='g_moderator3', region = +surfaces['guide outer radius'], fill = g_moderator_cont_universe)
 cells['g_moderator4'] = openmc.Cell(name='g_moderator4', region = +surfaces['guide outer radius'], fill = g_moderator_cont_universe)
+cells['g_moderator5'] = openmc.Cell(name='g_moderator5', region = +surfaces['guide outer radius'], fill = g_moderator_cont_universe)
 cells['inner guide moderator no CR'] = openmc.Cell(name='inner guide moderator no CR', region = -surfaces['guide inner radius'], fill = i_g_moderator_n_CR_cont_universe)
 cells['inner guide moderator no BPR'] = openmc.Cell(name='inner guide moderator no BPR', region = -surfaces['guide inner radius'], fill = i_g_moderator_n_BPR_cont_universe)
-cells['inner guide moderator w BPR'] = openmc.Cell(name='inner guide moderator w BPR', region = -surfaces['guide inner radius'] & +surfaces['BPR rod cladding outer radius'], fill = i_g_moderator_w_BPR_cont_universe)
-cells['inner inner guide moderator w BPR'] = openmc.Cell(name='inner inner guide moderator w BPR', region = -surfaces['BPR inner rod cladding inner radius'], fill = i_i_g_moderator_w_BPR_cont_universe)
+cells['inner guide moderator w BSG'] = openmc.Cell(name='inner guide moderator w BSG', region = -surfaces['guide inner radius'] & +surfaces['BSG rod cladding outer radius'], fill = i_g_moderator_w_BPR_cont_universe)
+cells['inner guide moderator w Al2O3_B4C'] = openmc.Cell(name='inner guide moderator w Al2O3_B4C', region = -surfaces['guide inner radius'] & +surfaces['AlB4C rod cladding outer radius'], fill = i_g_moderator_w_BPR_cont_universe)
+cells['inner inner guide moderator w BSG'] = openmc.Cell(name='inner inner guide moderator w BSG', region = -surfaces['BSG inner rod cladding inner radius'], fill = i_i_g_moderator_w_BSG_cont_universe)
+cells['inner inner guide moderator w Al2O3_B4C'] = openmc.Cell(name='inner inner guide moderator w Al2O3_B4C', region = -surfaces['AlB4C inner rod cladding inner radius'], fill = i_i_g_moderator_w_Al2O3_B4C_cont_universe)
 cells['inner guide moderator w CR'] = openmc.Cell(name='inner guide moderator w CR', region = -surfaces['guide inner radius'] & +surfaces['CR rod cladding outer radius'], fill = i_g_moderator_w_CR_cont_universe)
 
 """#print(cells['spacerL'])
@@ -359,9 +382,74 @@ cells['IFBA'].region = -surfaces['IFBA'] & +surfaces['pin radius']
 cells['IFBA'].fill = axial_materials['IFBA']
 
 #Integral control rod
-cells['BPRboron'] = openmc.Cell(name = 'BPRboron')
-cells['BPRboron'].fill = axial_materials['Borosilicate Glass']
-cells['BPRboron'].region = -surfaces['BPR rod cladding inner radius'] & +surfaces['BPR inner rod cladding outer radius']
+cells['Al2O3_B4C'] = openmc.Cell(name = 'Al2O3_B4C')
+cells['Al2O3_B4C'].fill = axial_materials['Al2O3_B4C']
+cells['Al2O3_B4C'].region = -surfaces['AlB4C rod outer radius'] & +surfaces['AlB4C rod inner radius']
+
+cells['Al2O3_B4C Outer Gap'] = openmc.Cell(name = 'Al2O3_B4C Outer Gap')
+cells['Al2O3_B4C Outer Gap'].fill = axial_materials['gap']
+cells['Al2O3_B4C Outer Gap'].region = -surfaces['AlB4C rod cladding inner radius'] & +surfaces['AlB4C rod outer radius']
+
+cells['Al2O3_B4C Inner Gap'] = openmc.Cell(name = 'Al2O3_B4C Inner Gap')
+cells['Al2O3_B4C Inner Gap'].fill = axial_materials['gap']
+cells['Al2O3_B4C Inner Gap'].region = -surfaces['AlB4C rod inner radius'] & +surfaces['AlB4C inner rod cladding outer radius']
+
+cells['outer clad Al2O3_B4C']= openmc.Cell(name='outer clad Al2O3_B4C')
+cells['outer clad Al2O3_B4C'].region= -surfaces['AlB4C rod cladding outer radius'] & +surfaces['AlB4C rod cladding inner radius']
+cells['outer clad Al2O3_B4C'].fill = axial_materials['Cladding']
+
+cells['inner clad Al2O3_B4C']= openmc.Cell(name='inner clad Al2O3_B4C')
+cells['inner clad Al2O3_B4C'].region= -surfaces['AlB4C inner rod cladding outer radius'] & +surfaces['AlB4C inner rod cladding inner radius']
+cells['inner clad Al2O3_B4C'].fill = axial_materials['Cladding']
+
+cells['guide tube Al2O3_B4C'] = openmc.Cell(name='guide tube Al2O3_B4C')
+cells['guide tube Al2O3_B4C'].region= +surfaces['guide inner radius'] & -surfaces['guide outer radius'] 
+cells['guide tube Al2O3_B4C'].fill = axial_materials['Cladding']
+
+
+#Integral control rod
+cells['BSG'] = openmc.Cell(name = 'BSG')
+cells['BSG'].fill = axial_materials['BSG']
+cells['BSG'].region = -surfaces['BSG rod outer radius'] & +surfaces['BSG rod inner radius']
+
+cells['BSG Outer Gap'] = openmc.Cell(name = 'BSG Outer Gap')
+cells['BSG Outer Gap'].fill = axial_materials['gap']
+cells['BSG Outer Gap'].region = -surfaces['BSG rod cladding inner radius'] & +surfaces['BSG rod outer radius']
+
+cells['BSG Inner Gap'] = openmc.Cell(name = 'BSG Inner Gap')
+cells['BSG Inner Gap'].fill = axial_materials['gap']
+cells['BSG Inner Gap'].region = -surfaces['BSG rod inner radius'] & +surfaces['BSG inner rod cladding outer radius']
+
+cells['outer clad BSG']= openmc.Cell(name='outer clad BSG')
+cells['outer clad BSG'].region= -surfaces['BSG rod cladding outer radius'] & +surfaces['BSG rod cladding inner radius']
+cells['outer clad BSG'].fill = axial_materials['SS304']
+
+cells['inner clad BSG']= openmc.Cell(name='inner clad BSG')
+cells['inner clad BSG'].region= -surfaces['BSG inner rod cladding outer radius'] & +surfaces['BSG inner rod cladding inner radius']
+cells['inner clad BSG'].fill = axial_materials['SS304']
+
+cells['guide tube BSG'] = openmc.Cell(name='guide tube BSG')
+cells['guide tube BSG'].region= +surfaces['guide inner radius'] & -surfaces['guide outer radius'] 
+cells['guide tube BSG'].fill = axial_materials['Cladding']
+
+"""root = openmc.Universe(cells=[cells['outer clad BSG']])
+geometry = openmc.Geometry(root)
+geometry.export_to_xml()
+
+# --- Plot ---
+plot = openmc.Plot()
+plot.filename = 'cell_xy'
+plot.origin = (0.0, 0.0, 0.0)
+plot.width = (1.0, 1.0)
+plot.pixels = (600, 600)
+plot.color_by = 'cell'
+plot.basis = 'xy'
+
+plots = openmc.Plots([plot])
+plots.export_to_xml()
+
+openmc.plot_geometry()"""
+
 
 cells['B4C CR'] = openmc.Cell(name = 'B4C CR')
 cells['B4C CR'].fill = axial_materials['B4C']
@@ -396,13 +484,7 @@ cells['gapHBP'].fill = axial_materials['gap']
 # no fill because no need hopefullt, iff not make H2 material and fill it here
 
 ##cladding cells
-cells['cladBPR']= openmc.Cell(name='cladBPR')
-cells['cladBPR'].region= -surfaces['BPR rod cladding outer radius'] & +surfaces['BPR rod cladding inner radius'] 
-cells['cladBPR'].fill = axial_materials['SS304']
 
-cells['inner cladBPR']= openmc.Cell(name='inner cladBPR')
-cells['inner cladBPR'].region= -surfaces['BPR inner rod cladding outer radius'] & +surfaces['BPR inner rod cladding inner radius']
-cells['inner cladBPR'].fill = axial_materials['SS304']
 
 cells['cladCR']= openmc.Cell(name='cladCR')
 cells['cladCR'].region= -surfaces['CR rod cladding outer radius'] & +surfaces['CR rod cladding inner radius'] 
@@ -434,9 +516,7 @@ cells['guide tube'] = openmc.Cell(name='guide tube')
 cells['guide tube'].region= +surfaces['guide inner radius'] & -surfaces['guide outer radius'] 
 cells['guide tube'].fill = axial_materials['Cladding']
 
-cells['guide tube BPR'] = openmc.Cell(name='guide tube BPR')
-cells['guide tube BPR'].region= +surfaces['guide inner radius'] & -surfaces['guide outer radius'] 
-cells['guide tube BPR'].fill = axial_materials['Cladding']
+
 
 cells['guide tube CR'] = openmc.Cell(name='guide tube CR')
 cells['guide tube CR'].region= +surfaces['guide inner radius'] & -surfaces['guide outer radius'] 
@@ -507,7 +587,6 @@ cells['rpv'] = openmc.Cell(name = 'rpv')
 cells['rpv'].region = -surfaces['rpv outer'] & +surfaces['rpv inner'] & -surfaces['z-max'] & +surfaces['z-min'] & +surfaces['qc x'] & +surfaces['qc y']
 cells['rpv'].fill = axial_materials['SS304']
 
-temp_universe = openmc.Universe(cells=[cells['moderatorL']])
 
 
 

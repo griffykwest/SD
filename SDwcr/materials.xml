@@ -1679,30 +1679,40 @@
     <nuclide name="Fe57" wo="0.01491086417158234"/>
     <nuclide name="Fe58" wo="0.0020191413387549177"/>
   </material>
-  <material id="165" name="Borosilicate Glass">
+  <material id="165" name="BSG">
     <density units="g/cm3" value="2.23"/>
-    <nuclide ao="0.0281796" name="B10"/>
-    <nuclide ao="0.0422694" name="B11"/>
-    <nuclide ao="0.6395695785569999" name="O16"/>
-    <nuclide ao="0.000242975005" name="O17"/>
-    <nuclide ao="0.0012824464379999998" name="O18"/>
-    <nuclide ao="0.023311" name="Na23"/>
-    <nuclide ao="0.008204" name="Al27"/>
-    <nuclide ao="0.23548727505360004" name="Si28"/>
-    <nuclide ao="0.011957371933200001" name="Si29"/>
-    <nuclide ao="0.0078823530132" name="Si30"/>
-    <nuclide ao="0.001506118315" name="K39"/>
-    <nuclide ao="1.88955e-07" name="K40"/>
-    <nuclide ao="0.00010869272999999999" name="K41"/>
+    <nuclide name="B10" wo="0.699"/>
+    <nuclide name="B11" wo="3.207"/>
+    <nuclide name="O16" wo="53.75899113817403"/>
+    <nuclide name="O17" wo="0.02170549654611959"/>
+    <nuclide name="O18" wo="0.12130336527984935"/>
+    <nuclide name="Si28" wo="34.53158020592702"/>
+    <nuclide name="Si29" wo="1.8160616650466945"/>
+    <nuclide name="Si30" wo="1.23835812902628"/>
+    <nuclide name="K39" wo="0.3085510475471842"/>
+    <nuclide name="K40" wo="3.970406663845833e-05"/>
+    <nuclide name="K41" wo="0.0234092483861773"/>
+    <nuclide name="Na23" wo="2.837"/>
   </material>
-  <material id="166" name="Boron Carbide (B4C)">
+  <material id="166" name="Al2O3-B4C">
+    <density units="g/cm3" value="2.593"/>
+    <nuclide name="B10" wo="1.968"/>
+    <nuclide name="B11" wo="8.992"/>
+    <nuclide name="C12" wo="3.003540809060487"/>
+    <nuclide name="C13" wo="0.03645919093951296"/>
+    <nuclide name="O16" wo="40.37160406445302"/>
+    <nuclide name="O17" wo="0.016300263342554543"/>
+    <nuclide name="O18" wo="0.09109567220442695"/>
+    <nuclide name="Al27" wo="45.521"/>
+  </material>
+  <material id="167" name="Boron Carbide (B4C)">
     <density units="g/cm3" value="2.52"/>
-    <nuclide ao="0.15999620000000003" name="B10"/>
-    <nuclide ao="0.6399848000000001" name="B11"/>
+    <nuclide ao="0.6799838500000001" name="B10"/>
+    <nuclide ao="0.11999715000000002" name="B11"/>
     <nuclide ao="0.197803189518" name="C12"/>
     <nuclide ao="0.0022158104819999997" name="C13"/>
   </material>
-  <material id="168" name="gap">
+  <material id="169" name="gap">
     <density units="g/cm3" value="0.001"/>
     <nuclide ao="2e-06" name="He3"/>
     <nuclide ao="0.999998" name="He4"/>

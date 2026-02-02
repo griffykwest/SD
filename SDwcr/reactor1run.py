@@ -40,9 +40,9 @@ M=universes['UO2M Unrodded Assembly']
 h=universes['UO2H Unrodded Assembly']
 H=universes['UO2HBP1 Unrodded Assembly']
 C=universes['UO2HBP2 Unrodded Assembly']
-I=universes['UO2M rodded Assembly']
-P=universes['UO2M Lrodded Assembly']
-G=universes['UO2M Mrodded Assembly']
+G=universes['UO2M rodded Assembly']
+I=universes['UO2M Lrodded Assembly']
+P=universes['UO2M Mrodded Assembly']
 S=universes['UO2HBP2S rodded Assembly']
 W=universes['UO2HBP2W rodded Assembly']
 D=universes['UO2HBP2SW rodded Assembly']
@@ -57,12 +57,12 @@ f = universes['BP Bank Shut Down Assembly']
 
 lattices['Core'].universes=[
  [m,m,m,m,m,m,m],
- [S,f,f,m,m,m,m],
- [c,P,D,d,m,m,m],
- [G,a,P,P,d,m,m],
- [b,G,c,P,D,f,m],
- [G,e,G,a,P,f,m],
- [a,G,b,G,c,W,m]
+ [f,f,f,m,m,m,m],
+ [c,G,D,d,m,m,m],
+ [G,a,G,P,d,m,m],
+ [b,G,c,G,D,f,m],
+ [G,e,G,a,G,f,m],
+ [a,G,b,G,c,f,m]
 ]
 cells['Core'].fill = lattices['Core']
 
@@ -73,7 +73,8 @@ universes['Core'] = openmc.Universe(name= 'Core', cells = [cells['Core']])
 # Start with the single materials (non-axial)
 material_colors = {
     axial_materials['IFBA']: (102, 255, 102),               # light green
-    axial_materials['Borosilicate Glass']: (204, 153, 255), # purple
+    axial_materials['BSG']: (204, 153, 255),                # purple
+    axial_materials['Al2O3_B4C']: (204, 100, 255),                # purple
     axial_materials['Cladding']: (169, 169, 169),           # light gray
     axial_materials['SS304']: (192, 192, 192),              # silver
     axial_materials['Inconel']: (255, 153, 204),            # pink

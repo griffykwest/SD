@@ -169,7 +169,8 @@
     <color id="163" rgb="255 153 204"/>
     <color id="164" rgb="192 192 192"/>
     <color id="165" rgb="204 153 255"/>
-    <color id="168" rgb="0 0 0"/>
+    <color id="166" rgb="204 100 255"/>
+    <color id="169" rgb="0 0 0"/>
   </plot>
   <plot basis="xy" color_by="material" filename="plot_blue_water_w_spacers2" id="2" type="slice">
     <pixels>4000 4000</pixels>
@@ -340,6 +341,7 @@
     <color id="163" rgb="255 153 204"/>
     <color id="164" rgb="192 192 192"/>
     <color id="165" rgb="204 153 255"/>
-    <color id="168" rgb="0 0 0"/>
+    <color id="166" rgb="204 100 255"/>
+    <color id="169" rgb="0 0 0"/>
   </plot>
 </plots>
