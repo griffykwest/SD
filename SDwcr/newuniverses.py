@@ -138,6 +138,7 @@ universes['UO2M Unrodded Assembly'] = openmc.Universe(name='UO2M Unrodded Assemb
 universes['UO2H Unrodded Assembly'] = openmc.Universe(name='UO2H Unrodded Assembly')
 universes['UO2HBP1 Unrodded Assembly'] = openmc.Universe(name='UO2HBP1 Unrodded Assembly')
 universes['UO2HBP2 Unrodded Assembly'] = openmc.Universe(name='UO2HBP2 Unrodded Assembly')
+universes['UO2HBP3 Unrodded Assembly'] = openmc.Universe(name='UO2HBP3 Unrodded Assembly')
 universes['UO2HBP2S rodded Assembly'] = openmc.Universe(name='UO2HBP2S rodded Assembly')
 universes['UO2HBP2W rodded Assembly'] = openmc.Universe(name='UO2HBP2W rodded Assembly')
 universes['UO2HBP2SW rodded Assembly'] = openmc.Universe(name='UO2HBP2SE rodded Assembly')
@@ -153,7 +154,7 @@ universes['UO2M Unrodded Assembly'].add_cell(cells['UO2M Unrodded Assembly'])
 universes['UO2H Unrodded Assembly'].add_cell(cells['UO2H Unrodded Assembly'])
 universes['UO2HBP1 Unrodded Assembly'].add_cell(cells['UO2HBP1 Unrodded Assembly'])
 universes['UO2HBP2 Unrodded Assembly'].add_cell(cells['UO2HBP2 Unrodded Assembly'])
-
+universes['UO2HBP3 Unrodded Assembly'].add_cell(cells['UO2HBP3 Unrodded Assembly'])
 
 universes['UO2HBP2S rodded Assembly'].add_cell(cells['UO2HBP2S rodded Assembly'])
 universes['UO2HBP2W rodded Assembly'].add_cell(cells['UO2HBP2W rodded Assembly'])

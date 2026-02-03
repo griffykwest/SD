@@ -297,5 +297,5 @@ def xzslice(batch, y):
 xzslice(2000, 65)
 xzslice(2000, 111)
 """
-
+#xyslice(2077,20)
 

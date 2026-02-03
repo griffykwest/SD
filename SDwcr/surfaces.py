@@ -38,12 +38,12 @@ surfaces['AlB4C rod cladding outer radius']= openmc.ZCylinder(r=R_AlB4Cco, name=
 
 #BPR rod absorber section
 R_AlB4Co=0.8077/2
-R_AlB4Ci=0.70610/2
+R_AlB4Ci=0.68610/2
 surfaces['AlB4C rod outer radius'] = openmc.ZCylinder(r=R_AlB4Co, name= 'AlB4C rod outer radius')
 surfaces['AlB4C rod inner radius'] = openmc.ZCylinder(r=R_AlB4Ci, name= 'AlB4C rod inner radius')
 
-R_inner_AlB4Cci=0.57150/2
-R_inner_AlB4Cco=0.6782/2
+R_inner_AlB4Cci=0.55150/2
+R_inner_AlB4Cco=0.6582/2
 surfaces['AlB4C inner rod cladding inner radius'] = openmc.ZCylinder(r=R_inner_AlB4Cci, name= 'AlB4C inner rod cladding inner radius')
 surfaces['AlB4C inner rod cladding outer radius']= openmc.ZCylinder(r=R_inner_AlB4Cco, name= 'AlB4C inner rod cladding outer radius')
 
@@ -106,14 +106,15 @@ surfaces['y-max'] = openmc.YPlane(y0= hw, name='y-max')
 #================================================
 # Z in core
 #================================================
-z_ta=143.84
-z_ba=-100
+length = 243.84  #8ft
+z_ta=length/2
+z_ba=-length/2
 #Top of the Active fuel region
 surfaces['z-top active'] = openmc.ZPlane(z0=z_ta, name='z-top active')
 surfaces['z-bottom active'] = openmc.ZPlane(z0=z_ba, name='z-bottom active')
 
 
-z_min=-150
+z_min=z_ba-50
 z_max=z_ta+(z_ta-z_ba)
 surfaces['z-min'] = openmc.ZPlane(z0=z_min)
 surfaces['z-max'] = openmc.ZPlane(z0=z_max)

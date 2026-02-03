@@ -262,8 +262,8 @@ lattices['UO2HBP1 Unrodded Assembly'].universes = \
     [[b, b, u, u, u, u, u, u, u, u, u, u, u, u, u, b, b],
      [b, u, u, u, u, b, u, u, b, u, u, b, u, u, u, u, b],
      [u, u, u, b, b, g, b, b, g, b, b, g, b, b, u, u, u],
-     [u, u, b, g, u, b, u, u, b, u, u, b, u, g, b, u, u],
-     [u, u, b, u, u, b, u, u, b, u, u, b, u, u, b, u, u],
+     [u, u, b, g, b, b, u, u, b, u, u, b, b, g, b, u, u],
+     [u, u, b, b, u, b, u, u, b, u, u, b, u, b, b, u, u],
      [u, b, g, b, b, g, b, b, g, b, b, g, b, b, g, b, u],
      [u, u, b, u, u, b, u, u, b, u, u, b, u, u, b, u, u],
      [u, u, b, u, u, b, u, u, b, u, u, b, u, u, b, u, u],
@@ -271,8 +271,8 @@ lattices['UO2HBP1 Unrodded Assembly'].universes = \
      [u, u, b, u, u, b, u, u, b, u, u, b, u, u, b, u, u],
      [u, u, b, u, u, b, u, u, b, u, u, b, u, u, b, u, u],
      [u, b, g, b, b, g, b, b, g, b, b, g, b, b, g, b, u],
-     [u, u, b, u, u, b, u, u, b, u, u, b, u, u, b, u, u],
-     [u, u, b, g, u, b, u, u, b, u, u, b, u, g, b, u, u],
+     [u, u, b, b, u, b, u, u, b, u, u, b, u, b, b, u, u],
+     [u, u, b, g, b, b, u, u, b, u, u, b, b, g, b, u, u],
      [u, u, u, b, b, g, b, b, g, b, b, g, b, b, u, u, u],
      [b, u, u, u, u, b, u, u, b, u, u, b, u, u, u, u, b],
      [b, b, u, u, u, u, u, u, u, u, u, u, u, u, u, b, b]]
@@ -303,6 +303,33 @@ lattices['UO2HBP2 Unrodded Assembly'].universes = \
      [u, u, b, g, u, u, u, u, u, u, u, u, u, g, b, u, u],
      [u, u, u, b, b, g, u, b, g, b, u, g, b, b, u, u, u],
      [b, u, u, u, u, b, u, u, b, u, u, b, u, u, u, u, b],
+     [b, b, u, u, u, u, u, u, u, u, u, u, u, u, u, b, b]]
+
+lattices['UO2HBP3 Unrodded Assembly'] = \
+    openmc.RectLattice(name='UO2HBP3 Unrodded Assembly')
+lattices['UO2HBP3 Unrodded Assembly'].dimension = [17, 17]
+lattices['UO2HBP3 Unrodded Assembly'].lower_left = [-10.71, -10.71]
+lattices['UO2HBP3 Unrodded Assembly'].pitch = [1.26, 1.26]
+u = universes['UO2H complete']
+b = universes['UO2HBP complete']
+g = universes['guide tube w/o BPR complete']
+lattices['UO2HBP3 Unrodded Assembly'].universes = \
+    [[b, b, u, u, u, u, u, u, u, u, u, u, u, u, u, b, b],
+     [b, u, u, u, u, b, u, u, u, u, u, b, u, u, u, u, b],
+     [u, u, u, u, b, g, u, b, g, b, u, g, b, u, u, u, u],
+     [u, u, u, g, u, u, u, u, u, u, u, u, u, g, u, u, u],
+     [u, u, b, u, u, b, u, u, b, u, u, b, u, u, b, u, u],
+     [u, b, g, u, b, g, u, b, g, b, u, g, b, u, g, b, u],
+     [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
+     [u, u, b, u, u, b, u, u, b, u, u, b, u, u, b, u, u],
+     [u, u, g, u, b, g, u, b, g, b, u, g, b, u, g, u, u],
+     [u, u, b, u, u, b, u, u, b, u, u, b, u, u, b, u, u],
+     [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
+     [u, b, g, u, b, g, u, b, g, b, u, g, b, u, g, b, u],
+     [u, u, b, u, u, b, u, u, b, u, u, b, u, u, b, u, u],
+     [u, u, u, g, u, u, u, u, u, u, u, u, u, g, u, u, u],
+     [u, u, u, u, b, g, u, b, g, b, u, g, b, u, u, u, u],
+     [b, u, u, u, u, b, u, u, u, u, u, b, u, u, u, u, b],
      [b, b, u, u, u, u, u, u, u, u, u, u, u, u, u, b, b]]
 
 
@@ -378,7 +405,7 @@ lattices['UO2M rodded Assembly'].universes = \
     [[u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, g, u, u, g, u, u, g, u, u, u, u, u],
-     [u, u, u, gt, u, u, u, u, u, u, u, u, u, gt, u, u, u],
+     [u, u, u, g, u, u, u, u, u, u, u, u, u, g, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, g, u, u, g, u, u, g, u, u, g, u, u, g, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
@@ -388,7 +415,7 @@ lattices['UO2M rodded Assembly'].universes = \
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, g, u, u, g, u, u, g, u, u, g, u, u, g, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
-     [u, u, u, gt, u, u, u, u, u, u, u, u, u, gt, u, u, u],
+     [u, u, u, g, u, u, u, u, u, u, u, u, u, g, u, u, u],
      [u, u, u, u, u, g, u, u, g, u, u, g, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u],
      [u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u, u]]
@@ -525,6 +552,7 @@ cells['UO2M Unrodded Assembly'].fill = lattices['UO2M Unrodded Assembly']
 cells['UO2H Unrodded Assembly'].fill = lattices['UO2H Unrodded Assembly']
 cells['UO2HBP1 Unrodded Assembly'].fill = lattices['UO2HBP1 Unrodded Assembly']
 cells['UO2HBP2 Unrodded Assembly'].fill = lattices['UO2HBP2 Unrodded Assembly']
+cells['UO2HBP3 Unrodded Assembly'].fill = lattices['UO2HBP3 Unrodded Assembly']
 
 cells['UO2M rodded Assembly'].fill = lattices['UO2M rodded Assembly']
 cells['UO2M Lrodded Assembly'].fill = lattices['UO2M Lrodded Assembly']
@@ -543,4 +571,6 @@ cells['Low Bank Shut Down Assembly'].fill = lattices['Low Bank Shut Down Assembl
 
 cells['Water Assembly'].fill = lattices['Water Assembly']
 cells['Baffle Assembly'].fill = lattices['Baffle assembly']
+
+#print(lattices)
 

@@ -40,6 +40,7 @@ M=universes['UO2M Unrodded Assembly']
 h=universes['UO2H Unrodded Assembly']
 H=universes['UO2HBP1 Unrodded Assembly']
 C=universes['UO2HBP2 Unrodded Assembly']
+K=universes['UO2HBP3 Unrodded Assembly']
 G=universes['UO2M rodded Assembly']
 I=universes['UO2M Lrodded Assembly']
 P=universes['UO2M Mrodded Assembly']
@@ -57,12 +58,12 @@ f = universes['BP Bank Shut Down Assembly']
 
 lattices['Core'].universes=[
  [m,m,m,m,m,m,m],
- [f,f,f,m,m,m,m],
- [c,G,D,d,m,m,m],
- [G,a,G,P,d,m,m],
- [b,G,c,G,D,f,m],
- [G,e,G,a,G,f,m],
- [a,G,b,G,c,f,m]
+ [H,C,K,m,m,m,m],
+ [c,P,D,C,m,m,m],
+ [G,a,G,P,C,m,m],
+ [b,G,c,G,D,K,m],
+ [G,e,G,a,P,C,m],
+ [a,G,b,G,c,H,m]
 ]
 cells['Core'].fill = lattices['Core']
 
@@ -106,7 +107,7 @@ geometry.export_to_xml()
 plot_1 = openmc.Plot()
 plot_1.filename = 'plot_blue_water'
 plot_1.width = [r_rpvouter, r_rpvouter] #[r_rpvouter, r_rpvouter]
-plot_1.pixels = [4000, 4000]
+plot_1.pixels = [6000, 6000]
 plot_1.origin = [r_rpvouter/2,r_rpvouter/2,150] #[r_rpvouter/2,r_rpvouter/2,10]
 plot_1.basis = 'xy'
 plot_1.color_by = 'material'
@@ -115,13 +116,22 @@ plot_1.colors = material_colors
 plot_2 = openmc.Plot()
 plot_2.filename = 'plot_blue_water_w_spacers2'
 plot_2.width = [r_rpvouter, r_rpvouter] #[r_rpvouter, r_rpvouter]
-plot_2.pixels = [4000, 4000]
-plot_2.origin = [r_rpvouter/2,r_rpvouter/2,-99]#[r_rpvouter/2,r_rpvouter/2,-99]
+plot_2.pixels = [6000, 6000]
+plot_2.origin = [r_rpvouter/2,r_rpvouter/2,z_ba+1]#[r_rpvouter/2,r_rpvouter/2,-99]
 plot_2.basis = 'xy'
 plot_2.color_by = 'material'
-plot_2.colors = material_colors
 
-plot_file = openmc.Plots([plot_1,plot_2])
+plot_2.colors = material_colors
+plot_3 = openmc.Plot()
+plot_3.filename = 'plot_blue_water_w_spacers3'
+plot_3.width = [pitch, pitch] #[r_rpvouter, r_rpvouter]
+plot_3.pixels = [2000, 2000]
+plot_3.origin = [11*pitch,3*pitch,z_ba+1]#[r_rpvouter/2,r_rpvouter/2,-99]
+plot_3.basis = 'xy'
+plot_3.color_by = 'material'
+plot_3.colors = material_colors
+
+plot_file = openmc.Plots([plot_1,plot_2,plot_3])
 plot_file.export_to_xml()
 openmc.plot_geometry()
 
@@ -175,4 +185,4 @@ xyslice(Batches,18)
 xyslice(Batches,15)
 xyslice(Batches,25)
 xzslice(Batches,1)
-ppf(Batches,20)
+#ppf(Batches,20)

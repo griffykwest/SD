@@ -5,10 +5,10 @@ A_Bank = 0  #0 is fully out 1 is fully in
 B_Bank = 0  #0 is fully out 1 is fully in
 C_Bank = 0  #0 is fully out 1 is fully in
 Shut_Down_Bank = 0  #0 is fully out 1 is fully in
-Batches = 2071
+Batches = 2001
 PPB = 10000
 inactive = 250
-Boron_PPM = 2275
+Boron_PPM = 2400
 T_mod_min = 285  #C
 T_mod_max = 315  #C
 """

@@ -10,8 +10,8 @@ from specialinputs import*
 # Axial parameters
 # ----------------------------
 n_axial = 40                # number of axial slices
-z_bot = -100                 # bottom of active fuel
-z_top = 143.84               # top of active fuel (m)
+z_bot =  z_ba               # bottom of active fuel
+z_top = z_ta          # top of active fuel (m)
 z_edges = np.linspace(z_bot, z_top, n_axial + 1)
 z_centers = 0.5 * (z_edges[:-1] + z_edges[1:])
 
@@ -29,13 +29,13 @@ T_amp = T_max-T_min
 
 # Cosine shape, peak in the middle, edges at min
 T_fuel_z = T_min + T_amp * np.cos(np.pi * (h - 0.5))
-print(T_fuel_z)
+#print(T_fuel_z)
 
 T_mod_z  = np.linspace(T_mod_min+273.15, T_mod_max+273.15, n_axial)
 
 
 axial_materials = {}
-multiplier = 1.0
+multiplier = 0.95
 fuel_density = 10.30
 for i in range(n_axial):
 
@@ -86,7 +86,7 @@ for i in range(n_axial):
 
 #natural enriched B10 is 19.9
 B10enrichment= 0.2 # for rods
-B10_enr = 0.2 # for coating
+B10_enr = 0.25 # for coating
 ##IFBA inspired coating from math the coating should be about 10 micronsbut the gap is only 5 microns? so maybe just a little less
 IFBA=openmc.Material()
 IFBA.name = 'IFBA'
@@ -548,6 +548,7 @@ cells['UO2M Unrodded Assembly'] = openmc.Cell(name='UO2M Unrodded Assembly')
 cells['UO2H Unrodded Assembly'] = openmc.Cell(name='UO2H Unrodded Assembly')
 cells['UO2HBP1 Unrodded Assembly'] = openmc.Cell(name='UO2HBP1 Unrodded Assembly')
 cells['UO2HBP2 Unrodded Assembly'] = openmc.Cell(name='UO2HBP2 Unrodded Assembly')
+cells['UO2HBP3 Unrodded Assembly'] = openmc.Cell(name='UO2HBP3 Unrodded Assembly')
 cells['UO2HBP2S rodded Assembly'] = openmc.Cell(name='UO2HBP2S rodded Assembly')
 cells['UO2HBP2W rodded Assembly'] = openmc.Cell(name='UO2HBP2W rodded Assembly')
 cells['UO2HBP2SW rodded Assembly'] = openmc.Cell(name='UO2HBP2SW rodded Assembly')

@@ -2,30 +2,30 @@
 <materials>
   <material depletable="true" id="1" name="UO2L0" temperature="368.0">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="2" name="UO2M0" temperature="368.0">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="3" name="UO2H0" temperature="368.0">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -37,35 +37,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="5" name="UO2L1" temperature="399.2210286620897">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="6" name="UO2M1" temperature="399.2210286620897">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="7" name="UO2H1" temperature="399.2210286620897">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -77,35 +77,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="9" name="UO2L2" temperature="430.239576972811">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="10" name="UO2M2" temperature="430.239576972811">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="11" name="UO2H2" temperature="430.239576972811">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -117,35 +117,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="13" name="UO2L3" temperature="460.85447774357243">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="14" name="UO2M3" temperature="460.85447774357243">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="15" name="UO2H3" temperature="460.85447774357243">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -157,35 +157,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="17" name="UO2L4" temperature="490.86718159497127">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="18" name="UO2M4" temperature="490.86718159497127">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="19" name="UO2H4" temperature="490.86718159497127">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -197,35 +197,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="21" name="UO2L5" temperature="520.0830446257091">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="22" name="UO2M5" temperature="520.0830446257091">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="23" name="UO2H5" temperature="520.0830446257091">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -237,35 +237,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="25" name="UO2L6" temperature="548.3125907529823">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="26" name="UO2M6" temperature="548.3125907529823">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="27" name="UO2H6" temperature="548.3125907529823">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -277,35 +277,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="29" name="UO2L7" temperature="575.3727405375869">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="30" name="UO2M7" temperature="575.3727405375869">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="31" name="UO2H7" temperature="575.3727405375869">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -317,35 +317,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="33" name="UO2L8" temperature="601.0879985243358">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="34" name="UO2M8" temperature="601.0879985243358">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="35" name="UO2H8" temperature="601.0879985243358">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -357,35 +357,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="37" name="UO2L9" temperature="625.2915913974284">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="38" name="UO2M9" temperature="625.2915913974284">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="39" name="UO2H9" temperature="625.2915913974284">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -397,35 +397,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="41" name="UO2L10" temperature="647.8265495694">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="42" name="UO2M10" temperature="647.8265495694">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="43" name="UO2H10" temperature="647.8265495694">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -437,35 +437,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="45" name="UO2L11" temperature="668.54672518913">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="46" name="UO2M11" temperature="668.54672518913">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="47" name="UO2H11" temperature="668.54672518913">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -477,35 +477,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="49" name="UO2L12" temperature="687.3177399667387">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="50" name="UO2M12" temperature="687.3177399667387">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="51" name="UO2H12" temperature="687.3177399667387">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -517,35 +517,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="53" name="UO2L13" temperature="704.0178566683621">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="54" name="UO2M13" temperature="704.0178566683621">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="55" name="UO2H13" temperature="704.0178566683621">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -557,35 +557,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="57" name="UO2L14" temperature="718.5387686288284">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="58" name="UO2M14" temperature="718.5387686288284">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="59" name="UO2H14" temperature="718.5387686288284">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -597,35 +597,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="61" name="UO2L15" temperature="730.786302161941">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="62" name="UO2M15" temperature="730.786302161941">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="63" name="UO2H15" temperature="730.786302161941">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -637,35 +637,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="65" name="UO2L16" temperature="740.6810273129724">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="66" name="UO2M16" temperature="740.6810273129724">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="67" name="UO2H16" temperature="740.6810273129724">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -677,35 +677,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="69" name="UO2L17" temperature="748.1587729923999">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="70" name="UO2M17" temperature="748.1587729923999">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="71" name="UO2H17" temperature="748.1587729923999">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -717,35 +717,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="73" name="UO2L18" temperature="753.171043150045">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="74" name="UO2M18" temperature="753.171043150045">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="75" name="UO2H18" temperature="753.171043150045">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -757,35 +757,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="77" name="UO2L19" temperature="755.685331290569">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="78" name="UO2M19" temperature="755.685331290569">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="79" name="UO2H19" temperature="755.685331290569">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -797,35 +797,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="81" name="UO2L20" temperature="755.685331290569">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="82" name="UO2M20" temperature="755.685331290569">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="83" name="UO2H20" temperature="755.685331290569">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -837,35 +837,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="85" name="UO2L21" temperature="753.171043150045">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="86" name="UO2M21" temperature="753.171043150045">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="87" name="UO2H21" temperature="753.171043150045">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -877,35 +877,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="89" name="UO2L22" temperature="748.1587729923999">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="90" name="UO2M22" temperature="748.1587729923999">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="91" name="UO2H22" temperature="748.1587729923999">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -917,35 +917,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="93" name="UO2L23" temperature="740.6810273129724">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="94" name="UO2M23" temperature="740.6810273129724">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="95" name="UO2H23" temperature="740.6810273129724">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -957,35 +957,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="97" name="UO2L24" temperature="730.786302161941">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="98" name="UO2M24" temperature="730.786302161941">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="99" name="UO2H24" temperature="730.786302161941">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -997,35 +997,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="101" name="UO2L25" temperature="718.5387686288284">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="102" name="UO2M25" temperature="718.5387686288284">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="103" name="UO2H25" temperature="718.5387686288284">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -1037,35 +1037,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="105" name="UO2L26" temperature="704.0178566683622">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="106" name="UO2M26" temperature="704.0178566683622">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="107" name="UO2H26" temperature="704.0178566683622">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -1077,35 +1077,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="109" name="UO2L27" temperature="687.3177399667387">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="110" name="UO2M27" temperature="687.3177399667387">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="111" name="UO2H27" temperature="687.3177399667387">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -1117,35 +1117,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="113" name="UO2L28" temperature="668.54672518913">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="114" name="UO2M28" temperature="668.54672518913">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="115" name="UO2H28" temperature="668.54672518913">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -1157,35 +1157,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="117" name="UO2L29" temperature="647.8265495694">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="118" name="UO2M29" temperature="647.8265495694">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="119" name="UO2H29" temperature="647.8265495694">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -1197,35 +1197,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="121" name="UO2L30" temperature="625.2915913974286">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="122" name="UO2M30" temperature="625.2915913974286">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="123" name="UO2H30" temperature="625.2915913974286">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -1237,35 +1237,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="125" name="UO2L31" temperature="601.0879985243358">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="126" name="UO2M31" temperature="601.0879985243358">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="127" name="UO2H31" temperature="601.0879985243358">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -1277,35 +1277,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="129" name="UO2L32" temperature="575.3727405375869">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="130" name="UO2M32" temperature="575.3727405375869">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="131" name="UO2H32" temperature="575.3727405375869">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -1317,35 +1317,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="133" name="UO2L33" temperature="548.3125907529823">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="134" name="UO2M33" temperature="548.3125907529823">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="135" name="UO2H33" temperature="548.3125907529823">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -1357,35 +1357,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="137" name="UO2L34" temperature="520.0830446257091">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="138" name="UO2M34" temperature="520.0830446257091">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="139" name="UO2H34" temperature="520.0830446257091">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -1397,35 +1397,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="141" name="UO2L35" temperature="490.8671815949715">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="142" name="UO2M35" temperature="490.8671815949715">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="143" name="UO2H35" temperature="490.8671815949715">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -1437,35 +1437,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="145" name="UO2L36" temperature="460.8544777435725">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="146" name="UO2M36" temperature="460.8544777435725">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="147" name="UO2H36" temperature="460.8544777435725">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -1477,35 +1477,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="149" name="UO2L37" temperature="430.23957697281105">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="150" name="UO2M37" temperature="430.23957697281105">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="151" name="UO2H37" temperature="430.23957697281105">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -1517,35 +1517,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="153" name="UO2L38" temperature="399.2210286620897">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="154" name="UO2M38" temperature="399.2210286620897">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="155" name="UO2H38" temperature="399.2210286620897">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -1557,35 +1557,35 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material depletable="true" id="157" name="UO2L39" temperature="368.0">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.00020362140700941233" name="U234"/>
-    <nuclide ao="0.02278118147783112" name="U235"/>
-    <nuclide ao="0.9769108483618251" name="U238"/>
-    <nuclide ao="0.00010434875333449281" name="U236"/>
+    <nuclide ao="0.0001934431615262697" name="U234"/>
+    <nuclide ao="0.021642438450352335" name="U235"/>
+    <nuclide ao="0.9780649856248093" name="U238"/>
+    <nuclide ao="9.913276331214082e-05" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="158" name="UO2M39" temperature="368.0">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0003166930253944235" name="U234"/>
-    <nuclide ao="0.03543164439454172" name="U235"/>
-    <nuclide ao="0.964089368630351" name="U238"/>
-    <nuclide ao="0.00016229394971280895" name="U236"/>
+    <nuclide ao="0.000300865207443888" name="U234"/>
+    <nuclide ao="0.03366082668718467" name="U235"/>
+    <nuclide ao="0.9658841253513104" name="U238"/>
+    <nuclide ao="0.0001541827540610308" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
   </material>
   <material depletable="true" id="159" name="UO2H39" temperature="368.0">
     <density units="g/cm3" value="10.3"/>
-    <nuclide ao="0.0004297279624677379" name="U234"/>
-    <nuclide ao="0.048078003402773906" name="U235"/>
-    <nuclide ao="0.9512720482865393" name="U238"/>
-    <nuclide ao="0.00022022034821912108" name="U236"/>
+    <nuclide ao="0.0004082541462220254" name="U234"/>
+    <nuclide ao="0.04567551089425018" name="U235"/>
+    <nuclide ao="0.9537070191809534" name="U238"/>
+    <nuclide ao="0.00020921577857448397" name="U236"/>
     <nuclide ao="1.9952412" name="O16"/>
     <nuclide ao="0.000758" name="O17"/>
     <nuclide ao="0.0040008" name="O18"/>
@@ -1597,8 +1597,8 @@
     <nuclide ao="0.9976206" name="O16"/>
     <nuclide ao="0.000379" name="O17"/>
     <nuclide ao="0.0020004" name="O18"/>
-    <nuclide ao="0.000450905" name="B10"/>
-    <nuclide ao="0.001824095" name="B11"/>
+    <nuclide ao="0.0004756799999999999" name="B10"/>
+    <nuclide ao="0.0019243199999999998" name="B11"/>
   </material>
   <material id="161" name="IFBA">
     <density units="g/cm3" value="6.09"/>
