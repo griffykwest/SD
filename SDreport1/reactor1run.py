@@ -181,8 +181,10 @@ tallies_file.export_to_xml()
 
 
 openmc.run()
-"""xyslice(Batches,18)
+xyslice(Batches,18)
 xyslice(Batches,15)
 xyslice(Batches,25)
-xzslice(Batches,1)"""
+xyslice(Batches,20)
+xzslice(Batches,1)
+
 #ppf(Batches,20)

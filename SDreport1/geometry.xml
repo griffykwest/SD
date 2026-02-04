@@ -420,7 +420,7 @@
   <cell fill="62" id="524" name="BP Bank Shut Down Assembly" universe="53"/>
   <cell fill="63" id="525" name="Low Bank Shut Down Assembly" universe="54"/>
   <cell fill="76" id="527" name="Baffle Assembly" universe="56"/>
-  <cell fill="77" id="528" name="Core" region="-37 -36 34 45 46" universe="13"/>
+  <cell fill="78" id="528" name="Core" region="-37 -36 34 45 46" universe="13"/>
   <cell id="529" material="4" name="lower plenum" region="35 -34 -37 45 46" universe="13"/>
   <cell id="530" material="164" name="core barrel" region="-38 37 -36 34 45 46" universe="13"/>
   <cell id="531" material="4" name="core barrel replace" region="-38 37 35 -34 45 46" universe="13"/>
@@ -1034,7 +1034,7 @@
 26 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 26 
 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 </universes>
   </lattice>
-  <lattice id="77" name="7X7 core lattice">
+  <lattice id="78" name="7X7 core lattice">
     <pitch>21.42 21.42</pitch>
     <dimension>7 7</dimension>
     <lower_left>-10.71 -10.71</lower_left>
