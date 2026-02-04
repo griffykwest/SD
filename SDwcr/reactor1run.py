@@ -60,7 +60,7 @@ lattices['Core'].universes=[
  [m,m,m,m,m,m,m],
  [H,C,K,m,m,m,m],
  [c,P,D,C,m,m,m],
- [G,a,G,P,C,m,m],
+ [G,a,G,I,C,m,m],
  [b,G,c,G,D,K,m],
  [G,e,G,a,P,C,m],
  [a,G,b,G,c,H,m]

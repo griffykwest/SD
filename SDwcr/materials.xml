@@ -1602,8 +1602,8 @@
   </material>
   <material id="161" name="IFBA">
     <density units="g/cm3" value="6.09"/>
-    <nuclide ao="0.4" name="B10"/>
-    <nuclide ao="1.6" name="B11"/>
+    <nuclide ao="0.5" name="B10"/>
+    <nuclide ao="1.5" name="B11"/>
     <nuclide ao="0.5145" name="Zr90"/>
     <nuclide ao="0.1122" name="Zr91"/>
     <nuclide ao="0.1715" name="Zr92"/>

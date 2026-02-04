@@ -225,7 +225,7 @@ def ppf(batch,z):
     return Fq_intra2r, Fq_intraA, Fq_inter, assembly_avgnowc, fuel_mask
 
 
-Fq_intra, Fq_intraA, Fq_inter, assembly_avg , fuel_mask = ppf(4000,20)
+Fq_intra, Fq_intraA, Fq_inter, assembly_avg , fuel_mask = ppf(2002,20)
 
 np.set_printoptions(linewidth=200)
 Fq_intra = Fq_intra.reshape((7,7))

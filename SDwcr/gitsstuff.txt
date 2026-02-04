@@ -1,6 +1,6 @@
 cd ~/SD
 git add -A
-git commit -m "Tried to un f***"
+git commit -m "Tried to un f*** k"
 git push
 
 
